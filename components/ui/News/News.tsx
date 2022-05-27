@@ -4,12 +4,17 @@ export type NewsProps = Readonly<
     title: string;
     content: string;
     logo: any;
+    url: string;
+    urltext: string;
 
   } & React.HTMLProps<HTMLButtonElement>
 >;
 
-export const News = ({ label }: NewsProps) => (
-  <button className="bg-mint w-40 h-14 rounded-3xl font-semibold">
-    {label}
-  </button>
+export const News = ({ cover, title, content, logo, url, urltext }: NewsProps) => (
+    <div className="col-md-4 col-sm-12 max-w-sm">
+        <img className="rounded-2xl" src={cover} ></img>
+        <div className="mt2 uppercase">{title}</div>
+        <div className="mt2">{content}</div>
+        <a className="underline underline-offset-2" href={url} target="_blank">{urltext}</a>
+    </div>
 );
