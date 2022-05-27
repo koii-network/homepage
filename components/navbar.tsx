@@ -14,7 +14,7 @@ export const Navbar = () => {
             alt="Koii logo"
           />
         </div>
-        <span className="text-[26px]">Koii</span>
+        <span className="text-[24px]">Koii</span>
       </div>
 
       <menu className="flex flex-row gap-12 align-middle">
