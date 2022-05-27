@@ -4,7 +4,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["Sora", "sans-serif"],
+    },
+    extend: {
+      colors: {
+        mint: "#5ED9D1",
+      },
+    },
   },
   plugins: [],
 };
