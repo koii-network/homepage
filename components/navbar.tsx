@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { NavbarItem } from "./menu-item";
 import { Button } from "./ui/Button";
 
