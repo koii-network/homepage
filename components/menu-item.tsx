@@ -6,9 +6,9 @@ type NavbarItemProps = {
 };
 
 export const NavbarItem = ({ url, label }: NavbarItemProps) => (
-  <li>
-    <Link href={url}>
-      <a className="text-[14px]">{label}</a>
+  <li className="flex flex-row items-center">
+    <Link className="" href={url}>
+      <a className="block leading-6 text-[14px]">{label}</a>
     </Link>
   </li>
 );
