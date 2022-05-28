@@ -23,6 +23,10 @@ export const Hero = () => {
                 </div>
             </div>
 
+            <div className="grid grid-cols-4 palce-content-center">
+        
+            </div>
+
             <svg viewBox="0 0 1441 94" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.488281 0.571289V94H1440.49V0.571289C1234.41 52.6445 986.809 82.9995 720.488 82.9995C454.169 82.9995 206.568 52.6445 0.488281 0.571289Z" fill="url(#paint0_linear_1510_2500)"/>
             <defs>
