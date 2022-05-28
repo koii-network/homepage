@@ -1,11 +1,10 @@
 export type ButtonProps = Readonly<
   {
     label: string;
+    className?: string;
   } & React.HTMLProps<HTMLButtonElement>
 >;
 
-export const Button = ({ label }: ButtonProps) => (
-  <button className="bg-mint w-40 h-14 rounded-3xl font-semibold">
-    {label}
-  </button>
-);
+export const Button = ({ label, className }: ButtonProps) => {
+  return <button className={className}>{label}</button>;
+};
