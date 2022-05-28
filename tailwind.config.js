@@ -8,12 +8,14 @@ module.exports = {
     fontFamily: {
       sans: ["Sora", "sans-serif"],
     },
+
     extend: {
       colors: {
         fontMain: "#171753",
         mint: "#5ED9D1",
         lightmint: "#BEF0ED",
         "faux-azure-mist": "#ECFFFE",
+        koiiblue: "#171753",
       },
     },
   },
