@@ -6,8 +6,9 @@ import { Hero } from "@/components/hero"
 
 const Home: NextPage = () => {
   return (
-<div>Page content
+<div>
     <Hero/>
+    Page content
 </div>
   );
 
