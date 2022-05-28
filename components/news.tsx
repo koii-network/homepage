@@ -3,7 +3,7 @@ import { Newsblock } from "./ui/News"
 
 export const News = () => {
     return (
-    <div>
+    <div className="text-koiiblue">
         <h2 className="pl-36 pt-2 text-5xl">In the News</h2>
         <p className="pl-36 pt-2 text-xs">Catch Up on all the Latest</p>
        
