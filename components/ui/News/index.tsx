@@ -1,1 +1,1 @@
-export { News } from "./News";
+export { Newsblock } from "./News";
