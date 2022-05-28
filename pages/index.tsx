@@ -7,7 +7,6 @@ import News1 from "../assets/images/news1.png"
 
 
 const Home: NextPage = () => {
-  console.log(News1.src)
   return (
     <div>
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
