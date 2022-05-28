@@ -8,15 +8,28 @@ export type NewsProps = Readonly<
     logo: any;
     url: string;
     urltext: string;
-
+    width?: string | 300;
   } & React.HTMLProps<HTMLButtonElement>
+  
 >;
 
-export const Newsblock = ({ cover, title, content, logo, url, urltext }: NewsProps) => (
-    <div className="col-md-4 col-sm-12 max-w-sm">
-        <Image className="rounded-2xl" src={cover} alt="news cover"/>
-        <div className="mt2 uppercase">{title}</div>
-        <div className="mt2">{content}</div>
-        <a className="underline underline-offset-2" href={url} rel="noreferrer">{urltext}</a>
+export const Newsblock = ({ cover, title, content, logo, url, urltext, width }: NewsProps) => (
+    <div className="px-6 max-w-sm">
+        <div className="cover-image" style={{textAlign: 'center'}}>
+            <div style={{
+            position: "relative",
+            width: width + "px",
+            height: "200px",
+            maxHeight: "200px",
+            maxWidth: "400px",
+            display: "inline-block"}} 
+            className="center">
+                <Image className="rounded-2xl" src={cover} alt="news cover" layout="fill"/>
+            </div>
+        </div>
+        <div className="mt-2 uppercase text-base leading-6">{title}</div>
+        <div className="mt-2 text-sm leading-6">{content}</div>
+        <a className="underline underline-offset-2 text-sm leading-6" href={url} rel="noreferrer">{urltext}</a>
     </div>
+    
 );
