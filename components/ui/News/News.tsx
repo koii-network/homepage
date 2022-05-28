@@ -17,6 +17,6 @@ export const Newsblock = ({ cover, title, content, logo, url, urltext }: NewsPro
         <Image className="rounded-2xl" src={cover} alt="news cover"/>
         <div className="mt2 uppercase">{title}</div>
         <div className="mt2">{content}</div>
-        <a className="underline underline-offset-2" href={url} target="_blank">{urltext}</a>
+        <a className="underline underline-offset-2" href={url} rel="noreferrer">{urltext}</a>
     </div>
 );
