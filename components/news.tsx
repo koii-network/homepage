@@ -3,7 +3,11 @@ import { Newsblock } from "./ui/News"
 
 export const News = () => {
     return (
-       <div className="grid grid-cols-3 gap-4 flex place-content-center px-12">
+    <div>
+        <h2 className="pl-36 pt-2 text-5xl">In the News</h2>
+        <p className="pl-36 pt-2 text-xs">Catch Up on all the Latest</p>
+       
+       <div className="pt-12 grid grid-cols-3 gap-4 flex place-content-center px-12">
       <Newsblock
       cover= "/images/news2.png"
       title="Growing Attention Economy"
@@ -32,6 +36,6 @@ export const News = () => {
       width="320"
       />
       </div>
-     
+    </div>
     );
 };
