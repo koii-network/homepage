@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Button } from "./ui/Button";
+import { Button } from "../ui/Button";
 import { IconButton } from "@/components/ui/Button";
 import styles from "../styles/home.module.css"
 
-export const Hero = () => {
+export const Hero2 = () => {
     return (
         <div className={styles.hero}>
             <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36" >
