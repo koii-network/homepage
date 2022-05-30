@@ -10,12 +10,6 @@ const Home: NextPage = () => {
 <div>
     <Hero/>
     Page content
-    <div className="grid grid-cols-4 gap-4">
-    <IconButton as="twitter" fill="#171799" px="80"/>
-    <IconButton as="discord" fill="#171799" px="80"/>
-    <IconButton as="telegram" fill="#171799" px="80"/>
-    <IconButton as="github" fill="#171799" px="80"/>
-    </div>
 </div>
   );
 

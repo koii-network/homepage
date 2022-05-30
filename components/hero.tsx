@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/Button";
-
+import { IconButton } from "@/components/ui/Button";
 import styles from "../styles/home.module.css"
 
 export const Hero = () => {
@@ -23,8 +23,11 @@ export const Hero = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-4 palce-content-center">
-        
+            <div className="grid grid-cols-4 justify-items-center px-[28rem] my-16">
+                <IconButton as="twitter" fill="#8585BC" px="40"/>
+                <IconButton as="discord" fill="#8585BC" px="40"/>
+                <IconButton as="telegram" fill="#8585BC" px="40"/>
+                <IconButton as="github" fill="#8585BC" px="40"/>
             </div>
 
             <svg viewBox="0 0 1441 94" fill="none" xmlns="http://www.w3.org/2000/svg">
