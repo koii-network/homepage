@@ -10,21 +10,20 @@ const Hero1 = () => {
         var options = {
             strings: ['access.', 'ownership.', 'privacy.', 'identity.', 'freedom.'],
             typeSpeed: 100,
-            backSpeed: 100,
-            showCursor: false,
+            backSpeed: 50,
+            showCursor: true,
             loop: true
         };
         new Typed('.element1', options);
-        console.log("b")
     })
-    console.log("a")
     return (
 
         <div className={styles.hero1}>
             <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36" >
-                <div className="title text-6xl font-light leading-8">
-                Reclaim
-                <p className="font-semibold mt-12 element1"/>
+                <div className="title text-6xl font-light">
+                    <div >Reclaim</div>
+                    <p className="font-semibold element1 inline"/>
+                    
                 </div>
                 <div className="content text-2xl leading-8">
                 For the last 25 years, you’ve been exploited by Big Tech.
