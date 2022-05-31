@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { MenuButton } from "./menu-button";
 import { NavbarMenu } from "./navbar-menu";
-import { NewsletterButton } from "./NewsletterButton";
+import { NewsletterButton } from "./newsletter-button";
 
 export const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
