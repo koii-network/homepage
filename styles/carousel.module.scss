@@ -1,0 +1,26 @@
+.dot {
+:global(.carousel .control-dots .dot) {
+    background-color: #5ED9D1;
+    border-radius: 0%;
+    width: 80px;
+    height: 5px;
+    }
+}
+
+.selectdot {
+:global(.carousel .control-dots .selected) {
+    background-color: #FFA54B;
+    }
+}
+
+.controldot {
+:global(.carousel .control-dots) {
+    margin: 85px 0;
+}
+}
+
+.slide {
+:global(.carousel .slide) {
+    text-align: inherit;
+}
+}
