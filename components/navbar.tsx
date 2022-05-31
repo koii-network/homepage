@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <header>
-      <div className="relative flex justify-between py-4 pl-4 pr-8 bg-gradient-to-r from-lightmint to-white drop-shadow-lg z-99">
+      <div className="relative z-50 flex justify-between py-4 pl-4 pr-8 bg-gradient-to-r from-lightmint to-white drop-shadow-lg md:drop-shadow-none">
         <div className="flex items-center gap-4">
           <div>
             <Image
