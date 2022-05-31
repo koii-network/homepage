@@ -4,6 +4,7 @@ import { IconButton } from "@/components/ui/Button";
 import styles from "../../styles/home.module.css"
 import Typed from 'typed.js';
 import React, { useEffect } from "react";
+import Link from 'next/link'
 
 const Hero3 = () => {
     useEffect(() => {
@@ -27,9 +28,11 @@ const Hero3 = () => {
                 Building scalable web3 apps shouldn’t be hard.
                 <p className="mt-3.5">So we make it easy. </p>
                 <div className="link pt-14">
-                <Button
-                label="Go to the Wiki"
-                className="place-content-center w-auto text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"/>
+                    <a rel="noreferrer noopener" href="https://docs.koii.network/" target="_blank">
+                    <Button
+                    label="Go to the Wiki"
+                    className="place-content-center w-auto text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"/>
+                    </a>
                 </div>
                 
                 </div>
