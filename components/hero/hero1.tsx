@@ -21,8 +21,8 @@ const Hero1 = () => {
         <div className={styles.hero1}>
             <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36" >
                 <div className="title text-6xl font-light">
-                    <div >Reclaim</div>
-                    <p className="font-semibold element1 inline"/>
+                    <div className="pb-8" >Reclaim</div>
+                    <p className="font-semibold element1 inline underline underline-offset-[20px] decoration-mint"/>
                     
                 </div>
                 <div className="content text-2xl leading-8">
