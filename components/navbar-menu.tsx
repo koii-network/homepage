@@ -1,5 +1,4 @@
 import { NavbarItem } from "./menu-item";
-import { Button } from "./ui/Button";
 
 export const NavbarMenu = () => {
   return (
