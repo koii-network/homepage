@@ -1,34 +1,49 @@
+import { useState } from "react";
+
 import Image from "next/image";
-import { NavbarItem } from "./menu-item";
-import { Button } from "./ui/Button";
+import { MenuButton } from "./menu-button";
+import { NavbarMenu } from "./navbar-menu";
+import { NewsletterButton } from "./NewsletterButton";
 
 export const Navbar = () => {
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+  const toggleOpenMenu = () => {
+    setOpenMobileMenu(!openMobileMenu);
+  };
+
   return (
-    <nav className="flex flex-row justify-between bg-gradient-to-r from-lightmint to-white py-4 pr-8 pl-4">
-      <div className="flex flex-row items-center gap-4">
-        <div>
-          <Image
-            src="/koii-icon.png"
-            width={38.63}
-            height={28.65}
-            alt="Koii logo"
-          />
+    <header>
+      <div className="relative flex justify-between py-4 pl-4 pr-8 bg-gradient-to-r from-lightmint to-white drop-shadow-lg z-99">
+        <div className="flex items-center gap-4">
+          <div>
+            <Image
+              src="/koii-icon.png"
+              width={38.63}
+              height={28.65}
+              alt="Koii logo"
+            />
+          </div>
+          <span className="text-[24px]">Koii</span>
         </div>
-        <span className="text-[24px]">Koii</span>
+
+        <MenuButton onClick={toggleOpenMenu} />
+
+        <div className="hidden md:block">
+          <NavbarMenu />
+        </div>
       </div>
 
-      <menu className="flex flex-row gap-12 align-middle">
-        <NavbarItem label={"About"} url={"/"} />
-        <NavbarItem label={"Earn"} url={"/"} />
-        <NavbarItem label={"Partnerships"} url={"/"} />
-        <NavbarItem label={"Blog"} url={"/"} />
-        <NavbarItem label={"Koii wiki"} url={"/"} />
-      </menu>
-
-      <Button
-        className="bg-faux-azure-mist border-mint border-solid border-2 p-[8px] w-[186px] h-[40px] rounded-3xl leading-3"
-        label={"Get the Newsletter"}
-      />
-    </nav>
+      {/**
+       * @todo: Fix animation
+       */}
+      <div
+        className={` ${
+          !openMobileMenu && "hidden opacity-0"
+        } md:hidden bg-gradient-to-l from-lightmint to-white drop-shadow-md transition-all ease-out duration-500 md:transition-none`}
+      >
+        <NavbarMenu />
+      </div>
+    </header>
   );
 };
