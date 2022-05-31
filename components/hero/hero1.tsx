@@ -3,21 +3,21 @@ import { Button } from "../ui/Button";
 import { IconButton } from "@/components/ui/Button";
 import styles from "../../styles/home.module.css"
 
-const Hero2 = () => {
+const Hero1 = () => {
     return (
-        <div className={styles.hero2}>
+        <div className={styles.hero1}>
             <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36" >
                 <div className="title text-6xl font-light leading-8">
-                Earn for every
-                <p className="font-semibold mt-12">view.</p>
+                Reclaim
+                <p className="font-semibold mt-12">access.</p>
                 </div>
                 <div className="content text-2xl leading-8">
-                You put talent and hard work into what you create online. 
-                <p className="mt-3.5">It’s time you got paid for it.</p>
+                For the last 25 years, you’ve been exploited by Big Tech.
+                <p className="mt-3.5">We empower you instead.</p>
                 <div className="link pt-14">
                 <Button
-                label="Prove it."
-                className="bg-mint border-mint border-solid border-2 p-[8px] w-[186px] h-[40px] rounded-3xl leading-3"/>
+                label="Oh, really... How?"
+                className="place-content-center w-auto text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"/>
                 </div>
                 
                 </div>
@@ -43,5 +43,4 @@ const Hero2 = () => {
         </div>
     )
 }
-
-export default Hero2
+export default Hero1

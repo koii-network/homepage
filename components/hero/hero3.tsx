@@ -3,20 +3,20 @@ import { Button } from "../ui/Button";
 import { IconButton } from "@/components/ui/Button";
 import styles from "../../styles/home.module.css"
 
-const Hero2 = () => {
+const Hero3 = () => {
     return (
-        <div className={styles.hero2}>
+        <div className={styles.hero3}>
             <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36" >
                 <div className="title text-6xl font-light leading-8">
-                Earn for every
-                <p className="font-semibold mt-12">view.</p>
+                Start building
+                <p className="font-semibold mt-12">the future.</p>
                 </div>
                 <div className="content text-2xl leading-8">
-                You put talent and hard work into what you create online. 
-                <p className="mt-3.5">It’s time you got paid for it.</p>
+                Building scalable web3 apps shouldn’t be hard.
+                <p className="mt-3.5">So we make it easy. </p>
                 <div className="link pt-14">
                 <Button
-                label="Prove it."
+                label="Go to the Wiki"
                 className="bg-mint border-mint border-solid border-2 p-[8px] w-[186px] h-[40px] rounded-3xl leading-3"/>
                 </div>
                 
@@ -44,4 +44,4 @@ const Hero2 = () => {
     )
 }
 
-export default Hero2
+export default Hero3
