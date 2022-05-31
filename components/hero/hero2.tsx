@@ -17,7 +17,7 @@ const Hero2 = () => {
                 <div className="link pt-14">
                 <Button
                 label="Prove it."
-                className="bg-mint border-mint border-solid border-2 p-[8px] w-[186px] h-[40px] rounded-3xl leading-3"/>
+                className="place-content-center w-auto text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"/>
                 </div>
                 
                 </div>
