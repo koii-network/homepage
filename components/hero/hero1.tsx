@@ -2,14 +2,29 @@ import Image from "next/image";
 import { Button } from "../ui/Button";
 import { IconButton } from "@/components/ui/Button";
 import styles from "../../styles/home.module.css"
+import Typed from 'typed.js';
+import React, { useEffect } from "react";
 
 const Hero1 = () => {
+    useEffect(() => {
+        var options = {
+            strings: ['access.', 'ownership.', 'privacy.', 'identity.', 'freedom.'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            showCursor: false,
+            loop: true
+        };
+        new Typed('.element1', options);
+        console.log("b")
+    })
+    console.log("a")
     return (
+
         <div className={styles.hero1}>
             <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36" >
                 <div className="title text-6xl font-light leading-8">
                 Reclaim
-                <p className="font-semibold mt-12">access.</p>
+                <p className="font-semibold mt-12 element1"/>
                 </div>
                 <div className="content text-2xl leading-8">
                 For the last 25 years, you’ve been exploited by Big Tech.
@@ -42,5 +57,5 @@ const Hero1 = () => {
 
         </div>
     )
-}
+    }
 export default Hero1
