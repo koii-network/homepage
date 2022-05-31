@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/Button";
 import { IconButton } from "@/components/ui/Button";
 import Head from "next/head";
 import Image from "next/image";
-import { Hero2 } from "@/components/hero/hero2"
+import  Hero  from "@/components/hero"
 
 const Home: NextPage = () => {
   return (
 <div>
-    <Hero2/>
+    <Hero/>
     Page content
 </div>
   );

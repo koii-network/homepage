@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "../ui/Button";
 import { IconButton } from "@/components/ui/Button";
-import styles from "../styles/home.module.css"
+import styles from "../../styles/home.module.css"
 
 export const Hero2 = () => {
     return (

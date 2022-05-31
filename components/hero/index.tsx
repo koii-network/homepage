@@ -1,6 +1,6 @@
 import { Hero2 } from "./hero2";
 
-const Hero = ({ children }: { children: React.ReactNode }) => {
+const Hero = () => {
   return (
     <>
      <Hero2/>
