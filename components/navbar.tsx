@@ -32,6 +32,10 @@ export const Navbar = () => {
         <div className="hidden md:block">
           <NavbarMenu />
         </div>
+
+        <div className="hidden md:block">
+          <NewsletterButton />
+        </div>
       </div>
 
       {/**
@@ -39,10 +43,14 @@ export const Navbar = () => {
        */}
       <div
         className={` ${
-          !openMobileMenu && "hidden opacity-0"
-        } md:hidden bg-gradient-to-l from-lightmint to-white drop-shadow-md transition-all ease-out duration-500 md:transition-none`}
+          !openMobileMenu && "hidden"
+        } md:hidden bg-gradient-to-l from-lightmint to-white drop-shadow-md pt-4 pb-6 pr-8`}
       >
         <NavbarMenu />
+
+        <div className="flex justify-end md:hidden">
+          <NewsletterButton />
+        </div>
       </div>
     </header>
   );
