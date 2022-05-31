@@ -2,15 +2,27 @@ import Image from "next/image";
 import { Button } from "../ui/Button";
 import { IconButton } from "@/components/ui/Button";
 import styles from "../../styles/home.module.css"
+import Typed from 'typed.js';
+import React, { useEffect } from "react";
 
 const Hero3 = () => {
+    useEffect(() => {
+        var options = {
+            strings: ['your community.', 'epic NFTs.', 'better apps.', 'a universe.', 'the future.'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            showCursor: true,
+            loop: true
+        };
+        new Typed('.element3', options);
+    })
     return (
         <div className={styles.hero3}>
             <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36" >
-                <div className="title text-6xl font-light leading-8">
-                Start building
-                <p className="font-semibold mt-12">the future.</p>
-                </div>
+            <div className="title text-6xl font-light">
+                <div className="pb-8" >Start building</div>
+                <p className="font-semibold element3 inline underline underline-offset-[20px] decoration-mint"/>
+            </div>
                 <div className="content text-2xl leading-8">
                 Building scalable web3 apps shouldn’t be hard.
                 <p className="mt-3.5">So we make it easy. </p>

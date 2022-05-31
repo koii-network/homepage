@@ -2,15 +2,27 @@ import Image from "next/image";
 import { Button } from "../ui/Button";
 import { IconButton } from "@/components/ui/Button";
 import styles from "../../styles/home.module.css"
+import Typed from 'typed.js';
+import React, { useEffect } from "react";
 
 const Hero2 = () => {
+    useEffect(() => {
+        var options = {
+            strings: ['view.', 'user.', 'follow.', 'critique.', 'like.'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            showCursor: true,
+            loop: true
+        };
+        new Typed('.element2', options);
+    })
     return (
         <div className={styles.hero2}>
             <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36" >
-                <div className="title text-6xl font-light leading-8">
-                Earn for every
-                <p className="font-semibold mt-12">view.</p>
-                </div>
+            <div className="title text-6xl font-light">
+                    <div className="pb-8" >Earn for every</div>
+                    <p className="font-semibold element2 inline underline underline-offset-[20px] decoration-mint"/> 
+            </div>
                 <div className="content text-2xl leading-8">
                 You put talent and hard work into what you create online. 
                 <p className="mt-3.5">It’s time you got paid for it.</p>
