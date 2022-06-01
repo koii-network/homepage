@@ -23,12 +23,12 @@ const Hero3 = () => {
   });
   return (
     <div className={styles.hero3}>
-      <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36">
-        <div className="title text-6xl font-light">
+      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:px-64 py-36">
+        <div className="title text-3xl md:text-6xl font-light">
           <div className="pb-8">Start building</div>
           <p className="font-semibold element3 inline underline underline-offset-[20px] decoration-mint" />
         </div>
-        <div className="content text-2xl leading-8">
+        <div className="content text-lg md:text-2xl leading-8">
           Building scalable web3 apps shouldn’t be hard.
           <p className="mt-3.5">So we make it easy. </p>
           <div className="link pt-14">
@@ -46,7 +46,7 @@ const Hero3 = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 justify-items-center px-[28rem] my-10">
+      <div className="grid grid-cols-4 justify-items-center px-4 md:px-[28rem] my-10">
         <IconButton as="twitter" fill="#8585BC" px="40" />
         <IconButton as="discord" fill="#8585BC" px="40" />
         <IconButton as="telegram" fill="#8585BC" px="40" />

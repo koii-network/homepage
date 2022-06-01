@@ -17,12 +17,12 @@ const Hero2 = () => {
   });
   return (
     <div className={styles.hero2}>
-      <div className="grid grid-cols-2 gap-6 place-content-between px-64 py-36">
-        <div className="title text-6xl font-light">
+      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:px-64 py-36">
+        <div className="title text-4xl md:text-6xl font-light">
           <div className="pb-8">Earn for every</div>
           <p className="font-semibold element2 inline underline underline-offset-[20px] decoration-mint" />
         </div>
-        <div className="content text-2xl leading-8">
+        <div className="content text-lg md:text-2xl leading-8">
           You put talent and hard work into what you create online.
           <p className="mt-3.5">It’s time you got paid for it.</p>
           <div className="link pt-14">
@@ -34,7 +34,7 @@ const Hero2 = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 justify-items-center px-[28rem] my-10">
+      <div className="grid grid-cols-4 justify-items-center px-4 md:px-[28rem] my-10">
         <IconButton as="twitter" fill="#8585BC" px="40" />
         <IconButton as="discord" fill="#8585BC" px="40" />
         <IconButton as="telegram" fill="#8585BC" px="40" />

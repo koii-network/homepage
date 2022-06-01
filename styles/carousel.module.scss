@@ -15,7 +15,10 @@
 
 .controldot {
 :global(.carousel .control-dots) {
-    margin: 85px 0;
+    margin: 150px 0;
+    @media (min-width: 768px) {
+        margin: 85px 0;
+    }
 }
 }
 
