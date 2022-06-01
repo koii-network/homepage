@@ -17,7 +17,7 @@
 :global(.carousel .control-dots) {
     margin: 17rem 0;
     @media (min-width: 768px) {
-        margin: 85px 0;
+        margin: 10rem 0;
     }
 }
 }
@@ -25,5 +25,6 @@
 .slide {
 :global(.carousel .slide) {
     text-align: inherit;
+    background: linear-gradient(140.29deg, #97E8E3 21.63%, #FFFFFF 72.72%);
 }
 }
