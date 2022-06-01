@@ -14,17 +14,16 @@ export const Navbar = () => {
 
   return (
     <header>
-      <div className="relative z-50 flex justify-between py-4 pl-4 pr-8 bg-gradient-to-r from-lightmint to-white drop-shadow-lg md:drop-shadow-none">
+      <div className="relative z-50 flex justify-between py-2 pl-4 pr-8 bg-gradient-to-r from-lightmint to-white drop-shadow-lg md:drop-shadow-none">
         <div className="flex items-center gap-4">
-          <div>
-            <Image
-              src="/koii-icon.png"
-              width={38.63}
-              height={28.65}
-              alt="Koii logo"
-            />
-          </div>
-          <span className="text-[24px]">Koii</span>
+          <Image
+            src="/KoiiNetwork-logo_128.png"
+            width={48}
+            height={48}
+            alt="Koii logo"
+          />
+
+          <span className="text-[24px] text-fontMain">Koii</span>
         </div>
 
         <MenuButton onClick={toggleOpenMenu} />
@@ -33,7 +32,7 @@ export const Navbar = () => {
           <NavbarMenu />
         </div>
 
-        <div className="hidden md:block">
+        <div className="self-center hidden md:block">
           <NewsletterButton />
         </div>
       </div>

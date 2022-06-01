@@ -8,7 +8,9 @@ type NavbarItemProps = {
 export const NavbarItem = ({ url, label }: NavbarItemProps) => (
   <li className="">
     <Link className="" href={url}>
-      <a className="block leading-6 md:text-sm">{label}</a>
+      <a className="block leading-6 text-fontMain md:text-sm hover:font-semibold">
+        {label}
+      </a>
     </Link>
   </li>
 );
