@@ -14,6 +14,7 @@ module.exports = {
         mint: "#5ED9D1",
         lightmint: "#BEF0ED",
         "faux-azure-mist": "#ECFFFE",
+        "titanium-white": "#E5E5E5",
       },
     },
   },
