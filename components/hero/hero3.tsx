@@ -6,6 +6,8 @@ import Typed from "typed.js";
 import React, { useEffect } from "react";
 
 const Hero3 = () => {
+  const el = React.useRef(null);
+  const typed = React.useRef(null);
   useEffect(() => {
     const options = {
       strings: [
@@ -20,15 +22,25 @@ const Hero3 = () => {
       showCursor: true,
       loop: true,
     };
-    new Typed(".element3", options);
-  });
+    if (el.current != null) {
+      typed.current = new Typed(el.current, options) as any;
+      return () => {
+        if (typed && typed.current) {
+          (typed.current as any).destroy();
+        }
+      };
+    }
+  }, []);
   const isBreakpoint = useMediaQuery(768);
   return (
     <div className={styles.hero3}>
       <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:px-64 py-36 md:pt-36">
         <div className="title text-3xl md:text-6xl font-light">
           <div className="pb-8">Start building</div>
-          <p className="font-semibold element3 inline underline underline-offset-[20px] decoration-mint" />
+          <p
+            className="font-semibold inline underline underline-offset-[20px] decoration-mint"
+            ref={el}
+          />
         </div>
         <div className="content text-lg md:text-2xl leading-8">
           Building scalable web3 apps shouldn’t be hard.
@@ -48,7 +60,7 @@ const Hero3 = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 justify-items-center px-4 md:px-[28rem] mb-10 md:relative md:bottom-[-120px]">
+      <div className="grid grid-cols-4 justify-items-center px-4 md:px-[28rem] mb-10 relative md:bottom-[-120px]">
         <IconButton as="twitter" fill="#8585BC" px="40" />
         <IconButton as="discord" fill="#8585BC" px="40" />
         <IconButton as="telegram" fill="#8585BC" px="40" />
@@ -82,7 +94,7 @@ const Hero3 = () => {
         </svg>
       ) : (
         <svg
-          viewBox="0 0 1440 309"
+          viewBox="0 0 1440 310"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >

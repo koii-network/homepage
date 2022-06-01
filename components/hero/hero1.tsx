@@ -6,6 +6,9 @@ import Typed from "typed.js";
 import React, { useEffect } from "react";
 
 const Hero1 = () => {
+  const el = React.useRef(null);
+  const typed = React.useRef(null);
+
   useEffect(() => {
     const options = {
       strings: ["access.", "ownership.", "privacy.", "identity.", "freedom."],
@@ -14,8 +17,15 @@ const Hero1 = () => {
       showCursor: true,
       loop: true,
     };
-    new Typed(".element1", options);
-  });
+    if (el.current != null) {
+      typed.current = new Typed(el.current, options) as any;
+      return () => {
+        if (typed && typed.current) {
+          (typed.current as any).destroy();
+        }
+      };
+    }
+  }, []);
 
   const isBreakpoint = useMediaQuery(768);
 
@@ -24,7 +34,10 @@ const Hero1 = () => {
       <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:px-64 py-36 md:pt-36">
         <div className="title text-3xl md:text-6xl font-light">
           <div className="pb-8">Reclaim</div>
-          <p className="font-semibold element1 inline underline underline-offset-[20px] decoration-mint" />
+          <p
+            className="font-semibold inline underline underline-offset-[20px] decoration-mint"
+            ref={el}
+          />
         </div>
         <div className="content text-lg md:text-2xl leading-8">
           For the last 25 years, you’ve been exploited by Big Tech.
@@ -72,7 +85,7 @@ const Hero1 = () => {
         </svg>
       ) : (
         <svg
-          viewBox="0 0 1411 310"
+          viewBox="0 0 1440 310"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
