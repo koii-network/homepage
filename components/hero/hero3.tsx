@@ -5,7 +5,7 @@ import styles from "/styles/home.module.css";
 import Typed from "typed.js";
 import React, { useEffect } from "react";
 
-const Hero3 = () => {
+const Heroslide3 = () => {
   const el = React.useRef(null);
   const typed = React.useRef(null);
   useEffect(() => {
@@ -124,4 +124,4 @@ const Hero3 = () => {
   );
 };
 
-export default Hero3;
+export default Heroslide3;

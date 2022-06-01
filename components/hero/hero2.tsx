@@ -4,7 +4,7 @@ import { useMediaQuery } from "@/components/hooks";
 import Typed from "typed.js";
 import React, { useEffect } from "react";
 
-const Hero2 = () => {
+const Heroslide2 = () => {
   const el = React.useRef(null);
   const typed = React.useRef(null);
 
@@ -114,4 +114,4 @@ const Hero2 = () => {
   );
 };
 
-export default Hero2;
+export default Heroslide2;

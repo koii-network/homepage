@@ -1,6 +1,6 @@
-import Hero1 from "./hero1";
-import Hero2 from "./hero2";
-import Hero3 from "./hero3";
+import Heroslide1 from "./hero1";
+import Heroslide2 from "./hero2";
+import Heroslide3 from "./hero3";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "/styles/carousel.module.scss";
 import { Carousel } from "react-responsive-carousel";
@@ -17,13 +17,13 @@ const Hero = () => {
     >
       <Carousel showThumbs={false} showStatus={false}>
         <div>
-          <Hero1 />
+          <Heroslide1 />
         </div>
         <div>
-          <Hero2 />
+          <Heroslide2 />
         </div>
         <div>
-          <Hero3 />
+          <Heroslide3 />
         </div>
       </Carousel>
     </div>
