@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { IconButton } from "@/components/ui/Button";
 import { useMediaQuery } from "@/components/hooks";
-import styles from "/styles/home.module.css";
 import Typed from "typed.js";
 import React, { useEffect } from "react";
 
