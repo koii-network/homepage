@@ -5,6 +5,10 @@ import Typed from "typed.js";
 import React, { useEffect } from "react";
 
 const Hero2 = () => {
+
+    const el = React.useRef(null);
+    const typed = React.useRef(null);
+
   useEffect(() => {
     const options = {
       strings: ["view.", "user.", "follow.", "critique.", "like."],
@@ -13,15 +17,20 @@ const Hero2 = () => {
       showCursor: true,
       loop: true,
     };
-    new Typed(".element2", options);
-  });
+    if (el.current != null) {
+        typed.current = new Typed(el.current, options) as any;
+    return () => {
+        typed.current.destroy();
+      }
+    }
+  },[]);
   const isBreakpoint = useMediaQuery(768);
   return (
     <div>
       <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:px-64 py-36 md:pt-36">
         <div className="title text-3xl md:text-6xl font-light">
           <div className="pb-8">Earn for every</div>
-          <p className="font-semibold element2 inline underline underline-offset-[20px] decoration-mint" />
+          <p className="font-semibold inline underline underline-offset-[20px] decoration-mint" ref={el} />
         </div>
         <div className="content text-lg md:text-2xl leading-8">
           You put talent and hard work into what you create online.
