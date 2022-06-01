@@ -1,6 +1,6 @@
-import { Button } from "../ui/Button";
+import { Button } from "@/components/ui/Button";
 import { IconButton } from "@/components/ui/Button";
-import styles from "../../styles/home.module.css";
+import styles from "/styles/home.module.css";
 import Typed from "typed.js";
 import React, { useEffect } from "react";
 
@@ -18,17 +18,17 @@ const Hero2 = () => {
   return (
     <div className={styles.hero2}>
       <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:px-64 py-36">
-        <div className="title text-4xl md:text-6xl font-light">
+        <div className="title text-3xl md:text-6xl font-light">
           <div className="pb-8">Earn for every</div>
           <p className="font-semibold element2 inline underline underline-offset-[20px] decoration-mint" />
         </div>
         <div className="content text-lg md:text-2xl leading-8">
           You put talent and hard work into what you create online.
           <p className="mt-3.5">It’s time you got paid for it.</p>
-          <div className="link pt-14">
+          <div className="link pt-14 text-center">
             <Button
               label="Prove it."
-              className="place-content-center w-auto text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
+              className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
             />
           </div>
         </div>
@@ -41,20 +41,20 @@ const Hero2 = () => {
         <IconButton as="github" fill="#8585BC" px="40" />
       </div>
 
-      <svg viewBox="0 0 1441 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 375 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M0.488281 0.571289V94H1440.49V0.571289C1234.41 52.6445 986.809 82.9995 720.488 82.9995C454.169 82.9995 206.568 52.6445 0.488281 0.571289Z"
-          fill="url(#paint0_linear_1510_2500)"
+          d="M0 33.5166V0.419434C60.7664 6.46973 123.44 9.6333 187.5 9.6333C251.56 9.6333 314.234 6.46973 375 0.419434V33.5166H0Z"
+          fill="url(#paint0_linear_2108_3386)"
         />
         <defs>
           <linearGradient
-            id="paint0_linear_1510_2500"
-            x1="1015.5"
-            y1="94"
-            x2="1111"
-            y2="-37"
+            id="paint0_linear_2108_3386"
+            x1="417.978"
+            y1="33.5166"
+            x2="529.253"
+            y2="-73.9156"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#171751" />

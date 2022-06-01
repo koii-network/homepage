@@ -2,7 +2,7 @@ import Hero1 from "./hero1";
 import Hero2 from "./hero2";
 import Hero3 from "./hero3";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import styles from "../../styles/carousel.module.scss";
+import styles from "/styles/carousel.module.scss";
 import { Carousel } from "react-responsive-carousel";
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
       ${styles.slide}
       `}
     >
-      <Carousel showThumbs={false} showStatus={false} autoPlay={true}>
+      <Carousel showThumbs={false} showStatus={false}>
         <div>
           <Hero1 />
         </div>

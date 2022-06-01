@@ -1,6 +1,6 @@
-import { Button } from "../ui/Button";
+import { Button } from "@/components/ui/Button";
 import { IconButton } from "@/components/ui/Button";
-import styles from "../../styles/home.module.css";
+import styles from "/styles/home.module.css";
 import Typed from "typed.js";
 import React, { useEffect } from "react";
 
@@ -31,7 +31,7 @@ const Hero3 = () => {
         <div className="content text-lg md:text-2xl leading-8">
           Building scalable web3 apps shouldn’t be hard.
           <p className="mt-3.5">So we make it easy. </p>
-          <div className="link pt-14">
+          <div className="link pt-14 text-center">
             <a
               rel="noreferrer noopener"
               href="https://docs.koii.network/"
@@ -39,7 +39,7 @@ const Hero3 = () => {
             >
               <Button
                 label="Go to the Wiki"
-                className="place-content-center w-auto text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
+                className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
               />
             </a>
           </div>
@@ -53,20 +53,20 @@ const Hero3 = () => {
         <IconButton as="github" fill="#8585BC" px="40" />
       </div>
 
-      <svg viewBox="0 0 1441 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 375 115" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M0.488281 0.571289V94H1440.49V0.571289C1234.41 52.6445 986.809 82.9995 720.488 82.9995C454.169 82.9995 206.568 52.6445 0.488281 0.571289Z"
-          fill="url(#paint0_linear_1510_2500)"
+          d="M0 114.517V81.4194C136.609 67.8179 263.579 39.6279 375 0V114.517H0Z"
+          fill="url(#paint0_linear_2108_3388)"
         />
         <defs>
           <linearGradient
-            id="paint0_linear_1510_2500"
-            x1="1015.5"
-            y1="94"
-            x2="1111"
-            y2="-37"
+            id="paint0_linear_2108_3388"
+            x1="42.9779"
+            y1="114.517"
+            x2="154.253"
+            y2="7.0844"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#171751" />
