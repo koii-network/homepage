@@ -24,7 +24,7 @@ export const Footer = () => {
           <h2>Don&apos;t Miss Out.</h2>
         </div>
         <div className="md:flex md:flex-row md:gap-x-32">
-          <div className="gap-20 md:flex md:flex-row">
+          <div className="gap-14 md:flex md:flex-row">
             <LinksSection title="COMPANY" links={companyLinks} />
             <LinksSection title="GET INVOLVED" links={getInvolvedLinks} />
             <LinksSection title="GET IN TOUCH" links={getInTouchLinks} />
