@@ -4,3 +4,7 @@
 
 .app-footer {
 }
+
+.subscribe-button:focus-within {
+  box-shadow: 0 0 0 1px #171753 inset;
+}

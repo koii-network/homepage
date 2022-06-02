@@ -8,10 +8,12 @@ export const Subscribe = () => {
     console.log("handle subscribe");
   };
 
+  //box-shadow: 0 0 0 $width $color inset;
+
   return (
     <div>
       <h3 className="mb-5 text-sm uppercase text-dark-blue">GET IN THE NODE</h3>
-      <div className="p-1 bg-white border border-solid rounded-[32px] md:w-[400px] flex flex-row justify-between focus-within:border">
+      <div className="p-1 bg-white border border-solid border-dark-blue rounded-[32px] md:w-[400px] flex flex-row justify-between subscribe-button">
         <input
           className="ml-4 outline-none bg-none focus:border-none w-[224px]"
           placeholder="Email address"
