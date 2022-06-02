@@ -28,7 +28,7 @@ const Heroslide2 = () => {
   const isBreakpoint = useMediaQuery(768);
   return (
     <div>
-      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:px-64 py-36 md:pt-36">
+      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="title text-3xl md:text-6xl font-light">
           <div className="pb-8">Earn for every</div>
           <p
@@ -36,7 +36,7 @@ const Heroslide2 = () => {
             ref={el}
           />
         </div>
-        <div className="content text-lg md:text-2xl leading-8">
+        <div className="content text-lg md:text-2xl leading-8  md:max-w-sm ">
           You put talent and hard work into what you create online.
           <p className="mt-3.5">It’s time you got paid for it.</p>
           <div className="link pt-14 text-center">

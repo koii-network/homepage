@@ -31,7 +31,7 @@ const Heroslide1 = () => {
 
   return (
     <div className={styles.hero1}>
-      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:px-64 py-36 md:pt-36">
+      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="title text-3xl md:text-6xl font-light">
           <div className="pb-8">Reclaim</div>
           <p
@@ -39,7 +39,7 @@ const Heroslide1 = () => {
             ref={el}
           />
         </div>
-        <div className="content text-lg md:text-2xl leading-8">
+        <div className="content text-lg md:text-2xl leading-8 md:max-w-sm">
           For the last 25 years, you’ve been exploited by Big Tech.
           <p className="mt-3.5">We empower you instead.</p>
           <div className="link pt-14 text-center">
