@@ -1,4 +1,4 @@
-import { Button } from "../ui/Button";
+import { Button } from "@/components/ui/Button";
 
 export const BottomBar = () => {
   return (

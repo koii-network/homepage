@@ -6,7 +6,7 @@ import {
 import { LinksSection } from "./links-section";
 import { SocialMediaLinks } from "./social-media-links";
 import Image from "next/image";
-import { Subscribe } from "../subscribe/subscribe";
+import { Subscribe } from "@/components/subscribe/subscribe";
 import { Policy } from "./policy";
 
 export const Footer = () => {
