@@ -12,7 +12,8 @@ export const NightSky = () => {
           className="!ml-[-3rem]"
           src={moon}
           alt="moon"
-          layout="fill" objectFit="cover"
+          layout="fill"
+          objectFit="cover"
         />
       </div>
       <div className="birds absolute top-[115px] md:bottom-0 md:top-[unset] left-[3rem] md:left-[16rem] w-[300px] h-[550px]">
@@ -20,7 +21,8 @@ export const NightSky = () => {
           className=""
           src={birds}
           alt="birds"
-          layout="fill" objectFit="cover"
+          layout="fill"
+          objectFit="cover"
         />
       </div>
       <div className="px-24 py-28 text-right text-white">
