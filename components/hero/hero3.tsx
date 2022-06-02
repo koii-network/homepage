@@ -45,7 +45,7 @@ const Heroslide3 = () => {
         <div className="content text-lg md:text-2xl leading-8  md:max-w-sm">
           Building scalable web3 apps shouldn’t be hard.
           <p className="mt-3.5">So we make it easy. </p>
-          <div className="link pt-14 text-center">
+          <div className="link pt-14 text-center md:text-left">
             <a
               rel="noreferrer noopener"
               href="https://docs.koii.network/"

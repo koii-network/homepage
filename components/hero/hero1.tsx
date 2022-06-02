@@ -42,7 +42,7 @@ const Heroslide1 = () => {
         <div className="content text-lg md:text-2xl leading-8 md:max-w-sm">
           For the last 25 years, you’ve been exploited by Big Tech.
           <p className="mt-3.5">We empower you instead.</p>
-          <div className="link pt-14 text-center">
+          <div className="link pt-14 text-center md:text-left">
             <Button
               label="Oh, really... How?"
               className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"

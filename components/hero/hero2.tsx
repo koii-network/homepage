@@ -39,7 +39,7 @@ const Heroslide2 = () => {
         <div className="content text-lg md:text-2xl leading-8  md:max-w-sm ">
           You put talent and hard work into what you create online.
           <p className="mt-3.5">It’s time you got paid for it.</p>
-          <div className="link pt-14 text-center">
+          <div className="link pt-14 text-center md:text-left">
             <Button
               label="Prove it."
               className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
