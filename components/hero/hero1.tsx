@@ -31,18 +31,18 @@ const Heroslide1 = () => {
 
   return (
     <div className={styles.hero1}>
-      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
-        <div className="title text-3xl md:text-6xl font-light">
+      <div className="grid gap-6 px-10 md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
+        <div className="text-3xl font-light title md:text-6xl">
           <div className="pb-8">Reclaim</div>
           <p
             className="font-semibold inline underline underline-offset-[20px] decoration-mint"
             ref={el}
           />
         </div>
-        <div className="content text-lg md:text-2xl leading-8 md:max-w-sm">
+        <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
           For the last 25 years, you’ve been exploited by Big Tech.
           <p className="mt-3.5">We empower you instead.</p>
-          <div className="link pt-14 text-center md:text-left">
+          <div className="text-center link pt-14 md:text-left">
             <Button
               label="Oh, really... How?"
               className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
@@ -51,10 +51,10 @@ const Heroslide1 = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 justify-items-center px-4 md:px-[28rem] mb-10 relative md:bottom-[-120px] ">
-        <IconButton as="twitter" fill="#8585BC" px="40" />
-        <IconButton as="discord" fill="#8585BC" px="40" />
-        <IconButton as="telegram" fill="#8585BC" px="40" />
-        <IconButton as="github" fill="#8585BC" px="40" />
+        <IconButton name="twitter" fill="#8585BC" px="40" />
+        <IconButton name="discord" fill="#8585BC" px="40" />
+        <IconButton name="telegram" fill="#8585BC" px="40" />
+        <IconButton name="github" fill="#8585BC" px="40" />
       </div>
 
       {isBreakpoint ? (

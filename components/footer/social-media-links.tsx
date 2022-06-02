@@ -1,27 +1,31 @@
-import { IconButton } from "@/components/ui/Button";
+import Image from "next/image";
 
 export const SocialMediaLinks = () => {
   return (
     <div className="flex flex-row items-center self-center justify-between gap-8 px-6 pb-6 align-bottom">
       <a href="https://twitter.com/KoiiNetwork">
-        <IconButton name={"twitter"} px={"24"} fill="#4E4E8D" />
+        <Image src="/twitter.png" alt="twitter" width={20.38} height={16.57} />
       </a>
       <a href="https://discord.gg/koii">
-        <IconButton name={"discord"} px={"24"} fill="#4E4E8D" />
+        <Image src="/discord.png" alt="discord" width={20.38} height={16.57} />
       </a>
       <a href=" https://t.me/koiinetwork">
-        <IconButton name={"telegram"} px={"24"} fill="#4E4E8D" />
+        <Image src="/telegram.png" alt="twitter" width={20.38} height={16.57} />
       </a>
       <a href="https://github.com/koii-network/">
-        <IconButton name={"github"} px={"24"} fill="#4E4E8D" />
+        <Image src="/github.png" alt="github" width={15.33} height={17.33} />
       </a>
       <a href="https://www.linkedin.com/company/open-koi/">
-        <IconButton name={"linkedin"} px={"24"} fill="#4E4E8D" />
+        <Image
+          src="/linkedin.png"
+          alt="linkedin"
+          width={20.38}
+          height={16.57}
+        />
       </a>
       <a href="https://www.youtube.com/c/KoiiNetwork">
-        <IconButton name={"youtube"} px={"24"} fill="#4E4E8D" />
+        <Image src="/youtube.png" alt="linkedin" width={20.38} height={16.57} />
       </a>
-      {/* <Image src="/twitter.png" alt="twitter" width={20.38} height={16.57} /> */}
     </div>
   );
 };
