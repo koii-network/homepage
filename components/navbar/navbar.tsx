@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <header>
-      <div className="relative z-50 flex justify-between py-2 pl-4 pr-8 bg-gradient-to-r from-lightmint to-white drop-shadow-lg md:drop-shadow-none">
+      <div className="relative z-50 flex justify-between py-2 pl-4 pr-8 bg-gradient-to-r from-turquoise-light to-white drop-shadow-lg md:drop-shadow-none">
         <div className="flex items-center gap-4">
           <Image
             src="/KoiiNetwork-logo_128.png"
@@ -23,7 +23,7 @@ export const Navbar = () => {
             alt="Koii logo"
           />
 
-          <span className="text-[24px] text-fontMain">Koii</span>
+          <span className="text-[24px] text-dark-blue">Koii</span>
         </div>
 
         <MenuButton onClick={toggleOpenMenu} />
@@ -43,7 +43,7 @@ export const Navbar = () => {
       <div
         className={` ${
           !openMobileMenu && "hidden"
-        } md:hidden bg-gradient-to-l from-lightmint to-white drop-shadow-md pt-4 pb-6 pr-8`}
+        } md:hidden bg-gradient-to-l from-turquoise-light to-white drop-shadow-md pt-4 pb-6 pr-8`}
       >
         <NavbarMenu />
 

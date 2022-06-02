@@ -1,16 +1,22 @@
 export type IconButtonProps = Readonly<
   {
-    as: string;
+    name:
+      | "twitter"
+      | "discord"
+      | "telegram"
+      | "github"
+      | "linkedin"
+      | "youtube";
     className?: string;
     fill?: string;
     px: string;
   } & React.HTMLProps<HTMLButtonElement>
 >;
 
-export const IconButton = ({ as, className, fill, px }: IconButtonProps) => {
+export const IconButton = ({ name, className, fill, px }: IconButtonProps) => {
   return (
     <div className={className}>
-      {as === "twitter" && (
+      {name === "twitter" && (
         <a
           href="https://twitter.com/KoiiNetwork"
           rel="noreferrer noopener"
@@ -30,7 +36,7 @@ export const IconButton = ({ as, className, fill, px }: IconButtonProps) => {
           </svg>
         </a>
       )}
-      {as === "discord" && (
+      {name === "discord" && (
         <a
           href="https://discord.gg/koii"
           rel="noreferrer noopener"
@@ -52,7 +58,7 @@ export const IconButton = ({ as, className, fill, px }: IconButtonProps) => {
           </svg>
         </a>
       )}
-      {as === "telegram" && (
+      {name === "telegram" && (
         <a
           href="https://t.me/koiinetwork"
           rel="noreferrer noopener"
@@ -72,7 +78,7 @@ export const IconButton = ({ as, className, fill, px }: IconButtonProps) => {
           </svg>
         </a>
       )}
-      {as === "github" && (
+      {name === "github" && (
         <a
           href="https://github.com/koii-network"
           rel="noreferrer noopener"
@@ -92,7 +98,7 @@ export const IconButton = ({ as, className, fill, px }: IconButtonProps) => {
           </svg>
         </a>
       )}
-      {as === "linkedin" && (
+      {name === "linkedin" && (
         <a
           href="https://www.linkedin.com/company/open-koi/"
           rel="noreferrer noopener"
@@ -112,7 +118,7 @@ export const IconButton = ({ as, className, fill, px }: IconButtonProps) => {
           </svg>
         </a>
       )}
-      {as === "youtube" && (
+      {name === "youtube" && (
         <a
           href="https://www.youtube.com/c/KoiiNetwork"
           rel="noreferrer noopener"
