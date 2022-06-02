@@ -7,7 +7,7 @@ import React, { useEffect } from "react";
 
 const Heroslide3 = () => {
   const el = React.useRef(null);
-  const typed = React.useRef(null);
+  const typed = React.useRef<Typed | null>(null);
   useEffect(() => {
     const options = {
       strings: [
@@ -23,10 +23,10 @@ const Heroslide3 = () => {
       loop: true,
     };
     if (el.current != null) {
-      typed.current = new Typed(el.current, options) as any;
+      typed.current = new Typed(el.current, options);
       return () => {
         if (typed && typed.current) {
-          (typed.current as any).destroy();
+          typed.current.destroy();
         }
       };
     }
