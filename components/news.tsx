@@ -5,7 +5,7 @@ import ethdenver from "/public/images/logos/ethdenver.svg";
 
 export const News = () => {
   return (
-    <div className="text-koiiblue ">
+    <div className="text-koiiblue py-16">
       <h2 className="text-center md:text-left md:pl-36 pt-2 text-5xl">
         In the News
       </h2>
