@@ -34,16 +34,16 @@ export const NightSky = () => {
           Koii is web3, for everyone.
         </div>
       </div>
-      <div className="star-text text-2xl flex flex-col pl-[35rem] text-white ">
-          <span className="relative bottom-[3rem]">Identity</span>
-          <span className="relative left-[11rem] top-[2rem] opacity-40">Creativity</span>
-          <span className="relative right-[19rem] opacity-20">Content</span>
-          <span className="relative top-[5rem] opacity-80">Rewards</span>
-          <span className="relative top-[8rem] right-[26rem] opacity-60">Attention</span>
+      <div className="star-text text-2xl flex pl-[35rem] text-white w-auto">
+          <span className="relative bottom-[3rem] left-[5rem]">Identity</span>
+          <span className="relative left-[5rem] top-[4rem] opacity-40">Creativity</span>
+          <span className="relative right-[30rem] top-4[rem] opacity-20">Content</span>
+          <span className="relative top-[11rem] right-[31rem] opacity-80">Rewards</span>
+          <span className="relative top-[15rem] right-[54rem] opacity-60">Attention</span>
       </div>
-    <div className="icebergtext text-2xl flex flex-col relative text-[#171753]">
-        <span className="relative left-[63rem] top-[5rem]">Free Crypto</span>
-        <span className="relative left-[42rem] top-[14rem]">Amazing Developer Tools</span>
+    <div className="icebergtext text-2xl flex flex-row-reverse relative text-[#171753]">
+        <span className="relative right-[18rem] top-[13rem]">Free Crypto</span>
+        <span className="relative right-[19rem] top-[24rem]">Amazing Developer Tools</span>
     </div>
       <div className="Icebergtop absolute top-[622px] right-0 w-[562px] h-[1035px]">
         <Image
