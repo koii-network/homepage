@@ -1,4 +1,5 @@
 module.exports = {
+  mode: "jit",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -9,6 +10,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        fontMain: "#171753",
         mint: "#5ED9D1",
         lightmint: "#BEF0ED",
         "faux-azure-mist": "#ECFFFE",
