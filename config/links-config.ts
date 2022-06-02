@@ -16,8 +16,6 @@ export const getInvolvedLinks = [
   { label: "Become a Partner", url: "/" },
   { label: "Join the Waitlist", url: "/" },
   { label: "Content Collectives", url: "/" },
-  { label: "Support", url: "/" },
-  { label: "FAQ", url: "/" },
 ];
 
 export const getInTouchLinks = [
