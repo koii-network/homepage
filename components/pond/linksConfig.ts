@@ -17,7 +17,7 @@ export const partnersFirstRow = [
   {
     name: "Fenbushi capital",
     iconSrc: "/partner-logos/fenbushi.svg",
-    url: "https://www.fenbushicapital.vc//",
+    url: "https://www.fenbushicapital.vc/",
   },
   {
     name: "Outlier Ventures",

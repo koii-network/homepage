@@ -15,7 +15,7 @@ export const WaysToEarn = () => {
         <div>
           <div className="flex flex-row gap-20">
             <WayToEarn
-              url=""
+              url="/"
               imgSrc="/images/way-1.svg"
               description={
                 <div className="text-lg text-dark-blue w-[190px]">
