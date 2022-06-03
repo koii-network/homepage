@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export type BubbleProps = {
   width: number;
   height: number;
@@ -22,7 +23,9 @@ export const Bubble = ({ width, height, text }: BubbleProps) => {
        */}
       <Image src="/images/bubble.svg" alt="" layout="fill" />
       <div className="text-center text-normal absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-dark-blue">
-        {text}
+        <Link href="https://blog.koii.network/The-Koii-Grant-Program-Set-for-Launch/">
+          <a>{text}</a>
+        </Link>
       </div>
     </div>
   );

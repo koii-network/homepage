@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/Button";
 import { Bubble } from "./Bubble";
+import Link from "next/link";
 
 export const GrantProgram = () => {
   return (
@@ -18,10 +19,14 @@ export const GrantProgram = () => {
             <p className="text-2xl text-gold">$1M Grant Program</p>
           </div>
           <div>
-            <Button
-              className="px-6 py-3 w-[190px] bg-white text-dark-blue text-normal rounded-[32px] drop-shadow-lg"
-              label="Apply Now"
-            />
+            <Link href="https://koii.network/form/grant/">
+              <a>
+                <Button
+                  className="px-6 py-3 w-[190px] bg-white text-dark-blue text-normal rounded-[32px] drop-shadow-lg"
+                  label="Apply Now"
+                />
+              </a>
+            </Link>
           </div>
         </div>
 
