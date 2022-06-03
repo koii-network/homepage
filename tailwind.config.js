@@ -18,6 +18,7 @@ module.exports = {
         "faux-azure-mist": "#ECFFFE",
         "titanium-white": "#E5E5E5",
         koiiblue: "#171753",
+        "fish-yellow": "#FFC78F",
       },
     },
   },
