@@ -1,0 +1,1 @@
+export { WaysToEarn } from "./WaysToEarn";
