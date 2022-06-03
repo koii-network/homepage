@@ -59,14 +59,5 @@ export const Pond = () => (
         </div>
       </div>
     </div>
-
-    {/* <Image
-      className="z-0"
-      src="/pond-bg.svg"
-      alt="pond"
-      width={1440}
-      height={1090}
-      layout="responsive"
-    /> */}
   </div>
 );

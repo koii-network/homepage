@@ -9,7 +9,7 @@ export const SocialMediaLinks = () => {
       <a href="https://discord.gg/koii">
         <Image src="/discord.png" alt="discord" width={20.38} height={16.57} />
       </a>
-      <a href=" https://t.me/koiinetwork">
+      <a href="https://t.me/koiinetwork">
         <Image src="/telegram.png" alt="twitter" width={20.38} height={16.57} />
       </a>
       <a href="https://github.com/koii-network/">

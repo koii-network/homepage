@@ -50,7 +50,7 @@ export const WaysToEarn = () => {
               buttonLabel={"Become an Ambassador"}
             />
             <WayToEarn
-              url="https://koii.network/form/pre-register/"
+              url="https://koii.network/form/pre-register"
               imgSrc="/images/way-4.svg"
               description={
                 <div className="text-lg text-dark-blue w-[190px]">
