@@ -11,7 +11,7 @@ export const companyLinks = [
 
 export const getInvolvedLinks = [
   { label: "Run a Node", url: "https://koii.network/form/pre-register/" },
-  { label: "Get Finnie", url: " https://koii.me/finnie" },
+  { label: "Get Finnie", url: "https://koii.me/finnie" },
   { label: "Apply for a Grant", url: "https://koii.network/form/grant/" },
   { label: "Become a Partner", url: "https://koii.network/form/partnership/" },
   { label: "Join the Waitlist", url: "https://koii.network/form/investor/" },
