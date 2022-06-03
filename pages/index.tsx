@@ -12,6 +12,7 @@ import { WaysToEarn } from "@/components/ways-to-earn";
  *
  */
 import { Pond } from "@/components/pond/pond";
+import { GrantProgram } from "@/components/grant-program/GrantProgram";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <NightSky />
       <Iceberg />
       <Timeline />
+      <GrantProgram />
       <WaysToEarn />
       <News />
       <Pond />
