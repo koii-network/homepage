@@ -18,6 +18,7 @@
 
 .Iceberg {
     background: linear-gradient(167deg, #7DFFFE 28.29%, #51557B 94.43%);
+    position: relative;
 }
 
 .Timeline {

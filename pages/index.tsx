@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <Hero />
       <NightSky />
       <Iceberg />
-      <Timeline />
+      {/* <Timeline /> */}
       <News />
       Page content
     </div>
