@@ -18,8 +18,8 @@ const Home: NextPage = () => {
     <div>
       <Hero />
       <NightSky />
-      <WaysToEarn />
       <Iceberg />
+      <WaysToEarn />
       <News />
       <Pond />
     </div>
