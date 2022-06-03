@@ -17,6 +17,7 @@ module.exports = {
         "turquoise-light": "#BEF0ED",
         "faux-azure-mist": "#ECFFFE",
         "titanium-white": "#E5E5E5",
+        gold: "#FFC78F",
         koiiblue: "#171753",
       },
     },

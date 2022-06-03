@@ -20,3 +20,7 @@
 .subscribe-button:focus-within {
   box-shadow: 0 0 0 1px #171753 inset;
 }
+
+.grant-program {
+  background: linear-gradient(180deg, #171753 7.18%, rgba(23, 23, 83, 0) 100%);
+}
