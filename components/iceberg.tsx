@@ -6,7 +6,7 @@ import Image from "next/image";
 export const Iceberg = () => {
   return (
     <div className={`${styles.Iceberg} md:h-[1515px]`}>
-      <div className="Icebergtop absolute top-0 md:top-0 right-[-5rem] md:right-0 w-[339px] md:w-[535px] h-[395px] md:h-[617px]">
+      <div className="mix-blend-hard-light Icebergtop absolute top-0 md:top-0 right-[-5rem] md:right-0 w-[339px] md:w-[535px] h-[395px] md:h-[617px]">
         <Image
           className=" "
           src={icebergbot}
@@ -15,51 +15,51 @@ export const Iceberg = () => {
           objectFit="cover"
         />
       </div>
-      <div className="2021list grid relative text-center grid-cols-1 gap-y-10 text-xl w-fit text-koiiblue py-12 z-20">
-        <div className="list-title text-right relative left-[30rem]">
-          <span className="text-3xl font-semibold">2021</span>
+      <div className="2021list grid relative text-center grid-cols-1 gap-y-10 md:text-xl w-fit text-koiiblue py-12 z-20">
+        <div className="list-title text-left md:text-right relative left-[2rem] md:left-[30rem]">
+          <span className="text-xl md:text-3xl font-semibold">2021</span>
           <br />
           <span className="text-base">Click for details</span>
         </div>
-        <span className="relative left-[35rem] hover:underline underline-offset-8">
+        <span className="relative left-[3rem] md:left-[35rem] hover:underline underline-offset-8">
           <a href="https://koii.network/DID">Decentralized Identity</a>
         </span>
-        <span className="relative left-[35rem] hover:underline underline-offset-8">
+        <span className="relative left-[6rem] md:left-[35rem] hover:underline underline-offset-8">
           <a href="https://docs.koii.network/koii-software-toolkit-sdk/what-is-the-koii-sdk">
             Near-Instant Transactions
           </a>
         </span>
-        <span className="relative left-[37rem] hover:underline underline-offset-8">
+        <span className="relative left-[7rem] md:left-[37rem] hover:underline underline-offset-8">
           <a href="https://docs.koii.network/earning-koii/attention-mining">
             Trustless Attention Tracking
           </a>
         </span>
-        <span className="relative left-[40rem] hover:underline underline-offset-8">
+        <span className="relative left-[8rem] md:left-[40rem] hover:underline underline-offset-8">
           <a href="https://docs.koii.network/build-dapps-with-koii/template-library">
             Koii-X UI Templates
           </a>
         </span>
-        <span className="relative left-[47rem] hover:underline underline-offset-8">
+        <span className="relative left-[10rem] md:left-[47rem] hover:underline underline-offset-8">
           <a href="https://docs.koii.network/earning-koii/running-task-nodes">
             Task Nodes
           </a>
         </span>
-        <span className="relative left-[44rem] hover:underline underline-offset-8">
+        <span className="relative left-[8rem] md:left-[44rem] hover:underline underline-offset-8">
           <a href="https://docs.koii.network/build-dapps-with-koii/using-nfts-as-content/create-nfts">
             Drag & Drop NFTs
           </a>
         </span>
-        <span className="relative left-[40rem] hover:underline underline-offset-8">
+        <span className="relative left-[6rem] md:left-[40rem] hover:underline underline-offset-8">
           <a href="https://docs.koii.network/#the-koii-token">
             Proofs of Real Traffic
           </a>
         </span>
-        <span className="relative left-[35rem] hover:underline underline-offset-8">
+        <span className="relative left-[5rem] md:left-[35rem] hover:underline underline-offset-8">
           <a href="https://docs.koii.network/microservices-and-tasks/gradual-consensus">
             Gradual Consensus
           </a>
         </span>
-        <span className="relative left-[27rem] hover:underline underline-offset-8">
+        <span className="relative left-[3rem] md:left-[27rem] hover:underline underline-offset-8">
           <a href="https://discord.gg/koii">Revolutionary Community</a>
         </span>
       </div>
@@ -90,7 +90,7 @@ export const Iceberg = () => {
           />
         </g>
       </svg>
-      <div className="fishstream relative w-[1300px] h-[500px] right-0 top-[-10rem] z-10 ml-14">
+      <div className="fishstream relative w-[1300px] h-[500px] md:right-0 md:top-[-10rem] z-10 ml-[-57rem] md:ml-14">
         <Image
           className=""
           src={fishstream}
