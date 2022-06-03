@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.app-footer {
+.pond {
+  background-image: url("/pond-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
+}
+
+.pond__icon:hover {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #b3fbf7 39.53%,
+    rgba(163, 234, 229, 0) 100%
+  );
 }
 
 .subscribe-button:focus-within {
