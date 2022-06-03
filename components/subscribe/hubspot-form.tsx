@@ -9,7 +9,19 @@ declare global {
           formId: string;
           target: string;
           region: string;
-        }): unknown;
+          errorMessageClass?: string;
+          cssClass?: string;
+          errorClass?: string;
+          submitButtonClass?: string;
+          cssRequired?: string;
+        }): {
+          id: string;
+          getMetaData(): unknown;
+          hasField(): boolean;
+          onReady(callback: () => void): void;
+          setFieldValue(val: string): unknown;
+          setSubmitText(val: string): unknown;
+        };
       };
     };
   }
@@ -17,6 +29,10 @@ declare global {
 
 interface HubspotFormProps {
   readonly formId: string;
+  readonly wrapperClassNames?: string;
+  readonly inputWrapperClassNames?: string;
+  readonly inputClassNames?: string;
+  readonly submitClassNames?: string;
 }
 
 const scriptElementId = "hubspot-script";
@@ -64,33 +80,76 @@ function generateContainerId(): string {
   }
 }
 
-// TODO: TESTS REQUIRED
+function addStyles(
+  containerId: string,
+  { formId, inputClassNames, inputWrapperClassNames }: HubspotFormProps
+): void {
+  const wrapperEl = document.querySelector(`#${containerId} form`);
+  if (wrapperEl) {
+    const inputEl = wrapperEl.querySelector(`#email-${formId}`);
+    if (inputEl && inputClassNames) {
+      inputEl.className += ` ${inputClassNames}`;
+      if (inputEl.parentElement)
+        inputEl.parentElement.className += ` ${inputWrapperClassNames}`;
+    }
+  }
+}
 
-export const HubspotForm = ({ formId }: HubspotFormProps) => {
-  const [hubspotLoadCheck] = useState(
-    waitForCondition(() => Boolean(window.hbspt))
-  );
+export const HubspotForm = ({
+  formId,
+  inputClassNames,
+  inputWrapperClassNames,
+  wrapperClassNames,
+  submitClassNames,
+}: HubspotFormProps) => {
+  const [hubspotLoadCheck, setHubspotLoadCheck] =
+    useState<Promise<void> | null>(null);
 
-  const [formContainerId] = useState(generateContainerId());
+  const [formContainerId, setFormContainerId] = useState<string | null>(null);
 
   useEffect(() => {
+    setHubspotLoadCheck(waitForCondition(() => Boolean(window.hbspt)));
+    setFormContainerId(generateContainerId());
+
     getScript() || appendScript();
   }, []);
 
   useEffect(() => {
-    hubspotLoadCheck.then(() => {
-      window.hbspt.forms.create({
-        target: `#${formContainerId}`,
-        region: "na1",
-        portalId: "20249188",
-        formId,
+    if (hubspotLoadCheck && formContainerId) {
+      hubspotLoadCheck.then(() => {
+        window.hbspt.forms
+          .create({
+            target: `#${formContainerId}`,
+            region: "na1",
+            portalId: "20249188",
+            formId,
+            errorMessageClass: "hide",
+            cssClass: wrapperClassNames,
+            errorClass: inputClassNames,
+            submitButtonClass: submitClassNames,
+          })
+          .onReady(() =>
+            addStyles(formContainerId, {
+              formId,
+              inputClassNames,
+              inputWrapperClassNames,
+            })
+          );
       });
-    });
-  }, [formId, hubspotLoadCheck, formContainerId]);
+    }
+  }, [
+    formId,
+    hubspotLoadCheck,
+    formContainerId,
+    wrapperClassNames,
+    inputClassNames,
+    submitClassNames,
+    inputWrapperClassNames,
+  ]);
 
   return (
     <div>
-      <div id={formContainerId}></div>
+      <div id={formContainerId || ""}></div>
     </div>
   );
 };
