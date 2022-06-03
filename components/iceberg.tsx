@@ -79,7 +79,7 @@ export const Iceberg = () => {
         >
           <rect width="1448" height="399" fill="#D9D9D9" />
         </mask>
-        <g mask="url(#mask0_2209_3498)">
+        <g>
           <path
             d="M253.567 124.489C216.199 72.4935 68.9526 21.1649 0.000236729 2L0 1201H1448L1448 251.977C1194.43 226.979 1081 306.972 827.429 314.471C573.862 321.97 493.788 244.478 387.023 226.979C280.258 209.481 300.277 189.483 253.567 124.489Z"
             fill="#171753"
@@ -90,7 +90,6 @@ export const Iceberg = () => {
           />
         </g>
       </svg>
-
       <div className="fishstream relative w-[1300px] h-[500px] right-0 top-[-10rem] z-10 ml-14">
         <Image
           className=""
