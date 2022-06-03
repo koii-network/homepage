@@ -19,6 +19,7 @@ module.exports = {
         "titanium-white": "#E5E5E5",
         gold: "#FFC78F",
         koiiblue: "#171753",
+        koiiorange: "#FFC78F",
       },
     },
   },

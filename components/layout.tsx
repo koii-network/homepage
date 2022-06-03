@@ -1,5 +1,6 @@
 import { Footer } from "./footer";
 import { Navbar } from "./navbar";
+import { SubscribeBar } from "@/components/subscribe/subscribe-bar";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -7,6 +8,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <Navbar />
       <main>{children}</main>
       <Footer />
+      <SubscribeBar />
     </>
   );
 };

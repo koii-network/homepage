@@ -33,6 +33,8 @@ interface HubspotFormProps {
   readonly inputWrapperClassNames?: string;
   readonly inputClassNames?: string;
   readonly submitClassNames?: string;
+  readonly className?: string;
+  readonly onSubmit?: () => void;
 }
 
 const scriptElementId = "hubspot-script";
@@ -101,6 +103,8 @@ export const HubspotForm = ({
   inputWrapperClassNames,
   wrapperClassNames,
   submitClassNames,
+  className,
+  onSubmit,
 }: HubspotFormProps) => {
   const [hubspotLoadCheck, setHubspotLoadCheck] =
     useState<Promise<void> | null>(null);
@@ -123,7 +127,7 @@ export const HubspotForm = ({
             region: "na1",
             portalId: "20249188",
             formId,
-            errorMessageClass: "hide",
+            errorMessageClass: "force-hide",
             cssClass: wrapperClassNames,
             errorClass: inputClassNames,
             submitButtonClass: submitClassNames,
@@ -145,11 +149,27 @@ export const HubspotForm = ({
     inputClassNames,
     submitClassNames,
     inputWrapperClassNames,
+    onSubmit,
   ]);
 
-  return (
-    <div>
-      <div id={formContainerId || ""}></div>
-    </div>
-  );
+  useEffect(() => {
+    window.addEventListener("message", handler);
+    return () => {
+      window.removeEventListener("message", handler);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  function handler(event: MessageEvent) {
+    if (
+      event.data.type === "hsFormCallback" &&
+      event.data.eventName === "onFormSubmitted"
+    ) {
+      if (event.data.id === formId) {
+        onSubmit && onSubmit();
+      }
+    }
+  }
+
+  return <div className={className} id={formContainerId || ""}></div>;
 };
