@@ -9,3 +9,18 @@
 .hero3 {
     background: linear-gradient(140.29deg, #97AEE8 21.63%, #FFFFFF 72.72%);
 }
+
+.nightsky {
+    background: linear-gradient(6.21deg, #BEF0ED 3.1%, #A1CBD0 35.22%, #171753 94.83%);
+    mix-blend-mode: multiply;
+    position: relative;
+}
+
+.Iceberg {
+    background: linear-gradient(167deg, #7DFFFE 28.29%, #51557B 94.43%);
+    position: relative;
+}
+
+.Timeline {
+    background: #171753;
+}

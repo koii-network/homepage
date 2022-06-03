@@ -68,6 +68,7 @@ const Heroslide3 = () => {
       </div>
       {isBreakpoint ? (
         <svg
+          className="relative top-[1px]"
           viewBox="0 0 375 115"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -94,6 +95,7 @@ const Heroslide3 = () => {
         </svg>
       ) : (
         <svg
+          className="relative top-[1px]"
           viewBox="0 0 1440 310"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
