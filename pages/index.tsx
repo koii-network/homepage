@@ -12,7 +12,6 @@ const Home: NextPage = () => {
       <NightSky />
       <Iceberg />
       <News />
-      Page content
     </div>
   );
 };
