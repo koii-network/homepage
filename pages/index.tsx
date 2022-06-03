@@ -10,7 +10,6 @@ const Home: NextPage = () => {
       <Hero />
       <NightSky />
       <News />
-      Page content
     </div>
   );
 };
