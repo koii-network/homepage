@@ -20,6 +20,7 @@ module.exports = {
         gold: "#FFC78F",
         koiiblue: "#171753",
         koiiorange: "#FFC78F",
+        "fish-yellow": "#FFC78F",
       },
     },
   },

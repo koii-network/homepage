@@ -27,7 +27,7 @@ const Heroslide2 = () => {
   }, []);
   const isBreakpoint = useMediaQuery(768);
   return (
-    <div>
+    <div className="text-koiiblue">
       <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="title text-3xl md:text-6xl font-light">
           <div className="pb-8">Earn for every</div>
