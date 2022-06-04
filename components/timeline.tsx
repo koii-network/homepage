@@ -88,7 +88,7 @@ export const Timeline = () => {
             placement="right-start"
             arrow
           >
-            <a className="hover:text-fish-yellow">K2 Settlement Layer</a>
+            <a className="hover:text-koiiorange">K2 Settlement Layer</a>
           </HtmlTooltip>
           <br />
           <span className="text-mint">Public Beta</span>
@@ -113,7 +113,7 @@ export const Timeline = () => {
             placement="right-start"
             arrow
           >
-            <span className="hover:text-fish-yellow">Attention Tracking</span>
+            <span className="hover:text-koiiorange">Attention Tracking</span>
           </HtmlTooltip>
           <br />
           <span className="text-mint">For any website</span>
@@ -137,7 +137,7 @@ export const Timeline = () => {
             placement="right-start"
             arrow
           >
-            <span className="hover:text-fish-yellow">Finnie Mobile</span>
+            <span className="hover:text-koiiorange">Finnie Mobile</span>
           </HtmlTooltip>
           <br />
         </div>
@@ -159,7 +159,7 @@ export const Timeline = () => {
             placement="right-start"
             arrow
           >
-            <span className="hover:text-fish-yellow">Content Collectives</span>
+            <span className="hover:text-koiiorange">Content Collectives</span>
           </HtmlTooltip>
           <br />
         </div>
@@ -182,7 +182,7 @@ export const Timeline = () => {
             placement="right-start"
             arrow
           >
-            <span className="hover:text-fish-yellow"> Tasks & Task Nodes</span>
+            <span className="hover:text-koiiorange"> Tasks & Task Nodes</span>
           </HtmlTooltip>
           <br />
           <span className="text-mint">Public Beta</span>
@@ -207,7 +207,7 @@ export const Timeline = () => {
             placement="right-start"
             arrow
           >
-            <span className="hover:text-fish-yellow">
+            <span className="hover:text-koiiorange">
               Finnie Browser Expansion
             </span>
           </HtmlTooltip>
@@ -231,7 +231,7 @@ export const Timeline = () => {
             placement="right-start"
             arrow
           >
-            <span className="hover:text-fish-yellow">
+            <span className="hover:text-koiiorange">
               Koii-X Template Library Expansion
             </span>
           </HtmlTooltip>
@@ -252,7 +252,7 @@ export const Timeline = () => {
             placement="right-start"
             arrow
           >
-            <span className="hover:text-fish-yellow">Public Mainnet</span>
+            <span className="hover:text-koiiorange">Public Mainnet</span>
           </HtmlTooltip>
           <br />
         </div>
@@ -275,7 +275,7 @@ export const Timeline = () => {
             placement="right-start"
             arrow
           >
-            <span className="hover:text-fish-yellow">Token Launch</span>
+            <span className="hover:text-koiiorange">Token Launch</span>
           </HtmlTooltip>
           <br />
           <span className="text-mint">Public Sale</span>

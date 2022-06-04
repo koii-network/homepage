@@ -24,3 +24,7 @@
 .grant-program {
   background: linear-gradient(180deg, #171753 7.18%, rgba(23, 23, 83, 0) 100%);
 }
+
+.force-hide {
+  display: none !important;
+}
