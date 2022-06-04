@@ -1,37 +1,27 @@
-import * as React from 'react';
+import * as React from "react";
 import styles from "/styles/home.module.css";
 import { useMediaQuery } from "@/components/hooks/mediaQuery";
-import { styled } from '@mui/material/styles';
-import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
-import ClickAwayListener from '@mui/material/ClickAwayListener';
+import { styled } from "@mui/material/styles";
+import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
 
 const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip {...props} classes={{ popper: className }} />
 ))(({ theme }) => ({
   [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: 'rgba(190, 240, 237, 0.85)',
-    color: '#171753',
+    backgroundColor: "rgba(190, 240, 237, 0.85)",
+    color: "#171753",
     maxWidth: 220,
     fontSize: theme.typography.pxToRem(12),
     lineHeight: theme.typography.pxToRem(18),
-    border: '1px solid #FFFFFF',
+    border: "1px solid #FFFFFF",
     borderRadius: theme.typography.pxToRem(20),
-    textAlign: 'left',
-    padding: '0.5rem 2rem',
+    textAlign: "left",
+    padding: "0.5rem 2rem",
   },
 }));
 
 export const Timeline = () => {
   const isBreakpoint = useMediaQuery(768);
-  const [open, setOpen] = React.useState(false);
-
-  const handleTooltipClose = () => {
-    setOpen(false);
-  };
-
-  const handleTooltipOpen = () => {
-    setOpen(true);
-  };
   return (
     <div className={`${styles.Timeline} pb-20 relative`}>
       {isBreakpoint ? (
@@ -74,134 +64,218 @@ export const Timeline = () => {
       )}
 
       <div className="2022list grid absolute text-center grid-cols-1 gap-y-4 md:gap-y-10 2xl:gap-y-16 2xl:left-[4rem] text-base md:text-xl w-fit text-white py-12 z-20 top-0 max-w-[220px]">
-        
         <div className="list-title text-right relative md:left-[3rem]">
           <span className="text-3xl font-semibold text-mint">2022</span>
           <br />
           <span className="text-base">Click for details</span>
         </div>
-       
+
         <div className="relative text-right md:left-[3rem]">
-        <HtmlTooltip 
-        title={
-          <React.Fragment>
-            <div>The new settlement layer where transactions are fast but consensus is slow. <u><a href="https://blog.koii.network/Koii-Announces-K2/">Learn more</a></u></div>
-          </React.Fragment>
-        } 
-        placement="right-start" 
-        arrow>
-          <a className="hover:text-fish-yellow">K2 Settlement Layer</a>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <div>
+                  The new settlement layer where transactions are fast but
+                  consensus is slow.{" "}
+                  <u>
+                    <a href="https://blog.koii.network/Koii-Announces-K2/">
+                      Learn more
+                    </a>
+                  </u>
+                </div>
+              </React.Fragment>
+            }
+            placement="right-start"
+            arrow
+          >
+            <a className="hover:text-fish-yellow">K2 Settlement Layer</a>
           </HtmlTooltip>
           <br />
           <span className="text-mint">Public Beta</span>
         </div>
 
         <div className="relative text-right md:left-[3rem]">
-        <HtmlTooltip 
-        title={
-          <React.Fragment>
-            <div>Attention Tracking - Get rewarded for every view by embedded 3 lines of code into the header of your site.<u><a href="https://docs.koii.network/earning-koii/attention-mining"> Learn how</a></u></div>
-          </React.Fragment>
-        } 
-        placement="right-start" 
-        arrow>
-          <span className="hover:text-fish-yellow">Attention Tracking</span>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <div>
+                  Attention Tracking - Get rewarded for every view by embedded 3
+                  lines of code into the header of your site.
+                  <u>
+                    <a href="https://docs.koii.network/earning-koii/attention-mining">
+                      {" "}
+                      Learn how
+                    </a>
+                  </u>
+                </div>
+              </React.Fragment>
+            }
+            placement="right-start"
+            arrow
+          >
+            <span className="hover:text-fish-yellow">Attention Tracking</span>
           </HtmlTooltip>
           <br />
           <span className="text-mint">For any website</span>
         </div>
         <div className="relative text-right md:left-[5rem]">
-        <HtmlTooltip 
-        title={
-          <React.Fragment>
-            <div>Take a photo or video and store it for free, right from your phone!<u><a href="https://share.hsforms.com/1isxRWrY7TIWU6bqJNSWzEwc20dg"> Get the app.</a></u></div>
-          </React.Fragment>
-        } 
-        placement="right-start" 
-        arrow>
-          <span className="hover:text-fish-yellow">Finnie Mobile</span>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <div>
+                  Take a photo or video and store it for free, right from your
+                  phone!
+                  <u>
+                    <a href="https://share.hsforms.com/1isxRWrY7TIWU6bqJNSWzEwc20dg">
+                      {" "}
+                      Get the app.
+                    </a>
+                  </u>
+                </div>
+              </React.Fragment>
+            }
+            placement="right-start"
+            arrow
+          >
+            <span className="hover:text-fish-yellow">Finnie Mobile</span>
           </HtmlTooltip>
           <br />
         </div>
         <div className="relative text-right md:top-[2rem] md:left-[12rem]">
-        <HtmlTooltip 
-        title={
-          <React.Fragment>
-            <div>Media-driven, community-owned collectives that reward members.<u><a href="https://blog.koii.network/Content-Collective/">  Read the paper</a></u></div>
-          </React.Fragment>
-        } 
-        placement="right-start" 
-        arrow>
-          <span className="hover:text-fish-yellow">Content Collectives</span>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <div>
+                  Media-driven, community-owned collectives that reward members.
+                  <u>
+                    <a href="https://blog.koii.network/Content-Collective/">
+                      {" "}
+                      Read the paper
+                    </a>
+                  </u>
+                </div>
+              </React.Fragment>
+            }
+            placement="right-start"
+            arrow
+          >
+            <span className="hover:text-fish-yellow">Content Collectives</span>
           </HtmlTooltip>
           <br />
         </div>
         <div className="relative text-right md:top-[2rem] md:left-[25rem]">
-        <HtmlTooltip 
-        title={
-          <React.Fragment>
-            <div>1. Ask our network to accomplish any micro-service 2. Rent out your unused RAM and get paid.<u><a href="https://share.hsforms.com/1kLtk8rfURZ-HY2xnKRTfCgc20dg"> Run a node</a></u></div>
-          </React.Fragment>
-        } 
-        placement="right-start" 
-        arrow>
-          <span className="hover:text-fish-yellow"> Tasks & Task Nodes</span>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <div>
+                  1. Ask our network to accomplish any micro-service 2. Rent out
+                  your unused RAM and get paid.
+                  <u>
+                    <a href="https://share.hsforms.com/1kLtk8rfURZ-HY2xnKRTfCgc20dg">
+                      {" "}
+                      Run a node
+                    </a>
+                  </u>
+                </div>
+              </React.Fragment>
+            }
+            placement="right-start"
+            arrow
+          >
+            <span className="hover:text-fish-yellow"> Tasks & Task Nodes</span>
           </HtmlTooltip>
           <br />
           <span className="text-mint">Public Beta</span>
         </div>
         <div className="relative text-right md:left-[43rem]">
-        <HtmlTooltip 
-        title={
-          <React.Fragment>
-            <div>The Finnie wallet compatibility is increasing every day, so you can keep all your assets in one place (but behind multiple keys).<u><a href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj"> Get Finnie</a></u></div>
-          </React.Fragment>
-        } 
-        placement="right-start" 
-        arrow>
-          <span className="hover:text-fish-yellow">
-            Finnie Browser Expansion
-          </span>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <div>
+                  The Finnie wallet compatibility is increasing every day, so
+                  you can keep all your assets in one place (but behind multiple
+                  keys).
+                  <u>
+                    <a href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj">
+                      {" "}
+                      Get Finnie
+                    </a>
+                  </u>
+                </div>
+              </React.Fragment>
+            }
+            placement="right-start"
+            arrow
+          >
+            <span className="hover:text-fish-yellow">
+              Finnie Browser Expansion
+            </span>
           </HtmlTooltip>
         </div>
         <div className="relative text-right md:left-[50rem] 2xl:left-[65rem]">
-        <HtmlTooltip 
-        title={
-          <React.Fragment>
-            <div>App templates, written 100% in JavaScript and easy to deploy to decentralized storage. <u><a href="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x"> Check out the library.</a></u></div>
-          </React.Fragment>
-        } 
-        placement="right-start" 
-        arrow>
-          <span className="hover:text-fish-yellow">
-            Koii-X Template Library Expansion
-          </span>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <div>
+                  App templates, written 100% in JavaScript and easy to deploy
+                  to decentralized storage.{" "}
+                  <u>
+                    <a href="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x">
+                      {" "}
+                      Check out the library.
+                    </a>
+                  </u>
+                </div>
+              </React.Fragment>
+            }
+            placement="right-start"
+            arrow
+          >
+            <span className="hover:text-fish-yellow">
+              Koii-X Template Library Expansion
+            </span>
           </HtmlTooltip>
           <br />
         </div>
         <div className="relative text-right md:left-[54rem] 2xl:left-[70rem]">
-        <HtmlTooltip 
-        title={
-          <React.Fragment>
-            <div>Fully audited and ready to go!<u><a href="koii.me/audit"> Get notified</a></u></div>
-          </React.Fragment>
-        } 
-        placement="right-start" 
-        arrow>
-          <span className="hover:text-fish-yellow">Public Mainnet</span>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <div>
+                  Fully audited and ready to go!
+                  <u>
+                    <a href="koii.me/audit"> Get notified</a>
+                  </u>
+                </div>
+              </React.Fragment>
+            }
+            placement="right-start"
+            arrow
+          >
+            <span className="hover:text-fish-yellow">Public Mainnet</span>
           </HtmlTooltip>
           <br />
         </div>
         <div className="relative text-right md:left-[55rem] 2xl:left-[75rem]">
-        <HtmlTooltip 
-        title={
-          <React.Fragment>
-            <div> Get tokens to use or run the network.<u><a href="https://koii.network/form/investor/"> Join the Investor Waitlist</a></u></div>
-          </React.Fragment>
-        } 
-        placement="right-start" 
-        arrow>
-          <span className="hover:text-fish-yellow">Token Launch</span>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <div>
+                  {" "}
+                  Get tokens to use or run the network.
+                  <u>
+                    <a href="https://koii.network/form/investor/">
+                      {" "}
+                      Join the Investor Waitlist
+                    </a>
+                  </u>
+                </div>
+              </React.Fragment>
+            }
+            placement="right-start"
+            arrow
+          >
+            <span className="hover:text-fish-yellow">Token Launch</span>
           </HtmlTooltip>
           <br />
           <span className="text-mint">Public Sale</span>
