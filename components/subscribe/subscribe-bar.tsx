@@ -9,16 +9,21 @@ export const SubscribeBar = () => {
   };
 
   return (
-    <div className="bg-koiiblue h-[54px] flex items-center">
+    <div className="bg-koiiblue h-[100px] md:h-[54px] flex items-center">
       {stage === "edit" ? (
-        <div className="md:max-w-[1060px] w-[100%]  md:mx-auto px-8 flex justify-center items-center">
-          <div className={"pr-4"}>
-            <h3 className=" uppercase text-mint">STAY IN THE KNOW!</h3>
+        <div className="md:max-w-[1060px] w-[100%]  md:mx-auto px-8 flex justify-center items-center flex-col md:flex-row">
+          <div className="flex justify-center items-center flex-row">
+            <div className={"pr-4"}>
+              <h3 className=" uppercase text-mint text-sm md:text-base">
+                STAY IN THE KNOW!
+              </h3>
+            </div>
+            <div className={"pr-9"}>
+              <span className="text-white text-sm md:text-base">
+                Get In The Node:
+              </span>
+            </div>
           </div>
-          <div className={"pr-9"}>
-            <span className="text-white">Get In The Node:</span>
-          </div>
-
           <HubspotForm
             formId={"b31f31bd-fffc-4ddb-84ff-f2448a776773"}
             wrapperClassNames={
