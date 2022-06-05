@@ -2,18 +2,18 @@ import { WayToEarn } from "./components/WayToEarn";
 
 export const WaysToEarn = () => {
   return (
-    <section className="container mt-32 max-w-[1140px] md:mx-auto z-40">
-      <div className="flex flex-row justify-between">
+    <section className="container md:mt-32 max-w-[1140px] md:mx-auto z-40">
+      <div className="flex flex-row justify-center md:justify-between flex-wrap md:flex-nowrap">
         <div>
-          <h2 className="text-4xl leading-[48px] pt-28 text-dark-blue">
+          <h2 className="text-3xl md:text-4xl leading-[48px] pt-28 text-dark-blue">
             So many ways to earn
           </h2>
           <p className="text-lg text-dark-blue">
             Start today so you don’t miss out.
           </p>
         </div>
-        <div>
-          <div className="flex flex-row gap-20">
+        <div className="mt-6 md:mt-0">
+          <div className="md:flex justify-center md:flex-row gap-20">
             <WayToEarn
               url="/"
               imgSrc="/images/way-1.svg"
@@ -37,7 +37,7 @@ export const WaysToEarn = () => {
               buttonLabel={"Get Finnie"}
             />
           </div>
-          <div className="flex flex-row gap-20">
+          <div className="md:flex flex-row gap-20">
             <WayToEarn
               url="https://discord.gg/koii"
               imgSrc="/images/way-3.svg"
