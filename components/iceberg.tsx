@@ -99,6 +99,12 @@ export const Iceberg = () => {
           objectFit="cover"
         />
       </div>
+      <div className="flex flex-row-reverse mt-[-9rem] pb-[6rem] pr-[2rem] md:pb-0 md:mt-[-14rem] md:pr-[12rem]">
+        <div className="text-lightmint w-[300px] md:w-[560px] text-xl text-right">
+          We collected all the benefits of blockchain & decentralized storage to
+          make web3 easy for everyone.
+        </div>
+      </div>
     </div>
   );
 };
