@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
-import Link from "next/link";
 
 type WayToEarnProps = {
   imgSrc: string;
@@ -25,14 +24,12 @@ export const WayToEarn = ({
       </div>
 
       <div>
-        <Link href={url}>
-          <a>
-            <Button
-              className=" py-2 px-6 rounded-[24px] w-[271px] text-dark-blue bg-mint"
-              label={buttonLabel}
-            />
-          </a>
-        </Link>
+        <Button
+          asLink
+          href={url}
+          className=" py-2 px-6 rounded-[24px] w-[271px] text-dark-blue bg-mint"
+          label={buttonLabel}
+        />
       </div>
     </div>
   );
