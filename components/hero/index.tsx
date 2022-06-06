@@ -15,7 +15,12 @@ const Hero = () => {
       ${styles.slide}
       `}
     >
-      <Carousel showThumbs={false} showStatus={false} interval={4500} autoPlay={true}>
+      <Carousel
+        showThumbs={false}
+        showStatus={false}
+        interval={4500}
+        autoPlay={true}
+      >
         <div>
           <Heroslide1 />
         </div>
