@@ -22,45 +22,85 @@ export const Iceberg = () => {
           <span className="text-base">Click for details</span>
         </div>
         <span className="relative left-[3rem] md:left-[35rem] hover:underline underline-offset-8">
-          <a href="https://koii.network/DID">Decentralized Identity</a>
+          <a
+            href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Decentralized Identity
+          </a>
         </span>
         <span className="relative left-[6rem] md:left-[35rem] hover:underline underline-offset-8">
-          <a href="https://docs.koii.network/koii-software-toolkit-sdk/what-is-the-koii-sdk">
+          <a
+            href="https://docs.koii.network/koii-software-toolkit-sdk/what-is-the-koii-sdk"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             Near-Instant Transactions
           </a>
         </span>
         <span className="relative left-[7rem] md:left-[37rem] hover:underline underline-offset-8">
-          <a href="https://docs.koii.network/earning-koii/attention-mining">
+          <a
+            href="https://docs.koii.network/earning-koii/attention-mining"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             Trustless Attention Tracking
           </a>
         </span>
         <span className="relative left-[8rem] md:left-[40rem] hover:underline underline-offset-8">
-          <a href="https://docs.koii.network/build-dapps-with-koii/template-library">
+          <a
+            href="https://docs.koii.network/build-dapps-with-koii/template-library"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             Koii-X UI Templates
           </a>
         </span>
         <span className="relative left-[10rem] md:left-[47rem] hover:underline underline-offset-8">
-          <a href="https://docs.koii.network/earning-koii/running-task-nodes">
+          <a
+            href="https://docs.koii.network/earning-koii/running-task-nodes"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             Task Nodes
           </a>
         </span>
         <span className="relative left-[8rem] md:left-[44rem] hover:underline underline-offset-8">
-          <a href="https://docs.koii.network/build-dapps-with-koii/using-nfts-as-content/create-nfts">
+          <a
+            href="https://docs.koii.network/build-dapps-with-koii/using-nfts-as-content/create-nfts"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             Drag & Drop NFTs
           </a>
         </span>
         <span className="relative left-[6rem] md:left-[40rem] hover:underline underline-offset-8">
-          <a href="https://docs.koii.network/#the-koii-token">
+          <a
+            href="https://docs.koii.network/#the-koii-token"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             Proofs of Real Traffic
           </a>
         </span>
         <span className="relative left-[5rem] md:left-[35rem] hover:underline underline-offset-8">
-          <a href="https://docs.koii.network/microservices-and-tasks/gradual-consensus">
+          <a
+            href="https://docs.koii.network/microservices-and-tasks/gradual-consensus"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             Gradual Consensus
           </a>
         </span>
         <span className="relative left-[3rem] md:left-[27rem] hover:underline underline-offset-8">
-          <a href="https://discord.gg/koii">Revolutionary Community</a>
+          <a
+            href="https://discord.gg/koii"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Revolutionary Community
+          </a>
         </span>
       </div>
       <svg

@@ -11,14 +11,8 @@ export const Policy = () => {
           />
         </div>
 
-        <FooterLink
-          title={"Privacy Policy"}
-          url={"https://koii.network/Privacy_Policy.pdf"}
-        />
-        <FooterLink
-          title={"Terms of Service"}
-          url={"https://koii.network/TOU_June_22_2021.pdf"}
-        />
+        <FooterLink title={"Privacy Polic"} url={"/Privacy_Policy.pdf"} />
+        <FooterLink title={"Terms of Service"} url={"/TOU_June_22_2021.pdf"} />
       </ul>
     </div>
   );

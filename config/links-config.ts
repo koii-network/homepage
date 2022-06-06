@@ -1,20 +1,32 @@
+export enum HubspotFormLinks {
+  PARTNERSHIP = "https://share.hsforms.com/1_HHcmivaTDaI9O1gX3DZngc20dg",
+  INVESTOR = "https://share.hsforms.com/14iIe1UZZTUqF-dPNONXc0Qc20dg",
+  GRANT = "https://share.hsforms.com/1ATBOuLeqSCa-WCEBU8Ky0Ac20dg",
+  NODE_PREREGISTER = "https://share.hsforms.com/1kLtk8rfURZ-HY2xnKRTfCgc20dg",
+  FINNIE_MOBIE_PREREGISTER = "https://share.hsforms.com/1isxRWrY7TIWU6bqJNSWzEwc20dg",
+  JOBS = "https://share.hsforms.com/142u1Vp02TGuojOXCTUBGGQc20dg",
+  SUPORT = "https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg",
+  FAUCET_SUPPORT = "https://share.hsforms.com/1C0zJsC7tTYe4s1fhtxE3-Qc20dg",
+  NEWSLETTER = "https://share.hsforms.com/1oqz977zNToCWmA-hbyTjXwc20dg",
+}
+
 export const companyLinks = [
   { label: "About", url: "/" },
   { label: "Earn", url: "/" },
   { label: "Blog", url: "https://blog.koii.network" },
-  { label: "Jobs", url: "https://koii.network/jobs/" },
+  { label: "Jobs", url: HubspotFormLinks.JOBS },
   { label: "Developers Docs", url: "https://docs.koii.network" },
   { label: "Leaderboard", url: "https://koi.rocks/" },
-  { label: "Support", url: "https://koii.network/form/support/" },
-  { label: "FAQ", url: "https://koii.network/faq" },
+  { label: "Support", url: HubspotFormLinks.SUPORT },
+  // { label: "FAQ", url: "https://koii.network/faq" },
 ];
 
 export const getInvolvedLinks = [
-  { label: "Run a Node", url: "https://koii.network/form/pre-register/" },
+  { label: "Run a Node", url: HubspotFormLinks.NODE_PREREGISTER },
   { label: "Get Finnie", url: "https://koii.me/finnie" },
-  { label: "Apply for a Grant", url: "https://koii.network/form/grant/" },
-  { label: "Become a Partner", url: "https://koii.network/form/partnership/" },
-  { label: "Join the Waitlist", url: "https://koii.network/form/investor/" },
+  { label: "Apply for a Grant", url: HubspotFormLinks.GRANT },
+  { label: "Become a Partner", url: HubspotFormLinks.PARTNERSHIP },
+  { label: "Join the Waitlist", url: HubspotFormLinks.INVESTOR },
   {
     label: "Content Collectives",
     url: "https://blog.koii.network/Content-Collective",

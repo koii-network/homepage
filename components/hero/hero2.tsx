@@ -28,14 +28,14 @@ const Heroslide2 = () => {
   return (
     <div className="text-koiiblue">
       <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
-        <div className="title text-3xl md:text-6xl font-light">
+        <div className="text-3xl font-light md:text-6xl title">
           <div className="pb-8">Earn for every</div>
           <p
             className="font-semibold inline underline underline-offset-[20px] decoration-mint"
             ref={el}
           />
         </div>
-        <div className="content text-lg md:text-2xl leading-8  md:max-w-sm ">
+        <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
           You put talent and hard work into what you create online.
           <p className="mt-3.5">It’s time you got paid for it.</p>
           <div className="link pt-14 text-center md:text-left">
@@ -48,7 +48,6 @@ const Heroslide2 = () => {
           </div>
         </div>
       </div>
-
       <div className="grid grid-cols-4 justify-items-center px-4 md:px-[28rem] mb-10 relative md:bottom-[-120px]">
         <IconButton name="twitter" fill="#8585BC" px="40" />
         <IconButton name="discord" fill="#8585BC" px="40" />
