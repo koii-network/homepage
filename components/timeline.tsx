@@ -3,6 +3,7 @@ import styles from "/styles/home.module.css";
 import { useMediaQuery } from "@/components/hooks/mediaQuery";
 import { styled } from "@mui/material/styles";
 import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
+import { FormLinks } from "config/links-config";
 
 const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -264,10 +265,7 @@ export const Timeline = () => {
                   {" "}
                   Get tokens to use or run the network.
                   <u>
-                    <a href="https://koii.network/form/investor/">
-                      {" "}
-                      Join the Investor Waitlist
-                    </a>
+                    <a href={FormLinks.INVESTOR}>Join the Investor Waitlist</a>
                   </u>
                 </div>
               </React.Fragment>
