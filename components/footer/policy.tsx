@@ -9,7 +9,7 @@ export const Policy = () => {
           url={"https://koii.network/Contest_TC_-_Cheeky_Lil_Contest.pdf"}
         />
         <FooterLink
-          title={"Privacy Polic"}
+          title={"Privacy Policy"}
           url={"https://koii.network/Privacy_Policy.pdf"}
         />
         <FooterLink
