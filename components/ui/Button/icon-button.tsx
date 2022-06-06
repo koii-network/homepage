@@ -15,7 +15,7 @@ export type IconButtonProps = Readonly<
 
 export const IconButton = ({ name, className, fill, px }: IconButtonProps) => {
   return (
-    <div className={className}>
+    <div className={`${className || ""} z1`.trim()}>
       {name === "twitter" && (
         <a
           href="https://twitter.com/KoiiNetwork"
