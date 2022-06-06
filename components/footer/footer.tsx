@@ -12,7 +12,7 @@ import { Policy } from "./policy";
 export const Footer = () => {
   return (
     <footer className=" bg-gradient-to-b from-titanium-white to-turquoise-light app-footer">
-      <div className="container  md:mx-auto md:pt-12">
+      <div className="container md:mx-auto md:pt-12">
         <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-dark-blue text-[30px] pb-6">
           <Image
             src="/KoiiNetwork-logo_128.png"
@@ -39,7 +39,7 @@ export const Footer = () => {
 
         <div className="mt-4 mb-3 border border-solid border-dark-blue md:mb-7" />
 
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-center md:last:justify-between">
           <Policy />
 
           <div className="hidden md:block">
