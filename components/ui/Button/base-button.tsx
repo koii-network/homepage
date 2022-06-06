@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export type ButtonProps = Readonly<
   {
     label: string;
@@ -5,6 +7,8 @@ export type ButtonProps = Readonly<
     asLink?: boolean;
     href?: string;
     target?: "_blank" | "_self" | "_parent" | "_top";
+    width?: string;
+    height?: string;
   } & React.HTMLProps<HTMLButtonElement>
 >;
 
@@ -14,12 +18,22 @@ export const Button = ({
   asLink,
   href,
   target,
+  width,
+  height,
 }: ButtonProps) => {
+  const base = `w-[${width ?? "186px"}] h-[${height ?? "40px"}]`;
+
   if (asLink) {
     return (
-      <a href={href} target={target} className={`${className} cursor-pointer`}>
-        {label}
-      </a>
+      <div
+        className={`${base} display flex justify-center ${className} cursor-pointer`}
+      >
+        <Link href={href ?? "#"}>
+          <a target={target} className="self-center">
+            {label}
+          </a>
+        </Link>
+      </div>
     );
   }
   return <button className={className}>{label}</button>;

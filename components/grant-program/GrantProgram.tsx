@@ -2,14 +2,13 @@ import Image from "next/image";
 import { useMediaQuery } from "@/components/hooks";
 import { Button } from "@/components/ui/Button";
 import { Bubble } from "./Bubble";
-import Link from "next/link";
 
 export const GrantProgram = () => {
   const isBreakpoint = useMediaQuery(768);
   return (
     <section className="grant-program h-[920px] md:h-[696px]">
       <div className="flex flex-row max-w-[1140px] md:mx-auto justify-between">
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center justify-center md:items-start">
           <div className="mb-20">
             {isBreakpoint ? (
               <h2 className="text-2xl leading-[48px] pt-28 px-12 text-white text-center pb-3">
@@ -22,22 +21,24 @@ export const GrantProgram = () => {
                 change the world?
               </h2>
             )}
-            <p className="text-sm text-white text-center md:text-left">
+            <p className="text-sm text-center text-white md:text-left">
               Get in on Koii’s
             </p>
-            <p className="text-2xl text-gold text-center md:text-left">
+            <p className="text-2xl text-center text-gold md:text-left">
               $1M Grant Program
             </p>
           </div>
-          <div className="mt-[22rem] text-center">
-            <Link href="https://koii.network/form/grant/">
-              <a>
-                <Button
-                  className="px-6 py-3 w-[190px] bg-white text-dark-blue text-normal rounded-[32px] drop-shadow-lg"
-                  label="Apply Now"
-                />
-              </a>
-            </Link>
+
+          <div className="mt-[400px] md:mt-0">
+            <Button
+              width="190px"
+              height="53px"
+              asLink
+              target="_blank"
+              href="https://koii.network/form/grant/"
+              className="px-6 py-3 w-[190px] bg-white text-dark-blue text-normal rounded-[32px] drop-shadow-lg"
+              label="Apply Now"
+            />
           </div>
         </div>
 
