@@ -14,7 +14,6 @@ const Heroslide2 = () => {
       typeSpeed: 100,
       backSpeed: 50,
       showCursor: true,
-      loop: true,
     };
     if (el.current != null) {
       typed.current = new Typed(el.current, options);
