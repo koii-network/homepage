@@ -10,14 +10,11 @@
     "lintfix": "next lint --fix"
   },
   "dependencies": {
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.8.2",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-responsive-carousel": "^3.2.23",
-    "react-tooltip": "^4.2.21",
     "typed.js": "^2.0.12"
   },
   "devDependencies": {
