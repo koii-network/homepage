@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const Iceberg = () => {
   return (
-    <div className={`${styles.Iceberg} md:h-[1515px]`}>
+    <div className={`${styles.Iceberg} md:h-[1515px]`} id="iceberg">
       <div className="mix-blend-hard-light Icebergtop absolute top-0 md:top-0 right-[-5rem] md:right-0 w-[339px] md:w-[535px] h-[395px] md:h-[617px]">
         <Image
           className=" "
