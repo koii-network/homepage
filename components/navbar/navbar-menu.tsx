@@ -7,11 +7,20 @@ export const NavbarMenu = () => {
         {/* <NavbarItem label={"About"} url={"/"} />
         <NavbarItem label={"Earn"} url={"/"} /> */}
         <NavbarItem
+          target={"_blank"}
           label={"Partnerships"}
           url={"https://koii.network/form/partnership/"}
         />
-        <NavbarItem label={"Blog"} url={"https://blog.koii.network"} />
-        <NavbarItem label={"Koii wiki"} url={"https://docs.koii.network"} />
+        <NavbarItem
+          target={"_blank"}
+          label={"Blog"}
+          url={"https://blog.koii.network"}
+        />
+        <NavbarItem
+          label={"Koii Wiki"}
+          url={"https://docs.koii.network"}
+          target={"_blank"}
+        />
       </nav>
     </menu>
   );

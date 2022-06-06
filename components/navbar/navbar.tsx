@@ -13,7 +13,7 @@ export const Navbar = () => {
   };
 
   return (
-    <header>
+    <header className="fixed top-0 left-0 right-0 z-50">
       <div className="relative z-50 flex justify-between py-2 pl-4 pr-8 bg-gradient-to-r from-turquoise-light to-white drop-shadow-lg md:drop-shadow-none">
         <div className="flex items-center gap-4">
           <Image
