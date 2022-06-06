@@ -1,5 +1,5 @@
 import { WayToEarn } from "./components/WayToEarn";
-import { FormLinks } from "config/links-config";
+import { HubspotFormLinks } from "config/links-config";
 
 export const WaysToEarn = () => {
   return (
@@ -56,7 +56,7 @@ export const WaysToEarn = () => {
               buttonLabel={"Become an Ambassador"}
             />
             <WayToEarn
-              url={FormLinks.PREREGISTER}
+              url={HubspotFormLinks.NODE_PREREGISTER}
               imgSrc="/images/way-4.svg"
               description={
                 <div className="text-lg text-dark-blue w-[190px]">
