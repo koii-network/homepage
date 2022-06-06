@@ -18,7 +18,7 @@ export const Subscribe = () => {
       />
 
       <div className="mt-5 ml-4 text-sm text-dark-blue">
-        ©KOI Co. 2021 All Rights Reserved, 2021.
+        © Koii Foundation 2022, All Rights Reserved.
       </div>
     </div>
   );
