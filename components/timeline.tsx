@@ -3,7 +3,7 @@ import styles from "/styles/home.module.css";
 import { useMediaQuery } from "@/components/hooks/mediaQuery";
 import { styled } from "@mui/material/styles";
 import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
-import { FormLinks } from "config/links-config";
+import { HubspotFormLinks } from "config/links-config";
 
 const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -104,7 +104,6 @@ export const Timeline = () => {
                   lines of code into the header of your site.
                   <u>
                     <a href="https://docs.koii.network/earning-koii/attention-mining">
-                      {" "}
                       Learn how
                     </a>
                   </u>
@@ -127,8 +126,7 @@ export const Timeline = () => {
                   Take a photo or video and store it for free, right from your
                   phone!
                   <u>
-                    <a href="https://share.hsforms.com/1isxRWrY7TIWU6bqJNSWzEwc20dg">
-                      {" "}
+                    <a href={HubspotFormLinks.FINNIE_MOBIE_PREREGISTER}>
                       Get the app.
                     </a>
                   </u>
@@ -150,7 +148,6 @@ export const Timeline = () => {
                   Media-driven, community-owned collectives that reward members.
                   <u>
                     <a href="https://blog.koii.network/Content-Collective/">
-                      {" "}
                       Read the paper
                     </a>
                   </u>
@@ -172,10 +169,7 @@ export const Timeline = () => {
                   1. Ask our network to accomplish any micro-service 2. Rent out
                   your unused RAM and get paid.
                   <u>
-                    <a href="https://share.hsforms.com/1kLtk8rfURZ-HY2xnKRTfCgc20dg">
-                      {" "}
-                      Run a node
-                    </a>
+                    <a href={HubspotFormLinks.NODE_PREREGISTER}>Run a node</a>
                   </u>
                 </div>
               </React.Fragment>
@@ -198,7 +192,6 @@ export const Timeline = () => {
                   keys).
                   <u>
                     <a href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj">
-                      {" "}
                       Get Finnie
                     </a>
                   </u>
@@ -222,7 +215,6 @@ export const Timeline = () => {
                   to decentralized storage.{" "}
                   <u>
                     <a href="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x">
-                      {" "}
                       Check out the library.
                     </a>
                   </u>
@@ -245,7 +237,7 @@ export const Timeline = () => {
                 <div>
                   Fully audited and ready to go!
                   <u>
-                    <a href="koii.me/audit"> Get notified</a>
+                    <a href={HubspotFormLinks.NEWSLETTER}> Get notified</a>
                   </u>
                 </div>
               </React.Fragment>
@@ -262,10 +254,11 @@ export const Timeline = () => {
             title={
               <React.Fragment>
                 <div>
-                  {" "}
                   Get tokens to use or run the network.
                   <u>
-                    <a href={FormLinks.INVESTOR}>Join the Investor Waitlist</a>
+                    <a href={HubspotFormLinks.INVESTOR}>
+                      Join the Investor Waitlist
+                    </a>
                   </u>
                 </div>
               </React.Fragment>

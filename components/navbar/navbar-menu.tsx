@@ -1,5 +1,5 @@
 import { NavbarItem } from "./menu-item";
-import { FormLinks } from "config/links-config";
+import { HubspotFormLinks } from "config/links-config";
 
 export const NavbarMenu = () => {
   return (
@@ -10,7 +10,7 @@ export const NavbarMenu = () => {
         <NavbarItem
           target={"_blank"}
           label={"Partnerships"}
-          url={FormLinks.PARTNERSHIP}
+          url={HubspotFormLinks.PARTNERSHIP}
         />
         <NavbarItem
           target={"_blank"}
