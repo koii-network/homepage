@@ -6,7 +6,7 @@ import birds from "/public/images/birds.svg";
 
 export const NightSky = () => {
   return (
-    <div className={`${styles.nightsky} h-[900px] md:h-[1000px]`}>
+    <div className={`${styles.nightsky} h-[900px] md:h-[1000px]`} id="nightsky">
       <div className="moon absolute top-[6rem] md:top-0 w-[180px] md:w-[450px] h-[270px] md:h-[500px]">
         <Image
           className="!ml-[-3rem]"
