@@ -46,7 +46,7 @@ const Heroslide1 = () => {
             <a href="#nightsky">
               <Button
                 label="Oh, really... How?"
-                className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
+                className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-full leading-3"
               />
             </a>
           </div>
