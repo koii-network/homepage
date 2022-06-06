@@ -7,7 +7,7 @@ export const WaysToEarn = () => {
       id="ways-to-earn"
     >
       <div className="flex flex-col justify-center lg:flex-row md: md:justify-between md:flex-nowrap">
-        <div className="flex flex-col items-center mb-16 md:items-start ">
+        <div className="flex flex-col items-center mb-16 lg:items-start ">
           <h2 className="text-[28px] md:text-4xl leading-[48px] pt-28 text-dark-blue">
             So many ways to earn
           </h2>
