@@ -3,7 +3,7 @@ import { FooterLink } from "./footer-link";
 export const Policy = () => {
   return (
     <div className="mb-3 md:mb-0">
-      <ul className="flex flex-wrap justify-center gap-6">
+      <ul className="flex flex-wrap justify-center gap-2 md:gap-6">
         <div className="w-[100%] md:w-max">
           <FooterLink
             title={"Contest Terms & Conditions"}
