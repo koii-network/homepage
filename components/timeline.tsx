@@ -237,7 +237,7 @@ export const Timeline = () => {
                 <div>
                   Fully audited and ready to go!
                   <u>
-                    <a href="koii.me/audit"> Get notified</a>
+                    <a href={HubspotFormLinks.NEWSLETTER}> Get notified</a>
                   </u>
                 </div>
               </React.Fragment>
