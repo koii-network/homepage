@@ -43,13 +43,11 @@ const Heroslide1 = () => {
           For the last 25 years, you’ve been exploited by Big Tech.
           <p className="mt-3.5">We empower you instead.</p>
           <div className="text-center link pt-14 md:text-left">
-          <a
-          href="#iceberg"
-            >
-            <Button
-              label="Oh, really... How?"
-              className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
-            />
+            <a href="#iceberg">
+              <Button
+                label="Oh, really... How?"
+                className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
+              />
             </a>
           </div>
         </div>

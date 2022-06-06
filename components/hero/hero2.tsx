@@ -40,13 +40,11 @@ const Heroslide2 = () => {
           You put talent and hard work into what you create online.
           <p className="mt-3.5">It’s time you got paid for it.</p>
           <div className="link pt-14 text-center md:text-left">
-          <a
-          href="#ways-to-earn"
-            >
-            <Button
-              label="Prove it."
-              className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
-            />
+            <a href="#ways-to-earn">
+              <Button
+                label="Prove it."
+                className="place-content-center min-w-[200px] text-base font-semibold bg-mint border-mint border-solid border-2 px-7 py-5 rounded-3xl leading-3"
+              />
             </a>
           </div>
         </div>

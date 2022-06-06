@@ -2,7 +2,10 @@ import { WayToEarn } from "./components/WayToEarn";
 
 export const WaysToEarn = () => {
   return (
-    <section className="container md:mt-32 max-w-[1140px] md:mx-auto z-40" id="ways-to-earn">
+    <section
+      className="container md:mt-32 max-w-[1140px] md:mx-auto z-40"
+      id="ways-to-earn"
+    >
       <div className="flex flex-row justify-center md:justify-between flex-wrap md:flex-nowrap">
         <div>
           <h2 className="text-3xl md:text-4xl leading-[48px] pt-28 text-dark-blue">
