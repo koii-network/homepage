@@ -8,7 +8,7 @@ type FooterLinkProps = {
 export const FooterLink = ({ title, url }: FooterLinkProps) => (
   <li className="text-sm text-center md:text-left text-dark-blue hover:underline">
     <Link href={url}>
-      <a>{title}</a>
+      <a target="_blank">{title}</a>
     </Link>
   </li>
 );
