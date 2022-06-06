@@ -1,4 +1,5 @@
 import { NavbarItem } from "./menu-item";
+import { FormLinks } from "config/links-config";
 
 export const NavbarMenu = () => {
   return (
@@ -9,7 +10,7 @@ export const NavbarMenu = () => {
         <NavbarItem
           target={"_blank"}
           label={"Partnerships"}
-          url={"https://koii.network/form/partnership/"}
+          url={FormLinks.PARTNERSHIP}
         />
         <NavbarItem
           target={"_blank"}

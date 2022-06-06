@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useMediaQuery } from "@/components/hooks";
 import { Button } from "@/components/ui/Button";
 import { Bubble } from "./Bubble";
+import { FormLinks } from "config/links-config";
 
 export const GrantProgram = () => {
   const isBreakpoint = useMediaQuery(768);
@@ -35,7 +36,7 @@ export const GrantProgram = () => {
               height="53px"
               asLink
               target="_blank"
-              href="https://koii.network/form/grant/"
+              href={FormLinks.GRANT}
               className="px-6 py-3 w-[190px] bg-white text-dark-blue text-normal rounded-[32px] drop-shadow-lg"
               label="Apply Now"
             />
