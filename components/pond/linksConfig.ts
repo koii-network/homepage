@@ -73,12 +73,12 @@ export const bottomIconsFirstRow = [
   {
     name: "Maven",
     iconSrc: "/partner-logos/maven11.svg",
-    url: "https://www.maven11.com/",
+    url: "https://www.maven11.com",
   },
   {
     name: "Max Stealth",
     iconSrc: "/partner-logos/maxstealth.svg",
-    url: "https://www.outliers.io/",
+    url: "https://twitter.com/MaxStealth5",
   },
   {
     name: "Digital Renaissance",

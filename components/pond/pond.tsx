@@ -27,7 +27,7 @@ export const Pond = () => {
           className={
             isBreakpoint
               ? `absolute left-[-20px] top-[110px]`
-              : `absolute left-0 top-[380px]`
+              : `absolute left-[-3%] top-[27%]`
           }
         >
           <Image
@@ -41,7 +41,7 @@ export const Pond = () => {
           className={
             isBreakpoint
               ? `absolute right-[0px] top-[80px]`
-              : `absolute right-40 top-[190px]`
+              : `absolute right-[5%] top-[15%]`
           }
         >
           <Image
@@ -69,16 +69,13 @@ export const Pond = () => {
              * @todo: Animate this section so it will pop in from bottom
              */}
             <div className="flex flex-col items-center justify-center mt-7 md:mt-0">
-              <a
+              <Button
+                asLink
                 href={HubspotFormLinks.PARTNERSHIP}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  className="px-6 w-[220px] py-3 mb-10 bg-white text-dark-blue rounded-[32px] drop-shadow-lg"
-                  label="Partner with Koii"
-                />
-              </a>
+                className="px-6 w-[220px] py-3 mb-10 bg-white text-dark-blue rounded-[32px] drop-shadow-lg"
+                label="Partner with Koii"
+              />
+
               <PartnersBottom />
             </div>
           </div>
