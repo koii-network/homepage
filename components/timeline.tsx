@@ -80,7 +80,11 @@ export const Timeline = () => {
                   The new settlement layer where transactions are fast but
                   consensus is slow.{" "}
                   <u>
-                    <a href="https://blog.koii.network/Koii-Announces-K2/">
+                    <a
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      href="https://blog.koii.network/Koii-Announces-K2/"
+                    >
                       Learn more
                     </a>
                   </u>
@@ -89,8 +93,20 @@ export const Timeline = () => {
             }
             placement="right-start"
             arrow
+            leaveDelay={800}
           >
-            <a className="hover:text-koiiorange">K2 Settlement Layer</a>
+            {isBreakpoint ? (
+              <a
+                className="hover:text-koiiorange"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://blog.koii.network/Koii-Announces-K2/"
+              >
+                K2 Settlement Layer
+              </a>
+            ) : (
+              <a className="hover:text-koiiorange">K2 Settlement Layer</a>
+            )}
           </HtmlTooltip>
           <br />
           <span className="text-mint">Public Beta</span>
@@ -103,7 +119,11 @@ export const Timeline = () => {
                   Attention Tracking - Get rewarded for every view by embedded 3
                   lines of code into the header of your site.
                   <u>
-                    <a href="https://docs.koii.network/earning-koii/attention-mining">
+                    <a
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      href="https://docs.koii.network/earning-koii/attention-mining"
+                    >
                       Learn how
                     </a>
                   </u>
@@ -112,8 +132,20 @@ export const Timeline = () => {
             }
             placement="right-start"
             arrow
+            leaveDelay={800}
           >
-            <span className="hover:text-koiiorange">Attention Tracking</span>
+            {isBreakpoint ? (
+              <a
+                className="hover:text-koiiorange"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://docs.koii.network/earning-koii/attention-mining"
+              >
+                Attention Tracking
+              </a>
+            ) : (
+              <a className="hover:text-koiiorange">Attention Tracking</a>
+            )}
           </HtmlTooltip>
           <br />
           <span className="text-mint">For any website</span>
@@ -126,7 +158,11 @@ export const Timeline = () => {
                   Take a photo or video and store it for free, right from your
                   phone!
                   <u>
-                    <a href={HubspotFormLinks.FINNIE_MOBIE_PREREGISTER}>
+                    <a
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      href={HubspotFormLinks.FINNIE_MOBIE_PREREGISTER}
+                    >
                       Get the app.
                     </a>
                   </u>
@@ -135,8 +171,20 @@ export const Timeline = () => {
             }
             placement="right-start"
             arrow
+            leaveDelay={800}
           >
-            <span className="hover:text-koiiorange">Finnie Mobile</span>
+            {isBreakpoint ? (
+              <a
+                className="hover:text-koiiorange"
+                rel="noreferrer noopener"
+                target="_blank"
+                href={HubspotFormLinks.FINNIE_MOBIE_PREREGISTER}
+              >
+                Finnie Mobile
+              </a>
+            ) : (
+              <a className="hover:text-koiiorange">Finnie Mobile</a>
+            )}
           </HtmlTooltip>
           <br />
         </div>
@@ -147,7 +195,11 @@ export const Timeline = () => {
                 <div>
                   Media-driven, community-owned collectives that reward members.
                   <u>
-                    <a href="https://blog.koii.network/Content-Collective/">
+                    <a
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      href="https://blog.koii.network/Content-Collective/"
+                    >
                       Read the paper
                     </a>
                   </u>
@@ -156,8 +208,20 @@ export const Timeline = () => {
             }
             placement="right-start"
             arrow
+            leaveDelay={800}
           >
-            <span className="hover:text-koiiorange">Content Collectives</span>
+            {isBreakpoint ? (
+              <a
+                className="hover:text-koiiorange"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://blog.koii.network/Content-Collective/"
+              >
+                Content Collectives
+              </a>
+            ) : (
+              <a className="hover:text-koiiorange">Content Collectives</a>
+            )}
           </HtmlTooltip>
           <br />
         </div>
@@ -169,15 +233,33 @@ export const Timeline = () => {
                   1. Ask our network to accomplish any micro-service 2. Rent out
                   your unused RAM and get paid.
                   <u>
-                    <a href={HubspotFormLinks.NODE_PREREGISTER}>Run a node</a>
+                    <a
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      href={HubspotFormLinks.NODE_PREREGISTER}
+                    >
+                      Run a node
+                    </a>
                   </u>
                 </div>
               </React.Fragment>
             }
             placement="right-start"
             arrow
+            leaveDelay={800}
           >
-            <span className="hover:text-koiiorange"> Tasks & Task Nodes</span>
+            {isBreakpoint ? (
+              <a
+                className="hover:text-koiiorange"
+                rel="noreferrer noopener"
+                target="_blank"
+                href={HubspotFormLinks.NODE_PREREGISTER}
+              >
+                Tasks & Task Nodes
+              </a>
+            ) : (
+              <a className="hover:text-koiiorange">Tasks & Task Nodes</a>
+            )}
           </HtmlTooltip>
           <br />
           <span className="text-mint">Public Beta</span>
@@ -191,7 +273,11 @@ export const Timeline = () => {
                   you can keep all your assets in one place (but behind multiple
                   keys).
                   <u>
-                    <a href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj">
+                    <a
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj"
+                    >
                       Get Finnie
                     </a>
                   </u>
@@ -200,10 +286,20 @@ export const Timeline = () => {
             }
             placement="right-start"
             arrow
+            leaveDelay={800}
           >
-            <span className="hover:text-koiiorange">
-              Finnie Browser Expansion
-            </span>
+            {isBreakpoint ? (
+              <a
+                className="hover:text-koiiorange"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj"
+              >
+                Finnie Browser Expansion
+              </a>
+            ) : (
+              <a className="hover:text-koiiorange">Finnie Browser Expansion</a>
+            )}
           </HtmlTooltip>
         </div>
         <div className="relative text-right md:w-fit md:right-[32%]">
@@ -214,7 +310,11 @@ export const Timeline = () => {
                   App templates, written 100% in JavaScript and easy to deploy
                   to decentralized storage.{" "}
                   <u>
-                    <a href="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x">
+                    <a
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      href="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x"
+                    >
                       Check out the library.
                     </a>
                   </u>
@@ -223,10 +323,25 @@ export const Timeline = () => {
             }
             placement="right-start"
             arrow
+            leaveDelay={800}
           >
-            <span className="hover:text-koiiorange">
-              Koii-X Template Library <br /> Expansion
-            </span>
+            {isBreakpoint ? (
+              <a
+                className="hover:text-koiiorange"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x"
+              >
+                {" "}
+                Koii-X Template Library <br />
+                Expansion
+              </a>
+            ) : (
+              <a className="hover:text-koiiorange">
+                {" "}
+                Koii-X Template Library Expansion
+              </a>
+            )}
           </HtmlTooltip>
           <br />
         </div>
@@ -237,15 +352,35 @@ export const Timeline = () => {
                 <div>
                   Fully audited and ready to go!
                   <u>
-                    <a href={HubspotFormLinks.NEWSLETTER}> Get notified</a>
+                    <a
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      href={HubspotFormLinks.NEWSLETTER}
+                    >
+                      {" "}
+                      Get notified
+                    </a>
                   </u>
                 </div>
               </React.Fragment>
             }
             placement="right-start"
             arrow
+            leaveDelay={800}
           >
-            <span className="hover:text-koiiorange">Public Mainnet</span>
+            {isBreakpoint ? (
+              <a
+                className="hover:text-koiiorange"
+                rel="noreferrer noopener"
+                target="_blank"
+                href={HubspotFormLinks.NEWSLETTER}
+              >
+                {" "}
+                Public Mainnet
+              </a>
+            ) : (
+              <a className="hover:text-koiiorange"> Public Mainnet</a>
+            )}
           </HtmlTooltip>
           <br />
         </div>
@@ -256,7 +391,11 @@ export const Timeline = () => {
                 <div>
                   Get tokens to use or run the network.
                   <u>
-                    <a href={HubspotFormLinks.INVESTOR}>
+                    <a
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      href={HubspotFormLinks.INVESTOR}
+                    >
                       Join the Investor Waitlist
                     </a>
                   </u>
@@ -265,8 +404,20 @@ export const Timeline = () => {
             }
             placement="right-start"
             arrow
+            leaveDelay={800}
           >
-            <span className="hover:text-koiiorange">Token Launch</span>
+            {isBreakpoint ? (
+              <a
+                className="hover:text-koiiorange"
+                rel="noreferrer noopener"
+                target="_blank"
+                href={HubspotFormLinks.INVESTOR}
+              >
+                Token Launch
+              </a>
+            ) : (
+              <a className="hover:text-koiiorange"> Token Launch</a>
+            )}
           </HtmlTooltip>
           <br />
           <span className="text-mint">Public Sale</span>
