@@ -16,12 +16,12 @@ export const Iceberg = () => {
         />
       </div>
       <div className="2021list grid relative text-center grid-cols-1 gap-y-10 md:text-xl w-fit text-koiiblue py-12 z-20">
-        <div className="list-title text-left md:text-right relative left-[2rem] md:left-[30rem]">
+        <div className="list-title text-left md:text-right relative left-[2rem] xl:left-[30rem]">
           <span className="text-xl md:text-3xl font-semibold">2021</span>
           <br />
           <span className="text-base">Click for details</span>
         </div>
-        <span className="relative left-[3rem] md:left-[35rem] hover:underline underline-offset-8">
+        <span className="relative left-[3rem] xl:left-[35rem] hover:underline underline-offset-8">
           <a
             href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj"
             rel="noreferrer noopener"
@@ -30,7 +30,7 @@ export const Iceberg = () => {
             Decentralized Identity
           </a>
         </span>
-        <span className="relative left-[6rem] md:left-[35rem] hover:underline underline-offset-8">
+        <span className="relative left-[6rem] xl:left-[35rem] hover:underline underline-offset-8">
           <a
             href="https://docs.koii.network/koii-software-toolkit-sdk/what-is-the-koii-sdk"
             rel="noreferrer noopener"
@@ -39,7 +39,7 @@ export const Iceberg = () => {
             Near-Instant Transactions
           </a>
         </span>
-        <span className="relative left-[7rem] md:left-[37rem] hover:underline underline-offset-8">
+        <span className="relative left-[7rem] xl:left-[37rem] hover:underline underline-offset-8">
           <a
             href="https://docs.koii.network/earning-koii/attention-mining"
             rel="noreferrer noopener"
@@ -48,7 +48,7 @@ export const Iceberg = () => {
             Trustless Attention Tracking
           </a>
         </span>
-        <span className="relative left-[8rem] md:left-[40rem] hover:underline underline-offset-8">
+        <span className="relative left-[8rem] xl:left-[40rem] hover:underline underline-offset-8">
           <a
             href="https://docs.koii.network/build-dapps-with-koii/template-library"
             rel="noreferrer noopener"
@@ -57,7 +57,7 @@ export const Iceberg = () => {
             Koii-X UI Templates
           </a>
         </span>
-        <span className="relative left-[10rem] md:left-[47rem] hover:underline underline-offset-8">
+        <span className="relative left-[10rem] xl:left-[47rem] hover:underline underline-offset-8">
           <a
             href="https://docs.koii.network/earning-koii/running-task-nodes"
             rel="noreferrer noopener"
@@ -66,7 +66,7 @@ export const Iceberg = () => {
             Task Nodes
           </a>
         </span>
-        <span className="relative left-[8rem] md:left-[44rem] hover:underline underline-offset-8">
+        <span className="relative left-[8rem] xl:left-[44rem] hover:underline underline-offset-8">
           <a
             href="https://docs.koii.network/build-dapps-with-koii/using-nfts-as-content/create-nfts"
             rel="noreferrer noopener"
@@ -75,7 +75,7 @@ export const Iceberg = () => {
             Drag & Drop NFTs
           </a>
         </span>
-        <span className="relative left-[6rem] md:left-[40rem] hover:underline underline-offset-8">
+        <span className="relative left-[6rem] xl:left-[40rem] hover:underline underline-offset-8">
           <a
             href="https://docs.koii.network/#the-koii-token"
             rel="noreferrer noopener"
@@ -84,7 +84,7 @@ export const Iceberg = () => {
             Proofs of Real Traffic
           </a>
         </span>
-        <span className="relative left-[5rem] md:left-[35rem] hover:underline underline-offset-8">
+        <span className="relative left-[5rem] xl:left-[35rem] hover:underline underline-offset-8">
           <a
             href="https://docs.koii.network/microservices-and-tasks/gradual-consensus"
             rel="noreferrer noopener"
@@ -93,7 +93,7 @@ export const Iceberg = () => {
             Gradual Consensus
           </a>
         </span>
-        <span className="relative left-[3rem] md:left-[27rem] hover:underline underline-offset-8">
+        <span className="relative left-[3rem] xl:left-[27rem] hover:underline underline-offset-8">
           <a
             href="https://discord.gg/koii"
             rel="noreferrer noopener"
