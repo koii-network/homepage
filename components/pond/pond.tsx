@@ -9,7 +9,7 @@ import {
 } from "./linksConfig";
 
 export const Pond = () => (
-  <div className="relative">
+  <div className="relative" id="partners">
     <div className="flex justify-center item-center mb-30">
       <h2 className="text-5xl text-center text-dark-blue leading-[72px]">
         Dive in, the pond is
