@@ -64,7 +64,12 @@ export const partnersSecondtRow = [
   },
 ] as const;
 
-export const bottoIconsFirstRow = [
+export const partnersLinks = [
+  ...partnersFirstRow,
+  ...partnersSecondtRow,
+] as const;
+
+export const bottomIconsFirstRow = [
   {
     name: "Maven",
     iconSrc: "/partner-logos/maven11.svg",
@@ -117,7 +122,7 @@ export const bottoIconsFirstRow = [
   },
 ] as const;
 
-export const bottoIconsSecondRow = [
+export const bottomIconsSecondRow = [
   {
     name: "ZMT",
     iconSrc: "/partner-logos/zmt.svg",
@@ -163,4 +168,9 @@ export const bottoIconsSecondRow = [
     iconSrc: "/partner-logos/iconomy.svg",
     url: "/",
   },
+] as const;
+
+export const partnersBottom = [
+  ...bottomIconsFirstRow,
+  ...bottomIconsSecondRow,
 ] as const;
