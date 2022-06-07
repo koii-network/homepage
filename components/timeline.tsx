@@ -24,10 +24,11 @@ const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
 export const Timeline = () => {
   const isBreakpoint = useMediaQuery(768);
   return (
-    <div className={`${styles.Timeline} pb-20 relative`}>
+    <div className={`${styles.Timeline} pb-20 relative h-[820px]`}>
       {isBreakpoint ? (
-        <div className="flex justify-center items-start pl-[5rem]">
+        <div className="flex justify-center items-start pl-[5rem] h-full">
           <svg
+            className="h-full w-fit"
             width="43"
             height="648"
             viewBox="0 0 43 648"
@@ -45,12 +46,13 @@ export const Timeline = () => {
           </svg>
         </div>
       ) : (
-        <div className="flex justify-center items-start">
+        <div className="px-[17%] h-full">
           <svg
             viewBox="0 0 1006 907"
+            preserveAspectRatio="none"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-[75%]"
+            className="w-full h-full"
           >
             <path
               d="M860.595 656.985C807.726 563.228 699.918 518.834 618.758 498.135C577.006 487.458 533.762 480.123 491.944 473.025C437.805 463.833 381.827 454.303 328.651 437.524C276.765 421.144 152.476 370.792 119.14 257.617C99.9997 192.531 114.425 114.371 162.018 25.3087C166.503 16.9446 170.507 9.93605 175.25 1.62477L173.437 1.24978C168.615 9.68736 164.747 15.8228 160.186 24.3428C112.304 113.878 97.852 192.593 117.16 258.234C150.742 372.36 275.806 423.034 328.015 439.522C381.315 456.35 437.369 465.888 491.567 475.075C533.356 482.175 576.54 489.516 618.214 500.154C698.978 520.768 806.198 564.942 858.753 657.993C877.455 691.182 888.194 728.979 898.556 765.521C902.871 780.749 907.275 796.163 912.291 811.376L913.879 809.492C909.066 794.726 904.793 779.808 900.618 764.973C890.199 728.3 879.449 690.385 860.595 656.985Z"
@@ -64,14 +66,13 @@ export const Timeline = () => {
         </div>
       )}
 
-      <div className="2022list grid absolute text-center grid-cols-1 gap-y-4 md:gap-y-10 2xl:gap-y-16 2xl:left-[4rem] text-base md:text-xl w-fit text-white py-12 z-20 top-0 max-w-[220px]">
-        <div className="list-title text-right relative md:left-[3rem]">
+      <div className="absolute flex flex-col justify-between  md:items-end text-white py-12 z-20 top-0 md:w-full h-[85%]">
+        <div className="relative text-right md:w-fit md:right-[77%]">
           <span className="text-3xl font-semibold text-mint">2022</span>
           <br />
           <span className="text-base">Click for details</span>
         </div>
-
-        <div className="relative text-right md:left-[3rem]">
+        <div className="relative text-right md:w-fit md:right-[78%]">
           <HtmlTooltip
             title={
               <React.Fragment>
@@ -94,8 +95,7 @@ export const Timeline = () => {
           <br />
           <span className="text-mint">Public Beta</span>
         </div>
-
-        <div className="relative text-right md:left-[3rem]">
+        <div className="relative text-right md:w-fit md:right-[77%]">
           <HtmlTooltip
             title={
               <React.Fragment>
@@ -118,7 +118,7 @@ export const Timeline = () => {
           <br />
           <span className="text-mint">For any website</span>
         </div>
-        <div className="relative text-right md:left-[5rem]">
+        <div className="relative text-right md:w-fit md:right-[75%]">
           <HtmlTooltip
             title={
               <React.Fragment>
@@ -140,7 +140,7 @@ export const Timeline = () => {
           </HtmlTooltip>
           <br />
         </div>
-        <div className="relative text-right md:top-[2rem] md:left-[12rem]">
+        <div className="relative text-right md:w-fit md:right-[72%]">
           <HtmlTooltip
             title={
               <React.Fragment>
@@ -161,7 +161,7 @@ export const Timeline = () => {
           </HtmlTooltip>
           <br />
         </div>
-        <div className="relative text-right md:top-[2rem] md:left-[25rem]">
+        <div className="relative text-right md:w-fit md:right-[65%]">
           <HtmlTooltip
             title={
               <React.Fragment>
@@ -182,7 +182,7 @@ export const Timeline = () => {
           <br />
           <span className="text-mint">Public Beta</span>
         </div>
-        <div className="relative text-right md:left-[43rem]">
+        <div className="relative text-right md:w-fit md:right-[39%]">
           <HtmlTooltip
             title={
               <React.Fragment>
@@ -206,7 +206,7 @@ export const Timeline = () => {
             </span>
           </HtmlTooltip>
         </div>
-        <div className="relative text-right md:left-[50rem] 2xl:left-[65rem]">
+        <div className="relative text-right md:w-fit md:right-[32%]">
           <HtmlTooltip
             title={
               <React.Fragment>
@@ -225,12 +225,12 @@ export const Timeline = () => {
             arrow
           >
             <span className="hover:text-koiiorange">
-              Koii-X Template Library Expansion
+              Koii-X Template Library <br /> Expansion
             </span>
           </HtmlTooltip>
           <br />
         </div>
-        <div className="relative text-right md:left-[54rem] 2xl:left-[70rem]">
+        <div className="relative text-right md:w-fit md:right-[29%]">
           <HtmlTooltip
             title={
               <React.Fragment>
@@ -249,7 +249,7 @@ export const Timeline = () => {
           </HtmlTooltip>
           <br />
         </div>
-        <div className="relative text-right md:left-[55rem] 2xl:left-[75rem]">
+        <div className="relative text-right md:w-fit md:right-[27%]">
           <HtmlTooltip
             title={
               <React.Fragment>
