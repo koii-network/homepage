@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 .pond {
-  background-image: url("/pond-bg.svg");
+  background-image: url("/images/pond-bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center, 50%, 50%;
+
+  @media (min-width: 768px) {
+    background-image: url("/images/pond-bg-large.svg");
+  }
 }
 
 .pond__icon:hover {

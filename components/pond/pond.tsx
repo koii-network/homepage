@@ -1,63 +1,82 @@
 import { Button } from "@/components/ui/Button";
-import { IconsRow } from "./components/icon-row";
-import { Iconlink } from "./components/IconLink";
-import {
-  bottoIconsFirstRow,
-  bottoIconsSecondRow,
-  partnersFirstRow,
-  partnersSecondtRow,
-} from "./linksConfig";
+import { Partners } from "./components/partners";
+import { PartnersBottom } from "./components/partnersBottom";
+import { useMediaQuery } from "@/components/hooks";
+import Image from "next/image";
 
-export const Pond = () => (
-  <div className="relative" id="partners">
-    <div className="flex justify-center item-center mb-30">
-      <h2 className="text-5xl text-center text-dark-blue leading-[72px]">
-        Dive in, the pond is
-        <br />
-        filling fast.
-      </h2>
-    </div>
+export const Pond = () => {
+  const isBreakpoint = useMediaQuery(768);
 
-    <div className="pt-[380px] pond">
-      <div className="z-10 flex flex-col items-center justify-center">
-        <IconsRow>
-          {partnersFirstRow.map(({ name, iconSrc, url }) => (
-            <Iconlink url={url} iconSource={iconSrc} key={name} />
-          ))}
-        </IconsRow>
-        <IconsRow>
-          {partnersSecondtRow.map(({ name, iconSrc, url }) => (
-            <Iconlink url={url} iconSource={iconSrc} key={name} />
-          ))}
-        </IconsRow>
+  const lillyHeight = isBreakpoint ? 128 : 320;
+  const lillyWidth = isBreakpoint ? 128 : 320;
+  const boatHeight = isBreakpoint ? 128 : 400;
+  const boatWidth = isBreakpoint ? 128 : 400;
+  return (
+    <div id="partners">
+      <div className="flex justify-center item-center mb-30">
+        <h2 className="text-[28px] mb-8 font-semibold leading-10 md:text-5xl text-center text-dark-blue md:leading-[72px]">
+          Dive in, the pond is
+          <br />
+          filling fast.
+        </h2>
+      </div>
 
-        <div className="flex flex-col items-center mt-4 mb-4">
-          <p className="text-lg font-semibold text-dark-blue">
-            Just kidding...
-          </p>
-          <p className="text-lg font-normal text-dark-blue">
-            There’s room for everyone! Earn more for being early.
-          </p>
+      <div className="relative pond">
+        <div
+          className={
+            isBreakpoint
+              ? `absolute left-[-20px] top-[110px]`
+              : `absolute left-0 top-[380px]`
+          }
+        >
+          <Image
+            src="/images/lilly.svg"
+            width={lillyWidth}
+            height={lillyHeight}
+            alt={"lilly"}
+          />
         </div>
+        <div
+          className={
+            isBreakpoint
+              ? `absolute right-[0px] top-[80px]`
+              : `absolute right-40 top-[190px]`
+          }
+        >
+          <Image
+            src="/images/boat.svg"
+            width={boatWidth}
+            height={boatHeight}
+            alt={"lilly"}
+          />
+        </div>
+        <div className="pt-[120px]  lg:pt-[180px] lg:pb-[80px] xl:pt-[260px] container mx-auto">
+          <div className="z-10 flex flex-col items-center justify-center ">
+            <Partners />
 
-        <Button
-          className="px-6 py-3  bg-white text-dark-blue rounded-[32px] drop-shadow-lg"
-          label="Partner with Koii"
-        />
+            <div className="flex flex-col items-center mt-4 mb-7 ">
+              <p className="text-lg font-semibold text-dark-blue">
+                Just kidding...
+              </p>
+              <p className="flex text-lg font-normal text-center text-dark-blue">
+                There’s room for everyone!
+                <br className="md:hidden" /> Earn more for being early.
+              </p>
+            </div>
 
-        <div className="flex flex-col items-center mt-16 mb-16">
-          <IconsRow>
-            {bottoIconsFirstRow.map(({ name, iconSrc, url }) => (
-              <Iconlink url={url} iconSource={iconSrc} key={name} />
-            ))}
-          </IconsRow>
-          <IconsRow>
-            {bottoIconsSecondRow.map(({ name, iconSrc, url }) => (
-              <Iconlink url={url} iconSource={iconSrc} key={name} />
-            ))}
-          </IconsRow>
+            {/**
+             * @todo: Animate this section so it will pop in from bottom
+             */}
+            <div className="flex flex-col items-center justify-center mt-7 md:mt-0">
+              <Button
+                className="px-6 w-[220px] py-3 mb-10 bg-white text-dark-blue rounded-[32px] drop-shadow-lg"
+                label="Partner with Koii"
+              />
+              <PartnersBottom />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
