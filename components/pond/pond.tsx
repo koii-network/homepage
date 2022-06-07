@@ -3,6 +3,7 @@ import { Partners } from "./components/partners";
 import { PartnersBottom } from "./components/partnersBottom";
 import { useMediaQuery } from "@/components/hooks";
 import Image from "next/image";
+import { HubspotFormLinks } from "config/links-config";
 
 export const Pond = () => {
   const isBreakpoint = useMediaQuery(768);
@@ -68,10 +69,16 @@ export const Pond = () => {
              * @todo: Animate this section so it will pop in from bottom
              */}
             <div className="flex flex-col items-center justify-center mt-7 md:mt-0">
-              <Button
-                className="px-6 w-[220px] py-3 mb-10 bg-white text-dark-blue rounded-[32px] drop-shadow-lg"
-                label="Partner with Koii"
-              />
+              <a
+                href={HubspotFormLinks.PARTNERSHIP}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  className="px-6 w-[220px] py-3 mb-10 bg-white text-dark-blue rounded-[32px] drop-shadow-lg"
+                  label="Partner with Koii"
+                />
+              </a>
               <PartnersBottom />
             </div>
           </div>

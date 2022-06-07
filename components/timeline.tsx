@@ -18,6 +18,7 @@ const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
     borderRadius: theme.typography.pxToRem(20),
     textAlign: "left",
     padding: "0.5rem 2rem",
+    fontFamily: "Sora",
   },
 }));
 
@@ -225,7 +226,7 @@ export const Timeline = () => {
           </HtmlTooltip>
           <br />
         </div>
-        <div className="relative text-right md:w-fit md:right-[65%]">
+        <div className="relative text-right md:w-fit md:right-[62%]">
           <HtmlTooltip
             title={
               <React.Fragment>
@@ -264,7 +265,7 @@ export const Timeline = () => {
           <br />
           <span className="text-mint">Public Beta</span>
         </div>
-        <div className="relative text-right md:w-fit md:right-[39%]">
+        <div className="relative text-right md:w-fit md:right-[43%] md:bottom-[2%]">
           <HtmlTooltip
             title={
               <React.Fragment>
