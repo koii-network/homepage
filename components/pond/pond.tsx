@@ -12,7 +12,7 @@ export const Pond = () => {
   const boatHeight = isBreakpoint ? 128 : 400;
   const boatWidth = isBreakpoint ? 128 : 400;
   return (
-    <div>
+    <div id="partners">
       <div className="flex justify-center item-center mb-30">
         <h2 className="text-[28px] mb-8 font-semibold leading-10 md:text-5xl text-center text-dark-blue md:leading-[72px]">
           Dive in, the pond is
