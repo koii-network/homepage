@@ -9,7 +9,7 @@ export const SubscribeBar = () => {
   };
 
   return (
-    <div className="bg-koiiblue h-[100px] md:h-[54px] flex items-center">
+    <div className="bg-koiiblue h-[100px] md:h-[54px] flex items-center fixed bottom-0 left-0 right-0">
       {stage === "edit" ? (
         <div className="md:max-w-[1060px] w-[100%]  md:mx-auto px-8 flex justify-center items-center flex-col md:flex-row">
           <div className="flex justify-center items-center flex-row">

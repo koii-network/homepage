@@ -11,7 +11,7 @@ import { Policy } from "./policy";
 
 export const Footer = () => {
   return (
-    <footer className=" bg-gradient-to-b from-titanium-white to-turquoise-light app-footer">
+    <footer className=" bg-gradient-to-b from-titanium-white to-turquoise-light app-footer pb-[100px] md:pb-[54px]">
       <div className="container md:mx-auto md:pt-12">
         <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-dark-blue text-[30px] pb-6">
           <Image
