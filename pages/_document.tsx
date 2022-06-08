@@ -8,6 +8,14 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <title>Koii Network</title>
+          <meta
+            name="og:description"
+            content="Koii was founded on fairness, trust, and one immense objective: to give creators a space where they permanently own and earn the value they deserve from their content."
+          />
+          <meta name="og:url" content="https://koii.network/" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta property="og:image" content="/static/thumbnail.png" />
+          <meta name="twitter:image" content="/static/thumbnail.png" />
           <link rel="shortcut icon" href="/static/KoiiNetwork-logo_64.svg" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
