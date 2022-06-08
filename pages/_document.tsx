@@ -14,7 +14,7 @@ class MyDocument extends Document {
           />
           <meta name="og:url" content="https://koii.network/" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@KoiiNetwork"/>
+          <meta name="twitter:site" content="@KoiiNetwork" />
           <meta name="twitter:title" content="Koii Network" />
           <meta
             name="twitter:description"
