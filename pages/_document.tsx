@@ -16,7 +16,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:image"
-            content="https://koii.network/static/thumbnail.png"
+            content="https://www.koii.network/static/thumbnail.png"
           />
           <meta name="twitter:title" content="Koii Network" />
           <meta
