@@ -1,5 +1,6 @@
 import Layout from "@/components/layout";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import Script from "next/script";
 import "styles/globals.css";
 import "styles/styles.css";
@@ -7,6 +8,9 @@ import "styles/styles.css";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <title>Koii Network</title>
+      </Head>
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-GRG9CP511Z"
