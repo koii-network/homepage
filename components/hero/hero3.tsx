@@ -58,7 +58,7 @@ const Heroslide3 = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 justify-items-center px-4 md:px-[28rem] mb-10 relative md:bottom-[-120px]">
+      <div className="flex place-content-around px-4 md:px-[28rem] mb-10 relative md:bottom-[-120px]">
         <IconButton name="twitter" fill="#8585BC" px="40" />
         <IconButton name="discord" fill="#8585BC" px="40" />
         <IconButton name="telegram" fill="#8585BC" px="40" />
