@@ -1,9 +1,17 @@
+import { useEffect, useState } from "react";
+import { isMobile as rddIsMobile } from "react-device-detect";
+import Image from "next/image";
 import styles from "/styles/home.module.css";
 import icebergbot from "public/images/icebergbot.svg";
 import fishstream from "/public/images/fish-stream_desktop.svg";
-import Image from "next/image";
 
 export const Iceberg = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(rddIsMobile);
+  }, []);
+
   return (
     <div className={`${styles.Iceberg} md:h-[1515px]`} id="iceberg">
       <div className="mix-blend-hard-light Icebergtop absolute top-0 md:top-0 right-[-5rem] md:right-0 w-[339px] md:w-[535px] h-[395px] md:h-[617px]">
@@ -19,7 +27,9 @@ export const Iceberg = () => {
         <div className="list-title text-left md:text-right relative left-[2rem] xl:left-[30rem]">
           <span className="text-xl md:text-3xl font-semibold">2021</span>
           <br />
-          <span className="text-base">Click for details</span>
+          <span className="text-base">
+            {isMobile ? "Tap" : "Click"} for details
+          </span>
         </div>
         <span className="relative left-[3rem] xl:left-[35rem] hover:underline underline-offset-8">
           <a
