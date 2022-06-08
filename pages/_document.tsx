@@ -7,6 +7,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>Koii Network</title>
+          <link rel="shortcut icon" href="/static/KoiiNetwork-logo_64.svg" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
