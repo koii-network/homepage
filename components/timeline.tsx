@@ -79,7 +79,7 @@ export const Timeline = () => {
               <React.Fragment>
                 <div>
                   The new settlement layer where transactions are fast but
-                  consensus is slow.{" "}
+                  consensus is slow. <br />
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -118,7 +118,7 @@ export const Timeline = () => {
               <React.Fragment>
                 <div>
                   Attention Tracking - Get rewarded for every view by embedded 3
-                  lines of code into the header of your site.
+                  lines of code into the header of your site. <br />
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -157,7 +157,7 @@ export const Timeline = () => {
               <React.Fragment>
                 <div>
                   Take a photo or video and store it for free, right from your
-                  phone!
+                  phone! <br />
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -194,7 +194,8 @@ export const Timeline = () => {
             title={
               <React.Fragment>
                 <div>
-                  Media-driven, community-owned collectives that reward members.
+                  Media-driven, community-owned collectives that reward members.{" "}
+                  <br />
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -232,7 +233,7 @@ export const Timeline = () => {
               <React.Fragment>
                 <div>
                   1. Ask our network to accomplish any micro-service 2. Rent out
-                  your unused RAM and get paid.
+                  your unused RAM and get paid. <br />
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -272,7 +273,7 @@ export const Timeline = () => {
                 <div>
                   The Finnie wallet compatibility is increasing every day, so
                   you can keep all your assets in one place (but behind multiple
-                  keys).
+                  keys). <br />
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -309,7 +310,7 @@ export const Timeline = () => {
               <React.Fragment>
                 <div>
                   App templates, written 100% in JavaScript and easy to deploy
-                  to decentralized storage.{" "}
+                  to decentralized storage. <br />
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -351,7 +352,7 @@ export const Timeline = () => {
             title={
               <React.Fragment>
                 <div>
-                  Fully audited and ready to go!
+                  Fully audited and ready to go! <br />
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -390,7 +391,7 @@ export const Timeline = () => {
             title={
               <React.Fragment>
                 <div>
-                  Get tokens to use or run the network.
+                  Get tokens to use or run the network. <br />
                   <u>
                     <a
                       rel="noreferrer noopener"
