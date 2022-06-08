@@ -132,15 +132,14 @@ export const Iceberg = () => {
       </svg>
       <div className="fishstream relative w-[1300px] h-[500px] md:right-0 md:top-[-10rem] z-10 ml-[-57rem] md:ml-14">
         <Image
-          className=""
           src={fishstream}
           alt="fishstream"
           layout="fill"
           objectFit="cover"
         />
       </div>
-      <div className="flex flex-row-reverse mt-[-9rem] pb-[6rem] pr-[2rem] md:pb-0 md:mt-[-14rem] md:pr-[12rem]">
-        <div className="text-lightmint w-[300px] md:w-[560px] text-xl text-right">
+      <div className="flex justify-end mt-[-9rem] pb-[6rem] pr-[2rem] md:pb-0 md:mt-[-14rem] md:pr-[12rem]">
+        <div className="text-lightmint w-[300px] md:w-[560px] text-xl text-right z-10">
           We collected all the benefits of blockchain & decentralized storage to
           make web3 easy for everyone.
         </div>
