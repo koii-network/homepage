@@ -9,17 +9,17 @@ export const SubscribeBar = () => {
   };
 
   return (
-    <div className="bg-koiiblue h-[100px] md:h-[54px] flex items-center fixed bottom-0 left-0 right-0">
+    <div className="bg-koiiblue h-[100px] md:h-[54px] flex items-center fixed bottom-0 left-0 right-0 z-50">
       {stage === "edit" ? (
         <div className="md:max-w-[1060px] w-[100%]  md:mx-auto px-8 flex justify-center items-center flex-col md:flex-row">
-          <div className="flex justify-center items-center flex-row">
+          <div className="flex flex-row items-center justify-center">
             <div className={"pr-4"}>
-              <h3 className=" uppercase text-mint text-sm md:text-base">
+              <h3 className="text-sm uppercase  text-mint md:text-base">
                 STAY IN THE KNOW!
               </h3>
             </div>
             <div className={"pr-9"}>
-              <span className="text-white text-sm md:text-base">
+              <span className="text-sm text-white md:text-base">
                 Get In The Node:
               </span>
             </div>
@@ -42,7 +42,7 @@ export const SubscribeBar = () => {
         </div>
       ) : (
         <div className="md:max-w-[1060px] md:mx-auto py-4 px-8 flex justify-center items-center">
-          <h3 className="uppercase text-koiiorange uppercase">
+          <h3 className="uppercase text-koiiorange">
             you&apos;re on the list!
           </h3>
         </div>
