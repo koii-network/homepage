@@ -1,12 +1,13 @@
-import * as React from "react";
-import styles from "/styles/home.module.css";
-import { useMediaQuery } from "@/components/hooks/mediaQuery";
+import { useEffect, useState, Fragment } from "react";
+import { isMobile as rddIsMobile } from "react-device-detect";
 import { styled } from "@mui/material/styles";
 import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
+import styles from "/styles/home.module.css";
+import { useMediaQuery } from "@/components/hooks/mediaQuery";
 import { HubspotFormLinks } from "config/links-config";
 
 const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
-  <Tooltip {...props} classes={{ popper: className }} />
+  <Tooltip {...props} classes={{ popper: className }} enterTouchDelay={0} />
 ))(({ theme }) => ({
   [`& .${tooltipClasses.tooltip}`]: {
     backgroundColor: "rgba(190, 240, 237, 0.85)",
@@ -23,6 +24,12 @@ const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
 }));
 
 export const Timeline = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(rddIsMobile);
+  }, []);
+
   const isBreakpoint = useMediaQuery(768);
   return (
     <div className={`${styles.Timeline} pb-20 relative h-[820px]`}>
@@ -71,15 +78,17 @@ export const Timeline = () => {
         <div className="relative text-right md:w-fit md:right-[77%]">
           <span className="text-3xl font-semibold text-mint">2022</span>
           <br />
-          <span className="text-base">Click for details</span>
+          <span className="text-base">
+            {isMobile ? "Tap" : "Click"} for details
+          </span>
         </div>
         <div className="relative text-right md:w-fit md:right-[78%]">
           <HtmlTooltip
             title={
-              <React.Fragment>
+              <Fragment>
                 <div>
                   The new settlement layer where transactions are fast but
-                  consensus is slow.{" "}
+                  consensus is slow.
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -90,7 +99,7 @@ export const Timeline = () => {
                     </a>
                   </u>
                 </div>
-              </React.Fragment>
+              </Fragment>
             }
             placement="right-start"
             arrow
@@ -115,7 +124,7 @@ export const Timeline = () => {
         <div className="relative text-right md:w-fit md:right-[77%]">
           <HtmlTooltip
             title={
-              <React.Fragment>
+              <Fragment>
                 <div>
                   Attention Tracking - Get rewarded for every view by embedded 3
                   lines of code into the header of your site.
@@ -129,7 +138,7 @@ export const Timeline = () => {
                     </a>
                   </u>
                 </div>
-              </React.Fragment>
+              </Fragment>
             }
             placement="right-start"
             arrow
@@ -154,7 +163,7 @@ export const Timeline = () => {
         <div className="relative text-right md:w-fit md:right-[75%]">
           <HtmlTooltip
             title={
-              <React.Fragment>
+              <Fragment>
                 <div>
                   Take a photo or video and store it for free, right from your
                   phone!
@@ -168,7 +177,7 @@ export const Timeline = () => {
                     </a>
                   </u>
                 </div>
-              </React.Fragment>
+              </Fragment>
             }
             placement="right-start"
             arrow
@@ -192,7 +201,7 @@ export const Timeline = () => {
         <div className="relative text-right md:w-fit md:right-[72%]">
           <HtmlTooltip
             title={
-              <React.Fragment>
+              <Fragment>
                 <div>
                   Media-driven, community-owned collectives that reward members.
                   <u>
@@ -205,7 +214,7 @@ export const Timeline = () => {
                     </a>
                   </u>
                 </div>
-              </React.Fragment>
+              </Fragment>
             }
             placement="right-start"
             arrow
@@ -229,7 +238,7 @@ export const Timeline = () => {
         <div className="relative text-right md:w-fit md:right-[62%]">
           <HtmlTooltip
             title={
-              <React.Fragment>
+              <Fragment>
                 <div>
                   1. Ask our network to accomplish any micro-service 2. Rent out
                   your unused RAM and get paid.
@@ -243,7 +252,7 @@ export const Timeline = () => {
                     </a>
                   </u>
                 </div>
-              </React.Fragment>
+              </Fragment>
             }
             placement="right-start"
             arrow
@@ -268,7 +277,7 @@ export const Timeline = () => {
         <div className="relative text-right md:w-fit md:right-[43%] md:bottom-[2%]">
           <HtmlTooltip
             title={
-              <React.Fragment>
+              <Fragment>
                 <div>
                   The Finnie wallet compatibility is increasing every day, so
                   you can keep all your assets in one place (but behind multiple
@@ -283,7 +292,7 @@ export const Timeline = () => {
                     </a>
                   </u>
                 </div>
-              </React.Fragment>
+              </Fragment>
             }
             placement="right-start"
             arrow
@@ -306,10 +315,10 @@ export const Timeline = () => {
         <div className="relative text-right md:w-fit md:right-[32%]">
           <HtmlTooltip
             title={
-              <React.Fragment>
+              <Fragment>
                 <div>
                   App templates, written 100% in JavaScript and easy to deploy
-                  to decentralized storage.{" "}
+                  to decentralized storage.
                   <u>
                     <a
                       rel="noreferrer noopener"
@@ -320,7 +329,7 @@ export const Timeline = () => {
                     </a>
                   </u>
                 </div>
-              </React.Fragment>
+              </Fragment>
             }
             placement="right-start"
             arrow
@@ -333,13 +342,11 @@ export const Timeline = () => {
                 target="_blank"
                 href="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x"
               >
-                {" "}
                 Koii-X Template Library <br />
                 Expansion
               </a>
             ) : (
               <a className="hover:text-koiiorange">
-                {" "}
                 Koii-X Template Library Expansion
               </a>
             )}
@@ -349,7 +356,7 @@ export const Timeline = () => {
         <div className="relative text-right md:w-fit md:right-[29%]">
           <HtmlTooltip
             title={
-              <React.Fragment>
+              <Fragment>
                 <div>
                   Fully audited and ready to go!
                   <u>
@@ -358,12 +365,11 @@ export const Timeline = () => {
                       target="_blank"
                       href={HubspotFormLinks.NEWSLETTER}
                     >
-                      {" "}
                       Get notified
                     </a>
                   </u>
                 </div>
-              </React.Fragment>
+              </Fragment>
             }
             placement="right-start"
             arrow
@@ -376,7 +382,6 @@ export const Timeline = () => {
                 target="_blank"
                 href={HubspotFormLinks.NEWSLETTER}
               >
-                {" "}
                 Public Mainnet
               </a>
             ) : (
@@ -388,7 +393,7 @@ export const Timeline = () => {
         <div className="relative text-right md:w-fit md:right-[27%]">
           <HtmlTooltip
             title={
-              <React.Fragment>
+              <Fragment>
                 <div>
                   Get tokens to use or run the network.
                   <u>
@@ -401,7 +406,7 @@ export const Timeline = () => {
                     </a>
                   </u>
                 </div>
-              </React.Fragment>
+              </Fragment>
             }
             placement="right-start"
             arrow
