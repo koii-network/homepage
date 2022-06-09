@@ -1,35 +1,27 @@
 import { Button } from "@/components/ui/Button";
 import { IconButton } from "@/components/ui/Button";
-import { useMediaQuery } from "@/components/hooks";
+import { useMediaQuery, useTyped } from "@/components/hooks";
 import styles from "/styles/home.module.css";
-import Typed from "typed.js";
-import React, { useEffect } from "react";
 
-const Heroslide3 = () => {
-  const el = React.useRef(null);
-  const typed = React.useRef<Typed | null>(null);
-  useEffect(() => {
-    const options = {
-      strings: [
-        "your community.",
-        "epic NFTs.",
-        "better apps.",
-        "a universe.",
-        "the future.",
-      ],
-      typeSpeed: 100,
-      backSpeed: 50,
-      showCursor: true,
-    };
-    if (el.current != null) {
-      typed.current = new Typed(el.current, options);
-      return () => {
-        if (typed && typed.current) {
-          typed.current.destroy();
-        }
-      };
-    }
-  }, []);
+const Heroslide3 = ({
+  onTypingComplete,
+  activateTyping,
+}: {
+  activateTyping: boolean;
+  onTypingComplete(): void;
+}) => {
+  const { wrapperElementRef } = useTyped(
+    [
+      "your community.",
+      "epic NFTs.",
+      "better apps.",
+      "a universe.",
+      "the future.",
+    ],
+    onTypingComplete,
+    activateTyping
+  );
+
   const isBreakpoint = useMediaQuery(768);
   return (
     <div className={styles.hero3}>
@@ -37,7 +29,7 @@ const Heroslide3 = () => {
         <div className="text-3xl font-light md:text-6xl title">
           <div className="pb-4 border-b-4 w-[72%] pl-4 border-mint">
             <div className="pb-8">Start building</div>
-            <p className="inline font-semibold" ref={el} />
+            <p className="inline font-semibold" ref={wrapperElementRef} />
           </div>
         </div>
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
