@@ -1,31 +1,23 @@
 import { Button } from "@/components/ui/Button";
 import { IconButton } from "@/components/ui/Button";
-import { useMediaQuery } from "@/components/hooks";
+import { useMediaQuery, useTyped } from "@/components/hooks";
 import styles from "/styles/home.module.css";
-import Typed from "typed.js";
-import React, { useEffect } from "react";
 
-const Heroslide1 = () => {
-  const el = React.useRef(null);
-  const typed = React.useRef<Typed | null>(null);
+const Heroslide1 = ({
+  onTypingComplete,
+  activateTyping,
+}: {
+  activateTyping: boolean;
+  onTypingComplete(): void;
+}) => {
+  const { wrapperElementRef } = useTyped(
+    ["access.", "ownership.", "privacy.", "identity.", "freedom."],
+    onTypingComplete,
+    activateTyping
+  );
 
-  useEffect(() => {
-    const options = {
-      strings: ["access.", "ownership.", "privacy.", "identity.", "freedom."],
-      typeSpeed: 100,
-      backSpeed: 50,
-      showCursor: true,
-    };
-    if (el.current != null) {
-      typed.current = new Typed(el.current, options);
-      return () => {
-        if (typed && typed.current) {
-          typed.current.destroy();
-        }
-      };
-    }
-  }, []);
   const isBreakpoint = useMediaQuery(768);
+
   return (
     <div className={styles.hero1}>
       <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
@@ -33,7 +25,7 @@ const Heroslide1 = () => {
           <div className="pb-8">Reclaim</div>
           <p
             className="font-semibold inline underline underline-offset-[20px] decoration-mint"
-            ref={el}
+            ref={wrapperElementRef}
           />
         </div>
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
