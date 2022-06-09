@@ -3,12 +3,9 @@ import { HubspotFormLinks } from "config/links-config";
 
 export const WaysToEarn = () => {
   return (
-    <section
-      className="container md:mt-32 max-w-[1140px] md:mx-auto z-40"
-      id="ways-to-earn"
-    >
+    <section className="container z-40 mx-auto md:mt-32" id="ways-to-earn">
       <div className="flex flex-col justify-center lg:flex-row md: md:justify-between md:flex-nowrap">
-        <div className="waytitle flex flex-col items-center mb-16 lg:items-start lg:ml-[-5rem]">
+        <div className="gap-8 mb-16 text-center lg:text-left">
           <h2 className="text-[28px] md:text-4xl leading-[48px] pt-28 text-dark-blue">
             So many ways to earn
           </h2>

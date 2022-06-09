@@ -7,8 +7,8 @@ import { HubspotFormLinks } from "config/links-config";
 export const GrantProgram = () => {
   const isBreakpoint = useMediaQuery(768);
   return (
-    <section className="grant-program h-[920px] md:h-[696px]">
-      <div className="flex flex-row max-w-[1140px] md:mx-auto justify-between">
+    <section className="grant-program h-[920px] md:h-[696px] ">
+      <div className="container flex flex-row justify-between mx-auto">
         <div className="flex flex-col items-center justify-center md:items-start">
           <div className="mb-20">
             {isBreakpoint ? (

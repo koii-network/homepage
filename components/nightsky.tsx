@@ -6,7 +6,10 @@ import birds from "/public/images/birds.svg";
 
 export const NightSky = () => {
   return (
-    <div className={`${styles.nightsky} h-[900px] md:h-[1000px]`} id="nightsky">
+    <div
+      className={`${styles.nightsky}  h-[900px] md:h-[1000px]`}
+      id="nightsky"
+    >
       <div className="moon absolute top-[6rem] md:top-0 w-[180px] md:w-[450px] h-[270px] md:h-[500px]">
         <Image
           className="!ml-[-3rem]"
@@ -25,8 +28,8 @@ export const NightSky = () => {
           objectFit="cover"
         />
       </div>
-      <div className="px-10 md:px-24 py-12 md:py-28 text-right text-white">
-        <div className="text-2xl md:text-5xl font-semibold md:max-w-2xl inline-block">
+      <div className="px-10 py-12 text-right text-white md:px-24 md:py-28">
+        <div className="inline-block text-2xl font-semibold md:text-5xl md:max-w-2xl">
           Take back control of your online life.
         </div>
         <div className="text-lg md:text-4xl mt-[15rem] md:mt-11 font-semibold text-center md:text-right">
@@ -60,7 +63,7 @@ export const NightSky = () => {
       </div>
       <div className="Icebergtop absolute top-[674px] md:top-[622px] right-[-5rem] md:right-0 w-[347px] md:w-[562px] h-[630px] md:h-[1035px]">
         <Image
-          className=" "
+          className=""
           src={iceberg}
           alt="icebergtop"
           layout="fill"

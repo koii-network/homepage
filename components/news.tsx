@@ -5,15 +5,13 @@ import ethdenver from "/public/images/logos/ethdenver.svg";
 
 export const News = () => {
   return (
-    <div className="text-koiiblue py-16 2xl:px-16">
-      <h2 className="text-center md:text-left md:pl-36 pt-2 text-5xl">
-        In the News
-      </h2>
-      <p className="text-center md:text-left md:pl-36 pt-10 md:pt-2 text-xs">
+    <div className="container z-40 py-16 mx-auto text-koiiblue 2xl:px-16">
+      <h2 className="pt-2 text-5xl text-center md:text-left">In the News</h2>
+      <p className="pt-10 text-xs text-center md:text-left md:pt-2">
         Catch Up on all the Latest
       </p>
 
-      <div className="grid lg:grid-cols-3 gap-16 flex justify-items-center justify-center px-12">
+      <div className="flex flex-wrap">
         <Newsblock
           cover="/images/news2.png"
           title="Growing Attention Economy"

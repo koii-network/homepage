@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/Button";
-import { IconButton } from "@/components/ui/Button";
 import { useMediaQuery } from "@/components/hooks";
 import styles from "/styles/home.module.css";
 import Typed from "typed.js";
 import React, { useEffect } from "react";
+import { SocialIcons } from "./SocialIcons";
 
 const Heroslide3 = () => {
   const el = React.useRef(null);
@@ -33,7 +33,7 @@ const Heroslide3 = () => {
   const isBreakpoint = useMediaQuery(768);
   return (
     <div className={styles.hero3}>
-      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
+      <div className="container grid gap-6 px-10 mx-auto md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="text-3xl font-light md:text-6xl title">
           <div className="pb-8">Start building</div>
           <p
@@ -44,7 +44,7 @@ const Heroslide3 = () => {
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
           Building scalable web3 apps shouldn’t be hard.
           <p className="mt-3.5">So we make it easy. </p>
-          <div className="link pt-14 text-center md:text-left">
+          <div className="text-center link pt-14 md:text-left">
             <a
               rel="noreferrer noopener"
               href="https://docs.koii.network/"
@@ -58,12 +58,7 @@ const Heroslide3 = () => {
           </div>
         </div>
       </div>
-      <div className="flex place-content-around px-4 md:px-[28rem] mb-10 relative md:bottom-[-120px]">
-        <IconButton name="twitter" fill="#8585BC" px="40" />
-        <IconButton name="discord" fill="#8585BC" px="40" />
-        <IconButton name="telegram" fill="#8585BC" px="40" />
-        <IconButton name="github" fill="#8585BC" px="40" />
-      </div>
+      <SocialIcons />
       {isBreakpoint ? (
         <svg
           className="relative top-[1px]"
