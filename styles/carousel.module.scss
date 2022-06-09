@@ -1,35 +1,36 @@
 .dot {
-:global(.carousel .control-dots .dot) {
-    background-color: #5ED9D1;
+  :global(.carousel .control-dots .dot) {
+    background-color: #5ed9d1;
     border-radius: 0%;
     width: 80px;
     height: 5px;
-    }
+    box-shadow: none;
+  }
 }
 
 .selectdot {
-:global(.carousel .control-dots .selected) {
-    background-color: #FFA54B;
-    }
+  :global(.carousel .control-dots .selected) {
+    background-color: #ffa54b;
+  }
 }
 
 .controldot {
-:global(.carousel .control-dots) {
+  :global(.carousel .control-dots) {
     margin: 17rem 0;
     @media (min-width: 468px) {
-        margin: 0;
-        bottom: 6rem;
+      margin: 0;
+      bottom: 6rem;
     }
     @media (min-width: 768px) {
-        margin: 0;
-        bottom: 4rem;
+      margin: 0;
+      bottom: 4rem;
     }
-}
+  }
 }
 
 .slide {
-:global(.carousel .slide) {
+  :global(.carousel .slide) {
     text-align: inherit;
-    background: linear-gradient(140.29deg, #97E8E3 21.63%, #FFFFFF 72.72%);
-}
+    background: linear-gradient(140.29deg, #97e8e3 21.63%, #ffffff 72.72%);
+  }
 }
