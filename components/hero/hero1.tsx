@@ -2,29 +2,53 @@ import { Button } from "@/components/ui/Button";
 import { IconButton } from "@/components/ui/Button";
 import { useMediaQuery } from "@/components/hooks";
 import styles from "/styles/home.module.css";
-import Typed from "typed.js";
+import Typed, { TypedOptions } from "typed.js";
 import React, { useEffect } from "react";
 
-const Heroslide1 = () => {
+const Heroslide1 = ({
+  onTypingComplete,
+  activateTyping,
+}: {
+  activateTyping: boolean;
+  onTypingComplete(): void;
+}) => {
   const el = React.useRef(null);
   const typed = React.useRef<Typed | null>(null);
 
   useEffect(() => {
-    const options = {
-      strings: ["access.", "ownership.", "privacy.", "identity.", "freedom."],
+    const dict = ["access.", "ownership.", "privacy.", "identity.", "freedom."];
+    const options: TypedOptions = {
+      strings: dict,
       typeSpeed: 100,
       backSpeed: 50,
+      startDelay: 500,
       showCursor: true,
+      loop: true,
+      onComplete: onTypingComplete,
+      onStringTyped: (index, typed) => {
+        if (index === dict.length - 1) {
+          typed.stop();
+        }
+      },
     };
     if (el.current != null) {
       typed.current = new Typed(el.current, options);
       return () => {
-        if (typed && typed.current) {
+        if (typed?.current) {
           typed.current.destroy();
         }
       };
     }
   }, []);
+
+  useEffect(() => {
+    if (activateTyping) {
+      typed.current?.start();
+    } else {
+      typed.current?.stop();
+    }
+  }, [activateTyping]);
+
   const isBreakpoint = useMediaQuery(768);
   return (
     <div className={styles.hero1}>
