@@ -33,18 +33,17 @@ const Heroslide3 = () => {
   const isBreakpoint = useMediaQuery(768);
   return (
     <div className={styles.hero3}>
-      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
+      <div className="grid gap-6 px-10 md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="text-3xl font-light md:text-6xl title">
-          <div className="pb-8">Start building</div>
-          <p
-            className="font-semibold inline underline underline-offset-[20px] decoration-mint"
-            ref={el}
-          />
+          <div className="pb-4 border-b-4 w-[72%] pl-4 border-mint">
+            <div className="pb-8">Start building</div>
+            <p className="inline font-semibold" ref={el} />
+          </div>
         </div>
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
           Building scalable web3 apps shouldn’t be hard.
           <p className="mt-3.5">So we make it easy. </p>
-          <div className="link pt-14 text-center md:text-left">
+          <div className="text-center link pt-14 md:text-left">
             <a
               rel="noreferrer noopener"
               href="https://docs.koii.network/"
