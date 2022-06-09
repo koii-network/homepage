@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { IconButton } from "@/components/ui/Button";
-import { useMediaQuery } from "@/components/hooks";
-import Typed, { TypedOptions } from "typed.js";
-import React, { useEffect } from "react";
+import { useMediaQuery, useTyped } from "@/components/hooks";
 
 const Heroslide2 = ({
   onTypingComplete,
@@ -11,44 +9,14 @@ const Heroslide2 = ({
   activateTyping: boolean;
   onTypingComplete(): void;
 }) => {
-  const el = React.useRef(null);
-  const typed = React.useRef<Typed | null>(null);
-
-  useEffect(() => {
-    const dict = ["view.", "user.", "follow.", "critique.", "like."];
-    const options: TypedOptions = {
-      strings: dict,
-      typeSpeed: 100,
-      backSpeed: 50,
-      startDelay: 500,
-      showCursor: true,
-      loop: true,
-      onComplete: onTypingComplete,
-      onStringTyped: (index, typed) => {
-        if (index === dict.length - 1) {
-          typed.stop();
-        }
-      },
-    };
-    if (el.current != null) {
-      typed.current = new Typed(el.current, options);
-      return () => {
-        if (typed && typed.current) {
-          typed.current.destroy();
-        }
-      };
-    }
-  }, []);
-
-  useEffect(() => {
-    if (activateTyping) {
-      typed.current?.start();
-    } else {
-      typed.current?.stop();
-    }
-  }, [activateTyping]);
+  const { wrapperElementRef } = useTyped(
+    ["view.", "user.", "follow.", "critique.", "like."],
+    onTypingComplete,
+    activateTyping
+  );
 
   const isBreakpoint = useMediaQuery(768);
+
   return (
     <div className="text-koiiblue">
       <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
@@ -56,7 +24,7 @@ const Heroslide2 = ({
           <div className="pb-8">Earn for every</div>
           <p
             className="font-semibold inline underline underline-offset-[20px] decoration-mint"
-            ref={el}
+            ref={wrapperElementRef}
           />
         </div>
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">

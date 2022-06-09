@@ -8,7 +8,9 @@ import { useRef, useState } from "react";
 
 const Hero = () => {
   const [autoPlay, setAutoPLay] = useState(false);
+  const [currentCarouselItem, setCurrentCarouselItem] = useState(0);
   const currentCarouselItemRef = useRef(0);
+
   const onTypingCompleteFun = (index: number) => () => {
     if (currentCarouselItemRef.current === index) {
       setAutoPLay(true);
@@ -18,7 +20,7 @@ const Hero = () => {
   const onItemChange = (index: number) => {
     setAutoPLay(false);
     currentCarouselItemRef.current = index;
-    console.log(currentCarouselItemRef.current);
+    setCurrentCarouselItem(index);
   };
 
   return (
@@ -41,19 +43,19 @@ const Hero = () => {
         <div>
           <Heroslide1
             onTypingComplete={onTypingCompleteFun(0)}
-            activateTyping={currentCarouselItemRef.current === 0}
+            activateTyping={currentCarouselItem === 0}
           />
         </div>
         <div>
           <Heroslide2
             onTypingComplete={onTypingCompleteFun(1)}
-            activateTyping={currentCarouselItemRef.current === 1}
+            activateTyping={currentCarouselItem === 1}
           />
         </div>
         <div>
           <Heroslide3
             onTypingComplete={onTypingCompleteFun(2)}
-            activateTyping={currentCarouselItemRef.current === 2}
+            activateTyping={currentCarouselItem === 2}
           />
         </div>
       </Carousel>
