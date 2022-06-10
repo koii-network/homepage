@@ -71,14 +71,14 @@ const Heroslide3 = ({
           <defs>
             <linearGradient
               id="paint0_linear_2108_3388"
-              x1="42.9779"
-              y1="114.517"
-              x2="154.253"
-              y2="7.0844"
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="0"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#171751" />
-              <stop offset="1" stopColor="#24295D" />
+              <stop stopColor="#171753" />
+              <stop offset="100%" stopColor="#171753" />
             </linearGradient>
           </defs>
         </svg>

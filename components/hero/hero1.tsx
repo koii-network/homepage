@@ -69,7 +69,7 @@ const Heroslide1 = ({
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#171751" />
-              <stop offset="1" stopColor="#24295D" />
+              <stop offset="0" stopColor="#24295D" />
             </linearGradient>
           </defs>
         </svg>
