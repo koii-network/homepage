@@ -16,7 +16,7 @@ export const NightSky = () => {
           objectFit="cover"
         />
       </div>
-      <div className="birds absolute top-[240px] md:bottom-0 md:top-[unset] left-[3rem] md:left-[16rem] w-[300px] h-[495px] md:h-[750px]">
+      <div className="birds absolute top-[240px] md:bottom-0 md:top-[unset] left-[3rem] md:left-[18rem] w-[300px] h-[495px] md:h-[750px]">
         <Image
           className=""
           src={birds}
@@ -25,8 +25,8 @@ export const NightSky = () => {
           objectFit="cover"
         />
       </div>
-      <div className="px-10 md:px-24 py-12 md:py-28 text-right text-white">
-        <div className="text-2xl md:text-5xl font-semibold md:max-w-2xl inline-block">
+      <div className="px-10 py-12 text-right text-white md:px-24 md:py-28">
+        <div className="inline-block text-2xl font-semibold md:text-5xl md:max-w-2xl">
           Take back control of your online life.
         </div>
         <div className="text-lg md:text-4xl mt-[15rem] md:mt-11 font-semibold text-center md:text-right">
@@ -40,7 +40,7 @@ export const NightSky = () => {
         <span className="animate-[creativity_6000ms_ease_infinite;] relative bottom-[10rem] md:left-[5rem] left-[13rem] md:top-[4rem] opacity-40">
           Creativity
         </span>
-        <span className="animate-[content_6000ms_ease_infinite;] relative right-[5rem] md:right-[30rem] bottom-[1rem] md:top-4[rem] opacity-20">
+        <span className="animate-[content_6000ms_ease_infinite;] relative right-[5rem] md:right-[30rem] bottom-[1rem] md:top-[4rem] opacity-20">
           Content
         </span>
         <span className="animate-[rewards_6000ms_ease_infinite;] relative top-[5rem] md:top-[11rem] md:right-[31rem] opacity-80">
@@ -60,7 +60,7 @@ export const NightSky = () => {
       </div>
       <div className="Icebergtop absolute top-[674px] md:top-[622px] right-[-5rem] md:right-0 w-[347px] md:w-[562px] h-[630px] md:h-[1035px]">
         <Image
-          className=" "
+          className=""
           src={iceberg}
           alt="icebergtop"
           layout="fill"
