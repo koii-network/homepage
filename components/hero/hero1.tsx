@@ -22,11 +22,10 @@ const Heroslide1 = ({
     <div className={styles.hero1}>
       <div className="grid gap-6 px-10 md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="text-3xl font-light md:text-6xl title">
-          <div className="pb-8">Reclaim</div>
-          <p
-            className="font-semibold inline underline underline-offset-[20px] decoration-mint"
-            ref={wrapperElementRef}
-          />
+          <div className="pb-4 border-b-4 w-[363px] pl-4 border-mint">
+            <div className="pb-8">Reclaim</div>
+            <p className="inline font-semibold" ref={wrapperElementRef} />
+          </div>
         </div>
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
           For the last 25 years, you’ve been exploited by Big Tech.
