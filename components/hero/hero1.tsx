@@ -20,7 +20,7 @@ const Heroslide1 = ({
 
   return (
     <div className={styles.hero1}>
-      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
+      <div className="grid gap-6 px-10 md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="text-3xl font-light md:text-6xl title">
           <div className="pb-8">Reclaim</div>
           <p
@@ -31,7 +31,7 @@ const Heroslide1 = ({
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
           For the last 25 years, you’ve been exploited by Big Tech.
           <p className="mt-3.5">We empower you instead.</p>
-          <div className="link pt-14 text-center md:text-left">
+          <div className="text-center link pt-14 md:text-left">
             <a href="#nightsky">
               <Button
                 label="Oh, really... How?"
@@ -90,10 +90,10 @@ const Heroslide1 = ({
           <defs>
             <linearGradient
               id="paint0_linear_2112_3518"
-              x1="1440"
-              y1="-366.827"
-              x2="1398.6"
-              y2="415.923"
+              x1="1440.74"
+              y1="1376.22"
+              x2="1482.13"
+              y2="593.473"
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#9BE7C4" />

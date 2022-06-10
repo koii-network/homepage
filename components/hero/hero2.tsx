@@ -19,7 +19,7 @@ const Heroslide2 = ({
 
   return (
     <div className="text-koiiblue">
-      <div className="grid md:grid-cols-2 gap-6 place-content-between px-10 md:pl-48 md:pr-10 py-36 md:pb-2">
+      <div className="grid gap-6 px-10 md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="text-3xl font-light md:text-6xl title">
           <div className="pb-8">Earn for every</div>
           <p
@@ -30,7 +30,7 @@ const Heroslide2 = ({
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
           You put talent and hard work into what you create online.
           <p className="mt-3.5">It’s time you got paid for it.</p>
-          <div className="link pt-14 text-center md:text-left">
+          <div className="text-center link pt-14 md:text-left">
             <a href="#ways-to-earn">
               <Button
                 label="Prove it."
@@ -89,10 +89,10 @@ const Heroslide2 = ({
           <defs>
             <linearGradient
               id="paint0_linear_2115_3647"
-              x1="1440"
-              y1="-579.974"
-              x2="1398.6"
-              y2="202.776"
+              x1="1440.74"
+              y1="1376.22"
+              x2="1482.13"
+              y2="593.473"
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#9BE7C4" />
