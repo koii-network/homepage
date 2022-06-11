@@ -39,6 +39,8 @@ const Hero = () => {
         autoPlay={autoPlay}
         infiniteLoop={true}
         onChange={onItemChange}
+        preventMovementUntilSwipeScrollTolerance
+        swipeScrollTolerance={20}
       >
         <div>
           <Heroslide1
