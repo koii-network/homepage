@@ -1,29 +1,35 @@
 .hero1 {
-    background: linear-gradient(140.29deg, #C5F7D0 21.63%, #FFFFFF 72.72%);
-    color: #171753
+  background: linear-gradient(140.29deg, #c5f7d0 21.63%, #ffffff 72.72%);
+  color: #171753;
 }
 
 .hero2 {
-    background: linear-gradient(140.29deg, #97E8E3 21.63%, #FFFFFF 72.72%);
-    color: #171753
+  background: linear-gradient(140.29deg, #97e8e3 21.63%, #ffffff 72.72%);
+  color: #171753;
 }
 
 .hero3 {
-    background: linear-gradient(140.29deg, #97AEE8 21.63%, #FFFFFF 72.72%);
-    color: #171753
+  background: linear-gradient(140.29deg, #97aee8 21.63%, #ffffff 72.72%);
+  color: #171753;
 }
 
 .nightsky {
-    background: linear-gradient(6.21deg, #BEF0ED 3.1%, #A1CBD0 35.22%, #171753 94.83%);
-    mix-blend-mode: multiply;
-    position: relative;
+  background: rgb(23, 23, 83);
+  background: linear-gradient(
+    180deg,
+    rgba(23, 23, 83, 1) 5%,
+    rgba(161, 203, 208, 1) 100%,
+    rgba(190, 240, 237, 1) 100%
+  );
+  mix-blend-mode: multiply;
+  position: relative;
 }
 
 .Iceberg {
-    background: linear-gradient(167deg, #7DFFFE 28.29%, #51557B 94.43%);
-    position: relative;
+  background: linear-gradient(167deg, #7dfffe 28.29%, #51557b 94.43%);
+  position: relative;
 }
 
 .Timeline {
-    background: #171753;
+  background: #171753;
 }

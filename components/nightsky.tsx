@@ -19,7 +19,7 @@ export const NightSky = () => {
           objectFit="cover"
         />
       </div>
-      <div className="birds absolute top-[240px] md:bottom-0 md:top-[unset] left-[3rem] md:left-[16rem] w-[300px] h-[495px] md:h-[750px]">
+      <div className="birds absolute top-[240px] md:bottom-0 md:top-[unset] left-[3rem] md:left-[18rem] w-[300px] h-[495px] md:h-[750px]">
         <Image
           className=""
           src={birds}
@@ -37,19 +37,19 @@ export const NightSky = () => {
         </div>
       </div>
       <div className="star-text md:text-2xl flex md:pl-[35rem] text-white w-auto">
-        <span className="relative bottom-[16rem] md:bottom-[3rem] left-[12rem] md:left-[5rem]">
+        <span className="animate-[identity_6000ms_ease_infinite;] relative bottom-[16rem] md:bottom-[3rem] left-[12rem] md:left-[5rem]">
           Identity
         </span>
-        <span className="relative bottom-[10rem] md:left-[5rem] left-[13rem] md:top-[4rem] opacity-40">
+        <span className="animate-[creativity_6000ms_ease_infinite;] relative bottom-[10rem] md:left-[5rem] left-[13rem] md:top-[4rem] opacity-40">
           Creativity
         </span>
-        <span className="relative right-[5rem] md:right-[30rem] bottom-[1rem] md:top-4[rem] opacity-20">
+        <span className="animate-[content_6000ms_ease_infinite;] relative right-[5rem] md:right-[30rem] bottom-[1rem] md:top-[4rem] opacity-20">
           Content
         </span>
-        <span className="relative top-[5rem] md:top-[11rem] md:right-[31rem] opacity-80">
+        <span className="animate-[rewards_6000ms_ease_infinite;] relative top-[5rem] md:top-[11rem] md:right-[31rem] opacity-80">
           Rewards
         </span>
-        <span className="relative top-[8rem] md:top-[15rem] right-[15rem] md:right-[54rem] opacity-60">
+        <span className="animate-[attention_6000ms_ease_infinite;] relative top-[8rem] md:top-[15rem] right-[15rem] md:right-[54rem] opacity-60">
           Attention
         </span>
       </div>

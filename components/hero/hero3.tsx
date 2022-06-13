@@ -1,45 +1,36 @@
 import { Button } from "@/components/ui/Button";
-import { useMediaQuery } from "@/components/hooks";
+import { useMediaQuery, useTyped } from "@/components/hooks";
 import styles from "/styles/home.module.css";
-import Typed from "typed.js";
-import React, { useEffect } from "react";
 import { SocialIcons } from "./SocialIcons";
 
-const Heroslide3 = () => {
-  const el = React.useRef(null);
-  const typed = React.useRef<Typed | null>(null);
-  useEffect(() => {
-    const options = {
-      strings: [
-        "your community.",
-        "epic NFTs.",
-        "better apps.",
-        "a universe.",
-        "the future.",
-      ],
-      typeSpeed: 100,
-      backSpeed: 50,
-      showCursor: true,
-    };
-    if (el.current != null) {
-      typed.current = new Typed(el.current, options);
-      return () => {
-        if (typed && typed.current) {
-          typed.current.destroy();
-        }
-      };
-    }
-  }, []);
+const Heroslide3 = ({
+  onTypingComplete,
+  activateTyping,
+}: {
+  activateTyping: boolean;
+  onTypingComplete(): void;
+}) => {
+  const { wrapperElementRef } = useTyped(
+    [
+      "your community.",
+      "epic NFTs.",
+      "better apps.",
+      "a universe.",
+      "the future.",
+    ],
+    onTypingComplete,
+    activateTyping
+  );
+
   const isBreakpoint = useMediaQuery(768);
   return (
     <div className={styles.hero3}>
-      <div className="container grid gap-6 px-10 mx-auto md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
+      <div className="container grid gap-6 px-10 mx-auto  md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="text-3xl font-light md:text-6xl title">
-          <div className="pb-8">Start building</div>
-          <p
-            className="font-semibold inline underline underline-offset-[20px] decoration-mint"
-            ref={el}
-          />
+          <div className="pb-4 border-b-4 w-[72%] pl-4 border-mint">
+            <div className="pb-8">Start building</div>
+            <p className="inline font-semibold" ref={wrapperElementRef} />
+          </div>
         </div>
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
           Building scalable web3 apps shouldn’t be hard.
@@ -75,14 +66,14 @@ const Heroslide3 = () => {
           <defs>
             <linearGradient
               id="paint0_linear_2108_3388"
-              x1="42.9779"
-              y1="114.517"
-              x2="154.253"
-              y2="7.0844"
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="0"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#171751" />
-              <stop offset="1" stopColor="#24295D" />
+              <stop stopColor="#171753" />
+              <stop offset="100%" stopColor="#171753" />
             </linearGradient>
           </defs>
         </svg>
@@ -102,15 +93,15 @@ const Heroslide3 = () => {
           <defs>
             <linearGradient
               id="paint0_linear_2118_3469"
-              x1="1439.73"
-              y1="-366.974"
-              x2="1398.33"
-              y2="415.776"
+              x1="1440.74"
+              y1="1076.22"
+              x2="1082.13"
+              y2="593.473"
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#9BE7C4" />
-              <stop offset="0.0203376" stopColor="#BEF0ED" />
-              <stop offset="0.907216" stopColor="#171753" />
+              <stop offset="0.6303376" stopColor="#BEF0ED" />
+              <stop offset="0.07216" stopColor="#171753" />
             </linearGradient>
           </defs>
         </svg>

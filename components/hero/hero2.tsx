@@ -1,39 +1,30 @@
 import { Button } from "@/components/ui/Button";
-import { useMediaQuery } from "@/components/hooks";
-import Typed from "typed.js";
-import React, { useEffect } from "react";
+import { useMediaQuery, useTyped } from "@/components/hooks";
 import { SocialIcons } from "./SocialIcons";
 
-const Heroslide2 = () => {
-  const el = React.useRef(null);
-  const typed = React.useRef<Typed | null>(null);
+const Heroslide2 = ({
+  onTypingComplete,
+  activateTyping,
+}: {
+  activateTyping: boolean;
+  onTypingComplete(): void;
+}) => {
+  const { wrapperElementRef } = useTyped(
+    ["view.", "user.", "follow.", "critique.", "like."],
+    onTypingComplete,
+    activateTyping
+  );
 
-  useEffect(() => {
-    const options = {
-      strings: ["view.", "user.", "follow.", "critique.", "like."],
-      typeSpeed: 100,
-      backSpeed: 50,
-      showCursor: true,
-    };
-    if (el.current != null) {
-      typed.current = new Typed(el.current, options);
-      return () => {
-        if (typed && typed.current) {
-          typed.current.destroy();
-        }
-      };
-    }
-  }, []);
   const isBreakpoint = useMediaQuery(768);
+
   return (
     <div className="text-koiiblue">
       <div className="container grid gap-6 px-10 mx-auto md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="text-3xl font-light md:text-6xl title">
-          <div className="pb-8">Earn for every</div>
-          <p
-            className="font-semibold inline underline underline-offset-[20px] decoration-mint"
-            ref={el}
-          />
+          <div className="pb-4 border-b-4 w-[363px] pl-4 border-mint">
+            <div className="pb-8">Earn for every</div>
+            <p className="inline font-semibold" ref={wrapperElementRef} />
+          </div>
         </div>
         <div className="text-lg leading-8 content md:text-2xl md:max-w-sm">
           You put talent and hard work into what you create online.
@@ -92,10 +83,10 @@ const Heroslide2 = () => {
           <defs>
             <linearGradient
               id="paint0_linear_2115_3647"
-              x1="1440"
-              y1="-579.974"
-              x2="1398.6"
-              y2="202.776"
+              x1="1440.74"
+              y1="1376.22"
+              x2="1482.13"
+              y2="593.473"
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#9BE7C4" />
