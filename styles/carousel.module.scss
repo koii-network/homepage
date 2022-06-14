@@ -25,6 +25,18 @@
       margin: 0;
       bottom: 4rem;
     }
+    @media (min-width: 1024px) {
+      margin: 0;
+      bottom: 8rem;
+    }
+    @media (min-width: 1560px) {
+      margin: 0;
+      bottom: 12rem;
+    }
+    @media (min-width: 2400px) {
+      margin: 0;
+      bottom: 20rem;
+    }
   }
 }
 
