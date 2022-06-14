@@ -27,7 +27,7 @@ const Heroslide3 = ({
     <div className={styles.hero3}>
       <div className="container grid gap-6 px-10 mx-auto  md:grid-cols-2 place-content-between md:pl-48 md:pr-10 py-36 md:pb-2">
         <div className="text-3xl font-light md:text-6xl title">
-          <div className="pb-4 border-b-4 w-[72%] pl-4 border-mint">
+          <div className="pb-4 border-b-4 w-[74%] xl:w-[86%] pl-4 border-mint">
             <div className="pb-8">Start building</div>
             <p className="inline font-semibold" ref={wrapperElementRef} />
           </div>
