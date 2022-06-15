@@ -34,7 +34,7 @@ export const Timeline = () => {
   return (
     <div className={`${styles.Timeline} pb-20 relative h-[820px]`}>
       {isBreakpoint ? (
-        <div className="flex justify-center items-start pl-[5rem] h-full">
+        <div className="flex justify-center items-start pl-[12rem] h-full">
           <svg
             className="h-full w-fit"
             width="43"
@@ -80,7 +80,7 @@ export const Timeline = () => {
         </div>
       )}
 
-      <div className="absolute flex flex-col justify-between  md:items-end text-white py-12 z-20 top-0 md:w-full h-[85%]">
+      <div className="absolute flex flex-col justify-between left-[3rem] md:left-0  md:items-end text-white py-12 z-20 top-0 md:w-full h-[85%]">
         <div className="relative text-right md:w-fit md:right-[77%]">
           <span className="text-3xl font-semibold text-mint">2022</span>
           <br />
