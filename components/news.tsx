@@ -1,7 +1,7 @@
 import { Newsblock } from "./ui/News";
 import arweave from "/public/images/logos/arweave.svg";
 import cointelegraph from "/public/images/logos/cointelegraph.svg";
-import ethdenver from "/public/images/logos/ethdenver.svg";
+import ethdenver from "/public/images/logos/ethdenver.png";
 
 export const News = () => {
   return (
@@ -29,6 +29,9 @@ export const News = () => {
           url="https://www.youtube.com/watch?v=PcGVNZldGqk"
           urltext="ETH Denver"
           width="320"
+          logowidth="74.66"
+          logoheight="67"
+          className="opacity-80"
         />
         <Newsblock
           cover="/images/news3.png"

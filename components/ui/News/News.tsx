@@ -5,10 +5,13 @@ export type NewsProps = Readonly<
     cover: string;
     title: string;
     content: string;
-    logo: string;
+    logo: any;
     url: string;
     urltext: string;
     width?: string | 300;
+    logowidth?: string;
+    logoheight?: string;
+    className?: string;
   } & React.HTMLProps<HTMLButtonElement>
 >;
 
@@ -20,6 +23,9 @@ export const Newsblock = ({
   url,
   urltext,
   width,
+  logowidth = "66",
+  logoheight = "66",
+  className,
 }: NewsProps) => (
   <div className="px-6 md:max-w-[28rem] pt-12">
     <a
@@ -41,7 +47,7 @@ export const Newsblock = ({
           className="center"
         >
           <Image
-            className="rounded-2xl"
+            className={`"rounded-2xl"`}
             src={cover}
             alt="news cover"
             layout="fill"
@@ -51,11 +57,11 @@ export const Newsblock = ({
       {logo && (
         <div className="flex relative float-right top-32 z-10">
           <Image
-            className="inline"
+            className={`"inline" ${className}`}
             src={logo}
             alt="news logo"
-            width="66"
-            height="66"
+            width={logowidth}
+            height={logoheight}
           />
         </div>
       )}
