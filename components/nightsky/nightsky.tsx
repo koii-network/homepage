@@ -58,7 +58,7 @@ export const NightSky = () => {
         >
           <Image
             className="z-10"
-            src={"/images/iceberg_desktop.png"}
+            src={"/images/iceberg_desktop.svg"}
             alt="iceberg"
             layout="fill"
             objectFit="cover"
