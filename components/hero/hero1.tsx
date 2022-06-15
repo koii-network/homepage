@@ -70,7 +70,7 @@ const Heroslide1 = ({
         </svg>
       ) : (
         <svg
-          className="relative top-[1px]"
+          className="relative top-[11px]"
           viewBox="0 0 1440 310"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
