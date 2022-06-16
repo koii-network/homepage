@@ -14,13 +14,6 @@ module.exports = {
         xl: "5rem",
         "2xl": "6rem",
       },
-      screens: {
-        sm: "600px",
-        md: "728px",
-        lg: "1440px",
-        xl: "1440px",
-        "2xl": "1496px",
-      },
     },
     fontFamily: {
       sans: ["Sora", "sans-serif"],
