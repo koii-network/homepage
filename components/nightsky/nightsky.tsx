@@ -27,7 +27,7 @@ export const NightSky = () => {
           </div>
         </div>
 
-        <div className="star-text md:text-2xl flex md:pl-[35rem] text-white w-auto">
+        <div className="star-text md:text-2xl flex md:pl-[26rem] lg:pl-[35rem] text-white w-auto">
           <span className="animate-[identity_6000ms_ease_infinite;] relative bottom-[16rem] md:bottom-[3rem] left-[12rem] md:left-[5rem]">
             Identity
           </span>
@@ -45,10 +45,10 @@ export const NightSky = () => {
           </span>
         </div>
         <div className="icebergtext md:text-2xl flex flex-row-reverse relative text-[#171753]">
-          <span className="relative right-[5rem] md:right-[18rem] top-[13rem] md:top-[13rem]">
+          <span className="relative right-[5rem] md:right-[13rem] lg:right-[18rem] top-[13rem] md:top-[13rem]">
             Free Crypto
           </span>
-          <span className="relative right-[4rem] md:right-[19rem] top-[19rem] md:top-[24rem]">
+          <span className="relative right-[4rem] md:right-[14rem] lg:right-[19rem] top-[19rem] md:top-[24rem]">
             Amazing Developer Tools
           </span>
         </div>
