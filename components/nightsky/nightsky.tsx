@@ -54,7 +54,7 @@ export const NightSky = () => {
         </div>
 
         <div
-          className={`Icebergtop absolute top-[724px] md:top-[640px] right-[-8rem] md:right-[-120px] w-[347px] md:w-[680px] h-[508px] md:h-[1025px]`}
+          className={`Icebergtop absolute top-[720px] md:top-[646px] right-[-8rem] md:right-[-120px] w-[347px] md:w-[680px] h-[525px] md:h-[1025px]`}
         >
           <Image
             className="z-10"
