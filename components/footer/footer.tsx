@@ -13,37 +13,39 @@ export const Footer = () => {
   return (
     <footer className=" bg-gradient-to-b from-titanium-white to-turquoise-light app-footer pb-[100px] md:pb-[54px]">
       <div className="container mx-auto md:pt-12">
-        <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-dark-blue text-[30px] pb-6">
-          <Image
-            src="/KoiiNetwork-logo_128.png"
-            width={64}
-            height={64}
-            alt="Koii logo"
-          />
+        <div className="max-w-[1060px] mx-auto">
+          <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-dark-blue text-[30px] pb-6">
+            <Image
+              src="/KoiiNetwork-logo_128.png"
+              width={64}
+              height={64}
+              alt="Koii logo"
+            />
 
-          <h2>Don&apos;t Miss Out.</h2>
-        </div>
-        <div className="flex flex-col items-center md:justify-between lg:items-start lg:flex-row">
-          <div className="md:gap-14 md:flex md:flex-row">
-            <LinksSection title="COMPANY" links={companyLinks} />
-            <LinksSection title="GET INVOLVED" links={getInvolvedLinks} />
-            <LinksSection title="GET IN TOUCH" links={getInTouchLinks} />
+            <h2>Don&apos;t Miss Out.</h2>
+          </div>
+          <div className="flex flex-col items-center md:justify-between lg:items-start lg:flex-row">
+            <div className="md:gap-14 md:flex md:flex-row">
+              <LinksSection title="COMPANY" links={companyLinks} />
+              <LinksSection title="GET INVOLVED" links={getInvolvedLinks} />
+              <LinksSection title="GET IN TOUCH" links={getInTouchLinks} />
+            </div>
+
+            <div className="md:hidden">
+              <SocialMediaLinks />
+            </div>
+
+            <Subscribe />
           </div>
 
-          <div className="md:hidden">
-            <SocialMediaLinks />
-          </div>
+          <div className="mt-4 mb-3 border border-solid border-dark-blue md:mb-7" />
 
-          <Subscribe />
-        </div>
+          <div className="flex flex-row justify-center md:last:justify-between">
+            <Policy />
 
-        <div className="mt-4 mb-3 border border-solid border-dark-blue md:mb-7" />
-
-        <div className="flex flex-row justify-center md:last:justify-between">
-          <Policy />
-
-          <div className="hidden md:block">
-            <SocialMediaLinks />
+            <div className="hidden md:block">
+              <SocialMediaLinks />
+            </div>
           </div>
         </div>
       </div>

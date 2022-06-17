@@ -21,7 +21,6 @@
     rgba(161, 203, 208, 1) 100%,
     rgba(190, 240, 237, 1) 100%
   );
-  mix-blend-mode: multiply;
   position: relative;
 }
 
@@ -31,5 +30,5 @@
 }
 
 .Timeline {
-  background: #171753;
+  background-color: #171753;
 }

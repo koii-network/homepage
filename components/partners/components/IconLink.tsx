@@ -18,7 +18,7 @@ export const Iconlink = ({
 }: IconLinkProps) => {
   return url ? (
     <Link href={url}>
-      <a className="pond__icon">
+      <a className="z-20 pond__icon">
         <Image
           src={iconSource}
           width={width ?? 80}
@@ -33,6 +33,8 @@ export const Iconlink = ({
       width={width ?? 80}
       height={height ?? 80}
       alt={alt ?? "company logo"}
+      layout="fill"
+      objectFit="cover"
     />
   );
 };

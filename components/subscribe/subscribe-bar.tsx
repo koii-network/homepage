@@ -3,13 +3,23 @@ import { useState } from "react";
 
 export const SubscribeBar = () => {
   const [stage, setStage] = useState<"edit" | "thankyou">("edit");
+  const [hidden, setHidden] = useState<boolean>(false);
+
+  const hide = () => {
+    setHidden(true);
+  };
 
   const switchView = () => {
     setStage("thankyou");
+    setTimeout(() => hide(), 3000);
   };
 
   return (
-    <div className="bg-koiiblue h-[100px] md:h-[54px] flex items-center fixed bottom-0 left-0 right-0 z-50">
+    <div
+      className={`${
+        hidden && "transition-opacity ease-in duration-700 opacity-0"
+      } bg-koiiblue h-[100px] md:h-[54px] flex items-center fixed bottom-0 left-0 right-0 z-50`}
+    >
       {stage === "edit" ? (
         <div className="md:max-w-[1060px] w-[100%]  md:mx-auto px-8 flex justify-center items-center flex-col md:flex-row">
           <div className="flex flex-row items-center justify-center">

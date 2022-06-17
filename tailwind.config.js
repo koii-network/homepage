@@ -5,7 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      sm: "600px",
+      md: "728px",
+      lg: "1440px",
+      xl: "1440px",
+      "2xl": "1496px",
+    },
     container: {
+      center: true,
       padding: {
         DEFAULT: "1rem",
         sm: "2rem",
@@ -33,25 +41,25 @@ module.exports = {
       },
       keyframes: {
         identity: {
-          '0%, 30%, 50%, 100%': { opacity: 0.2 },
-          '10%': { opacity: 1 },
+          "0%, 30%, 50%, 100%": { opacity: 0.2 },
+          "10%": { opacity: 1 },
         },
         creativity: {
-          '0%, 50%, 100%': { opacity: 0.2 },
-          '80%': { opacity: 1 },
+          "0%, 50%, 100%": { opacity: 0.2 },
+          "80%": { opacity: 1 },
         },
         content: {
-          '0%, 20%, 80%, 100%': { opacity: 0.2 },
-          '50%': { opacity: 1 },
+          "0%, 20%, 80%, 100%": { opacity: 0.2 },
+          "50%": { opacity: 1 },
         },
         rewards: {
-          '0%, 10%, 70%, 100%': { opacity: 0.2 },
-          '30%': { opacity: 1 },
+          "0%, 10%, 70%, 100%": { opacity: 0.2 },
+          "30%": { opacity: 1 },
         },
         attention: {
-          '0%, 40%, 100%': { opacity: 0.2 },
-          '70%': { opacity: 1 },
-        }
+          "0%, 40%, 100%": { opacity: 0.2 },
+          "70%": { opacity: 1 },
+        },
       },
     },
   },
