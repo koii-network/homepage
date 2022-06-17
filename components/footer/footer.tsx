@@ -13,7 +13,7 @@ export const Footer = () => {
   return (
     <footer className=" bg-gradient-to-b from-titanium-white to-turquoise-light app-footer pb-[100px] md:pb-[54px]">
       <div className="container mx-auto md:pt-12">
-        <div className="md:w-[1060px] mx-auto">
+        <div className="max-w-[1060px] mx-auto">
           <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-dark-blue text-[30px] pb-6">
             <Image
               src="/KoiiNetwork-logo_128.png"

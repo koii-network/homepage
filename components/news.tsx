@@ -2,18 +2,23 @@ import { Newsblock } from "./ui/News";
 import arweave from "/public/images/logos/arweave.svg";
 import cointelegraph from "/public/images/logos/cointelegraph.svg";
 import ethdenver from "/public/images/logos/ethdenver.png";
+import Image from "next/image";
 
 export const News = () => {
   return (
     <div className="container z-40 py-16 mx-auto text-koiiblue 2xl:px-16">
-      <h2 className="pt-2 text-5xl text-center md:text-left">In the News</h2>
-      <p className="pt-10 text-xs text-center md:text-left md:pt-2">
-        Catch Up on all the Latest
-      </p>
+      <div className="mb-8">
+        <h2 className="pt-2 text-5xl text-center md:text-left">In the News</h2>
+        <p className="pt-6 text-xs text-center uppercase md:text-left md:pt-2">
+          Catch Up on all the Latest
+        </p>
+      </div>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-col flex-wrap items-center justify-center md:justify-between md:flex-row">
         <Newsblock
-          cover="/images/news2.png"
+          imageSlot={
+            <Image src="/images/news2.png" alt="" width={197} height={197} />
+          }
           title="Growing Attention Economy"
           content='"What were trying to do is complement that [proof of humanity] with proof of contribution. The way you prove your contribution to the collective knowledge commons is by getting attention from other people who have a higher reputation."'
           logo={arweave}
@@ -22,7 +27,9 @@ export const News = () => {
           width="200"
         />
         <Newsblock
-          cover="/images/news1.png"
+          imageSlot={
+            <Image src="/images/news1.png" alt="" width={330} height={197} />
+          }
           title="User Experience At ETH Denver"
           content="See Creative Director Kayla Kroot speak at the future of User Experience in Web3 on a panel at ETH Denver with leaders from Chainlink Labs, Biconomy, and DeFi Saver."
           logo={ethdenver}
@@ -34,7 +41,9 @@ export const News = () => {
           className="opacity-80"
         />
         <Newsblock
-          cover="/images/news3.png"
+          imageSlot={
+            <Image src="/images/news3.png" alt="" width={330} height={197} />
+          }
           title="NFT potential takes quantum..."
           content="They decay! They grow back! They transform with the passage of time (sometimes into zombies!) Koii Network’s new NFT..."
           logo={cointelegraph}

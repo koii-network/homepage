@@ -1,76 +1,49 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export type NewsProps = Readonly<
   {
-    cover: string;
     title: string;
     content: string;
-    logo: any;
+    logo: string | StaticImageData;
     url: string;
     urltext: string;
-    width?: string | 300;
+    imageSlot: React.ReactNode;
     logowidth?: string;
     logoheight?: string;
-    className?: string;
   } & React.HTMLProps<HTMLButtonElement>
 >;
 
 export const Newsblock = ({
-  cover,
   title,
   content,
   logo,
   url,
   urltext,
-  width,
   logowidth = "66",
   logoheight = "66",
-  className,
+  imageSlot,
 }: NewsProps) => (
-  <div className="px-6 md:max-w-[28rem] pt-12">
-    <a
-      className="text-sm leading-6"
-      href={url}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div className="cover-image" style={{ textAlign: "center" }}>
-        <div
-          style={{
-            position: "relative",
-            width: width + "px",
-            height: "200px",
-            maxHeight: "200px",
-            maxWidth: "400px",
-            display: "inline-block",
-          }}
-          className="center"
-        >
-          <Image
-            className={`"rounded-2xl"`}
-            src={cover}
-            alt="news cover"
-            layout="fill"
-          />
-        </div>
+  <div className="flex flex-col items-center justify-center px-5 mb-[60px] w-[340px]">
+    <a className="block" href={url} rel="noopener noreferrer" target="_blank">
+      <div className="flex justify-center">{imageSlot}</div>
+      <div className="mt-4 text-base font-semibold leading-4 uppercase">
+        {title}
       </div>
-      {logo && (
-        <div className="flex relative float-right top-32 z-10">
+      <div className="relative z-20 text-sm leading-6 ">
+        <div className="h-[168px]">
+          <p>{content}</p>
+          <div className="underline underline-offset-2">{urltext}</div>
+        </div>
+
+        <div className="absolute top-[60px] right-[-50px] z-10">
           <Image
-            className={`"inline" ${className}`}
             src={logo}
             alt="news logo"
             width={logowidth}
             height={logoheight}
           />
         </div>
-      )}
-      <div className="mt-2 uppercase text-base leading-6 min-w-[25rem] px-[2rem]">
-        {title}
       </div>
-      <div className="mt-2 text-sm leading-6 px-[2rem]">{content}</div>
-
-      <div className="underline underline-offset-2 px-[2rem]">{urltext}</div>
     </a>
   </div>
 );
