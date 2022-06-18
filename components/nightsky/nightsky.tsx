@@ -45,10 +45,10 @@ export const NightSky = () => {
           </span>
         </div>
         <div className="icebergtext md:text-2xl flex flex-row-reverse relative text-[#171753]">
-          <span className="relative right-[5rem] md:right-[13rem] lg:right-[18rem] top-[13rem] md:top-[13rem]">
+          <span className="relative right-[4rem] md:right-[13rem] lg:right-[18rem] top-[14rem] md:top-[13rem]">
             Free Crypto
           </span>
-          <span className="relative right-[4rem] md:right-[14rem] lg:right-[19rem] top-[19rem] md:top-[24rem]">
+          <span className="relative right-[3rem] md:right-[14rem] lg:right-[19rem] top-[20rem] md:top-[24rem]">
             Amazing Developer Tools
           </span>
         </div>
