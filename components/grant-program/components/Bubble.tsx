@@ -21,7 +21,7 @@ export const Bubble = ({ size, text }: BubbleProps) => {
 
       <div className="z-20 flex justify-center text-center text-normal text-dark-blue w-[55%]">
         <Link href="https://blog.koii.network/The-Koii-Grant-Program-Set-for-Launch/">
-          <a className="block">
+          <a className="block" rel="noreferrer noopener" target="_blank">
             <p>{text}</p>
           </a>
         </Link>
