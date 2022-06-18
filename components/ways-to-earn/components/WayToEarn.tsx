@@ -26,6 +26,8 @@ export const WayToEarn = ({
       <div>
         <Button
           asLink
+          rel="noreferrer noopener"
+          target="_blank"
           href={url}
           className=" py-2 px-6 rounded-[24px] w-[271px] text-dark-blue bg-mint"
           label={buttonLabel}
