@@ -18,7 +18,7 @@ export const Iconlink = ({
 }: IconLinkProps) => {
   return url ? (
     <Link href={url}>
-      <a className="z-20 pond__icon"  rel="noreferrer noopener" target="_blank">
+      <a className="z-20 pond__icon" rel="noreferrer noopener" target="_blank">
         <Image
           src={iconSource}
           width={width ?? 80}
