@@ -29,6 +29,10 @@
   position: relative;
 }
 
+.num {
+  background: linear-gradient(93.89deg, #17174F 16.6%, #171751 91.44%);
+}
+
 .Timeline {
   background-color: #171753;
 }
