@@ -17,15 +17,18 @@ export const Bubble = ({ size, text }: BubbleProps) => {
       {/**
        * @todo: use raw svg here and animate on hover
        */}
-      <Image src="/images/bubble.svg" alt="" layout="fill" />
-
-      <div className="z-20 flex justify-center text-center text-normal text-dark-blue w-[55%]">
-        <Link href="https://blog.koii.network/The-Koii-Grant-Program-Set-for-Launch/">
-          <a className="block" rel="noreferrer noopener" target="_blank">
-            <p>{text}</p>
-          </a>
-        </Link>
-      </div>
+      <Link href="https://blog.koii.network/The-Koii-Grant-Program-Set-for-Launch/">
+        <a
+          className="block text-center"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <div className="z-20 flex justify-center text-center text-normal text-dark-blue relative">
+            <p className="w-[55%]">{text}</p>
+          </div>
+          <Image src="/images/bubble.svg" alt="" layout="fill" />
+        </a>
+      </Link>
     </div>
   );
 };

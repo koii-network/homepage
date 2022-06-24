@@ -20,9 +20,9 @@ export const Num = () => {
           <Image src="/images/vector/arrow-left.svg" width={854} height={162} />
         </div>
         <div className="relative flex flex-col lg:flex-row pt-[3rem] lg:pt-[6rem] items-center place-content-evenly">
-          <Card top="more than" number="30M+" bot="Views" />
-          <Card top="about" number="300K+" bot="Tokens awarded" />
-          <Card top="more than" number="40K+" bot="Node pre-registered" />
+          <Card number="30M+" bot="Views" />
+          <Card number="300K+" bot="Tokens Awarded" />
+          <Card number="40K+" bot="Node Registrations" />
         </div>
       </div>
     </div>
