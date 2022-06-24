@@ -1,5 +1,5 @@
 type CardProps = {
-  top: string;
+  top?: string;
   number: string;
   bot: string;
 };

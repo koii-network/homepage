@@ -25,12 +25,14 @@ export const Button = ({
 
   if (asLink) {
     return (
-      <div
-        className={`${base} display flex justify-center ${className} cursor-pointer`}
-      >
+      <div>
         <Link href={href ?? "#"}>
           <a target={target} className="self-center">
-            {label}
+            <div
+              className={`${base} items-center display flex justify-center ${className} cursor-pointer`}
+            >
+              {label}
+            </div>
           </a>
         </Link>
       </div>

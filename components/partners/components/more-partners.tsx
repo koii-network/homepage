@@ -14,6 +14,7 @@ export const MorePartners = () => (
 
     <Button
       asLink
+      target="_blank"
       href={HubspotFormLinks.PARTNERSHIP}
       className="px-6 w-[220px] h-[53px] py-3 mb-10 bg-white text-dark-blue rounded-[32px] drop-shadow-lg"
       label="Partner with Koii"
