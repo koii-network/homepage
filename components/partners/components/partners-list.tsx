@@ -11,7 +11,7 @@ export const PartnersList = () => {
 
   return (
     <>
-      <div className="flex z-40 flex-wrap justify-center w-[90%] md:w-[480px] lg:w-[670px] gap-4 lg:gap-4 xl:gap-x-10 mb-[30px]  md:mb-[68px]">
+      <div className="flex z-40 flex-wrap justify-center w-[90%] md:w-[480px] lg:w-[670px] md:gap-2 lg:gap-4 lg:gap-4 xl:gap-x-10 mb-[30px] md:mb-[30px]  lg:mb-[68px]">
         {partnersLinks.map(({ name, iconSrc, url }) => (
           <Iconlink
             url={url}
