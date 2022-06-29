@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.koii.network
+
+# Sitemaps
+Sitemap: https://www.koii.network/sitemap.xml
