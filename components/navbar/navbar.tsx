@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Link from "next/link";
 import Image from "next/image";
 import { MenuButton } from "./menu-button";
 import { NavbarMenu } from "./navbar-menu";
@@ -15,16 +15,20 @@ export const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="relative z-50 flex justify-between py-2 pl-4 pr-8 bg-gradient-to-r from-turquoise-light to-white drop-shadow-lg md:drop-shadow-none">
-        <div className="flex items-center gap-4">
-          <Image
-            src="/KoiiNetwork-logo_128.png"
-            width={48}
-            height={48}
-            alt="Koii logo"
-          />
+        <Link href="/">
+          <a>
+            <div className="flex items-center gap-4">
+              <Image
+                src="/KoiiNetwork-logo_128.png"
+                width={48}
+                height={48}
+                alt="Koii logo"
+              />
 
-          <span className="text-[24px] text-dark-blue">Koii</span>
-        </div>
+              <span className="text-[24px] text-dark-blue">Koii</span>
+            </div>
+          </a>
+        </Link>
 
         <MenuButton onClick={toggleOpenMenu} />
 

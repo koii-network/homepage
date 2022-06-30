@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap --config sitemap.config.js",
+    "sitemap": "next-sitemap --config sitemap.config.js",
     "start": "next start",
     "lint": "next lint",
     "lintfix": "next lint --fix"
@@ -15,6 +17,7 @@
     "@mui/material": "^5.8.2",
     "framer-motion": "^6.3.11",
     "next": "12.1.6",
+    "next-sitemap": "^3.1.7",
     "react": "18.1.0",
     "react-device-detect": "^2.2.2",
     "react-dom": "18.1.0",

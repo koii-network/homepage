@@ -29,6 +29,7 @@ module.exports = {
       colors: {
         fontMain: "#171753",
         "dark-blue": "#171753",
+        darkmint: "#237B75",
         mint: "#5ED9D1",
         lightmint: "#BEF0ED",
         "turquoise-light": "#BEF0ED",
