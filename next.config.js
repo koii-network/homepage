@@ -2,7 +2,7 @@
 
 const blog = "https://blog.koii.network/";
 const docs = "https://docs.koii.network/";
-const jobsForm = "https://share.hsforms.com/142u1Vp02TGuojOXCTUBGGQc20dg";
+const jobsForm = "/career";
 const faucetForm = "https://share.hsforms.com/1C0zJsC7tTYe4s1fhtxE3-Qc20dg";
 const creatorStudioForm =
   "https://share.hsforms.com/1U0Fat-BvSiK7JJ9IRCQz4Qc20dg";
