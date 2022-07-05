@@ -33,9 +33,7 @@ export const MediaCard = ({
     <div
       className={`${styles.flipcard} ${className} ${width} ${height} justify-center flex flex-col items-center m-[4px] md:m-[8px]`}
     >
-      <div
-        className={` ${styles.cardinner}`}
-      >
+      <div className={` ${styles.cardinner}`}>
         <div
           className={` ${styles.cardfront}  ${colour} border-4 rounded-[20px] border-[#ECFFFE] flex justify-center iconarea ${width} ${height} ease-in-out duration-300`}
         >
