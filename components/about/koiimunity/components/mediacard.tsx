@@ -34,10 +34,10 @@ export const MediaCard = ({
       className={`${styles.flipcard} ${className} ${width} ${height} justify-center flex flex-col items-center m-[4px] md:m-[8px]`}
     >
       <div
-        className={` ${styles.cardinner}  ${colour} border-4 rounded-[20px] border-[#ECFFFE]`}
+        className={` ${styles.cardinner}`}
       >
         <div
-          className={` ${styles.cardfront} flex justify-center iconarea ${width} ${height} ease-in-out duration-300`}
+          className={` ${styles.cardfront}  ${colour} border-4 rounded-[20px] border-[#ECFFFE] flex justify-center iconarea ${width} ${height} ease-in-out duration-300`}
         >
           {isBreakpoint ? (
             <Image src={`${imgSrc}`} alt={alt} width={50} height={50} />
@@ -46,7 +46,7 @@ export const MediaCard = ({
           )}
         </div>
         <div
-          className={` ${styles.cardback} ${width} ${height} flex flex-col ease-in-out duration-300`}
+          className={` ${styles.cardback} ${width} ${height} ${colour} border-4 rounded-[20px] border-[#ECFFFE] flex flex-col ease-in-out duration-300`}
         >
           <div className="m-[1rem]">
             <p className="font-semibold text-[20px] md:text-[40px]">{title}</p>
