@@ -15,6 +15,10 @@
   transform: rotateY(180deg)
 }
 
+.flipcard:active .cardinner {
+  transform: rotateY(180deg)
+}
+
 .cardfront, .cardback {
   position: absolute;
   width: 100%;
