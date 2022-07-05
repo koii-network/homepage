@@ -1,0 +1,67 @@
+.wallet:hover ~ .walletback{
+    opacity: 1;
+    transition: opacity .5s ease-in-out transform 0.6s;
+    transition-timing-function: ease-out;
+    transform: translate(0, 0);
+}
+
+.walletback {
+    opacity: 0;
+    transition: opacity .5s ease-in-out transform 0.6s;
+    transition-timing-function: ease-out;
+    transform: translate(-180px, 50%);
+}
+
+.decentralized:hover ~ .decentralizedback{
+    opacity: 1;
+    transition: opacity .5s ease-in-out transform 0.6s;
+    transition-timing-function: ease-out;
+    transform: translate(0, 0);
+}
+
+.decentralizedback {
+    opacity: 0;
+    transition: opacity .5s ease-in-out transform 0.6s;
+    transition-timing-function: ease-out;
+    transform: translate(-222px, 32%);
+}
+
+.mobile:hover ~ .mobileback{
+    opacity: 1;
+    transition: opacity .5s ease-in-out transform 0.6s;
+    transition-timing-function: ease-out;
+    transform: translate(0, 0);
+}
+
+.mobileback {
+    opacity: 0;
+    transition: opacity .5s ease-in-out transform 0.6s;
+    transition-timing-function: ease-out;
+    transform: translate(142px, -68%);
+}
+
+.node:hover ~ .nodeback{
+    opacity: 1;
+    transition: opacity .5s ease-in-out transform 0.6s;
+    transition-timing-function: ease-out;
+    transform: translate(0, 0);
+}
+
+.nodeback {
+    opacity: 0;
+    transition: opacity .5s ease-in-out transform 0.6s;
+    transition-timing-function: ease-out;
+    transform: translate(10px, -38%);
+}
+
+@media only screen and (max-width: 768px) {
+    .walletback {
+        transform: translate(-180px, 50%);
+    }
+    .mobileback {
+        transform: translate(-155px, 47%);
+    }
+    .decentralizedback {
+        transform: translate(84px, 32%);
+    }
+  }

@@ -29,7 +29,6 @@ export const Navbar = () => {
             </div>
           </a>
         </Link>
-
         <MenuButton onClick={toggleOpenMenu} />
 
         <div className="hidden md:block">
