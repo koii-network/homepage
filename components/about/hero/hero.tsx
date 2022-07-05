@@ -6,7 +6,7 @@ export const Abouthero = () => {
   return (
     <div className={` heroabout lg:h-[740px] pt-[4rem] lg:pt-[120px]`}>
       <div
-        className="h-[738px] lg:h-[925px] relative z-20"
+        className="h-[782px] lg:h-[925px] relative z-20"
         style={{
           background: isBreakpoint
             ? `url("/images/about/hero_curve_mobile.svg") no-repeat center / cover`
@@ -31,7 +31,7 @@ export const Abouthero = () => {
               shared history of what matters most.
             </div>
             {isBreakpoint ? (
-              <div className="flex justify-center gap-[4rem] place-content-around pt-[5rem] relative">
+              <div className="flex justify-center gap-[4rem] place-content-around pt-[6rem] relative">
                 <IconButton name="twitter" fill="#171753" px="30" />
                 <IconButton
                   className="pt-[1rem]"
