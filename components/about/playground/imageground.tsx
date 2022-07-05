@@ -17,7 +17,7 @@ export const Imageground = () => {
         <div className="container md:mt-[-16rem] lg:mt-0">
           <div className="ground relative z-30 pt-[10rem] px-[5rem] h-[1800px] lg:h-[1360px]">
             <div className="">
-              <div className="absolute top-[15rem] left-[13rem] lg:left-[4rem] md:top-[31rem] lg:top-[20rem] text-[18px] lg:text-[25px]  lg:w-[126px] font-semibold">
+              <div className={`${styles.wallet} absolute top-[15rem] left-[13rem] lg:left-[4rem] md:top-[31rem] lg:top-[20rem] text-[18px] lg:text-[25px]  lg:w-[126px] font-semibold`}>
                 Finnie Wallet
               </div>
               <div
@@ -52,7 +52,7 @@ export const Imageground = () => {
             </div>
 
             <div className="">
-              <div className="absolute top-[62rem] md:top-[78rem] lg:top-[20rem] right-[8rem] lg:left-[45rem] text-[18px] lg:text-[25px] w-[200px] font-semibold">
+              <div className={`${styles.decentralized} absolute top-[62rem] md:top-[78rem] lg:top-[20rem] right-[8rem] lg:left-[45rem] text-[18px] lg:text-[25px] w-[200px] font-semibold`}>
                 Decentralized Identity
               </div>
               <div
@@ -87,7 +87,7 @@ export const Imageground = () => {
             </div>
 
             <div className="">
-              <div className="absolute top-[37rem] md:top-[53rem] lg:top-[44rem] left-[13rem] lg:left-[15rem] text-[18px] lg:text-[25px] w-[200px] font-semibold">
+              <div className={`${styles.mobile} absolute top-[37rem] md:top-[53rem] lg:top-[44rem] left-[13rem] lg:left-[15rem] text-[18px] lg:text-[25px] w-[200px] font-semibold`}>
                 Finnie Mobile
               </div>
               <div
@@ -122,7 +122,7 @@ export const Imageground = () => {
             </div>
 
             <div className="">
-              <div className="absolute top-[80rem] md:top-[90rem] lg:top-[60rem] left-[13rem] lg:left-[55rem] text-[18px] lg:text-[25px] w-[200px] font-semibold">
+              <div className={`${styles.node} absolute top-[80rem] md:top-[90rem] lg:top-[60rem] left-[13rem] lg:left-[55rem] text-[18px] lg:text-[25px] w-[200px] font-semibold`}>
                 Desktop Node
               </div>
               <div
