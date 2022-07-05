@@ -22,6 +22,7 @@ export const Technology = () => {
             subtitle="Super wallet"
             description="Finnie"
             alt="Identity Layer"
+            link="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj"
           />
           <TechCard
             imgSrc="/images/tech_interface.svg"
@@ -31,6 +32,7 @@ export const Technology = () => {
             subtitle="Toolkit, hosting, & templates"
             description="Koii-X"
             alt="Koii-X"
+            link="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x"
           />
           <TechCard
             imgSrc="/images/tech_settlement.svg"
@@ -40,6 +42,7 @@ export const Technology = () => {
             subtitle="Fast consensus"
             description="K2"
             alt="K2"
+            link="https://blog.koii.network/Koii-Announces-K2/"
           />
           <TechCard
             imgSrc="/images/tech_storage.svg"
@@ -49,6 +52,8 @@ export const Technology = () => {
             subtitle="SDKs & Libraries"
             description="Universal Content Registry"
             alt="Universal Content Registry"
+            link="https://docs.koii.network/koii-software-toolkit-sdk/what-is-the-koii-sdk"
+
           />
           <TechCard
             imgSrc="/images/tech_application.svg"
@@ -58,6 +63,7 @@ export const Technology = () => {
             subtitle="Serverless hosting "
             description="Task Nodes"
             alt="Task Nodes"
+            link="https://share.hsforms.com/1kLtk8rfURZ-HY2xnKRTfCgc20dg"
           />
         </div>
       </div>
