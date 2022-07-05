@@ -53,7 +53,6 @@ export const Technology = () => {
             description="Universal Content Registry"
             alt="Universal Content Registry"
             link="https://docs.koii.network/koii-software-toolkit-sdk/what-is-the-koii-sdk"
-
           />
           <TechCard
             imgSrc="/images/tech_application.svg"
