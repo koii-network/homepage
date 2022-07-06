@@ -1,14 +1,21 @@
 .background {
     background: linear-gradient(90deg, #BEF0ED 0%, #FFFFFF 80%);
     color: #171753;
+    @media (max-width: 468px) {
+      background: linear-gradient(90deg, #BEF0ED 0%, #FFFFFF 100%);
+    }
   }
 
 .featurebackground{
   background: linear-gradient(90deg, #BEF0ED 0%, #FFFFFF 100%);
   color: #171753;
+
 }
 
 .newsbackground {
   background: linear-gradient(114.1deg, #BEF0ED 0%, #FFFFFF 66.99%);
   color: #171753;
+  @media (max-width: 468px) {
+    background: linear-gradient(111.51deg, #BEF0ED 0%, #FFFFFF 30.17%);
+  }
 }

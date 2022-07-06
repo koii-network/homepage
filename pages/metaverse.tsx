@@ -3,7 +3,7 @@ import { Metaversehero } from "@/components/metaverse/hero";
 import { Feature } from "@/components/metaverse/features";
 import { Signup } from "@/components/signup";
 import { News } from "@/components/news";
-import styles from "/styles/metaverse.module.css";
+import styles from "/styles/metaverse.module.scss";
 
 const Home: NextPage = () => {
   return (
