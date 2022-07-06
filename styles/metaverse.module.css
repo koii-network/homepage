@@ -1,0 +1,14 @@
+.background {
+    background: linear-gradient(90deg, #BEF0ED 0%, #FFFFFF 80%);
+    color: #171753;
+  }
+
+.featurebackground{
+  background: linear-gradient(90deg, #BEF0ED 0%, #FFFFFF 100%);
+  color: #171753;
+}
+
+.newsbackground {
+  background: linear-gradient(114.1deg, #BEF0ED 0%, #FFFFFF 66.99%);
+  color: #171753;
+}
