@@ -9,7 +9,7 @@ export const Signup = ({ title, subtitle }: SignupProps) => {
   return (
     <div className="signup">
       <div className="container flex flex-col items-center py-[5rem]">
-        <h3 className="flex justify-center text-center mb-5 text-[24px] md:justify-start text-dark-blue">
+        <h3 className="flex justify-center text-center mb-5 text-[16px] lg:text-[24px] md:justify-start text-dark-blue max-w-[350px] md:max-w-[800px]">
           {title}
         </h3>
         <Button

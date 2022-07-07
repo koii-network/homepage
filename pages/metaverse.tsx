@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       <div className={styles.background}>
         <Metaversehero />
         <Feature />
-        <Signup title="Sign up to hear more about Koii and the Metaverse" />
+        <Signup title="Koii is here to support the metaverse. Our team can help you build and get access to our grants program. Reach out today!" />
       </div>
       <News background={styles.newsbackground} />
     </div>
