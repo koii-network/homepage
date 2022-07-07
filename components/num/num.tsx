@@ -6,7 +6,6 @@ export const Num = () => {
   return (
     <div
       className={`${styles.num} h-[900px] md:h-[900px] lg:h-[600px] overflow-visible`}
-      id="nightsky"
     >
       <div className="container relative mx-auto overflow-visible text-koiiblue">
         <div className="topvector absolute top-[2rem]">
