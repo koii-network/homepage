@@ -12,7 +12,7 @@ export const Koiimunity = () => {
           : `url("/images/about/koiimunity.svg") no-repeat center / cover`,
       }}
     >
-      <div className=" container flex flex-col lg:flex-row px-[40px] lg:px-[120px]">
+      <div className=" container flex flex-col lg:flex-row px-[40px] lg:px-[120px] 2xl:px-[18rem]">
         <div className="flex flex-col pt-[3rem] md:pt-[10rem] items-center md:items-start">
           <div className="title text-[45px] lg:text-[60px] text-lightmint w-[293px] sm:w-auto lg:w-[380px]">
             Join the Koii-munity
