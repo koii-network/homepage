@@ -5,8 +5,11 @@ export const NightSky = () => {
   return (
     <div
       className={`${styles.nightsky} h-[900px] md:h-[1000px] overflow-visible`}
-      id="nightsky"
     >
+      <span
+        className="anchor absolute translate-y-[-3rem] md:translate-y-[-2rem] lg:translate-y-[-2rem]"
+        id="nightsky"
+      ></span>
       <div className="container relative mx-auto overflow-visible">
         <div className="moon absolute left-[-8rem] top-[4rem] md:top-0 md:left-[-200px] z-50 w-[500px] h-[632px] md:w-[858px] md:h-[1085px]">
           <Image
