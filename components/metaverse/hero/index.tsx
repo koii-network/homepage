@@ -6,11 +6,11 @@ export const Metaversehero = () => {
   const isBreakpoint = useMediaQuery(728);
   return (
     <div
-      className={`herometaverse lg:h-[600px] 2xl:h-[800px] pt-[4rem] lg:pt-[70px]`}
+      className={`herometaverse lg:h-[800px] pt-[4rem] lg:pt-[70px]`}
       id="myID"
     >
       <div
-        className={`h-[782px] lg:h-[525px] 2xl:h-[725px] relative z-10`}
+        className={`h-[782px] lg:h-[725px] relative z-10`}
         style={{
           background: isBreakpoint
             ? `url("/images/metaverse/hero_curve.svg") no-repeat center / cover`

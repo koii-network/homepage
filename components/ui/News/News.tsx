@@ -26,9 +26,7 @@ export const Newsblock = ({
   <div className="flex flex-col items-center justify-center px-5 mb-[60px] w-[340px] relative z-20">
     <a className="block" href={url} rel="noopener noreferrer" target="_blank">
       <div className="flex justify-center">{imageSlot}</div>
-      <div className="mt-4 text-base font-semibold leading-4 uppercase">
-        {title}
-      </div>
+      <div className="mt-4 text-base font-semibold uppercase">{title}</div>
       <div className="relative z-20 text-sm leading-6 ">
         <div className="h-[168px] pt-[15px] relative z-30">
           <p>{content}</p>
