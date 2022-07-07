@@ -13,15 +13,14 @@ export const Signup = ({ title, subtitle }: SignupProps) => {
           {title}
         </h3>
         <Button
-                  width="197px"
-                  height="53px"
-                  asLink
-                  target="_blank"
-                  href="http://koii.me/gaming"
-                  className="px-6 py-3 w-[190px] bg-koiiblue text-lightmint text-normal rounded-[32px] drop-shadow-lg"
-                  label="Get in Touch"
+          width="197px"
+          height="53px"
+          asLink
+          target="_blank"
+          href="http://koii.me/gaming"
+          className="px-6 py-3 w-[190px] bg-koiiblue text-lightmint text-normal rounded-[32px] drop-shadow-lg"
+          label="Get in Touch"
         />
-       
       </div>
       <p className="flex justify-center text-center text-[24px] md:justify-start text-dark-blue">
         {subtitle}

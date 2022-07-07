@@ -4,9 +4,9 @@ import styles from "/styles/home.module.css";
 export const NightSky = () => {
   return (
     <div
-      className={`${styles.nightsky} h-[900px] md:h-[1000px] overflow-visible`} 
+      className={`${styles.nightsky} h-[900px] md:h-[1000px] overflow-visible`}
     >
-       <span
+      <span
         className="anchor absolute translate-y-[-3rem] md:translate-y-[-2rem] lg:translate-y-[-2rem]"
         id="nightsky"
       ></span>
