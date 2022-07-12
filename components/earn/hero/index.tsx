@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 export const Earnhero = () => {
   const isBreakpoint = useMediaQuery(728);
   return (
-    <div className={`heroearn lg:h-[900px] pt-[4rem] lg:pt-[70px]`} id="myID">
+    <div className={`heroearn h-[1230px] lg:h-[900px] pt-[4rem] lg:pt-[70px]`} id="myID">
       <div
         className={`h-[1082px] lg:h-[525px] relative z-10`}
         style={{
