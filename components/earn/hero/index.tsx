@@ -6,7 +6,10 @@ import { Button } from "@/components/ui/Button";
 export const Earnhero = () => {
   const isBreakpoint = useMediaQuery(728);
   return (
-    <div className={`heroearn h-[1230px] lg:h-[900px] pt-[4rem] lg:pt-[70px]`} id="myID">
+    <div
+      className={`heroearn h-[1230px] lg:h-[900px] pt-[4rem] lg:pt-[70px]`}
+      id="myID"
+    >
       <div
         className={`h-[1082px] lg:h-[525px] relative z-10`}
         style={{
@@ -36,10 +39,11 @@ export const Earnhero = () => {
           </div>
           <div className="subtitle flex flex-col pt-[30rem] md:pt-[30rem] pb-[5rem] lg:pt-[8rem] lg:pl-[5rem]">
             <div className="sub_head font-semibold text-center md:text-left text-[28px] md:text-[30px] md:w-[565px]">
-            The internet should be owned by those who use it.
+              The internet should be owned by those who use it.
             </div>
             <div className="sub_content text-[18px] md:w-[590px]">
-            We are giving away the keys to the new web. All you have to do is click one of the bubbles to get started.
+              We are giving away the keys to the new web. All you have to do is
+              click one of the bubbles to get started.
             </div>
           </div>
 
