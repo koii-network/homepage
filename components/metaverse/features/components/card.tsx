@@ -30,9 +30,7 @@ export const FeatureCard = ({
       </div>
 
       <div className={`${textclassName} flex flex-col pt-[15px] md:pl-[2rem]`}>
-        <p className="font-semibold text-[20px]">
-          {title}
-        </p>
+        <p className="font-semibold text-[20px]">{title}</p>
         <p className="font-normal text-[16px] w-[234px] lg:w-[300px] pt-[20px] md:pt-[5px]">
           {description}
         </p>
