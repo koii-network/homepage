@@ -26,7 +26,7 @@ export const News = ({ background }: NewsbgProps) => {
             imageSlot={
               <Image src="/images/news2.png" alt="" width={197} height={197} />
             }
-            title="Growing The Attention Economy"
+            title="Growing The Attention Economy With Al Morris"
             content='"What were trying to do is complement that [proof of humanity] with proof of contribution. The way you prove your contribution to the collective knowledge commons is by getting attention from other people who have a higher reputation."'
             logo={arweave}
             url="https://open.spotify.com/episode/1UEi9pJKjuVii2jGnjFC6D?si=FrXk2eOTRZK5vB5h5_AiWw&utm_source=copy-link"
