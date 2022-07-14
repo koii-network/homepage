@@ -318,9 +318,9 @@ export const Steps = () => {
           />
         </div>
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] lg:h-[371px]`}
+          className={`justify-center w-[242px] h-[auto] lg:w-[371px]`}
         >
-          <div className={` ${styles.script} script-box text-white p-[2rem] md:w-[242px] md:h-[242px] lg:w-[371px] lg:h-[371px]`}>
+          <div className={` ${styles.script} text-center script-box text-white p-[2rem] md:w-[242px] lg:w-[371px] h-auto`}>
             <p>script</p>
           </div>
         </div>
