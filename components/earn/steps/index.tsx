@@ -115,7 +115,7 @@ export const Steps = () => {
         Step4.style.opacity = "1";
         Step4.style.visibility = "visible";
         Stepbox.classList.add("md:min-h-[900px]");
-        Stepbox.classList.add("h-[950px]");
+        Stepbox.classList.add("h-[1050px]");
       }
     }
   };
@@ -132,14 +132,16 @@ export const Steps = () => {
         Step4.style.opacity = "0";
         Step4.style.visibility = "hidden";
         Stepbox.classList.remove("md:min-h-[900px]");
-        Stepbox.classList.remove("h-[950px]");
+        Stepbox.classList.remove("h-[1050px]");
       }
     }
   };
+
   const isBreakpoint = useMediaQuery(1439);
+  const isMobile = useMediaQuery(728)
   return (
     <div
-      className={`earnsteps container lg:min-h-[580px] pt-[150px] lg:pt-[30px] relative z-10`}
+      className={`earnsteps container lg:min-h-[580px] pt-[50px] lg:pt-[30px] relative z-10`}
     >
       <div
         className={`${styles.stepbox} md:h-auto lg:min-h-[370px]  flex flex-col px-[40px] lg:px-[120px]`}
@@ -150,6 +152,11 @@ export const Steps = () => {
             className={`${styles.stepcard} Steps grid grid-cols-1 lg:grid-cols-2 gap-4 items-center lg:flex-row lg:items-baseline mx-[-3.5rem]`}
             id="Stepcard"
           >
+             <span
+        className="anchor absolute translate-y-[-60rem]"
+        id="earnanchor"
+      ></span>
+            <a href="#earnanchor">
             <StepsCard
               onMouseEnter={Step1IN}
               imgSrc="/images/earn/step1.svg"
@@ -161,7 +168,8 @@ export const Steps = () => {
               className={`pl-[4rem] lg:pl-0`}
               textclassName="text-left"
             />
-
+            </a>
+            <a href="#earnanchor">
             <StepsCard
               onMouseEnter={Step2IN}
               imgSrc="/images/earn/step2.svg"
@@ -173,6 +181,8 @@ export const Steps = () => {
               className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
               textclassName="text-right md:text-left items-end lg:items-start"
             />
+            </a>
+            <a href="#earnanchor">
             <StepsCard
               onMouseEnter={Step3IN}
               imgSrc="/images/earn/step3.svg"
@@ -184,6 +194,8 @@ export const Steps = () => {
               className="pl-[4rem] lg:pl-0"
               textclassName="text-left"
             />
+            </a>
+            <a href="#earnanchor">
             <StepsCard
               onMouseEnter={Step4IN}
               imgSrc="/images/earn/step4_big.svg"
@@ -195,6 +207,7 @@ export const Steps = () => {
               className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
               textclassName="text-right md:text-left "
             />
+            </a>
           </div>
         ) : (
           <div
@@ -254,8 +267,18 @@ export const Steps = () => {
         id="Step1Full"
         onMouseLeave={Step1OUT}
       >
+        {isMobile ? (
+           <div
+           className={`self-start`}
+           onClick={Step1OUT}
+         >
+           <Image src="/images/earn/icon_back.svg" width={46} height={46} />
+         </div>
+        ) : (
+          ""
+        )}
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] my-[2rem]`}
+          className={`justify-center lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] mb-[2rem]`}
         >
           <Image src="/images/earn/step1.svg" width={371} height={371} />
         </div>
@@ -293,8 +316,18 @@ export const Steps = () => {
         id="Step2Full"
         onMouseLeave={Step2OUT}
       >
+          {isMobile ? (
+           <div
+           className={`self-start`}
+           onClick={Step2OUT}
+         >
+           <Image src="/images/earn/icon_back.svg" width={46} height={46} />
+         </div>
+        ) : (
+          ""
+        )}
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] my-[2rem]`}
+          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] mb-[2rem]`}
         >
           <Image src="/images/earn/step2.svg" width={371} height={371} />
         </div>
@@ -331,8 +364,18 @@ export const Steps = () => {
         id="Step3Full"
         onMouseLeave={Step3OUT}
       >
+          {isMobile ? (
+           <div
+           className={`self-start`}
+           onClick={Step3OUT}
+         >
+           <Image src="/images/earn/icon_back.svg" width={46} height={46} />
+         </div>
+        ) : (
+          ""
+        )}
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] my-[2rem]`}
+          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] mb-[2rem]`}
         >
           <Image src="/images/earn/step3.svg" width={371} height={371} />
         </div>
@@ -368,8 +411,18 @@ export const Steps = () => {
         id="Step4Full"
         onMouseLeave={Step4OUT}
       >
+          {isMobile ? (
+           <div
+           className={`self-start`}
+           onClick={Step4OUT}
+         >
+           <Image src="/images/earn/icon_back.svg" width={46} height={46} />
+         </div>
+        ) : (
+          ""
+        )}
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] my-[2rem]`}
+          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] mb-[2rem]`}
         >
           <Image src="/images/earn/step4_big.svg" width={371} height={371} />
         </div>
