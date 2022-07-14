@@ -13,12 +13,16 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step1 = document.getElementById("Step1Full");
       const Stepbox = document.getElementById("stepbox");
+      const Anchor = document.getElementById("earnanchor");
       if (Stepcard != null && Step1 != null && Stepbox != null) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
         Step1.style.opacity = "1";
         Step1.style.visibility = "visible";
         Stepbox.classList.add("h-[950px]");
+      }
+      if (Anchor != null) {
+        Anchor.scrollIntoView();
       }
     }
   };
@@ -45,12 +49,16 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step2 = document.getElementById("Step2Full");
       const Stepbox = document.getElementById("stepbox");
+      const Anchor = document.getElementById("earnanchor");
       if (Stepcard != null && Step2 != null && Stepbox != null) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
         Step2.style.opacity = "1";
         Step2.style.visibility = "visible";
         Stepbox.classList.add("h-[950px]");
+      }
+      if (Anchor != null) {
+        Anchor.scrollIntoView();
       }
     }
   };
@@ -77,12 +85,16 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step3 = document.getElementById("Step3Full");
       const Stepbox = document.getElementById("stepbox");
+      const Anchor = document.getElementById("earnanchor");
       if (Stepcard != null && Step3 != null && Stepbox != null) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
         Step3.style.opacity = "1";
         Step3.style.visibility = "visible";
         Stepbox.classList.add("h-[950px]");
+      }
+      if (Anchor != null) {
+        Anchor.scrollIntoView();
       }
     }
   };
@@ -109,6 +121,7 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step4 = document.getElementById("Step4Full");
       const Stepbox = document.getElementById("stepbox");
+      const Anchor = document.getElementById("earnanchor");
       if (Stepcard != null && Step4 != null && Stepbox != null) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
@@ -116,6 +129,9 @@ export const Steps = () => {
         Step4.style.visibility = "visible";
         Stepbox.classList.add("md:min-h-[900px]");
         Stepbox.classList.add("h-[1050px]");
+      }
+      if (Anchor != null) {
+        Anchor.scrollIntoView();
       }
     }
   };
@@ -153,65 +169,61 @@ export const Steps = () => {
             id="Stepcard"
           >
             <span
-              className="anchor absolute translate-y-[-60rem]"
+              className="anchor absolute translate-y-[-60rem] md:translate-y-[-30rem]"
               id="earnanchor"
             ></span>
-            <a className="w-fit" href="#earnanchor">
-              <div onClick={Step1IN}>
-                <StepsCard
-                  imgSrc="/images/earn/step1.svg"
-                  width="w-[172.5px]"
-                  height="h-[172.5px]"
-                  title="Attention Tracking on your site"
-                  description="If you have a website with regular traffic, earn passive income now— it only takes 2 minutes."
-                  alt="Dynamic NFT"
-                  className={`pl-[4rem] lg:pl-0`}
-                  textclassName="text-left"
-                />
-              </div>
-            </a>
-            <a className="" href="#earnanchor">
-              <div onClick={Step2IN}>
-                <StepsCard
-                  imgSrc="/images/earn/step2.svg"
-                  width="w-[172.5px]"
-                  height="h-[172.5px]"
-                  title="Drag & Drop any file to create an NFT"
-                  description="Share it with your friends and start earning right away."
-                  alt="step2"
-                  className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
-                  textclassName="text-right md:text-left items-end lg:items-start"
-                />
-              </div>
-            </a>
-            <a className="w-fit" href="#earnanchor">
-              <div onClick={Step3IN}>
-                <StepsCard
-                  imgSrc="/images/earn/step3.svg"
-                  width="w-[172.5px]"
-                  height="h-[172.5px]"
-                  title="Become an Ambassador"
-                  description="Learn about Koii, engage with the community, and earn for your time!"
-                  alt="Koii-X"
-                  className="pl-[4rem] lg:pl-0"
-                  textclassName="text-left"
-                />
-              </div>
-            </a>
-            <a className="" href="#earnanchor">
-              <div onClick={Step4IN}>
-                <StepsCard
-                  imgSrc="/images/earn/step4_big.svg"
-                  width="w-[172.5px]"
-                  height="h-[172.5px]"
-                  title="Rent your device’s extra comute power"
-                  description="Run the network and get rewarded without a second thought."
-                  alt="destorage"
-                  className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
-                  textclassName="text-right md:text-left "
-                />
-              </div>
-            </a>
+
+            <div onClick={Step1IN}>
+              <StepsCard
+                imgSrc="/images/earn/step1.svg"
+                width="w-[172.5px]"
+                height="h-[172.5px]"
+                title="Attention Tracking on your site"
+                description="If you have a website with regular traffic, earn passive income now— it only takes 2 minutes."
+                alt="Dynamic NFT"
+                className={`pl-[4rem] lg:pl-0`}
+                textclassName="text-left"
+              />
+            </div>
+
+            <div onClick={Step2IN}>
+              <StepsCard
+                imgSrc="/images/earn/step2.svg"
+                width="w-[172.5px]"
+                height="h-[172.5px]"
+                title="Drag & Drop any file to create an NFT"
+                description="Share it with your friends and start earning right away."
+                alt="step2"
+                className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
+                textclassName="text-right md:text-left items-end lg:items-start"
+              />
+            </div>
+
+            <div onClick={Step3IN}>
+              <StepsCard
+                imgSrc="/images/earn/step3.svg"
+                width="w-[172.5px]"
+                height="h-[172.5px]"
+                title="Become an Ambassador"
+                description="Learn about Koii, engage with the community, and earn for your time!"
+                alt="Koii-X"
+                className="pl-[4rem] lg:pl-0"
+                textclassName="text-left"
+              />
+            </div>
+
+            <div onClick={Step4IN}>
+              <StepsCard
+                imgSrc="/images/earn/step4_big.svg"
+                width="w-[172.5px]"
+                height="h-[172.5px]"
+                title="Rent your device’s extra comute power"
+                description="Run the network and get rewarded without a second thought."
+                alt="destorage"
+                className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
+                textclassName="text-right md:text-left "
+              />
+            </div>
           </div>
         ) : (
           <div
