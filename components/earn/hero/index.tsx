@@ -27,15 +27,17 @@ export const Earnhero = () => {
               No matter who you are or where you’re from, you can earn KOII as
               long as you have an internet connection.
             </div>
-            <Button
-              width="221px"
-              height="40px"
-              asLink
-              target="_blank"
-              href="https://docs.koii.network/"
-              className="px-6 py-3 w-[190px] bg-[#9BE7C4] text-koiiblue text-normal rounded-[32px] drop-shadow-lg mt-[3rem]"
-              label="Find out how"
-            />
+            <div className="w-fit">
+              <Button
+                width="221px"
+                height="40px"
+                asLink
+                target="_blank"
+                href="https://docs.koii.network/"
+                className="px-6 py-3 w-[190px] bg-[#9BE7C4] text-koiiblue text-normal rounded-[32px] drop-shadow-lg mt-[3rem]"
+                label="Find out how"
+              />
+            </div>
           </div>
           <div className="subtitle flex flex-col pt-[30rem] md:pt-[30rem] pb-[5rem] lg:pt-[8rem] lg:pl-[5rem]">
             <div className="sub_head font-semibold text-center md:text-left text-[28px] md:text-[30px] md:w-[565px]">
