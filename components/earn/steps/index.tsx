@@ -6,7 +6,7 @@ import styles from "styles/earn.module.css";
 import React, { MouseEvent } from "react";
 
 export const Steps = () => {
-  const Step1IN = (e: MouseEvent<HTMLButtonElement>) => {
+  const Step1IN = (e: MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     // Do something
     if (typeof window !== "undefined") {
@@ -38,7 +38,7 @@ export const Steps = () => {
       }
     }
   };
-  const Step2IN = (e: MouseEvent<HTMLButtonElement>) => {
+  const Step2IN = (e: any) => {
     e.preventDefault();
     // Do something
     if (typeof window !== "undefined") {
@@ -70,7 +70,7 @@ export const Steps = () => {
       }
     }
   };
-  const Step3IN = (e: MouseEvent<HTMLButtonElement>) => {
+  const Step3IN = (e: MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     // Do something
     if (typeof window !== "undefined") {
@@ -102,7 +102,7 @@ export const Steps = () => {
       }
     }
   };
-  const Step4IN = (e: MouseEvent<HTMLButtonElement>) => {
+  const Step4IN = (e: MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     // Do something
     if (typeof window !== "undefined") {
@@ -156,9 +156,9 @@ export const Steps = () => {
         className="anchor absolute translate-y-[-60rem]"
         id="earnanchor"
       ></span>
-            <a href="#earnanchor">
+            <a className="w-fit" href="#earnanchor">
+             <div onClick={Step1IN}>
             <StepsCard
-              onMouseEnter={Step1IN}
               imgSrc="/images/earn/step1.svg"
               width="w-[172.5px]"
               height="h-[172.5px]"
@@ -168,10 +168,11 @@ export const Steps = () => {
               className={`pl-[4rem] lg:pl-0`}
               textclassName="text-left"
             />
+            </div>
             </a>
-            <a href="#earnanchor">
+            <a className="" href="#earnanchor">
+            <div onClick={Step2IN}>
             <StepsCard
-              onMouseEnter={Step2IN}
               imgSrc="/images/earn/step2.svg"
               width="w-[172.5px]"
               height="h-[172.5px]"
@@ -181,10 +182,11 @@ export const Steps = () => {
               className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
               textclassName="text-right md:text-left items-end lg:items-start"
             />
+           </div>
             </a>
-            <a href="#earnanchor">
+            <a className="w-fit" href="#earnanchor">
+            <div onClick={Step3IN}>
             <StepsCard
-              onMouseEnter={Step3IN}
               imgSrc="/images/earn/step3.svg"
               width="w-[172.5px]"
               height="h-[172.5px]"
@@ -194,10 +196,11 @@ export const Steps = () => {
               className="pl-[4rem] lg:pl-0"
               textclassName="text-left"
             />
+           </div>
             </a>
-            <a href="#earnanchor">
+            <a className="" href="#earnanchor">
+            <div onClick={Step4IN}>
             <StepsCard
-              onMouseEnter={Step4IN}
               imgSrc="/images/earn/step4_big.svg"
               width="w-[172.5px]"
               height="h-[172.5px]"
@@ -207,6 +210,7 @@ export const Steps = () => {
               className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
               textclassName="text-right md:text-left "
             />
+           </div>
             </a>
           </div>
         ) : (
