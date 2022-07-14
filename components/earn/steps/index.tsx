@@ -138,7 +138,7 @@ export const Steps = () => {
   };
 
   const isBreakpoint = useMediaQuery(1439);
-  const isMobile = useMediaQuery(728)
+  const isMobile = useMediaQuery(728);
   return (
     <div
       className={`earnsteps container lg:min-h-[580px] pt-[50px] lg:pt-[30px] relative z-10`}
@@ -152,65 +152,65 @@ export const Steps = () => {
             className={`${styles.stepcard} Steps grid grid-cols-1 lg:grid-cols-2 gap-4 items-center lg:flex-row lg:items-baseline mx-[-3.5rem]`}
             id="Stepcard"
           >
-             <span
-        className="anchor absolute translate-y-[-60rem]"
-        id="earnanchor"
-      ></span>
+            <span
+              className="anchor absolute translate-y-[-60rem]"
+              id="earnanchor"
+            ></span>
             <a className="w-fit" href="#earnanchor">
-             <div onClick={Step1IN}>
-            <StepsCard
-              imgSrc="/images/earn/step1.svg"
-              width="w-[172.5px]"
-              height="h-[172.5px]"
-              title="Attention Tracking on your site"
-              description="If you have a website with regular traffic, earn passive income now— it only takes 2 minutes."
-              alt="Dynamic NFT"
-              className={`pl-[4rem] lg:pl-0`}
-              textclassName="text-left"
-            />
-            </div>
+              <div onClick={Step1IN}>
+                <StepsCard
+                  imgSrc="/images/earn/step1.svg"
+                  width="w-[172.5px]"
+                  height="h-[172.5px]"
+                  title="Attention Tracking on your site"
+                  description="If you have a website with regular traffic, earn passive income now— it only takes 2 minutes."
+                  alt="Dynamic NFT"
+                  className={`pl-[4rem] lg:pl-0`}
+                  textclassName="text-left"
+                />
+              </div>
             </a>
             <a className="" href="#earnanchor">
-            <div onClick={Step2IN}>
-            <StepsCard
-              imgSrc="/images/earn/step2.svg"
-              width="w-[172.5px]"
-              height="h-[172.5px]"
-              title="Drag & Drop any file to create an NFT"
-              description="Share it with your friends and start earning right away."
-              alt="step2"
-              className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
-              textclassName="text-right md:text-left items-end lg:items-start"
-            />
-           </div>
+              <div onClick={Step2IN}>
+                <StepsCard
+                  imgSrc="/images/earn/step2.svg"
+                  width="w-[172.5px]"
+                  height="h-[172.5px]"
+                  title="Drag & Drop any file to create an NFT"
+                  description="Share it with your friends and start earning right away."
+                  alt="step2"
+                  className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
+                  textclassName="text-right md:text-left items-end lg:items-start"
+                />
+              </div>
             </a>
             <a className="w-fit" href="#earnanchor">
-            <div onClick={Step3IN}>
-            <StepsCard
-              imgSrc="/images/earn/step3.svg"
-              width="w-[172.5px]"
-              height="h-[172.5px]"
-              title="Become an Ambassador"
-              description="Learn about Koii, engage with the community, and earn for your time!"
-              alt="Koii-X"
-              className="pl-[4rem] lg:pl-0"
-              textclassName="text-left"
-            />
-           </div>
+              <div onClick={Step3IN}>
+                <StepsCard
+                  imgSrc="/images/earn/step3.svg"
+                  width="w-[172.5px]"
+                  height="h-[172.5px]"
+                  title="Become an Ambassador"
+                  description="Learn about Koii, engage with the community, and earn for your time!"
+                  alt="Koii-X"
+                  className="pl-[4rem] lg:pl-0"
+                  textclassName="text-left"
+                />
+              </div>
             </a>
             <a className="" href="#earnanchor">
-            <div onClick={Step4IN}>
-            <StepsCard
-              imgSrc="/images/earn/step4_big.svg"
-              width="w-[172.5px]"
-              height="h-[172.5px]"
-              title="Rent your device’s extra comute power"
-              description="Run the network and get rewarded without a second thought."
-              alt="destorage"
-              className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
-              textclassName="text-right md:text-left "
-            />
-           </div>
+              <div onClick={Step4IN}>
+                <StepsCard
+                  imgSrc="/images/earn/step4_big.svg"
+                  width="w-[172.5px]"
+                  height="h-[172.5px]"
+                  title="Rent your device’s extra comute power"
+                  description="Run the network and get rewarded without a second thought."
+                  alt="destorage"
+                  className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
+                  textclassName="text-right md:text-left "
+                />
+              </div>
             </a>
           </div>
         ) : (
@@ -272,12 +272,9 @@ export const Steps = () => {
         onMouseLeave={Step1OUT}
       >
         {isMobile ? (
-           <div
-           className={`self-start`}
-           onClick={Step1OUT}
-         >
-           <Image src="/images/earn/icon_back.svg" width={46} height={46} />
-         </div>
+          <div className={`self-start`} onClick={Step1OUT}>
+            <Image src="/images/earn/icon_back.svg" width={46} height={46} />
+          </div>
         ) : (
           ""
         )}
@@ -320,13 +317,10 @@ export const Steps = () => {
         id="Step2Full"
         onMouseLeave={Step2OUT}
       >
-          {isMobile ? (
-           <div
-           className={`self-start`}
-           onClick={Step2OUT}
-         >
-           <Image src="/images/earn/icon_back.svg" width={46} height={46} />
-         </div>
+        {isMobile ? (
+          <div className={`self-start`} onClick={Step2OUT}>
+            <Image src="/images/earn/icon_back.svg" width={46} height={46} />
+          </div>
         ) : (
           ""
         )}
@@ -368,13 +362,10 @@ export const Steps = () => {
         id="Step3Full"
         onMouseLeave={Step3OUT}
       >
-          {isMobile ? (
-           <div
-           className={`self-start`}
-           onClick={Step3OUT}
-         >
-           <Image src="/images/earn/icon_back.svg" width={46} height={46} />
-         </div>
+        {isMobile ? (
+          <div className={`self-start`} onClick={Step3OUT}>
+            <Image src="/images/earn/icon_back.svg" width={46} height={46} />
+          </div>
         ) : (
           ""
         )}
@@ -415,13 +406,10 @@ export const Steps = () => {
         id="Step4Full"
         onMouseLeave={Step4OUT}
       >
-          {isMobile ? (
-           <div
-           className={`self-start`}
-           onClick={Step4OUT}
-         >
-           <Image src="/images/earn/icon_back.svg" width={46} height={46} />
-         </div>
+        {isMobile ? (
+          <div className={`self-start`} onClick={Step4OUT}>
+            <Image src="/images/earn/icon_back.svg" width={46} height={46} />
+          </div>
         ) : (
           ""
         )}
