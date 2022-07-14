@@ -317,10 +317,10 @@ export const Steps = () => {
             label="Koii Wiki"
           />
         </div>
-        <div
-          className={`justify-center w-[242px] h-[auto] lg:w-[371px]`}
-        >
-          <div className={` ${styles.script} text-center script-box text-white p-[2rem] md:w-[242px] lg:w-[371px] h-auto`}>
+        <div className={`justify-center w-[242px] h-[auto] lg:w-[371px]`}>
+          <div
+            className={` ${styles.script} text-center script-box text-white p-[2rem] md:w-[242px] lg:w-[371px] h-auto`}
+          >
             <p>script</p>
           </div>
         </div>
