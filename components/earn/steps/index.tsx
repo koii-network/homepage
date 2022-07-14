@@ -173,7 +173,7 @@ export const Steps = () => {
               id="earnanchor"
             ></span>
 
-            <div onClick={Step1IN}>
+            <div onClick={Step1IN} className="cursor-pointer">
               <StepsCard
                 imgSrc="/images/earn/step1.svg"
                 width="w-[172.5px]"
@@ -186,7 +186,7 @@ export const Steps = () => {
               />
             </div>
 
-            <div onClick={Step2IN}>
+            <div onClick={Step2IN} className="cursor-pointer">
               <StepsCard
                 imgSrc="/images/earn/step2.svg"
                 width="w-[172.5px]"
@@ -199,7 +199,7 @@ export const Steps = () => {
               />
             </div>
 
-            <div onClick={Step3IN}>
+            <div onClick={Step3IN} className="cursor-pointer">
               <StepsCard
                 imgSrc="/images/earn/step3.svg"
                 width="w-[172.5px]"
@@ -212,7 +212,7 @@ export const Steps = () => {
               />
             </div>
 
-            <div onClick={Step4IN}>
+            <div onClick={Step4IN} className="cursor-pointer">
               <StepsCard
                 imgSrc="/images/earn/step4_big.svg"
                 width="w-[172.5px]"
@@ -318,9 +318,11 @@ export const Steps = () => {
           />
         </div>
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px]`}
+          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] lg:h-[371px]`}
         >
-          <Image src="/images/earn/step1_code.svg" width={371} height={371} />
+          <div className={` ${styles.script} script-box text-white p-[2rem] md:w-[242px] md:h-[242px] lg:w-[371px] lg:h-[371px]`}>
+            <p>script</p>
+          </div>
         </div>
       </div>
 
@@ -401,7 +403,7 @@ export const Steps = () => {
             height="53px"
             asLink
             target="_blank"
-            href="https://share.hsforms.com/1ATBOuLeqSCa-WCEBU8Ky0Ac20dg"
+            href="https://discord.gg/koii"
             className=" my-[2rem] px-6 py-3 w-[251px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
             label="Become an Ambassador"
           />
