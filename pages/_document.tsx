@@ -10,7 +10,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Koii Network" />
           <meta
             name="og:description"
-            content="Koii was founded on fairness, trust, and one immense objective: to give creators a space where they permanently own and earn the value they deserve from their content."
+            content="Own the internet, like you should. Join Koii to mine crypto every time someone looks at your content, and use your computer or phone to earn tokens while you sleep!"
           />
           <meta
             property="og:image"
@@ -22,7 +22,7 @@ class MyDocument extends Document {
           <meta name="twitter:title" content="Koii Network" />
           <meta
             name="twitter:description"
-            content="Koii was founded on fairness, trust, and one immense objective: to give creators a space where they permanently own and earn the value they deserve from their content."
+            content="Own the internet, like you should. Join Koii to mine crypto every time someone looks at your content, and use your computer or phone to earn tokens while you sleep!"
           />
           <meta
             name="twitter:image"
