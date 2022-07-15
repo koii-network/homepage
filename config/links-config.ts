@@ -11,8 +11,8 @@ export enum HubspotFormLinks {
 }
 
 export const companyLinks = [
-  // { label: "About", url: "/" },
-  // { label: "Earn", url: "/" },
+  { label: "About", url: "/about" },
+  { label: "Earn", url: "/earn" },
   { label: "Blog", url: "https://blog.koii.network" },
   { label: "Jobs", url: HubspotFormLinks.JOBS },
   { label: "Developers Docs", url: "https://docs.koii.network" },
