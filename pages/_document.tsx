@@ -7,9 +7,14 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta property="og:title" content="Koii Network" />
           <meta
             name="og:description"
             content="Koii was founded on fairness, trust, and one immense objective: to give creators a space where they permanently own and earn the value they deserve from their content."
+          />
+          <meta
+            property="og:image"
+            content="https://www.koii.network/static/thumbnail.png"
           />
           <meta name="og:url" content="https://koii.network/" />
           <meta name="twitter:card" content="summary_large_image" />
