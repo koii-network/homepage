@@ -61,6 +61,18 @@ module.exports = {
           "0%, 40%, 100%": { opacity: 0.2 },
           "70%": { opacity: 1 },
         },
+        guy: {
+          "0%, 33%, 100%": { opacity: 0 },
+          "3%, 31%": { opacity: 1 },
+        },
+        guitar: {
+          "0%, 32%, 67%, 100%": { opacity: 0 },
+          "35%, 64%": { opacity: 1 },
+        },
+        paint: {
+          "0%, 66%, 100%": { opacity: 0 },
+          "68%, 97%": { opacity: 1 },
+        },
       },
     },
   },

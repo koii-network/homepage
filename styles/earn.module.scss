@@ -1,0 +1,7 @@
+.background {
+    background: linear-gradient(90deg, #BEF0ED 0%, #FFFFFF 80%);
+    color: #171753;
+    @media (max-width: 468px) {
+      background: linear-gradient(90deg, #BEF0ED 0%, #FFFFFF 100%);
+    }
+  }
