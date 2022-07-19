@@ -322,14 +322,10 @@ export const Steps = () => {
             className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] lg:w-[371px] h-auto`}
           >
             <p>{` port = new PoRT({ `} </p>
-           <p>
-           trustedNodeAddress: 'https://mainnet.koii.live',
-           </p>
-            <p>  node: 5,</p>
-            <p>   connectionWait: true,</p>
+            <p>trustedNodeAddress: 'https://mainnet.koii.live',</p>
+            <p> node: 5,</p>
+            <p> connectionWait: true,</p>
             <p>{`});`}</p>
-
-             
           </div>
         </div>
       </div>
