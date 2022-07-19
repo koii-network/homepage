@@ -312,16 +312,24 @@ export const Steps = () => {
             height="53px"
             asLink
             target="_blank"
-            href="https://docs.koii.network/"
+            href="https://docs.koii.network/earning-koii/attention-mining"
             className=" my-[2rem] px-6 py-3 w-[221px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
             label="Koii Wiki"
           />
         </div>
         <div className={`justify-center w-[242px] h-[auto] lg:w-[371px]`}>
           <div
-            className={` ${styles.script} text-center script-box text-white p-[2rem] md:w-[242px] lg:w-[371px] h-auto`}
+            className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] lg:w-[371px] h-auto`}
           >
-            <p>script</p>
+            <p>{` port = new PoRT({ `} </p>
+           <p>
+           trustedNodeAddress: 'https://mainnet.koii.live',
+           </p>
+            <p>  node: 5,</p>
+            <p>   connectionWait: true,</p>
+            <p>{`});`}</p>
+
+             
           </div>
         </div>
       </div>
