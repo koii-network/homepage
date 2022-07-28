@@ -13,7 +13,7 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step1 = document.getElementById("Step1Full");
       const Stepbox = document.getElementById("stepbox");
-      const Anchor = document.getElementById("earnanchor");
+      const Anchor = document.getElementById("subtitle");
       if (Stepcard != null && Step1 != null && Stepbox != null) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
@@ -49,7 +49,7 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step2 = document.getElementById("Step2Full");
       const Stepbox = document.getElementById("stepbox");
-      const Anchor = document.getElementById("earnanchor");
+      const Anchor = document.getElementById("subtitle");
       if (Stepcard != null && Step2 != null && Stepbox != null) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
@@ -85,7 +85,7 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step3 = document.getElementById("Step3Full");
       const Stepbox = document.getElementById("stepbox");
-      const Anchor = document.getElementById("earnanchor");
+      const Anchor = document.getElementById("subtitle");
       if (Stepcard != null && Step3 != null && Stepbox != null) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
@@ -121,7 +121,7 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step4 = document.getElementById("Step4Full");
       const Stepbox = document.getElementById("stepbox");
-      const Anchor = document.getElementById("earnanchor");
+      const Anchor = document.getElementById("subtitle");
       if (Stepcard != null && Step4 != null && Stepbox != null) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
@@ -168,10 +168,10 @@ export const Steps = () => {
             className={`${styles.stepcard} Steps grid grid-cols-1 lg:grid-cols-2 gap-4 items-center lg:flex-row lg:items-baseline mx-[-3.5rem]`}
             id="Stepcard"
           >
-            <span
+            {/* <span
               className="anchor absolute translate-y-[-60rem] md:translate-y-[-30rem]"
               id="earnanchor"
-            ></span>
+            ></span> */}
 
             <div onClick={Step1IN} className="cursor-pointer">
               <StepsCard

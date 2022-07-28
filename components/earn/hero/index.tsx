@@ -33,7 +33,7 @@ export const Earnhero = () => {
                 height="40px"
                 asLink
                 target="_blank"
-                href="https://docs.koii.network/"
+                href="https://docs.koii.network/earning-koii/attention-mining"
                 className="px-6 py-3 w-[190px] bg-[#9BE7C4] text-koiiblue text-normal rounded-[32px] drop-shadow-lg mt-[3rem]"
                 label="Find out how"
               />
@@ -43,7 +43,7 @@ export const Earnhero = () => {
             <div className="sub_head font-semibold text-center md:text-left text-[28px] md:text-[30px] md:w-[565px]">
               The internet should be owned by those who use it.
             </div>
-            <div className="sub_content text-[18px] md:w-[590px]">
+            <div className="sub_content text-[18px] md:w-[590px]" id="subtitle">
               We are giving away the keys to the new web. All you have to do is
               click one of the bubbles to get started.
             </div>
