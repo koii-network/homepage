@@ -217,7 +217,7 @@ export const Steps = () => {
                 imgSrc="/images/earn/step4_big.svg"
                 width="w-[172.5px]"
                 height="h-[172.5px]"
-                title="Rent your device’s extra comute power"
+                title="Rent your device’s extra compute power"
                 description="Run the network and get rewarded without a second thought."
                 alt="destorage"
                 className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
@@ -268,7 +268,7 @@ export const Steps = () => {
               imgSrc="/images/earn/step4_big.svg"
               width="w-[172.5px]"
               height="h-[172.5px]"
-              title="Rent your device’s extra comute power"
+              title="Rent your device’s extra compute power"
               description="Run the network and get rewarded without a second thought."
               alt="destorage"
               className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
@@ -438,7 +438,7 @@ export const Steps = () => {
         </div>
         <div className={`flex flex-col mx-[2rem]`}>
           <p className="text-[20px] font-semibold">
-            Rent your device’s extra comute power
+            Rent your device’s extra compute power
           </p>
           <p className="text-[16px] pt-[20px] max-w-[326px]">
             Rent the extra compute power on your laptop or desktop (mobile
