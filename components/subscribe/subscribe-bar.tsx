@@ -40,7 +40,7 @@ export const SubscribeBar = () => {
               "p-1 bg-white border border-solid border-dark-blue rounded-[32px] flex flex-row justify-between subscribe-button"
             }
             inputClassNames={
-              "outline-none bg-none focus:border-none w-[224px] text-xs"
+              "outline-none bg-none focus:border-none w-[187px] text-xs"
             }
             inputWrapperClassNames={"ml-4 pt-1"}
             submitClassNames={
