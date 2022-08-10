@@ -13,7 +13,7 @@ export const Subscribe = () => {
           "p-1 bg-white border border-solid border-dark-blue rounded-[32px] md:w-[400px] flex flex-row justify-between subscribe-button"
         }
         inputClassNames={
-          " outline-none bg-none focus:border-none w-[187px] md:w-[224px]"
+          " outline-none bg-none focus:border-none md:w-[224px]"
         }
         inputWrapperClassNames={"ml-4 pt-3"}
         submitClassNames={
