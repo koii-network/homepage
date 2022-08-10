@@ -39,9 +39,7 @@ export const SubscribeBar = () => {
             wrapperClassNames={
               "p-1 bg-white border border-solid border-dark-blue rounded-[32px] flex flex-row justify-between subscribe-button"
             }
-            inputClassNames={
-              "outline-none bg-none focus:border-none"
-            }
+            inputClassNames={"outline-none bg-none focus:border-none"}
             inputWrapperClassNames={"ml-4 pt-1"}
             submitClassNames={
               "bg-koiiorange rounded-[24px] px-4 h-[30px] text-xs"

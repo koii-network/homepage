@@ -12,9 +12,7 @@ export const Subscribe = () => {
         wrapperClassNames={
           "p-1 bg-white border border-solid border-dark-blue rounded-[32px] md:w-[400px] flex flex-row justify-between subscribe-button"
         }
-        inputClassNames={
-          " outline-none bg-none focus:border-none md:w-[224px]"
-        }
+        inputClassNames={" outline-none bg-none focus:border-none md:w-[224px]"}
         inputWrapperClassNames={"ml-4 pt-3"}
         submitClassNames={
           "bg-[#4E4E8D] text-white rounded-[24px] w-[142px] h-[48px] text-base uppercase"
