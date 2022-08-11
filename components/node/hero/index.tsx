@@ -11,15 +11,15 @@ export const Nodehero = () => {
       id="myID"
     >
         <div className="container ">
-          <div className="flex flex-col pt-[8rem] lg:pt-[4rem] lg:pl-[5rem] ">
+          <div className="flex flex-col pt-[8rem] lg:pt-[4rem] lg:pl-[5rem] items-center md:items-start">
             <div className="Node-title text-[#ECFFFE] text-white font-semibold md:font-blod text-[30px] md:text-[44px] lg:text-[56px] w-[300px] lg:w-[587px]">
               Nodes are here
             </div>
-            <div className="Node-subtitle text-[#ECFFFE] font-normal text-[18px] md:text-[20px] lg:text-[32px] md:w-[400px] lg:w-[455px] w-[280px] pt-[6px]">
+            <div className="Node-subtitle text-[#ECFFFE] font-normal text-[18px] md:text-[20px] lg:text-[32px] md:w-[400px] lg:w-[455px] w-[300px] pt-[6px]">
             Making the internet better, <br/>
 one node at a time.
             </div>
-            <div className="Node-subtitle font-semibold text-[#ECFFFE] text-white text-[18px] md:text-[20px] lg:text-[20px] md:w-[400px] lg:w-[600px] w-[280px] pt-[4rem] leading-[32px]">
+            <div className="Node-subtitle font-semibold text-[#ECFFFE] text-white text-[18px] md:text-[20px] lg:text-[20px] md:w-[400px] lg:w-[600px] w-[300px] pt-[4rem] leading-[32px]">
             We’re slowly expanding the network to make sure everything runs smoothly.  <br/>
 Get on the list now - it’s first come, first serve!
             </div>
@@ -49,10 +49,15 @@ Get on the list now - it’s first come, first serve!
               />
             </div>
           </div>
-
+        {isBreakpoint ? ( 
+        <div className="absolute z-20 w-[400px] h-[300px] right-0 translate-y-4">
+            <Image src="/images/node/hero_mobile.svg" layout="fill" />
+          </div>
+          ) : ( 
           <div className="absolute z-20 md:w-[469px] md:h-[421px] lg:w-[869px] lg:h-[721px] md:right-0 md:top-0">
             <Image src="/images/node/hero.svg" layout="fill" />
-          </div>
+          </div>)        
+        }
         </div>
     </div>
   );
