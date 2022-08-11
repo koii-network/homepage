@@ -23,7 +23,7 @@ export const companyLinks = [
 ];
 
 export const getInvolvedLinks = [
-  { label: "Run a Node", url: HubspotFormLinks.NODE_PREREGISTER },
+  { label: "Run a Node", url: "/node" },
   { label: "Get Finnie", url: "https://koii.me/finnie" },
   { label: "Apply for a Grant", url: HubspotFormLinks.GRANT },
   { label: "Become a Partner", url: HubspotFormLinks.PARTNERSHIP },

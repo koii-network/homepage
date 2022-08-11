@@ -29,7 +29,7 @@ Get on the list now - it’s first come, first serve!
                 height="40px"
                 asLink
                 target="_blank"
-                href="https://docs.koii.network/Nodeing-koii/attention-mining"
+                href="https://share.hsforms.com/1kLtk8rfURZ-HY2xnKRTfCgc20dg"
                 className="px-6 py-3 w-[190px] bg-[#9BE7C4] text-koiiblue text-normal rounded-[32px] drop-shadow-lg mt-[3rem]"
                 label="Node Waitlist"
               />
@@ -43,7 +43,7 @@ Get on the list now - it’s first come, first serve!
                 height="40px"
                 asLink
                 target="_blank"
-                href="https://docs.koii.network/Nodeing-koii/attention-mining"
+                href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj"
                 className="border-2 border-[#9BE7C4] px-6 py-3 w-[190px] bg-transparent text-koiiblue text-normal text-white rounded-[32px] drop-shadow-lg mt-[3rem]"
                 label="Get Finnie"
               />
