@@ -50,7 +50,7 @@ Get on the list now - it’s first come, first serve!
             </div>
           </div>
 
-          <div className="absolute z-20 w-[869px] h-[721px] lg:right-0 lg:top-0">
+          <div className="absolute z-20 md:w-[469px] md:h-[421px] lg:w-[869px] lg:h-[721px] md:right-0 md:top-0">
             <Image src="/images/node/hero.svg" layout="fill" />
           </div>
         </div>
