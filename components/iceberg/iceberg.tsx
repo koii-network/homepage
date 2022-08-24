@@ -25,7 +25,7 @@ export const Iceberg = () => {
             objectFit="cover"
           />
         </div>
-        <div className="flex justify-end mt-[-9rem] pb-[6rem] pr-[2rem] md:pb-0 md:mt-[-12rem] md:pr-[12rem]">
+        <div className="flex justify-end mt-[-9rem] pb-[6rem] pr-[2rem] md:pb-0 md:mt-[1rem] lg:mt-[-12rem] md:pr-[12rem]">
           <div className="text-lightmint w-[300px] md:w-[560px] text-xl text-right z-10">
             We collected all the benefits of blockchain & decentralized storage
             to make web3 easy for everyone.

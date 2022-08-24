@@ -453,8 +453,7 @@ export const Steps = () => {
             width="197px"
             height="53px"
             asLink
-            target="_blank"
-            href="https://share.hsforms.com/1kLtk8rfURZ-HY2xnKRTfCgc20dg"
+            href="/node"
             className=" my-[2rem] px-6 py-3 w-[221px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
             label="Run a Node"
           />
