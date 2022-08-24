@@ -44,7 +44,6 @@ export const Howitwork = () => {
                   width="221px"
                   height="53px"
                   asLink
-                  target="_blank"
                   href={HubspotFormLinks.NODE_PREREGISTER}
                   className="px-6 py-3 w-[190px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
                   label="Run a Node"
