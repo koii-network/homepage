@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/Button";
+import { isMobile } from "react-device-detect";
 
 export const Downloadhero = () => {
   const isBreakpoint = useMediaQuery(728);
@@ -79,6 +80,7 @@ export const Downloadhero = () => {
             </p>
           </div>
         </div>
+        {isMobile ? <div>mobile content</div> : <div>desktop content</div>}
         {isBreakpoint ? (
           <div className="absolute z-1 w-[400px] h-[300px] right-0 translate-y-4">
             <Image src="/images/download/hero_mobile.svg" layout="fill" />
