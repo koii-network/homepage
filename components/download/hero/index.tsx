@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/Button";
-import { isMobile } from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
 
 export const Downloadhero = () => {
   const isBreakpoint = useMediaQuery(728);
@@ -17,14 +17,17 @@ export const Downloadhero = () => {
           <div className="download-title text-[#ECFFFE] text-white font-semibold md:font-blod text-[30px] md:text-[44px] lg:text-[56px] w-[330px] lg:w-[587px]">
             The Koii Node
           </div>
-          <div className="download-subtitle text-[#ECFFFE] font-normal text-[18px] md:text-[20px] lg:text-[32px] md:w-[400px] lg:w-[455px] w-[300px] pt-[6px]">
+          <div className="download-subtitle text-[#ECFFFE] font-normal text-[18px] md:text-[20px] lg:text-[32px] md:w-[400px] lg:w-[455px] w-[330px] pt-[6px]">
             Making the internet better, <br />
             one node at a time.
           </div>
           <div className="download-subtitle font-semibold text-[#ECFFFE] text-white text-[18px] md:text-[20px] lg:text-[20px] md:w-[400px] lg:w-[600px] w-[330px] pt-[4rem] leading-[32px]">
             Get your node today
           </div>
-          <div className="flex md:flex-col lg:flex-row lg:pr-[5rem] w-[100%] lg:place-content-evenly items-center">
+          <MobileView className="flex flex-col lg:flex-row lg:pr-[5rem] w-[100%] lg:place-content-evenly items-center">
+            <div className="font-white">mobile view</div>
+          </MobileView>
+          <BrowserView className="flex flex-col lg:flex-row lg:pr-[5rem] w-[100%] lg:place-content-evenly items-center">
             <div className="window text-center">
               <Button
                 width=""
@@ -67,7 +70,7 @@ export const Downloadhero = () => {
                 For Linux ### or later.
               </p>
             </div>
-          </div>
+          </BrowserView>
           <div className="download-subtitle text-[#ECFFFE] text-white text-[18px] md:text-[20px] lg:text-[20px] md:w-[400px] lg:w-[600px] w-[280px] pt-[4rem] leading-[32px]">
             <p>Having trouble?</p>
             <p>
@@ -80,7 +83,6 @@ export const Downloadhero = () => {
             </p>
           </div>
         </div>
-        {isMobile ? <div>mobile content</div> : <div>desktop content</div>}
         {isBreakpoint ? (
           <div className="absolute z-1 w-[400px] h-[300px] right-0 translate-y-4">
             <Image src="/images/download/hero_mobile.svg" layout="fill" />
