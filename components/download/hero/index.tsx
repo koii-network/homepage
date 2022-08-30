@@ -14,18 +14,24 @@ export const Downloadhero = () => {
     >
       <div className="container ">
         <div className="flex flex-col pt-[8rem] lg:pt-[4rem] lg:pl-[5rem] items-center md:items-start relative z-20">
-          <div className="download-title text-[#ECFFFE] text-white font-semibold md:font-blod text-[30px] md:text-[44px] lg:text-[56px] w-[330px] lg:w-[587px]">
+          <div className="download-title text-[#ECFFFE] text-white font-semibold md:font-blod text-[40px] md:text-[44px] lg:text-[56px] w-[330px] lg:w-[587px]">
             The Koii Node
           </div>
           <div className="download-subtitle text-[#ECFFFE] font-normal text-[18px] md:text-[20px] lg:text-[32px] md:w-[400px] lg:w-[455px] w-[330px] pt-[6px]">
             Making the internet better, <br />
             one node at a time.
           </div>
-          <div className="download-subtitle font-semibold text-[#ECFFFE] text-white text-[18px] md:text-[20px] lg:text-[20px] md:w-[400px] lg:w-[600px] w-[330px] pt-[4rem] leading-[32px]">
+          <div className="download-subtitle font-semibold text-[#ECFFFE] text-white text-[18px] md:text-[20px] lg:text-[20px] md:w-[400px] lg:w-[600px] w-[330px] pt-[2rem] md:pt-[4rem] leading-[32px]">
             Get your node today
           </div>
-          <MobileView className="flex flex-col lg:flex-row lg:pr-[5rem] w-[100%] lg:place-content-evenly items-center">
-            <div className="font-white">mobile view</div>
+          <MobileView className="flex flex-col lg:flex-row lg:pr-[5rem] w-[100%] lg:place-content-evenly items-center text-center">
+            <div className="w-[48px] h-[48px] mt-[2rem]">
+              <Image src="/images/icon/warning.svg" width={48} height={48} />
+            </div>
+            <div className="text-[#FFA54B] text-[20px] font-semibold w-[270px]">
+              Mobile nodes are still in development. <br />
+              Open this page on a computer to get started.
+            </div>
           </MobileView>
           <BrowserView className="flex flex-col lg:flex-row lg:pr-[5rem] w-[100%] lg:place-content-evenly items-center">
             <div className="window text-center">
@@ -85,7 +91,7 @@ export const Downloadhero = () => {
         </div>
         {isBreakpoint ? (
           <div className="absolute z-1 w-[400px] h-[300px] right-0 translate-y-4">
-            <Image src="/images/download/hero_mobile.svg" layout="fill" />
+            <Image src="/images/node/download_mobile.svg" layout="fill" />
           </div>
         ) : (
           <div className="absolute z-1 md:w-[469px] md:h-[421px] lg:w-[669px] lg:h-[521px] md:right-0 md:top-0">
