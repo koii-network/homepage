@@ -19,7 +19,7 @@ export const Nodehero = () => {
             Making the internet better, <br />
             one node at a time.
           </div>
-          <div className="Node-subtitle font-semibold text-[#ECFFFE] text-white text-[18px] md:text-[20px]  md:w-[400px] lg:w-[600px] w-[300px] pt-[4rem] leading-[32px]">
+          <div className="Node-subtitle text-[#ECFFFE] text-white text-[16px] md:w-[400px] lg:w-[400px] w-[300px] pt-[4rem] leading-[22px]">
             We’re slowly expanding the network to make sure everything runs
             smoothly. <br />
             Get on the list now - it’s first come, first serve!
@@ -31,11 +31,11 @@ export const Nodehero = () => {
               asLink
               target="_blank"
               href="https://share.hsforms.com/1kLtk8rfURZ-HY2xnKRTfCgc20dg"
-              className="px-6 py-3 w-[190px] bg-[#9BE7C4] text-koiiblue text-normal rounded-[32px] drop-shadow-lg mt-[3rem]"
+              className="px-6 py-3 w-[190px] bg-[#9BE7C4] text-koiiblue text-normal rounded-[32px] drop-shadow-lg mt-[2rem]"
               label="Node Waitlist"
             />
           </div>
-          <div className="Node-subtitle text-[#ECFFFE] text-white text-[18px] md:text-[20px]  md:w-[400px] lg:w-[600px] w-[280px] pt-[4rem] leading-[32px]">
+          <div className="Node-subtitle text-[#ECFFFE] text-white text-[16px] md:w-[400px] lg:w-[400px] w-[280px] pt-[2rem] leading-[22px]">
             In the meantime, check out the Finnie Wallet for an easy,
             multi-chain wallet experience.
           </div>
