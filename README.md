@@ -1,3 +1,4 @@
+{::options parse_block_html="true" /}
 <div style="display: flex; flex-direction: column; align-items: center">
     <p>
       <img src="https://raw.githubusercontent.com/koii-network/koii.X/main/.github/images/koii_logo.svg" width="224px" alt="logo" />
