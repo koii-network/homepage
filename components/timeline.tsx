@@ -264,7 +264,7 @@ export const Timeline = () => {
                       <a
                         rel="noreferrer noopener"
                         target="_blank"
-                        href={HubspotFormLinks.NODE_PREREGISTER}
+                        href="/node"
                       >
                         Run a node
                       </a>
@@ -280,8 +280,7 @@ export const Timeline = () => {
                 <a
                   className="hover:text-koiiorange"
                   rel="noreferrer noopener"
-                  target="_blank"
-                  href={HubspotFormLinks.NODE_PREREGISTER}
+                  href="/node"
                 >
                   Tasks & Task Nodes
                 </a>

@@ -38,7 +38,7 @@ const Heroslide3 = ({
           <div className="text-center link pt-14 md:text-left">
             <a
               rel="noreferrer noopener"
-              href="https://docs.koii.network/"
+              href="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x"
               target="_blank"
             >
               <Button
