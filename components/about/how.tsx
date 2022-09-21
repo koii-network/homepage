@@ -1,7 +1,6 @@
 import { useMediaQuery } from "@/components/hooks";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
-import { HubspotFormLinks } from "config/links-config";
 
 export const Howitwork = () => {
   const isBreakpoint = useMediaQuery(1439);

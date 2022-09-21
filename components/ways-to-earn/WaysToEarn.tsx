@@ -1,5 +1,4 @@
 import { WayToEarn } from "./components/WayToEarn";
-import { HubspotFormLinks } from "config/links-config";
 
 export const WaysToEarn = () => {
   return (
