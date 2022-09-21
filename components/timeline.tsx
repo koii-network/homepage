@@ -276,7 +276,7 @@ export const Timeline = () => {
                 <a
                   className="hover:text-koiiorange"
                   rel="noreferrer noopener"
-                  href="/node"
+                  href={"/node"}
                 >
                   Tasks & Task Nodes
                 </a>
