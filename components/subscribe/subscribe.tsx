@@ -15,7 +15,7 @@ export const Subscribe = () => {
         inputClassNames={" outline-none bg-none focus:border-none md:w-[224px]"}
         inputWrapperClassNames={"ml-4 pt-3"}
         submitClassNames={
-          "bg-[#4E4E8D] text-white rounded-[24px] w-[142px] h-[48px] text-base uppercase"
+          "bg-[#4E4E8D] text-white rounded-[24px] w-[142px] h-[48px] text-[12px] uppercase"
         }
       />
 
