@@ -261,11 +261,7 @@ export const Timeline = () => {
                     1. Ask our network to accomplish any micro-service 2. Rent
                     out your unused RAM and get paid. <br />
                     <u>
-                      <a
-                        rel="noreferrer noopener"
-                        target="_blank"
-                        href={HubspotFormLinks.NODE_PREREGISTER}
-                      >
+                      <a rel="noreferrer noopener" target="_blank" href="/node">
                         Run a node
                       </a>
                     </u>
@@ -280,8 +276,7 @@ export const Timeline = () => {
                 <a
                   className="hover:text-koiiorange"
                   rel="noreferrer noopener"
-                  target="_blank"
-                  href={HubspotFormLinks.NODE_PREREGISTER}
+                  href={"/node"}
                 >
                   Tasks & Task Nodes
                 </a>

@@ -18,7 +18,7 @@ export const FeaturesList = ({ isMobile }: { isMobile: boolean }) => (
     </span>
     <span className="relative left-[6rem] xl:left-[35rem] hover:underline underline-offset-8">
       <a
-        href="https://docs.koii.network/koii-software-toolkit-sdk/what-is-the-koii-sdk"
+        href="https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x/tech-stack#k2-settlement-layer"
         rel="noreferrer noopener"
         target="_blank"
       >
