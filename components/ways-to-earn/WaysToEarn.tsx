@@ -1,5 +1,4 @@
 import { WayToEarn } from "./components/WayToEarn";
-import { HubspotFormLinks } from "config/links-config";
 
 export const WaysToEarn = () => {
   return (
@@ -44,7 +43,7 @@ export const WaysToEarn = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center md:gap-20 md:flex-row">
+          <div className="flex flex-col items-center justify-center md:gap-20 md:flex-row relative z-20">
             <WayToEarn
               url="https://discord.gg/koii"
               imgSrc="/images/way-3.svg"
@@ -57,7 +56,7 @@ export const WaysToEarn = () => {
               buttonLabel={"Become an Ambassador"}
             />
             <WayToEarn
-              url={HubspotFormLinks.NODE_PREREGISTER}
+              url="/node"
               imgSrc="/images/way-4.svg"
               description={
                 <div className="text-lg text-dark-blue w-[190px]">

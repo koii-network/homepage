@@ -1,7 +1,6 @@
 import { useMediaQuery } from "@/components/hooks";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
-import { HubspotFormLinks } from "config/links-config";
 
 export const Howitwork = () => {
   const isBreakpoint = useMediaQuery(1439);
@@ -44,7 +43,7 @@ export const Howitwork = () => {
                   width="221px"
                   height="53px"
                   asLink
-                  href={HubspotFormLinks.NODE_PREREGISTER}
+                  href="/node"
                   className="px-6 py-3 w-[190px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
                   label="Run a Node"
                 />

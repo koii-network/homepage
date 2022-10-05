@@ -304,4 +304,8 @@ const redirectConfig = [
     source: "/whitepaper.pdf",
     destination: docs,
   },
+  {
+    source: "/one-pager",
+    destination: "https://docsend.com/view/imrrbbnprzxxwrju",
+  },
 ];
