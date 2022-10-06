@@ -33,6 +33,11 @@ export const partnersFirstRow = [
 
 export const partnersSecondtRow = [
   {
+    name: "IBM Hyper Protect Accelerator",
+    iconSrc: "/partner-logos/ibm.svg",
+    url: "https://www.crypto-reporter.com/press-releases/koii-network-joins-ibm-hyper-protect-startup-accelerator-36874/",
+  },
+  {
     name: "Near Protocol",
     iconSrc: "/partner-logos/near.svg",
     url: "https://near.org/",
@@ -61,6 +66,11 @@ export const partnersSecondtRow = [
     name: "Spheron Protocol",
     iconSrc: "/partner-logos/spheron.svg",
     url: "https://spheron.network/",
+  },
+  {
+    name: "Village Capital",
+    iconSrc: "/partner-logos/VilCap.svg",
+    url: "https://vilcap.com/",
   },
 ] as const;
 
