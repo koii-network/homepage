@@ -17,7 +17,7 @@ export const companyLinks = [
   { label: "Jobs", url: HubspotFormLinks.JOBS },
   { label: "Developers Docs", url: "https://docs.koii.network" },
   { label: "Leaderboard", url: "https://koi.rocks/" },
-  { label: "Support", url: HubspotFormLinks.SUPORT },
+  // { label: "Support", url: HubspotFormLinks.SUPORT },
   { label: "Press Kit", url: "/Koii-Network_External-Assets.zip" },
   // { label: "FAQ", url: "https://koii.network/faq" },
 ];
