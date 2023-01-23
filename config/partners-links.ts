@@ -33,6 +33,11 @@ export const partnersFirstRow = [
 
 export const partnersSecondtRow = [
   {
+    name: "Peeranha",
+    iconSrc: "/partner-logos/peeranha.svg",
+    url: "https://peeranha.io/",
+  },
+  {
     name: "IBM Hyper Protect Accelerator",
     iconSrc: "/partner-logos/ibm.svg",
     url: "https://www.crypto-reporter.com/press-releases/koii-network-joins-ibm-hyper-protect-startup-accelerator-36874/",
