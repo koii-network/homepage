@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import {
   Hero,
   PirateShip,
-  ProductsToBuild,
+  LearnToBuild,
   ProgramBenefits,
   Form,
   DiscordAndDocs,
@@ -10,10 +10,10 @@ import {
 
 const Founders: NextPage = () => {
   return (
-    <div>
+    <div className="pt-16">
       <Hero />
       <PirateShip />
-      <ProductsToBuild />
+      <LearnToBuild />
       <ProgramBenefits />
       <Form />
       <DiscordAndDocs />
