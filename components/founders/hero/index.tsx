@@ -24,7 +24,7 @@ export const Hero = () => {
           </p>
           <Button
             label=" Join the Next Cohort"
-            className="text-[#4D3D8D] text-base tracking-wider px-6 py-3 bg-[#F5F5F5] mt-10 rounded-md"
+            className="text-[#4D3D8D] text-base tracking-wider px-6 py-3 bg-[#F5F5F5] mt-10 rounded-md font-sans"
           />
           <div className="mt-16 h-80 w-full">
             <ReactPlayer
