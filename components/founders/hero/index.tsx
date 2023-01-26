@@ -17,7 +17,7 @@ export const Hero = () => {
             />
           </div>
           <span className="pt-[30px] text-[32px] leading-10 text-white font-sans font-semibold">
-            Reimagine the web: Bring your passion project to life.
+            Reimagine the web: <br /> Bring your passion project to life.
           </span>
           <span className="pt-7 text-base leading-[22px] w-full text-white font-sans">
             Calling all founders with a revolutionary idea. <br />
