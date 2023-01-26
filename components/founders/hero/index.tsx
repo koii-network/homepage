@@ -8,7 +8,7 @@ export const Hero = () => {
     <div className="bg-lightmint pt-40 relative flex justify-center">
       <div className="relative px-8 w-full flex flex-col justify-center items-center">
         <div className="relative pb-80 flex z-30 flex-col justify-center items-center">
-          <div className="relative w-[238px] h-[269px] mt-[-22px]">
+          <div className="relative w-60 h-[269px] mt-[-22px]">
             <Image
               src={`/images/founders/desktop-node.svg`}
               alt="desktop-node"
