@@ -24,7 +24,8 @@ export const Hero = () => {
             Koii’s tools and support program empower you to make it happen fast.
           </span>
           <Button
-            label=" Join the Next Cohort"
+            label="Join the Next Cohort"
+            href="#founders-form"
             className="text-koiipurple text-base tracking-wider px-6 py-3 bg-[#F5F5F5] mt-10 rounded-md font-sans"
           />
           <div className="mt-16 h-80 w-full">
