@@ -10,7 +10,7 @@ import {
 
 const Founders: NextPage = () => {
   return (
-    <div className="pt-16">
+    <div>
       <Hero />
       <PirateShip />
       <LearnToBuild />
