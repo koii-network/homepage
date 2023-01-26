@@ -23,11 +23,12 @@ export const Hero = () => {
             Calling all founders with a revolutionary idea. <br />
             Koii’s tools and support program empower you to make it happen fast.
           </span>
-          <Button
-            label="Join the Next Cohort"
-            href="#founders-form"
-            className="text-koiipurple text-base tracking-wider px-6 py-3 bg-[#F5F5F5] mt-10 rounded-md font-sans"
-          />
+          <a href="#founders-form">
+            <Button
+              label="Join the Next Cohort"
+              className="text-koiipurple text-base tracking-wider px-6 py-3 bg-[#F5F5F5] mt-10 rounded-md font-sans"
+            />
+          </a>
           <div className="mt-16 h-80 w-full">
             <ReactPlayer
               url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
