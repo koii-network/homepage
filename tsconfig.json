@@ -21,7 +21,8 @@
       "@/pages/*": ["pages/*"],
       "@/utils/*": ["utils/*"],
       "@/types/*": ["types/*"],
-      "@/config/*": ["config/*"]
+      "@/config/*": ["config/*"],
+      "@/public/*": ["public/*"]
     }
   },
   "include": [

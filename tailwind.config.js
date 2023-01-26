@@ -26,6 +26,9 @@ module.exports = {
       sans: ["Sora", "sans-serif"],
     },
     extend: {
+      transitionDuration: {
+        1300: "1300ms",
+      },
       colors: {
         fontMain: "#171753",
         "dark-blue": "#171753",
@@ -40,6 +43,8 @@ module.exports = {
         koiiorange: "#FFC78F",
         koiipurple: "#4D3D8D",
         "fish-yellow": "#FFC78F",
+        purple: "#4D3D8D",
+        "dark-green": "#087980",
       },
       keyframes: {
         identity: {
