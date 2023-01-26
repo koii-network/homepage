@@ -31,6 +31,7 @@ export const Hero = () => {
             <ReactPlayer
               url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
               playsinline
+              controls
               width="100%"
               height="100%"
             />
