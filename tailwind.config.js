@@ -46,6 +46,9 @@ module.exports = {
         purple: "#4D3D8D",
         "dark-green": "#087980",
       },
+      dropShadow: {
+        "3xl": "0px 10px 6px rgba(0, 0, 0, 0.15)",
+      },
       keyframes: {
         identity: {
           "0%, 30%, 50%, 100%": { opacity: 0.2 },
