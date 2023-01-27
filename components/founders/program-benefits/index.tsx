@@ -5,7 +5,7 @@ import { Benefit } from "./benefit";
 export const ProgramBenefits = () => {
   return (
     <div className="flex flex-col relative justify-center w-full">
-      <div className="px-8 w-full flex-col pb-16 flex justify-center align-center z-[40]">
+      <div className="!px-8 w-full flex-col pb-16 flex justify-center align-center z-[40]">
         <div className="flex justify-center align-center -mt-44">
           <div className="relative h-64 w-[278px]">
             <Image
@@ -23,7 +23,7 @@ export const ProgramBenefits = () => {
           Turn your passion project into reality, our mentor network is here to
           help
         </p>
-        <div>
+        <div className="w-full flex  flex-col flex-start justify-start items-start">
           {programBenefits.map(({ image, text }, index) => {
             return (
               <Benefit
@@ -31,6 +31,7 @@ export const ProgramBenefits = () => {
                 image={image}
                 text={text}
                 side={index % 2 ? "right" : "left"}
+                lastIndex={index >= programBenefits.length - 2}
               />
             );
           })}
