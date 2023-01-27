@@ -2,15 +2,6 @@ import One from "@/public/images/founders/1.svg";
 import Two from "@/public/images/founders/2.svg";
 import Three from "@/public/images/founders/3.svg";
 import Four from "@/public/images/founders/4.svg";
-import fish1 from "@/public/images/founders/fish-1.svg";
-import fish2 from "@/public/images/founders/fish-2.svg";
-import fish3 from "@/public/images/founders/fish-3.svg";
-import fish4 from "@/public/images/founders/fish-4.svg";
-import fish5 from "@/public/images/founders/fish-5.svg";
-import fish6 from "@/public/images/founders/fish-6.svg";
-import fish7 from "@/public/images/founders/fish-7.svg";
-import fish8 from "@/public/images/founders/fish-8.svg";
-import fish9 from "@/public/images/founders/fish-9.svg";
 
 // for some reason Tailwind doesn't like the classes to be passed within benefits like benefits.[0].background === 'bg-mint',
 // it treats it like it was being constructed on the fly even when the whole class is present there at buildtime (https://tailwindcss.com/docs/content-configuration#dynamic-class-names)
@@ -82,81 +73,5 @@ export const benefits = [
     ),
     color: COLORS["[#a4d59e]"],
     image: Four,
-  },
-];
-
-export const buoys = [
-  {
-    originalPosition: "top-[261px]",
-    shiftedPosition: "top-[261px]",
-  },
-  {
-    originalPosition: "top-[465px]",
-    shiftedPosition: "top-[600px]",
-  },
-  {
-    originalPosition: "top-[655px]",
-    shiftedPosition: "top-[790px]",
-  },
-  {
-    originalPosition: "top-[845px]",
-    shiftedPosition: "top-[990px]",
-  },
-];
-
-export const fishes = [
-  {
-    benefit: null,
-    image: fish1,
-    originalPosition: "top-[460px] left-16",
-    shiftedPosition: "top-[460px] left-16",
-  },
-  {
-    benefit: null,
-    image: fish2,
-    originalPosition: "top-[452px] left-60",
-    shiftedPosition: "top-[452px] left-60",
-  },
-  {
-    benefit: 2,
-    image: fish3,
-    originalPosition: "top-[660px] left-16",
-    shiftedPosition: "top-[800px] left-16",
-  },
-  {
-    benefit: 3,
-    image: fish4,
-    originalPosition: "top-[900px] -left-8",
-    shiftedPosition: "top-[900px] -left-8",
-  },
-  {
-    benefit: 4,
-    image: fish5,
-    originalPosition: "top-[1090px] left-14",
-    shiftedPosition: "top-[1190px] left-14",
-  },
-  {
-    benefit: 4,
-    image: fish6,
-    originalPosition: "top-[1390px] left-28",
-    shiftedPosition: "top-[1300px] left-28",
-  },
-  {
-    benefit: null,
-    image: fish7,
-    originalPosition: "top-[1420px] left-20",
-    shiftedPosition: "top-[1380px] left-20",
-  },
-  {
-    benefit: null,
-    image: fish8,
-    originalPosition: "top-[1390px] -left-2",
-    shiftedPosition: "top-[1280px] -left-2",
-  },
-  {
-    benefit: null,
-    image: fish9,
-    originalPosition: "top-[1644px] -left-12",
-    shiftedPosition: "top-[1688px] -left-12",
   },
 ];
