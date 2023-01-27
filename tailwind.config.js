@@ -42,6 +42,7 @@ module.exports = {
         koiiblue: "#171753",
         koiiorange: "#FFC78F",
         koiipurple: "#4D3D8D",
+        koiipurpledark: "#353570",
         "fish-yellow": "#FFC78F",
         purple: "#4D3D8D",
         "dark-green": "#087980",
