@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import { getDiscordDocsLinks } from "@/config/links-config";
 
 export const DiscordAndDocs = () => {
   return (
@@ -18,7 +19,7 @@ export const DiscordAndDocs = () => {
         asLink
         label="Join the Discord"
         target="_blank"
-        href=" https://discord.gg/koii"
+        href={getDiscordDocsLinks.discord}
         className="bg-purple text-base tracking-wider px-9 py-3 text-[#FCFCFC] mt-10 rounded-md font-sans mx-auto  min-w-[220px] w-full"
       />
       <p className="text-koiipurpledark font-sans pt-11 font-semibold text-xl leading-5 text-center">
@@ -27,7 +28,7 @@ export const DiscordAndDocs = () => {
       <Button
         asLink
         target="_blank"
-        href="https://docs.koii.network/"
+        href={getDiscordDocsLinks.docs}
         label="Koii Wiki"
         className="bg-transparent text-base tracking-wider px-9 py-3 text-purple border-purple border-2 border-solid mt-10 rounded-md font-sans min-w-[220px] w-full mx-auto"
       />
