@@ -4,7 +4,7 @@ import { Benefit } from "./benefit";
 
 export const ProgramBenefits = () => {
   return (
-    <div className="flex flex-col relative justify-center w-full">
+    <div className="flex flex-col relative justify-center w-full bg-lightmint">
       <div className="!px-8 w-full flex-col pb-16 flex justify-center align-center z-40">
         <div className="flex justify-center align-center -mt-44">
           <div className="relative h-64 w-[278px]">

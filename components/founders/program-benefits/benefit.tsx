@@ -11,8 +11,9 @@ interface BenefitProps {
 
 export const Benefit = ({ image, text, side, lastIndex }: BenefitProps) => {
   const { ref, inView } = useInView({
-    threshold: 0.7,
-    delay: 200,
+    threshold: 0.35,
+    delay: 100,
+    rootMargin: "-30% 0% -45% 0%",
   });
 
   const benefitClasses = ` flex gap-5 mb-4 items-center flex-shrink-0 ${
