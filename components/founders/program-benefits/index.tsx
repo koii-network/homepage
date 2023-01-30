@@ -27,7 +27,7 @@ export const ProgramBenefits = () => {
             </p>
           </div>
         </div>
-        <div className="w-full flex flex-col lg:grid  lg:grid-cols-3 lg:pt-24 grid-flow-row gap-4 lg:max-w-7xl lg:mx-auto justify-center items-center">
+        <div className="w-full flex flex-col lg:grid  lg:grid-cols-3 lg:pt-24 grid-flow-row gap-4 lg:gap-x-9 lg:gap-y-24 lg:max-w-7xl lg:mx-auto justify-center items-center">
           {programBenefits.map(({ image, text }, index) => {
             return (
               <Benefit

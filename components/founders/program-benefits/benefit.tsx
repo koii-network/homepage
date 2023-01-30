@@ -18,7 +18,7 @@ export const Benefit = ({ image, text, side, lastIndex }: BenefitProps) => {
   });
 
   const isBreakpoint = useMediaQuery(1024);
-  const benefitClasses = `flex gap-5 mb-4 items-center flex-shrink-0 ${
+  const benefitClasses = `flex gap-5 items-center flex-shrink-0 ${
     side === "right" && isBreakpoint
       ? "flex-row-reverse"
       : "flex-row text-right"
