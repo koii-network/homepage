@@ -33,7 +33,7 @@ export const Benefit = ({ image, text, side, lastIndex }: BenefitProps) => {
 
   const textClasses = `font-sans transition-all text-lg leading-6 tracking-tighter ease-in-out duration-200 ${
     inView && isBreakpoint ? "text-mint font-bold" : "text-white"
-  } ${side === "left" ? "text-left" : "text-right"}`;
+  } ${side === "right" && isBreakpoint ? "text-right" : "text-left"}`;
 
   return (
     <div className={benefitClasses}>

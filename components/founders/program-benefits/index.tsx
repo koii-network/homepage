@@ -6,7 +6,7 @@ export const ProgramBenefits = () => {
   return (
     <div className="flex flex-col relative justify-center w-full bg-lightmint">
       <div className="!px-8 w-full flex-col pb-16 lg:pb-36 flex justify-center align-center z-40">
-        <div className="flex w-full flex-col lg:flex-row items-center justify-center">
+        <div className="flex w-full flex-col items-center justify-center lg:flex-row">
           <div className="flex justify-center align-center -mt-44">
             <div className="relative h-64 lg:h-[410px] w-[278px] lg:w-[485px]">
               <Image
@@ -27,7 +27,7 @@ export const ProgramBenefits = () => {
             </p>
           </div>
         </div>
-        <div className="w-full flex flex-col lg:grid  lg:grid-cols-3 lg:pt-24 grid-flow-row gap-4 lg:gap-x-9 lg:gap-y-24 lg:max-w-7xl lg:mx-auto justify-center items-center">
+        <div className="w-full flex flex-col grid-flow-row gap-4 justify-center items-center lg:grid lg:grid-cols-3 lg:pt-24 lg:gap-x-9 lg:gap-y-24 lg:max-w-7xl lg:mx-auto">
           {programBenefits.map(({ image, text }, index) => {
             return (
               <Benefit
