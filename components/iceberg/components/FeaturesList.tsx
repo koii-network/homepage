@@ -9,7 +9,7 @@ export const FeaturesList = ({ isMobile }: { isMobile: boolean }) => (
     </div>
     <span className="relative left-[3rem] xl:left-[35rem] hover:underline underline-offset-8">
       <a
-        href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj"
+        href="https://docs.koii.network/koii-summary/tools"
         rel="noreferrer noopener"
         target="_blank"
       >
@@ -63,7 +63,7 @@ export const FeaturesList = ({ isMobile }: { isMobile: boolean }) => (
     </span>
     <span className="relative left-[6rem] xl:left-[40rem] hover:underline underline-offset-8">
       <a
-        href="https://docs.koii.network/#the-koii-token"
+        href="https://docs.koii.network/earning-koii/attention-mining"
         rel="noreferrer noopener"
         target="_blank"
       >
@@ -81,7 +81,7 @@ export const FeaturesList = ({ isMobile }: { isMobile: boolean }) => (
     </span>
     <span className="relative left-[3rem] xl:left-[27rem] hover:underline underline-offset-8">
       <a
-        href="https://discord.gg/koii"
+        href="https://docs.koii.network/koii-summary/philosophy"
         rel="noreferrer noopener"
         target="_blank"
       >
