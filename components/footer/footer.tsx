@@ -12,7 +12,7 @@ import { Policy } from "./policy";
 
 export const Footer = () => {
   return (
-    <footer className="relative bg-koiipurpledark md:bg-koiipurple app-footer pb-[100px] md:pb-[54px] text-white bg-footer-pattern md:bg-footer-pattern-desktop bg-no-repeat bg-center">
+    <footer className="relative bg-koiipurpledark md:bg-koiipurple app-footer pb-[100px] md:pb-[54px] text-white">
       <div className="container mx-auto md:pt-12">
         <div className="max-w-[1060px] mx-auto">
           <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-[30px] pb-6">

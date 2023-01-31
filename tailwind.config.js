@@ -26,11 +26,6 @@ module.exports = {
       sans: ["Sora", "sans-serif"],
     },
     extend: {
-      backgroundImage: {
-        "footer-pattern": "url('/images/footer-background-pattern.svg')",
-        "footer-pattern-desktop":
-          "url('/images/footer-background-pattern-xl.svg')",
-      },
       transitionDuration: {
         1300: "1300ms",
       },
