@@ -3,7 +3,7 @@ import { HubspotForm } from "@/components/subscribe/hubspot-form";
 export const Subscribe = () => {
   return (
     <div>
-      <h3 className="flex justify-center mb-5 text-sm uppercase md:justify-start text-dark-blue">
+      <h3 className="flex justify-center mb-5 text-sm uppercase md:justify-start">
         Get in the Node
       </h3>
 
@@ -19,7 +19,7 @@ export const Subscribe = () => {
         }
       />
 
-      <div className="mt-5 ml-4 text-sm text-dark-blue">
+      <div className="mt-5 ml-4 text-sm">
         © Koii Foundation 2022, All Rights Reserved.
       </div>
     </div>

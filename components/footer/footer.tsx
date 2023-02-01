@@ -7,20 +7,16 @@ import { LinksSection } from "./links-section";
 import { SocialMediaLinks } from "./social-media-links";
 import Image from "next/image";
 import { Subscribe } from "@/components/subscribe/subscribe";
+import FinnieLogo from "@/public/images/finnie-koii-logo-white.svg";
 import { Policy } from "./policy";
 
 export const Footer = () => {
   return (
-    <footer className=" bg-gradient-to-b from-titanium-white to-turquoise-light app-footer pb-[100px] md:pb-[54px]">
+    <footer className="relative bg-koiipurpledark md:bg-koiipurple app-footer pb-[100px] md:pb-[54px] text-white">
       <div className="container mx-auto md:pt-12">
         <div className="max-w-[1060px] mx-auto">
-          <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-dark-blue text-[30px] pb-6">
-            <Image
-              src="/KoiiNetwork-logo_128.png"
-              width={64}
-              height={64}
-              alt="Koii logo"
-            />
+          <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-[30px] pb-6">
+            <Image src={FinnieLogo} alt="Koii logo" />
 
             <h2>Don&apos;t Miss Out.</h2>
           </div>
@@ -38,7 +34,7 @@ export const Footer = () => {
             <Subscribe />
           </div>
 
-          <div className="mt-4 mb-3 border border-solid border-dark-blue md:mb-7" />
+          <div className="mt-4 mb-3 border border-solid border-white md:mb-7" />
 
           <div className="flex flex-row justify-center md:last:justify-between">
             <Policy />
