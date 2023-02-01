@@ -26,6 +26,11 @@ module.exports = {
       sans: ["Sora", "sans-serif"],
     },
     extend: {
+      backgroundImage: {
+        "benefits-background-xl":
+          "url('/images/founders/benefit-background-xl.svg')",
+        "benefits-background": "url('/images/founders/benefit-background.svg')",
+      },
       transitionDuration: {
         1300: "1300ms",
       },
