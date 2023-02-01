@@ -26,6 +26,11 @@ module.exports = {
       sans: ["Sora", "sans-serif"],
     },
     extend: {
+      backgroundImage: {
+        "benefits-background-xl":
+          "url('/images/founders/benefit-background-xl.svg')",
+        "benefits-background": "url('/images/founders/benefit-background.svg')",
+      },
       transitionDuration: {
         1300: "1300ms",
       },
@@ -46,9 +51,6 @@ module.exports = {
         "fish-yellow": "#FFC78F",
         purple: "#4D3D8D",
         "dark-green": "#087980",
-      },
-      dropShadow: {
-        "3xl": "0px 10px 6px rgba(0, 0, 0, 0.15)",
       },
       keyframes: {
         identity: {

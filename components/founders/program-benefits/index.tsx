@@ -4,7 +4,7 @@ import { Benefit } from "./benefit";
 
 export const ProgramBenefits = () => {
   return (
-    <div className="flex flex-col relative justify-center w-full bg-lightmint">
+    <div className="flex flex-col relative justify-center w-full bg-lightmint bg-benefits-background lg:bg-benefits-background-xl bg-no-repeat bg-[length:100%_100%] bg-center">
       <div
         className={`!px-8 w-full flex-col pb-16 lg:pb-36 flex justify-center align-center z-40`}
       >
@@ -41,15 +41,6 @@ export const ProgramBenefits = () => {
               />
             );
           })}
-        </div>
-      </div>
-      <div className={`absolute w-full h-full`}>
-        <div className="relative min-w-full max-w-full h-full">
-          <Image
-            src="/images/founders/benefit-background.svg"
-            alt="benefits building"
-            layout="fill"
-          />
         </div>
       </div>
     </div>
