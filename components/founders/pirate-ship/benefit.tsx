@@ -1,7 +1,8 @@
 import { ReactNode } from "react";
 import { useInView } from "react-intersection-observer";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import { useMediaQuery } from "@/components/hooks";
+import { BenefitLabel } from "./benefit-label";
 
 interface Props {
   label: string;
@@ -55,26 +56,5 @@ export const Benefit = ({ label, text, images, onSelect }: Props) => {
         <BenefitLabel image={image} label={label} />
       </div>
     </div>
-  );
-};
-
-interface BenefitLabelProps {
-  image: StaticImageData;
-  label: string;
-}
-
-const BenefitLabel = ({ image, label }: BenefitLabelProps) => {
-  const labelClasses =
-    "text-koiiblue lg:text-lightmint text-left whitespace-normal w-[150px]";
-
-  return (
-    <>
-      <Image
-        alt="Benefit building on Koii"
-        className="transition-all duration-700 ease-in-out"
-        src={image}
-      />
-      <div className={labelClasses}>{label}</div>
-    </>
   );
 };
