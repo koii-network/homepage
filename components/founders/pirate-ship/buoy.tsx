@@ -17,7 +17,7 @@ export const Buoy = ({
     currentStep >= 1 && currentStep < index + 1
       ? shiftedPosition
       : originalPosition
-  } w-2.5 h-2.5 bg-purple rounded-full -left-1`;
+  } w-2.5 h-2.5 bg-lightmint rounded-full -left-1`;
 
   return <div className={classes} />;
 };

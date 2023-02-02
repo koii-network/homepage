@@ -25,3 +25,21 @@ body {
 .force-hide {
   display: none !important;
 }
+
+
+
+@layer utilities {
+
+  .clip-light-triangle {
+    background: linear-gradient(180.24deg, rgba(66, 232, 224, 0.5) 2.08%, rgba(217, 217, 217, 0) 86.79%);
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+  }
+
+  .section-bottom-transition {  
+    border-radius: 0% 0% 50% 50% / 0% 0% 25% 25%;
+  }
+
+  .section-bottom-transition-desktop {  
+    border-radius: 0% 0% 30% 70% / 0% 0% 48% 48%  ;
+  }
+}

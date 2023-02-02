@@ -1,21 +1,11 @@
-import One from "@/public/images/founders/1.svg";
-import Two from "@/public/images/founders/2.svg";
-import Three from "@/public/images/founders/3.svg";
-import Four from "@/public/images/founders/4.svg";
-
-// for some reason Tailwind doesn't like the classes to be passed within benefits like benefits.[0].background === 'bg-mint',
-// it treats it like it was being constructed on the fly even when the whole class is present there at buildtime (https://tailwindcss.com/docs/content-configuration#dynamic-class-names)
-export enum COLORS {
-  "mint" = "mint",
-  "[#71d4bc]" = "[#71d4bc]",
-  "[#79abc6]" = "[#79abc6]",
-  "[#a4d59e]" = "[#a4d59e]",
-}
-
-export type ColorsMap = Record<
-  COLORS,
-  { background: `bg-${COLORS}`; border: `border-${COLORS}` }
->;
+import oneLight from "@/public/images/founders/1-light.svg";
+import twoLight from "@/public/images/founders/2-light.svg";
+import threeLight from "@/public/images/founders/3-light.svg";
+import fourLight from "@/public/images/founders/4-light.svg";
+import oneDark from "@/public/images/founders/1-dark.svg";
+import twoDark from "@/public/images/founders/2-dark.svg";
+import threeDark from "@/public/images/founders/3-dark.svg";
+import fourDark from "@/public/images/founders/4-dark.svg";
 
 export const benefits = [
   {
@@ -29,8 +19,7 @@ export const benefits = [
         <p>Speed up time between deployments with easy, pre-made Koii Tasks.</p>
       </div>
     ),
-    color: COLORS.mint,
-    image: One,
+    images: { light: oneLight, dark: oneDark },
   },
   {
     label: "Go Beyond Smart Contracts",
@@ -43,8 +32,7 @@ export const benefits = [
         </p>
       </div>
     ),
-    color: COLORS["[#71d4bc]"],
-    image: Two,
+    images: { light: twoLight, dark: twoDark },
   },
   {
     label: "Scale Quickly",
@@ -57,8 +45,7 @@ export const benefits = [
         <p>Don’t duplicate work and still get all the nodes you need.</p>
       </div>
     ),
-    color: COLORS["[#79abc6]"],
-    image: Three,
+    images: { light: threeLight, dark: threeDark },
   },
   {
     label: "Easily Integrate with Web2",
@@ -71,7 +58,6 @@ export const benefits = [
         <p>Do what’s best for your project at the right time.</p>
       </div>
     ),
-    color: COLORS["[#a4d59e]"],
-    image: Four,
+    images: { light: fourLight, dark: fourDark },
   },
 ];

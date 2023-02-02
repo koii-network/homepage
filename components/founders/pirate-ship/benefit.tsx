@@ -1,28 +1,21 @@
 import { ReactNode } from "react";
 import { useInView } from "react-intersection-observer";
 import Image, { StaticImageData } from "next/image";
-import { ColorsMap, COLORS } from "@/config/benefits-building-on-koii";
-
-const colors: ColorsMap = {
-  mint: { background: "bg-mint", border: "border-mint" },
-  "[#71d4bc]": { background: "bg-[#71d4bc]", border: "border-[#71d4bc]" },
-  "[#79abc6]": { background: "bg-[#79abc6]", border: "border-[#79abc6]" },
-  "[#a4d59e]": { background: "bg-[#a4d59e]", border: "border-[#a4d59e]" },
-};
+import { useMediaQuery } from "@/components/hooks";
 
 interface Props {
   label: string;
-  color: COLORS;
   text: ReactNode;
-  image: StaticImageData;
+  images: { dark: StaticImageData; light: StaticImageData };
   onSelect: () => void;
 }
 
-export const Benefit = ({ label, color, text, image, onSelect }: Props) => {
+export const Benefit = ({ label, text, images, onSelect }: Props) => {
+  const isMobileScreen = useMediaQuery(1439);
+
   const { ref, inView } = useInView({
-    threshold: 0.35,
-    delay: 100,
-    rootMargin: "-30% 0% -45% 0%",
+    threshold: 0,
+    rootMargin: "-50% 0% -50% 0%",
     onChange: (inView) => {
       if (inView) {
         onSelect();
@@ -30,36 +23,58 @@ export const Benefit = ({ label, color, text, image, onSelect }: Props) => {
     },
   });
 
-  const containerClasses = `relative flex flex-col items-center justify-center gap-8 transition-all ease-in-out duration-700 ${
+  const containerClasses = `relative flex flex-col items-center justify-center gap-8 transition-all ease-in-out duration-700 lg:-left-36 ${
     inView
-      ? `rounded-full ${colors[color].background} w-[305px] h-[305px] mb-10`
+      ? `shadow-benefit rounded-full bg-lightmint w-[305px] h-[305px] mb-10`
       : "w-50 h-50 ml-[5px]"
   }`;
 
   const externalRingClasses = `absolute transition-all ease-in-out duration-300 rounded-full ${
     inView
-      ? `w-[365px] h-[365px] border-2 ${colors[color].border}`
+      ? `w-[365px] h-[365px] border-2 border-lightmint`
       : "opacity-0 scale(0)"
   }`;
-
-  const labelClasses = `text-purple text-left whitespace-normal w-[150px]`;
 
   const textClasses = `pl-10 pr-5 text-left transition-all ease-in-out duration-300 text-xs text-koiiblue font-normal w-62 ${
     inView ? "max-h-96 opacity-1" : "max-h-0 opacity-0 scale(0)"
   }`;
 
+  const image = inView && isMobileScreen ? images.dark : images.light;
+
   return (
-    <div className={containerClasses} ref={ref}>
-      <div className={externalRingClasses} />
-      <div className="flex gap-6 items-center">
-        <Image
-          alt="Benefit building on Koii"
-          className="transition-all ease-in-out duration-700 !w-full !h-full"
-          src={image}
-        />
-        <div className={labelClasses}>{label}</div>
+    <div className="flex items-center lg:ml-2 lg:h-50 lg:gap-52" ref={ref}>
+      <div className={containerClasses} ref={ref}>
+        <div className={externalRingClasses} />
+        <div className="flex items-center gap-6 lg:hidden">
+          <BenefitLabel image={image} label={label} />
+        </div>
+        <div className={textClasses}>{text}</div>
       </div>
-      <div className={textClasses}>{text}</div>
+
+      <div className="hidden items-center gap-6 lg:flex lg:h-fit">
+        <BenefitLabel image={image} label={label} />
+      </div>
     </div>
+  );
+};
+
+interface BenefitLabelProps {
+  image: StaticImageData;
+  label: string;
+}
+
+const BenefitLabel = ({ image, label }: BenefitLabelProps) => {
+  const labelClasses =
+    "text-koiiblue lg:text-lightmint text-left whitespace-normal w-[150px]";
+
+  return (
+    <>
+      <Image
+        alt="Benefit building on Koii"
+        className="transition-all duration-700 ease-in-out"
+        src={image}
+      />
+      <div className={labelClasses}>{label}</div>
+    </>
   );
 };
