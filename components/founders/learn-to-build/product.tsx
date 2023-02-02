@@ -11,8 +11,8 @@ interface Props {
 
 export const Product = ({ label, image, text, side }: Props) => {
   const { ref, inView } = useInView({
-    threshold: 1,
-    delay: 300,
+    threshold: 0.9,
+    delay: 350,
   });
 
   // ideally we'd go from w-fit to w-56 but to transition it needs for both to be absolute units,
@@ -25,7 +25,7 @@ export const Product = ({ label, image, text, side }: Props) => {
       : "text-right ml-auto rounded-l-full"
   }`;
 
-  const textClasses = `px-7 text-left transition-all ease-in-out duration-1300 ${
+  const textClasses = `px-7 text-left transition-all ease-in-out duration-500 ${
     inView ? "max-h-96 opacity-1" : "max-h-0 opacity-0"
   }`;
 
