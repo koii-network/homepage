@@ -45,7 +45,7 @@ export const WaysToEarn = () => {
 
           <div className="flex flex-col items-center justify-center md:gap-20 md:flex-row relative z-20">
             <WayToEarn
-              url="https://discord.gg/koii"
+              url="https://docs.koii.network/koii-summary/philosophy"
               imgSrc="/images/way-3.svg"
               description={
                 <div className="text-lg text-dark-blue w-[190px]">

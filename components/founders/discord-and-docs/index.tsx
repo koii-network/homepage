@@ -4,7 +4,7 @@ import { getDiscordDocsLinks } from "@/config/links-config";
 
 export const DiscordAndDocs = () => {
   return (
-    <div className="pt-32 pb-[120px] w-full bg-lightmint flex justify-center lg:pb-32 lg:pt-28">
+    <div className="pt-32 pb-[120px] w-full bg-lightmint lg:bg-faux-azure-mist flex justify-center lg:pb-32 lg:pt-28">
       <div className="max-auto w-full px-8 flex flex-col lg:flex-row lg:gap-10 lg:max-w-6xl">
         <div className="w-full lg:max-w-xs lg:flex lg:flex-col lg:items-start">
           <p className="text-koiipurpledark font-sans font-semibold text-xl leading-5 text-center lg:text-start">
