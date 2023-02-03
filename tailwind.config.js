@@ -34,7 +34,7 @@ module.exports = {
         "sea-lg": "url('/images/founders/sea-lg.svg')",
         products: "url('/images/founders/products-background.svg')",
         "products-xl": "url('/images/founders/products-background-xl.svg')",
-        sky: "linear-gradient(180deg, #ECFFFE 0%, #BEF0ED 58.58%, #BEF0ED 100%)"
+        sky: "linear-gradient(180deg, #ECFFFE 0%, #BEF0ED 58.58%, #BEF0ED 100%)",
       },
       transitionDuration: {
         1300: "1300ms",
@@ -104,6 +104,9 @@ module.exports = {
       },
       boxShadow: {
         benefit: "0 0 300px 50px #e3e0eb",
+      },
+      dropShadow: {
+        "3xl": "0px 8px 6px rgba(0, 0, 0, 0.15)",
       },
       keyframes: {
         identity: {
