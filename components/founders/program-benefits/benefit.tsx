@@ -17,7 +17,7 @@ export const Benefit = ({ image, text, side, lastIndex }: BenefitProps) => {
     rootMargin: "-30% 0% -45% 0%",
   });
 
-  const isBreakpoint = useMediaQuery(1024);
+  const isBreakpoint = useMediaQuery(1439);
   const benefitClasses = `flex gap-5 items-center flex-shrink-0 ${
     side === "right" && isBreakpoint
       ? "flex-row-reverse"
