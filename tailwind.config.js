@@ -26,6 +26,9 @@ module.exports = {
       sans: ["Sora", "sans-serif"],
     },
     extend: {
+      animation: {
+        "fade-in": "fade-in 0.5s ease-in-out 1",
+      },
       backgroundImage: {
         "benefits-background-xl":
           "url('/images/founders/benefit-background-xl.svg')",
@@ -109,6 +112,16 @@ module.exports = {
         "3xl": "0px 8px 6px rgba(0, 0, 0, 0.15)",
       },
       keyframes: {
+        "fade-in": {
+          "0%": {
+            transform: "translateY(25%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: 1,
+          },
+        },
         identity: {
           "0%, 30%, 50%, 100%": { opacity: 0.2 },
           "10%": { opacity: 1 },
