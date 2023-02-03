@@ -50,14 +50,14 @@ export const LearnToBuild = () => {
   // ];
 
   return (
-    <div className="relative flex flex-col items-center gap-20 pt-16 text-purple text-center font-medium bg-[#1e1d5a] lg:bg-[#191854]">
-      <div className="lg:-mb-48 text-2xl text-lightmint tracking-tighter lg:text-white  lg:text-4xl lg:leading-48px lg:tracking-normal">
+    <div className="relative flex flex-col items-center gap-20 bg-[#1e1d5a] pt-16 text-center font-medium text-purple md:bg-[#191854]">
+      <div className="md:leading-48px text-2xl tracking-tighter text-lightmint md:tracking-normal md:text-white lg:-mb-48 lg:text-4xl">
         Community Ownership & Governance:
         <br />
         The future is in your hands.
       </div>
-      <div className="pt-40 lg:pt-[340px] pb-[280px] bg-products lg:bg-products-xl bg-no-repeat bg-cover flex w-full flex-col lg:px-8">
-        <div className="lg:-mt-24 hidden lg:flex">
+      <div className="flex w-full flex-col bg-products bg-cover bg-no-repeat pt-40 pb-[280px] md:px-8 md:pt-0 lg:bg-products-xl lg:pt-[340px]">
+        <div className="hidden md:mt-7 md:flex lg:-mt-24">
           <Product
             label={topProduct.label}
             images={topProduct.images}
@@ -66,11 +66,11 @@ export const LearnToBuild = () => {
           />
         </div>
 
-        <div className="lg:max-w-screen-xl w-full flex flex-col lg:flex-row lg:mx-auto gap-16 transition-all ease-in-out duration-700">
+        <div className="flex w-full flex-col gap-16 transition-all duration-700 ease-in-out md:mx-auto md:max-w-screen-xl md:flex-row md:flex-wrap">
           {products.map(({ label, images, text }, index) => (
             <div
               key={label}
-              className="w-full flex flex-col transition-all ease-in-out duration-1000 lg:hover:scale-110 lg:cursor-pointer"
+              className="flex w-full flex-col transition-all duration-500 ease-in-out md:flex-1 md:basis-[28%] md:cursor-pointer md:hover:scale-105 lg:basis-48"
               onMouseEnter={() => handleHover({ label, images, text })}
             >
               <Product

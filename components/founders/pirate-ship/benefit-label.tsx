@@ -12,7 +12,7 @@ export const BenefitLabel = ({ image, label }: Props) => (
       className="transition-all duration-700 ease-in-out"
       src={image}
     />
-    <div className="text-koiiblue lg:text-lightmint text-left whitespace-normal w-[150px]">
+    <div className="w-[150px] whitespace-normal text-left text-koiiblue lg:text-lightmint">
       {label}
     </div>
   </>

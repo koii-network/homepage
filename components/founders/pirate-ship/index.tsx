@@ -68,22 +68,22 @@ export const PirateShip = () => {
   const oceanFloorImage = shouldUseSmallOceanFloor ? oceanFloor : oceanFloorLg;
 
   return (
-    <div className="relative -mt-250 lg:-mt-105 flex flex-col items-center gap-9 bg-sea bg-cover bg-[center_top_36rem] bg-no-repeat pt-32 text-center font-medium lg:bg-sea-lg lg:bg-[center_top_8rem]">
+    <div className="relative -mt-250 flex flex-col items-center gap-9 bg-sea bg-cover bg-[center_top_36rem] bg-no-repeat pt-32 text-center font-medium lg:-mt-105 lg:bg-sea-lg lg:bg-[center_top_8rem]">
       <div className={cloudsClasses}>
         <Image alt="Clouds" src={cloudsImage} />
       </div>
 
       <div className="relative lg:-top-48 lg:right-72">
-        <h3 className="px-2 text-2xl lg:text-[32px] text-darkpurple lg:w-[790px] lg:pl-28 lg:text-left">
+        <h3 className="px-2 text-2xl text-darkpurple lg:w-[790px] lg:pl-28 lg:text-left lg:text-[32px]">
           Koii makes it easy to build decentralized apps that don’t suck.
         </h3>
-        <div className="relative mt-10 lg:mt-16 lg:-left-20 lg:scale-125">
+        <div className="relative mt-10 lg:-left-20 lg:mt-16 lg:scale-125">
           <Image alt="Pirate source code" src={pirateCode} />
         </div>
       </div>
       <div className="relative bottom-16 left-4 lg:left-52 lg:-top-64">
         <div className="clip-light-triangle absolute top-56 -left-166 h-350 w-350 lg:-left-[710px] lg:rotate-[2.5deg]" />
-        <div ref={topRef} className="lg:relative lg:right-4 z-20">
+        <div ref={topRef} className="z-20 lg:relative lg:right-4">
           <Image alt="Pirate ship" src={pirateShip} />
         </div>
 
@@ -104,7 +104,7 @@ export const PirateShip = () => {
         <div className={anchorClasses}>
           <Image alt="Anchor" src={anchor} />
         </div>
-        <div className="relative right-26.2 top-2 lg:right-31.8 z-10">
+        <div className="relative right-26.2 top-2 z-10 lg:right-31.8">
           <Image alt="Small waves" src={smallWaves} />
         </div>
 
@@ -137,7 +137,7 @@ export const PirateShip = () => {
           />
         ))}
       </div>
-      <div className="mt-40 w-[130%] lg:mt-32 -mb-32 lg:mb-0" ref={bottomRef}>
+      <div className="mt-40 -mb-32 w-[130%] lg:mt-32 lg:mb-0" ref={bottomRef}>
         <Image alt="Ocean floor" src={oceanFloorImage} />
         <div className="relative -top-36 left-16 lg:-top-96 lg:-left-80">
           <Image alt="Small rocks" src={rocks} />
