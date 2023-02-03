@@ -34,6 +34,7 @@ module.exports = {
         "sea-lg": "url('/images/founders/sea-lg.svg')",
         products: "url('/images/founders/products-background.svg')",
         "products-xl": "url('/images/founders/products-background-xl.svg')",
+        sky: "linear-gradient(180deg, #ECFFFE 0%, #BEF0ED 58.58%, #BEF0ED 100%)"
       },
       transitionDuration: {
         1300: "1300ms",
