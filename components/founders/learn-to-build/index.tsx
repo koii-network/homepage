@@ -2,16 +2,20 @@ import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { products } from "@/config/products-to-build-on-koii";
 import { useMediaQuery } from "@/components/hooks";
+import type { Props } from "./product";
 import { Product } from "./product";
 
 export type ProductSelected = 0 | 1 | 2 | 3 | 4;
 
 export const LearnToBuild = () => {
-  const [topProduct, setTopProduct] = useState<ProductSelected>();
+  const [topProduct, setTopProduct] = useState<Props>();
   const isMobile = useMediaQuery(1439);
 
-  const handleHover = (featuredItem?: ProductSelected) => {
-    if (!isMobile) {
+  const handleHover = (featuredItem?: Props) => {
+    console.log("hover", 1);
+    if (!isMobile && !(topProduct?.label === featuredItem?.label)) {
+      console.log("hover", 2);
+      console.log(featuredItem);
       setTopProduct(featuredItem);
     }
   };
@@ -50,39 +54,34 @@ export const LearnToBuild = () => {
 
   return (
     <div className="relative flex flex-col items-center gap-20 pt-16 text-purple text-center font-medium bg-[#1e1d5a] lg:bg-[#191854]">
-      {scrollReferencesToProducts.map(({ classes, ref }) => (
-        <div key={classes} className={classes} ref={ref} />
-      ))}
-
-      <div
-        ref={titleRef}
-        className="text-2xl text-lightmint tracking-tighter lg:text-white  lg:text-4xl lg:leading-48px lg:tracking-normal"
-      >
+      <div className="text-2xl text-lightmint tracking-tighter lg:text-white  lg:text-4xl lg:leading-48px lg:tracking-normal">
         Community Ownership & Governance:
         <br />
         The future is in your hands.
       </div>
-      <div className="lg:pt-56 pb-[620px] bg-products lg:bg-products-xl bg-no-repeat bg-cover lg:flex w-full lg:flex-col lg:px-8">
+      <div className="pt-40 lg:pt-[340px] pb-[620px] bg-products lg:bg-products-xl bg-no-repeat bg-cover lg:flex w-full lg:flex-col lg:px-8">
+        {topProduct && !isMobile && (
+          <Product
+            label={topProduct.label}
+            images={topProduct.images}
+            text={topProduct.text}
+            isSelected={true}
+          />
+        )}
         <div
-          className={`lg:max-w-screen-xl w-full flex flex-col lg:flex-row lg:mx-auto gap-16 transition-all ease-in-out duration-700 ${
-            topProduct === undefined ? "-mt-[248px] lg:-mt-[336px]" : ""
-          }`}
+          className={`lg:max-w-screen-xl w-full flex flex-col lg:flex-row lg:mx-auto gap-16 transition-all ease-in-out duration-700`}
         >
           {products.map(({ label, images, text }, index) => (
             <div
               key={label}
-              className={`w-full flex flex-col transition-all ease-in-out duration-1000 ${
-                topProduct === index
-                  ? "absolute top-[488px] left-0"
-                  : "relative top-96"
-              }`}
+              className={`w-full flex flex-col transition-all ease-in-out duration-1000`}
+              onMouseEnter={(e) => handleHover({ label, images, text })}
             >
               <Product
                 label={label}
                 images={images}
                 text={text}
                 side={index % 2 ? "right" : "left"}
-                isSelected={topProduct === index}
               />
             </div>
           ))}

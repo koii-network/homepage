@@ -3,12 +3,12 @@ import Image, { StaticImageData } from "next/image";
 import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from "@/components/hooks";
 
-interface Props {
+export interface Props {
   label: string;
   images: { small: StaticImageData; big: StaticImageData };
   text: ReactNode;
-  side: "left" | "right";
-  isSelected: boolean;
+  side?: "left" | "right";
+  isSelected?: boolean;
 }
 
 export const Product = ({ label, images, text, side, isSelected }: Props) => {
