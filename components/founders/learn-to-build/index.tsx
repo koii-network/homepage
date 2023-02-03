@@ -72,6 +72,7 @@ export const LearnToBuild = () => {
               key={label}
               className="flex w-full flex-col transition-all duration-500 ease-in-out md:flex-1 md:basis-[28%] md:cursor-pointer md:hover:scale-105 lg:basis-48"
               onMouseEnter={() => handleHover({ label, images, text })}
+              onClick={() => handleHover({ label, images, text })}
             >
               <Product
                 label={label}
