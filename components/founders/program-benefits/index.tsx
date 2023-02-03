@@ -25,8 +25,7 @@ export const ProgramBenefits = () => {
                 Join the Founder Support Program
               </p>
               <p className="mt-2 font-sans text-white lg:mt-5 font-semibold text-base leading-[22px] mb-11 text-center">
-                Turn your passion project into reality, our mentor network is
-                here to help
+                Turn your passion project into reality. Our mentor network is here to help.
               </p>
             </div>
           </div>

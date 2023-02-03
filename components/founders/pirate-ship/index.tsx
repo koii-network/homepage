@@ -75,8 +75,7 @@ export const PirateShip = () => {
 
       <div className="relative lg:-top-48 lg:right-72">
         <h3 className="px-2 text-2xl lg:text-[32px] text-darkpurple lg:w-[790px] lg:pl-28 lg:text-left">
-          Koii makes it easy to build decentralized apps that{" "}
-          <br className="lg:hidden" /> DON’T SUCK.
+          Koii makes it easy to build decentralized apps that don’t suck.
         </h3>
         <div className="relative mt-10 lg:mt-16 lg:-left-20 lg:scale-125">
           <Image alt="Pirate source code" src={pirateCode} />
