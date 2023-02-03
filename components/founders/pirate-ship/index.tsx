@@ -111,7 +111,7 @@ export const PirateShip = () => {
 
         {fishes.map(
           ({ image, originalPosition, shiftedPosition, benefit }, index) => {
-            const classes = `transition-all ease-in-out duration-700 absolute z-10 ${
+            const classes = `transition-all ease-in-out duration-500 absolute z-10 ${
               (currentStep >= 1 && currentStep < Number(benefit)) ||
               currentStep === 5
                 ? shiftedPosition
@@ -138,7 +138,7 @@ export const PirateShip = () => {
           />
         ))}
       </div>
-      <div className="mt-40 w-[130%] lg:mt-32" ref={bottomRef}>
+      <div className="mt-40 w-[130%] lg:mt-32 -mb-32 lg:mb-0" ref={bottomRef}>
         <Image alt="Ocean floor" src={oceanFloorImage} />
         <div className="relative -top-36 left-16 lg:-top-96 lg:-left-80">
           <Image alt="Small rocks" src={rocks} />

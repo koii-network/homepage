@@ -11,8 +11,10 @@ import tokensXl from "@/public/images/founders/tokens-xl.svg";
 export const products = [
   {
     label: "CONTENT APPS",
-    image: apps,
-    imageXl: appsXl,
+    images: {
+      small: apps,
+      big: appsXl,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>
@@ -29,8 +31,10 @@ export const products = [
   },
   {
     label: "INFRASTRUCTURE",
-    image: decentralizedStorage,
-    imageXl: decentralizedStorageXl,
+    images: {
+      small: decentralizedStorage,
+      big: decentralizedStorageXl,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>
@@ -48,8 +52,10 @@ export const products = [
   },
   {
     label: "WEBSITES",
-    image: websites,
-    imageXl: websites,
+    images: {
+      small: websites,
+      big: websites,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>
@@ -65,8 +71,10 @@ export const products = [
   },
   {
     label: "NFTS",
-    image: nfts,
-    imageXl: nftsXl,
+    images: {
+      small: nfts,
+      big: nftsXl,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>
@@ -83,8 +91,10 @@ export const products = [
   },
   {
     label: "TOKENS",
-    image: tokens,
-    imageXl: tokensXl,
+    images: {
+      small: tokens,
+      big: tokensXl,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>Koii Nodes and lightning fast transactions make it easy to:</p>
