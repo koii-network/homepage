@@ -16,10 +16,10 @@ export const Benefit = ({ image, text, side, lastIndex }: BenefitProps) => {
     rootMargin: "-30% 0% -45% 0%",
   });
 
-  const benefitClasses = `flex gap-5 items-center flex-shrink-0 transition-all ease-in-out duration-200 ${
+  const benefitClasses = `text-lg hover:text-[18.5px] text-white !leading-6 flex gap-5 items-center flex-shrink-0 transition-all ease-in-out duration-200 ${
     side === "right" ? "flex-row-reverse lg:flex-row" : "flex-row text-right"
   }
-  ${inView ? "text-mint font-bold lg:text-white lg:font-normal " : "text-white"}
+  ${inView ? "text-[18.5px] text-mint lg:text-lg lg:text-white" : ""}
   ${
     lastIndex
       ? side === "left"
@@ -27,16 +27,16 @@ export const Benefit = ({ image, text, side, lastIndex }: BenefitProps) => {
         : "-mr-14 gap-x-0 sm:gap-5 sm:m-0"
       : ""
   }
-  lg:hover:text-mint lg:hover:font-bold lg:hover:drop-shadow-3xl`;
+  lg:hover:text-mint lg:hover:drop-shadow-3xl`;
 
   const imageContainer = `${styles.container} flex-shrink-0`;
 
-  const imageClasses = `transition-all ease-in-out duration-300 ${
+  const imageClasses = `transition-all ease-in-out duration-200 ${
     inView ? "drop-shadow-3xl lg:drop-shadow-none" : ""
   }
   `;
 
-  const textClasses = `font-sans transition-all text-lg leading-6 tracking-tighter ease-in-out duration-200 ${
+  const textClasses = `font-sans transition-all tracking-tighter ease-in-out duration-200 ${
     side === "right" ? "text-right lg:text-left" : "text-left"
   }`;
 

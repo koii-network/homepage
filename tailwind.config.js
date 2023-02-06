@@ -109,7 +109,7 @@ module.exports = {
         benefit: "0 0 300px 50px #e3e0eb",
       },
       dropShadow: {
-        "3xl": "0px 8px 6px rgba(0, 0, 0, 0.15)",
+        "3xl": "0px 8px 6px rgba(0, 0, 0, 0.45)",
       },
       keyframes: {
         "fade-in": {
