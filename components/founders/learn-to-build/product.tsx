@@ -81,7 +81,7 @@ export const Product = ({
         target="_blank"
         rel="noreferrer"
         href={docsLink}
-        className={`${textClasses} underline`}
+        className={`${textClasses} -mt-4 underline`}
       >
         See the Docs
       </a>
