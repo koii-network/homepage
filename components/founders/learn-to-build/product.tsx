@@ -9,9 +9,17 @@ export interface Props {
   text: ReactNode;
   side?: "left" | "right";
   isSelected?: boolean;
+  docsLink: string;
 }
 
-export const Product = ({ label, images, text, side, isSelected }: Props) => {
+export const Product = ({
+  label,
+  images,
+  text,
+  side,
+  docsLink,
+  isSelected,
+}: Props) => {
   const { ref, inView } = useInView({
     threshold: 1,
     delay: 300,
@@ -24,7 +32,9 @@ export const Product = ({ label, images, text, side, isSelected }: Props) => {
       : "text-right ml-auto rounded-l-full md:rounded-full md:text-center"
   } ${inView ? "w-12 bg-dark-green md:w-full md:bg-purple" : ""}`;
   const textClasses = `px-7 text-left transition-all ease-in-out duration-700 ${
-    inView ? "max-h-96 opacity-1 md:max-h-0 md:opacity-0" : "max-h-0 opacity-0"
+    inView
+      ? "max-h-96 opacity-1 md:max-h-0 md:opacity-0 overflow-hidden"
+      : "max-h-0 opacity-0"
   }`;
   const image = 
     (isSelected && !isMobile) || (inView && isMobile)
@@ -32,19 +42,27 @@ export const Product = ({ label, images, text, side, isSelected }: Props) => {
       : images.small;
 
   return isSelected && !isMobile ? (
-    <div className="mx-auto -mt-20 flex h-[380px] w-full max-w-[891px] justify-between pb-10 transition-all duration-500 ease-in-out md:-mb-24 md:-mt-[224px] md:h-[700px]">
+    <div className="mx-auto flex h-[380px] w-full max-w-[891px] justify-between gap-6 pb-10 transition-all duration-500 ease-in-out md:-mb-24 md:-mt-52 md:h-[700px] lg:gap-0">
       <Image
         alt="Content Apps"
-        className="animate-fade-in transition-all duration-500 ease-in-out md:scale-90 lg:scale-100"
+        className="animate-fade-in transition-all duration-500 ease-in-out lg:scale-100"
         src={image}
         height={330}
         key={label}
       />
-      <div className="flex flex-col md:scale-90 md:self-center lg:scale-100">
-        <div className="w-48 whitespace-nowrap rounded-full bg-dark-green py-5 text-white">
+      <div className="mt-56 flex flex-col text-left md:scale-90 md:self-start lg:scale-100">
+        <div className="bg-transparenttext-xl mt-10 w-48 whitespace-nowrap rounded-full font-semibold">
           {label}
         </div>
-        <div className="mt-10 w-[424px] text-left text-base">{text}</div>
+        <div className="my-4 w-[424px] text-left text-base">{text}</div>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={docsLink}
+          className="underline"
+        >
+          See the Docs
+        </a>
       </div>
     </div>
   ) : (
