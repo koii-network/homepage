@@ -63,7 +63,7 @@ export const PirateShip = () => {
   const anchorVerticalPosition =
     currentStep === 0 || currentStep === 5 ? "top-396 lg:top-392" : "top-428";
   const ropeClasses = `transition-all ease-in-out duration-500 absolute w-0.5 bg-koiipurpledark top-[282px] left-[14.5%] lg:top-66 lg:left-[7%] z-10 ${ropeLength}`;
-  const anchorClasses = `transition-all ease-in-out duration-500 absolute ${anchorVerticalPosition} left-7 z-10 lg:left-1.5`;
+  const anchorClasses = `transition-all ease-in-out duration-500 absolute ${anchorVerticalPosition} left-4 z-10 lg:-left-1.5`;
   const diverClasses = `transition-all ease-in-out duration-1000 absolute -left-4.4 lg:-left-10 z-20 ${diverVerticalPosition}`;
   const oceanFloorImage = shouldUseSmallOceanFloor ? oceanFloor : oceanFloorLg;
 
