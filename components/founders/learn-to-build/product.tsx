@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
-// import { useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from "@/components/hooks";
 
 export interface Props {
@@ -12,13 +12,20 @@ export interface Props {
 }
 
 export const Product = ({ label, images, text, side, isSelected }: Props) => {
+  const { ref, inView } = useInView({
+    threshold: 1,
+    delay: 300,
+  });
+
   const isMobile = useMediaQuery(727);
   const labelClasses = `text-white py-5 px-9 whitespace-nowrap transition-all ease-in-out duration-500 min-w-min w-56 bg-purple md:w-full md:max-w-[248px] md:mx-auto xl:max-w-none z-10 ${
     side === "left" && isMobile
       ? "text-left rounded-r-full md:rounded-full"
       : "text-right ml-auto rounded-l-full md:rounded-full md:text-center"
+  } ${inView ? "w-12 bg-dark-green md:w-full md:bg-purple" : ""}`;
+  const textClasses = `px-7 text-left transition-all ease-in-out duration-700 ${
+    inView ? "max-h-96 opacity-1 md:max-h-0 md:opacity-0" : "max-h-0 opacity-0"
   }`;
-  const textClasses = `px-7 text-left transition-all ease-in-out duration-1300 max-h-96 md:hidden`;
   const image = isSelected && !isMobile ? images.big : images.small;
 
   return isSelected && !isMobile ? (
@@ -40,7 +47,7 @@ export const Product = ({ label, images, text, side, isSelected }: Props) => {
   ) : (
     <div className="flex w-full flex-col gap-8 transition-all duration-500 ease-in-out md:items-center">
       <div className={labelClasses}>{label}</div>
-      <div>
+      <div ref={ref}>
         <Image
           alt="Content Apps"
           className="transition-all duration-500 ease-in-out"
