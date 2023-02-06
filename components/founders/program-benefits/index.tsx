@@ -13,7 +13,7 @@ export const ProgramBenefits = () => {
             <div className="flex justify-center align-center -mt-44">
               <div className="relative h-64 lg:h-[410px] w-[278px] lg:w-[485px]">
                 <Image
-                  src="/images/founders/benefits-building.png"
+                  src="/images/founders/benefits-building.svg"
                   alt="benefits building"
                   layout="fill"
                   className="z-40 h-full"

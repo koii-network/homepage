@@ -23,7 +23,13 @@ export const Benefit = ({ image, text, side, lastIndex }: BenefitProps) => {
       ? "flex-row-reverse"
       : "flex-row text-right"
   }
-  ${lastIndex ? (side === "left" ? "-ml-10 sm:m-0" : "-mr-24 sm:m-0") : ""}`;
+  ${
+    lastIndex
+      ? side === "left"
+        ? "-ml-10 sm:m-0"
+        : "-mr-14 gap-x-0 sm:gap-5 sm:m-0"
+      : ""
+  }`;
 
   const imageContainer = `${styles.container} flex-shrink-0`;
 
