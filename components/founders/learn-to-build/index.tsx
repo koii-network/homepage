@@ -1,7 +1,6 @@
 import { useState } from "react";
 // import { useInView } from "react-intersection-observer";
 import { products } from "@/config/products-to-build-on-koii";
-import { useMediaQuery } from "@/components/hooks";
 import type { Props } from "./product";
 import { Product } from "./product";
 
@@ -9,13 +8,6 @@ import { Product } from "./product";
 
 export const LearnToBuild = () => {
   const [topProduct, setTopProduct] = useState<Props>(products[0]);
-  const isMobile = useMediaQuery(1439);
-
-  const handleHover = (featuredItem: Props) => {
-    if (!isMobile) {
-      setTopProduct(featuredItem);
-    }
-  };
 
   // const getIntersectionObserverOptions = (featuredItem?: ProductSelected) => ({
   //   threshold: 0,
@@ -71,8 +63,8 @@ export const LearnToBuild = () => {
             <div
               key={label}
               className="flex w-full flex-col transition-all duration-500 ease-in-out md:flex-1 md:basis-[28%] md:cursor-pointer md:hover:scale-105 lg:basis-48"
-              onMouseEnter={() => handleHover({ label, images, text })}
-              onClick={() => handleHover({ label, images, text })}
+              onMouseEnter={() => setTopProduct({ label, images, text })}
+              onClick={() => setTopProduct({ label, images, text })}
             >
               <Product
                 label={label}
