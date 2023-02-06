@@ -36,7 +36,7 @@ export const Product = ({
       ? "max-h-96 opacity-1 md:max-h-0 md:opacity-0 overflow-hidden"
       : "max-h-0 opacity-0"
   }`;
-  const image = 
+  const image =
     (isSelected && !isMobile) || (inView && isMobile)
       ? images.big
       : images.small;

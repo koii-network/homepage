@@ -19,7 +19,7 @@ import fish6 from "@/public/images/founders/fish-6.svg";
 import fish7 from "@/public/images/founders/fish-7.svg";
 import fish8 from "@/public/images/founders/fish-8.svg";
 import fish9 from "@/public/images/founders/fish-9.svg";
-import clouds from "@/public/images/founders/clouds.png";
+import clouds from "@/public/images/founders/clouds.svg";
 import cloudsXL from "@/public/images/founders/clouds-lg.svg";
 import { benefits } from "@/config/benefits-building-on-koii";
 import { Benefit } from "./benefit";
