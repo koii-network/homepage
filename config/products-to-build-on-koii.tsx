@@ -106,7 +106,7 @@ export const products = [
     text: (
       <div className="flex flex-col gap-2">
         <p>Koii Nodes and lightning fast transactions make it easy to:</p>
-        <ul>
+        <ul className="list-disc" style={{ marginLeft: "24px" }}>
           <li>Create an attention-driven economy,</li>
           <li>Build oracle nodes for any purpose,</li>
           <li>Do fully decentralized token distributions,</li>

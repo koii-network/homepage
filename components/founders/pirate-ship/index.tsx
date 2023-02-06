@@ -70,7 +70,7 @@ export const PirateShip = () => {
   return (
     <div className="relative -mt-250 flex flex-col items-center gap-9 bg-sea bg-cover bg-[center_top_36rem] bg-no-repeat pt-32 text-center font-medium lg:-mt-105 lg:bg-sea-lg lg:bg-[center_top_8rem]">
       <div className={cloudsClasses}>
-        <Image alt="Clouds" src={cloudsImage} />
+        <Image alt="Clouds" src={cloudsImage} className="w-full" />
       </div>
 
       <div className="relative lg:-top-48 lg:right-72">
