@@ -77,6 +77,14 @@ export const Product = ({
         />
       </div>
       <div className={textClasses}>{text}</div>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={docsLink}
+        className={`${textClasses} underline`}
+      >
+        See the Docs
+      </a>
     </div>
   );
 };
