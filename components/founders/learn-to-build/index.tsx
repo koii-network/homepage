@@ -42,7 +42,7 @@ export const LearnToBuild = () => {
   // ];
 
   return (
-    <div className="relative flex flex-col items-center gap-20 bg-[#1e1d5a] pt-16 text-center font-medium text-purple md:bg-[#191854]">
+    <div className="relative flex flex-col items-center gap-20 bg-[#1e1d5a] pt-16 text-center font-medium text-purple lg:bg-[#191854]">
       <div className="md:leading-48px text-2xl tracking-tighter text-lightmint md:tracking-normal md:text-white lg:-mb-48 lg:text-4xl">
         Community Ownership & Governance:
         <br />
@@ -55,22 +55,26 @@ export const LearnToBuild = () => {
             images={topProduct.images}
             text={topProduct.text}
             isSelected
+            docsLink={topProduct.docsLink}
           />
         </div>
 
         <div className="flex w-full flex-col gap-16 transition-all duration-700 ease-in-out md:mx-auto md:max-w-screen-xl md:flex-row md:flex-wrap">
-          {products.map(({ label, images, text }, index) => (
+          {products.map(({ label, images, text, docsLink }, index) => (
             <div
               key={label}
               className="flex w-full flex-col transition-all duration-500 ease-in-out md:flex-1 md:basis-[28%] md:cursor-pointer md:hover:scale-105 lg:basis-48"
-              onMouseEnter={() => setTopProduct({ label, images, text })}
-              onClick={() => setTopProduct({ label, images, text })}
+              onMouseEnter={() =>
+                setTopProduct({ label, images, text, docsLink })
+              }
+              onClick={() => setTopProduct({ label, images, text, docsLink })}
             >
               <Product
                 label={label}
                 images={images}
                 text={text}
                 side={index % 2 ? "right" : "left"}
+                docsLink={docsLink}
               />
             </div>
           ))}

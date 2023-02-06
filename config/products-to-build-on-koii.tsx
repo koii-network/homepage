@@ -24,10 +24,12 @@ export const products = [
         <p>
           Pay for hosting with Attention Rewards—a.k.a. get free hosting—and let
           your community make decisions alongside you for truly decentralized
-          apps
+          apps.
         </p>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x",
   },
   {
     label: "INFRASTRUCTURE",
@@ -49,6 +51,8 @@ export const products = [
         <p>And you get to do it all in JavaScript.</p>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/microservices-and-tasks/what-are-tasks",
   },
   {
     label: "WEBSITES",
@@ -68,6 +72,8 @@ export const products = [
         </p>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x",
   },
   {
     label: "NFTS",
@@ -88,6 +94,8 @@ export const products = [
         <p>Mint simply and manage your assets with Finnie.</p>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/build-dapps-with-koii/using-nfts-as-content",
   },
   {
     label: "TOKENS",
@@ -109,5 +117,7 @@ export const products = [
         </ul>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/settlement-layer/creating-tokens-on-k2",
   },
 ];
