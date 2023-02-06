@@ -7,11 +7,11 @@ import coaching from "@/public/images/founders/benefit-coaching.svg";
 
 export const programBenefits = [
   {
-    image: techAdvice ,
+    image: techAdvice,
     text: "Expert technical advice",
   },
   {
-    image:  mentorship,
+    image: mentorship,
     text: "Mentorship from investors",
   },
   {
