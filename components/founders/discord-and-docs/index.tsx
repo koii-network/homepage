@@ -16,7 +16,7 @@ export const DiscordAndDocs = () => {
             label="Join the Discord"
             target="_blank"
             href={getDiscordDocsLinks.discord}
-            className="mx-auto mt-10 hidden w-full min-w-[220px] rounded-md bg-purple px-9 py-3 font-sans text-base tracking-wider  text-[#FCFCFC] xl:flex"
+            className="mx-auto mt-10 hidden w-full min-w-[220px] rounded-md bg-purple px-9 py-3 font-sans text-base tracking-wider  text-[#FCFCFC] whitespace-nowrap xl:flex"
           />
         </div>
         <div className="relative mx-auto mt-10 h-24 w-full max-w-xs lg:mt-0 lg:h-36 lg:max-w-sm">
@@ -42,7 +42,7 @@ export const DiscordAndDocs = () => {
             target="_blank"
             href={getDiscordDocsLinks.docs}
             label="Koii Wiki"
-            className="mx-auto mt-10 w-full min-w-[220px] rounded-md border-2 border-solid border-purple bg-transparent px-16 py-3 font-sans text-base tracking-wider text-purple"
+            className="mx-auto mt-10 w-full min-w-[220px] rounded-md border-2 border-solid border-purple bg-transparent px-16 py-3 font-sans text-base tracking-wider text-purple whitespace-nowrap"
           />
         </div>
       </div>

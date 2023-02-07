@@ -21,7 +21,7 @@ export const Product = ({
   isSelected,
 }: Props) => {
   const { ref, inView } = useInView({
-    threshold: 1,
+    threshold: 0.9,
     delay: 300,
   });
 
@@ -31,7 +31,7 @@ export const Product = ({
       ? "text-left rounded-r-full md:rounded-full"
       : "text-right ml-auto rounded-l-full md:rounded-full md:text-center"
   } ${inView ? "w-12 bg-dark-green md:w-full md:bg-purple" : ""}`;
-  const textClasses = `px-7 text-left transition-all ease-in-out duration-700 ${
+  const textClasses = `px-7 text-left transition-all ease-in-out duration-100 ${
     inView
       ? "max-h-96 opacity-1 md:max-h-0 md:opacity-0 overflow-hidden"
       : "max-h-0 opacity-0"
