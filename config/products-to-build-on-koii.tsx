@@ -3,11 +3,18 @@ import decentralizedStorage from "@/public/images/founders/decentralized-storage
 import websites from "@/public/images/founders/websites.svg";
 import nfts from "@/public/images/founders/nfts.svg";
 import tokens from "@/public/images/founders/tokens.svg";
+import appsXl from "@/public/images/founders/apps-xl.svg";
+import decentralizedStorageXl from "@/public/images/founders/decentralized-storage-xl.svg";
+import nftsXl from "@/public/images/founders/nfts-xl.svg";
+import tokensXl from "@/public/images/founders/tokens-xl.svg";
 
 export const products = [
   {
     label: "CONTENT APPS",
-    image: apps,
+    images: {
+      small: apps,
+      big: appsXl,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>
@@ -17,14 +24,19 @@ export const products = [
         <p>
           Pay for hosting with Attention Rewards—a.k.a. get free hosting—and let
           your community make decisions alongside you for truly decentralized
-          apps
+          apps.
         </p>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x",
   },
   {
     label: "INFRASTRUCTURE",
-    image: decentralizedStorage,
+    images: {
+      small: decentralizedStorage,
+      big: decentralizedStorageXl,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>
@@ -39,10 +51,15 @@ export const products = [
         <p>And you get to do it all in JavaScript.</p>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/microservices-and-tasks/what-are-tasks",
   },
   {
     label: "WEBSITES",
-    image: websites,
+    images: {
+      small: websites,
+      big: websites,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>
@@ -55,10 +72,15 @@ export const products = [
         </p>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/build-dapps-with-koii/welcome-to-koii-x",
   },
   {
     label: "NFTS",
-    image: nfts,
+    images: {
+      small: nfts,
+      big: nftsXl,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>
@@ -72,14 +94,19 @@ export const products = [
         <p>Mint simply and manage your assets with Finnie.</p>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/build-dapps-with-koii/using-nfts-as-content",
   },
   {
     label: "TOKENS",
-    image: tokens,
+    images: {
+      small: tokens,
+      big: tokensXl,
+    },
     text: (
       <div className="flex flex-col gap-2">
         <p>Koii Nodes and lightning fast transactions make it easy to:</p>
-        <ul>
+        <ul className="list-disc" style={{ marginLeft: "24px" }}>
           <li>Create an attention-driven economy,</li>
           <li>Build oracle nodes for any purpose,</li>
           <li>Do fully decentralized token distributions,</li>
@@ -90,5 +117,7 @@ export const products = [
         </ul>
       </div>
     ),
+    docsLink:
+      "https://docs.koii.network/settlement-layer/creating-tokens-on-k2",
   },
 ];
