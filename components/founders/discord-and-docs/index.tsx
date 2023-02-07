@@ -11,22 +11,13 @@ export const DiscordAndDocs = () => {
             Jump in our Discord to say hello and chat with other powerhouse
             people.
           </p>
-          {/* <Button
+          <Button
             asLink
             label="Join the Discord"
             target="_blank"
             href={getDiscordDocsLinks.discord}
             className="mx-auto mt-10 hidden w-full rounded-md bg-purple px-9 py-3 font-sans text-base tracking-wider  text-[#FCFCFC] whitespace-nowrap xl:flex"
-          /> */}
-          <a
-            target="_blank"
-            href={getDiscordDocsLinks.discord}
-            rel="noreferrer"
-          >
-            <button className="mx-auto mt-10 hidden w-full rounded-md bg-purple px-9 py-3 font-sans text-base tracking-wider  text-[#FCFCFC] whitespace-nowrap xl:flex">
-              Join the Discord
-            </button>
-          </a>
+          />
         </div>
         <div className="relative mx-auto mt-10 h-24 w-full max-w-xs lg:mt-0 lg:h-36 lg:max-w-sm">
           <Image
@@ -41,7 +32,7 @@ export const DiscordAndDocs = () => {
             label="Join the Discord"
             target="_blank"
             href={getDiscordDocsLinks.discord}
-            className="mx-auto mt-10 w-full min-w-[220px] rounded-md bg-purple px-9 py-3 font-sans text-base  tracking-wider text-[#FCFCFC] lg:hidden"
+            className="mx-auto mt-10 w-full min-w-[220px] rounded-md bg-purple px-9 py-3 font-sans text-base  tracking-wider whitespace-nowrap text-[#FCFCFC] lg:hidden"
           />
           <p className="pt-11 text-center font-sans text-xl font-semibold leading-5 text-koiipurpledark lg:pt-0 lg:text-end">
             And check out the newly updated Docs.
