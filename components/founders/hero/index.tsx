@@ -25,7 +25,7 @@ export const Hero = () => {
               />
             </a>
           </div>
-          <div className="mt-16 !h-[20rem] !w-[20rem] lg:!w-[27.7rem]">
+          <div className="mt-16 !h-80 !w-80 rounded-md lg:!w-[27.7rem]">
             <ReactPlayer
               url="https://youtu.be/p4m4qThshfg"
               playsinline
