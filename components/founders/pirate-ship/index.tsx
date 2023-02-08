@@ -59,7 +59,7 @@ export const PirateShip = () => {
 
   const cloudsImage = isMobileScreen ? clouds : cloudsXL;
   const cloudsClasses =
-    "lg:absolute lg:-top-80 xl:-top-90 lg:px-40 lg:scale-90 xl:scale-90";
+    "lg:absolute lg:-top-80 xl:-top-90 lg:px-40 lg:scale-90";
   const ropeLength = currentStep === 0 || currentStep === 5 ? "h-328" : "h-368";
   const anchorVerticalPosition =
     currentStep === 0 || currentStep === 5 ? "top-396 lg:top-392" : "top-428";
