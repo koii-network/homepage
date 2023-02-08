@@ -8,7 +8,7 @@ type LinksSectionProps = {
 export const LinksSection = ({ title, links = [] }: LinksSectionProps) => {
   return (
     <div className="mb-[32px]">
-      <h3 className="mb-2 text-base font-semibold text-center underline uppercase md:text-left text-dark-blue">
+      <h3 className="mb-2 text-base font-semibold text-center underline uppercase md:text-left">
         {title}
       </h3>
       <ul className="space-y-3">

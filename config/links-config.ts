@@ -38,3 +38,8 @@ export const getInTouchLinks = [
   { label: "hello@koii.network", url: "mailto:hello@koii.network" },
   { label: "press@koii.network", url: "mailto:press@koii.network" },
 ];
+
+export const getDiscordDocsLinks = {
+  discord: "https://discord.gg/koii",
+  docs: "https://docs.koii.network/",
+}
