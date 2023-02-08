@@ -36,10 +36,7 @@ export const Product = ({
       ? "max-h-96 opacity-1 md:max-h-0 md:opacity-0 overflow-hidden"
       : "max-h-0 opacity-0"
   }`;
-  const image =
-    (isSelected && !isMobile) || (inView && isMobile)
-      ? images.big
-      : images.small;
+  const image = isSelected && !isMobile ? images.big : images.small;
 
   return isSelected && !isMobile ? (
     <div className="mx-auto flex h-[380px] w-full max-w-[891px] justify-between gap-6 pb-10 transition-all duration-500 ease-in-out md:-mb-24 md:-mt-52 md:h-[700px] lg:gap-0">
