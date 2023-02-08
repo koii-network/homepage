@@ -59,7 +59,7 @@ export const PirateShip = () => {
 
   const cloudsImage = isMobileScreen ? clouds : cloudsXL;
   const cloudsClasses =
-    "lg:absolute lg:-top-80 xl:-top-90 lg:px-20 xl:px-40 lg:scale-90";
+    "lg:absolute lg:-top-80 xl:-top-90 lg:px-16 lg:ml-16 xl:px-40 lg:scale-90";
   const ropeLength = currentStep === 0 || currentStep === 5 ? "h-328" : "h-368";
   const anchorVerticalPosition =
     currentStep === 0 || currentStep === 5 ? "top-396 lg:top-392" : "top-428";
@@ -71,7 +71,11 @@ export const PirateShip = () => {
   return (
     <div className="relative -mt-250 flex flex-col items-center gap-9 bg-sea bg-cover bg-[center_top_36rem] bg-no-repeat pt-32 text-center font-medium lg:-mt-105 lg:bg-sea-lg lg:bg-[center_top_8rem]">
       <div className={cloudsClasses}>
-        <Image alt="Clouds" src={cloudsImage} className="w-full" />
+        <Image
+          alt="Clouds"
+          src={cloudsImage}
+          className="w-full lg:max-w-5xl xl:max-w-[1121px]"
+        />
       </div>
 
       <div className="relative lg:-top-[215px] xl:-top-48 lg:right-48 xl:right-72">

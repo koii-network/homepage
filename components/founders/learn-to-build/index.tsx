@@ -59,7 +59,7 @@ export const LearnToBuild = () => {
           />
         </div>
 
-        <div className="flex w-full flex-col gap-16 transition-all duration-700 ease-in-out lg:mx-auto lg:max-w-[1024px] lg:gap-4 xl:max-w-screen-xl lg:flex-row">
+        <div className="flex w-full flex-col gap-16 transition-all duration-700 ease-in-out lg:mx-auto lg:max-w-5xl lg:gap-4 xl:max-w-screen-xl lg:flex-row">
           {products.map(({ label, images, text, docsLink }, index) => (
             <div
               key={label}
