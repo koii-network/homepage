@@ -5,7 +5,7 @@ const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 export const Hero = () => {
   return (
     <div className="relative flex justify-center bg-gradient-to-b from-faux-azure-mist via-lightmint to-mint pt-24 pb-165 lg:pb-115">
-      <div className="relative flex w-full max-w-[1220px] flex-col items-center justify-center px-8">
+      <div className="container relative flex w-full max-w-[1024px] flex-col items-center justify-center px-8">
         <div className="relative z-30 flex w-full flex-col items-center justify-center pb-80 text-koiipurpledark  lg:flex-row lg:justify-between">
           <div className="flex w-full !max-w-[326px] flex-col items-center md:!max-w-[500px] lg:mb-auto lg:mt-16 lg:!max-w-none">
             <span className="mr-auto pt-[30px] font-sans text-[32px] font-semibold leading-10">

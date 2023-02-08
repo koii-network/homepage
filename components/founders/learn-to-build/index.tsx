@@ -42,7 +42,7 @@ export const LearnToBuild = () => {
   // ];
 
   return (
-    <div className="relative flex flex-col items-center gap-20 bg-[#1e1d5a] pt-16 text-center font-medium text-purple xl:bg-[#191854]">
+    <div className="relative flex flex-col items-center gap-20 bg-[#1e1d5a] pt-16 text-center font-medium text-purple lg:bg-[#191854]">
       <div className="md:leading-48px text-2xl tracking-tighter text-lightmint md:tracking-normal md:text-white xl:-mb-48 xl:text-4xl">
         Community Ownership & Governance:
         <br />
