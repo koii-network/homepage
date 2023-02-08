@@ -3,19 +3,19 @@ import { Button } from "@/components/ui/Button";
 
 export default function FourOhFour() {
   return (
-    <div className={`heroearn pt-[4rem] lg:pt-[60px]`}>
+    <div className={`heroearn pt-[4rem] xl:pt-[60px]`}>
       <div
-        className={`h-[1082px] lg:h-[525px] relative z-10`}
+        className={`h-[1082px] xl:h-[525px] relative z-10`}
         style={{
           background: `linear-gradient(90deg, #BEF0ED 0%, #FFFFFF 100%);`,
         }}
       >
         <div className="container ">
-          <div className="flex flex-col pt-[8rem] lg:pt-[4rem] lg:pl-[5rem] ">
-            <div className="text-koiiblue font-semibold md:font-normal text-[30px] md:text-[44px] lg:text-[50px] w-[300px] lg:w-[587px]">
+          <div className="flex flex-col pt-[8rem] xl:pt-[4rem] xl:pl-[5rem] ">
+            <div className="text-koiiblue font-semibold md:font-normal text-[30px] md:text-[44px] xl:text-[50px] w-[300px] xl:w-[587px]">
               404 Page Not Found
             </div>
-            <div className="text-koiiblue text-[18px] md:text-[20px] lg:text-[24px] md:w-[400px] lg:w-[455px] w-[280px] pt-[30px]">
+            <div className="text-koiiblue text-[18px] md:text-[20px] xl:text-[24px] md:w-[400px] xl:w-[455px] w-[280px] pt-[30px]">
               The Page you are looking for doesn&apos;t exist or an other error
               occurred.
             </div>

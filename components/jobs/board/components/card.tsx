@@ -6,7 +6,7 @@ type CardProps = {
 
 export const Card = ({ top, number, bot }: CardProps) => {
   return (
-    <div className="card my-[0.5rem] md:my-[1rem] lg:my-[2rem] flex flex-col items-center bg-white place-content-evenly w-[200px] lg:w-[290px] h-[160px] md:h-[208px] drop-shadow-lg">
+    <div className="card my-[0.5rem] md:my-[1rem] xl:my-[2rem] flex flex-col items-center bg-white place-content-evenly w-[200px] xl:w-[290px] h-[160px] md:h-[208px] drop-shadow-lg">
       <div className="text-[#BCB8D0] top text-[16px] uppercase font-semibold">
         {top}
       </div>

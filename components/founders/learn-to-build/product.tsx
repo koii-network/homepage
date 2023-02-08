@@ -39,15 +39,15 @@ export const Product = ({
   const image = isSelected && !isMobile ? images.big : images.small;
 
   return isSelected && !isMobile ? (
-    <div className="mx-auto flex h-[380px] w-full max-w-[891px] justify-between gap-6 pb-10 transition-all duration-500 ease-in-out md:-mb-24 md:-mt-52 md:h-[700px] lg:gap-0">
+    <div className="mx-auto flex h-[380px] w-full max-w-[891px] justify-between gap-6 pb-10 transition-all duration-500 ease-in-out md:-mb-24 md:-mt-52 md:h-[700px] xl:gap-0">
       <Image
         alt="Content Apps"
-        className="animate-fade-in transition-all duration-500 ease-in-out lg:scale-100"
+        className="animate-fade-in transition-all duration-500 ease-in-out xl:scale-100"
         src={image}
         height={330}
         key={label}
       />
-      <div className="mt-56 flex flex-col text-left md:scale-90 md:self-start lg:scale-100">
+      <div className="mt-56 flex flex-col text-left md:scale-90 md:self-start xl:scale-100">
         <div className="bg-transparenttext-xl mt-10 w-48 whitespace-nowrap rounded-full font-semibold">
           {label}
         </div>

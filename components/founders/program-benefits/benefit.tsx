@@ -28,7 +28,7 @@ export const Benefit = ({ image, text, side, lastIndex }: BenefitProps) => {
   }
   lg:hover:text-mint lg:hover:drop-shadow-3xl`;
 
-  const imageContainer = `${styles.container} flex-shrink-0`;
+  const imageContainer = `${styles.container} flex-shrink-0 lg:flex-shrink xl:flex-shrink-0`;
 
   const imageClasses = `relative transition-all ease-in-out duration-300 group-hover:lg:!-top-7 ${
     inView ? "drop-shadow-3xl lg:drop-shadow-none !-top-7 lg:!-top-0" : ""

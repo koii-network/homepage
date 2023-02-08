@@ -157,15 +157,15 @@ export const Steps = () => {
   const isMobile = useMediaQuery(728);
   return (
     <div
-      className={`earnsteps container lg:min-h-[580px] pt-[50px] lg:pt-[30px] relative z-10`}
+      className={`earnsteps container xl:min-h-[580px] pt-[50px] xl:pt-[30px] relative z-10`}
     >
       <div
-        className={`${styles.stepbox} md:h-auto lg:min-h-[370px]  flex flex-col px-[40px] lg:px-[120px]`}
+        className={`${styles.stepbox} md:h-auto xl:min-h-[370px]  flex flex-col px-[40px] xl:px-[120px]`}
         id="stepbox"
       >
         {isBreakpoint ? (
           <div
-            className={`${styles.stepcard} Steps grid grid-cols-1 lg:grid-cols-2 gap-4 items-center lg:flex-row lg:items-baseline mx-[-3.5rem]`}
+            className={`${styles.stepcard} Steps grid grid-cols-1 xl:grid-cols-2 gap-4 items-center xl:flex-row xl:items-baseline mx-[-3.5rem]`}
             id="Stepcard"
           >
             {/* <span
@@ -181,7 +181,7 @@ export const Steps = () => {
                 title="Attention Tracking on your site"
                 description="If you have a website with regular traffic, earn passive income now— it only takes 2 minutes."
                 alt="Dynamic NFT"
-                className={`pl-[4rem] lg:pl-0`}
+                className={`pl-[4rem] xl:pl-0`}
                 textclassName="text-left"
               />
             </div>
@@ -194,8 +194,8 @@ export const Steps = () => {
                 title="Drag & Drop any file to create an NFT"
                 description="Share it with your friends and start earning right away."
                 alt="step2"
-                className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
-                textclassName="text-right md:text-left items-end lg:items-start"
+                className="items-end md:ml-[10rem] pr-[4rem] xl:pr-0"
+                textclassName="text-right md:text-left items-end xl:items-start"
               />
             </div>
 
@@ -207,7 +207,7 @@ export const Steps = () => {
                 title="Become an Ambassador"
                 description="Learn about Koii, engage with the community, and earn for your time!"
                 alt="Koii-X"
-                className="pl-[4rem] lg:pl-0"
+                className="pl-[4rem] xl:pl-0"
                 textclassName="text-left"
               />
             </div>
@@ -220,14 +220,14 @@ export const Steps = () => {
                 title="Rent your device’s extra compute power"
                 description="Run the network and get rewarded without a second thought."
                 alt="destorage"
-                className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
+                className="items-end md:ml-[10rem] pr-[4rem] xl:pr-0"
                 textclassName="text-right md:text-left "
               />
             </div>
           </div>
         ) : (
           <div
-            className={`${styles.stepcard} Steps grid grid-cols-1 lg:grid-cols-2 gap-4 items-center lg:flex-row lg:items-baseline mx-[-3.5rem]`}
+            className={`${styles.stepcard} Steps grid grid-cols-1 xl:grid-cols-2 gap-4 items-center xl:flex-row xl:items-baseline mx-[-3.5rem]`}
             id="Stepcard"
           >
             <StepsCard
@@ -238,7 +238,7 @@ export const Steps = () => {
               title="Attention Tracking on your site"
               description="If you have a website with regular traffic, earn passive income now— it only takes 2 minutes."
               alt="dynamic nft"
-              className="pl-[4rem] lg:pl-0"
+              className="pl-[4rem] xl:pl-0"
               textclassName="text-left"
             />
             <StepsCard
@@ -249,7 +249,7 @@ export const Steps = () => {
               title="Become an Ambassador"
               description="Learn about Koii, engage with the community, and earn for your time!"
               alt="Koii token"
-              className="pl-[4rem] lg:pl-0"
+              className="pl-[4rem] xl:pl-0"
               textclassName="text-left"
             />
             <StepsCard
@@ -260,8 +260,8 @@ export const Steps = () => {
               title="Drag & Drop any file to create an NFT"
               description="Share it with your friends and start earning right away."
               alt="step2"
-              className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
-              textclassName="text-right md:text-left items-end lg:items-start"
+              className="items-end md:ml-[10rem] pr-[4rem] xl:pr-0"
+              textclassName="text-right md:text-left items-end xl:items-start"
             />
             <StepsCard
               onMouseEnter={Step4IN}
@@ -271,7 +271,7 @@ export const Steps = () => {
               title="Rent your device’s extra compute power"
               description="Run the network and get rewarded without a second thought."
               alt="destorage"
-              className="items-end md:ml-[10rem] pr-[4rem] lg:pr-0"
+              className="items-end md:ml-[10rem] pr-[4rem] xl:pr-0"
               textclassName="text-right md:text-left"
             />
           </div>
@@ -279,7 +279,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step1full} flex flex-col lg:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%] `}
+        className={`${styles.step1full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%] `}
         id="Step1Full"
         onMouseLeave={Step1OUT}
       >
@@ -291,7 +291,7 @@ export const Steps = () => {
           ""
         )}
         <div
-          className={`justify-center lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] mb-[2rem]`}
+          className={`justify-center xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px] mb-[2rem]`}
         >
           <Image src="/images/earn/step1.svg" width={371} height={371} />
         </div>
@@ -317,9 +317,9 @@ export const Steps = () => {
             label="Koii Wiki"
           />
         </div>
-        <div className={`justify-center w-[242px] h-[auto] lg:w-[371px]`}>
+        <div className={`justify-center w-[242px] h-[auto] xl:w-[371px]`}>
           <div
-            className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] lg:w-[371px] h-auto`}
+            className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] xl:w-[371px] h-auto`}
           >
             <p>{` port = new PoRT({ `} </p>
             <p>trustedNodeAddress: &apos;https://mainnet.koii.live&apos;,</p>
@@ -331,7 +331,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step2full} flex flex-col lg:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%]`}
+        className={`${styles.step2full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%]`}
         id="Step2Full"
         onMouseLeave={Step2OUT}
       >
@@ -343,7 +343,7 @@ export const Steps = () => {
           ""
         )}
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] mb-[2rem]`}
+          className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px] mb-[2rem]`}
         >
           <Image src="/images/earn/step2.svg" width={371} height={371} />
         </div>
@@ -369,14 +369,14 @@ export const Steps = () => {
           />
         </div>
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px]`}
+          className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
         >
           <Image src="/images/earn/step2_finnie.svg" width={371} height={371} />
         </div>
       </div>
 
       <div
-        className={`${styles.step3full} flex flex-col lg:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%]`}
+        className={`${styles.step3full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%]`}
         id="Step3Full"
         onMouseLeave={Step3OUT}
       >
@@ -388,7 +388,7 @@ export const Steps = () => {
           ""
         )}
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] mb-[2rem]`}
+          className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px] mb-[2rem]`}
         >
           <Image src="/images/earn/step3.svg" width={371} height={371} />
         </div>
@@ -413,14 +413,14 @@ export const Steps = () => {
           />
         </div>
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px]`}
+          className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
         >
           <Image src="/images/earn/step3_become.svg" width={371} height={371} />
         </div>
       </div>
 
       <div
-        className={`${styles.step4full} flex flex-col lg:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%]`}
+        className={`${styles.step4full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%]`}
         id="Step4Full"
         onMouseLeave={Step4OUT}
       >
@@ -432,7 +432,7 @@ export const Steps = () => {
           ""
         )}
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px] mb-[2rem]`}
+          className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px] mb-[2rem]`}
         >
           <Image src="/images/earn/step4_big.svg" width={371} height={371} />
         </div>
@@ -459,12 +459,12 @@ export const Steps = () => {
           />
         </div>
         <div
-          className={`justify-center md:w-[242px] md:h-[242px] lg:w-[371px] md:w-[242px] md:h-[242px] lg:h-[371px]`}
+          className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
         >
           <Image src="/images/earn/step4_node.svg" width={371} height={371} />
         </div>
       </div>
-      <div className="text-center pb-[2rem] md:text-center lg:text-left lg::text-left md:w-[712px] font-[18px] mt-[5rem] px-[1rem] lg::pl-[4rem]">
+      <div className="text-center pb-[2rem] md:text-center xl:text-left xl::text-left md:w-[712px] font-[18px] mt-[5rem] px-[1rem] xl::pl-[4rem]">
         1 Million KOII are released each day. Every token gives you{" "}
         <b>governance rights</b>, and can be used to <b>rent computing power</b>{" "}
         from the network.

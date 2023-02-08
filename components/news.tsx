@@ -13,15 +13,15 @@ export const News = ({ background }: NewsbgProps) => {
     <div className={`${background} news-area relative`}>
       <div className="container z-40 py-16 mx-auto text-koiiblue 2xl:px-[260px]">
         <div className="mb-8 relative z-20">
-          <h2 className="pt-2 text-5xl text-center lg:text-left">
+          <h2 className="pt-2 text-5xl text-center xl:text-left">
             In the News
           </h2>
-          <p className="pt-6 text-xs text-center uppercase lg:text-left md:pt-2">
+          <p className="pt-6 text-xs text-center uppercase xl:text-left md:pt-2">
             Catch Up on all the Latest
           </p>
         </div>
 
-        <div className="flex flex-col flex-wrap items-center justify-center md:pt-12 lg:justify-between md:flex-row">
+        <div className="flex flex-col flex-wrap items-center justify-center md:pt-12 xl:justify-between md:flex-row">
           <Newsblock
             imageSlot={
               <Image src="/images/news2.png" alt="" width={197} height={197} />
@@ -59,10 +59,10 @@ export const News = ({ background }: NewsbgProps) => {
             width="320"
           />
         </div>
-        <div className="metaverse-guy absolute z-[1] w-[394px] h-[547px] right-0 top-0 lg:top-[-5rem] opacity-[0.7]">
+        <div className="metaverse-guy absolute z-[1] w-[394px] h-[547px] right-0 top-0 xl:top-[-5rem] opacity-[0.7]">
           <Image src="/images/vector/x_circle.svg" layout="fill" />
         </div>
-        <div className="metaverse-guy absolute z-[1] w-[160px] h-[160px] left-[2rem] top-0 lg:top-[2rem]">
+        <div className="metaverse-guy absolute z-[1] w-[160px] h-[160px] left-[2rem] top-0 xl:top-[2rem]">
           <Image src="/images/vector/light_circle.svg" layout="fill" />
         </div>
       </div>

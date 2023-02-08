@@ -21,12 +21,12 @@ const Heroslide2 = ({
     <div className="text-koiiblue">
       <div className="container grid gap-6 px-10 mx-auto md:grid-cols-2 place-content-between md:pl-[0.5rem] xl:pl-48 md:pr-[0.5rem] py-36 md:pb-2 h-[700px] md:h-[400px]">
         <div className="text-3xl font-light md:text-4xl xl:text-6xl title">
-          <div className="pb-2 border-b-4 w-[74%] md:w-[290px] lg:w-[460px] lg:pl-4 border-mint">
-            <div className="md:pb-2 lg:pb-8">Earn for every</div>
+          <div className="pb-2 border-b-4 w-[74%] md:w-[290px] xl:w-[460px] xl:pl-4 border-mint">
+            <div className="md:pb-2 xl:pb-8">Earn for every</div>
             <p className="inline font-semibold" ref={wrapperElementRef} />
           </div>
         </div>
-        <div className="text-lg leading-8 content md:text-xl lg:text-2xl md:w-[340px] md:max-w-sm pt-[5.2rem] md:pt-0">
+        <div className="text-lg leading-8 content md:text-xl xl:text-2xl md:w-[340px] md:max-w-sm pt-[5.2rem] md:pt-0">
           You put talent and hard work into what you create online.
           <p className="mt-3.5">It’s time you got paid for it.</p>
           <div className="text-center link pt-14 md:text-left">

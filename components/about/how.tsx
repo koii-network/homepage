@@ -6,15 +6,15 @@ export const Howitwork = () => {
   const isBreakpoint = useMediaQuery(1439);
   return (
     <div
-      className={`heroabout container lg:h-[740px] lg:pt-[120px] relative z-10`}
+      className={`heroabout container xl:h-[740px] xl:pt-[120px] relative z-10`}
     >
-      <div className="px-[40px] lg:px-[120px]">
+      <div className="px-[40px] xl:px-[120px]">
         <div className="flex flex-col">
-          <div className="title text-[26px] lg:text-[40px] font-semibold">
+          <div className="title text-[26px] xl:text-[40px] font-semibold">
             How it works.
           </div>
-          <div className="flex flex-col lg:flex-row">
-            <div className="subtitle text-[14px] lg:text-[16px] lg:max-w-[585px] pt-[20px] lg:pt-[30px]">
+          <div className="flex flex-col xl:flex-row">
+            <div className="subtitle text-[14px] xl:text-[16px] xl:max-w-[585px] pt-[20px] xl:pt-[30px]">
               <p>
                 Nearly every person in the world has a computer, an internet
                 connection, and an online presence.{" "}
@@ -38,7 +38,7 @@ export const Howitwork = () => {
                 ""
               )}
 
-              <div className="buttton lg:pt-[42px] flex justify-center lg:justify-start">
+              <div className="buttton xl:pt-[42px] flex justify-center xl:justify-start">
                 <Button
                   width="221px"
                   height="53px"
@@ -52,7 +52,7 @@ export const Howitwork = () => {
             {isBreakpoint ? (
               ""
             ) : (
-              <div className="how_image lg:p-[30px]">
+              <div className="how_image xl:p-[30px]">
                 <Image
                   src="/images/about/how_work.svg"
                   alt="how_it_works"

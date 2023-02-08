@@ -5,25 +5,25 @@ import styles from "styles/playground.module.scss";
 export const Imageground = () => {
   const isBreakpoint = useMediaQuery(728);
   return (
-    <div className={`Imageground lg:h-[1260px] my-[-7rem]`}>
+    <div className={`Imageground xl:h-[1260px] my-[-7rem]`}>
       <div
-        className="h-[1800px] lg:h-[1360px] relative z-[1]"
+        className="h-[1800px] xl:h-[1360px] relative z-[1]"
         style={{
           background: isBreakpoint
             ? ``
             : `url("/images/about/playground.svg") no-repeat center / cover`,
         }}
       >
-        <div className="container md:mt-[-16rem] lg:mt-0">
-          <div className="ground relative z-30 pt-[10rem] px-[5rem] h-[1800px] lg:h-[1360px]">
+        <div className="container md:mt-[-16rem] xl:mt-0">
+          <div className="ground relative z-30 pt-[10rem] px-[5rem] h-[1800px] xl:h-[1360px]">
             <div className="">
               <div
-                className={`${styles.wallet} absolute top-[15rem] left-[13rem] lg:left-[4rem] md:top-[31rem] lg:top-[20rem] text-[18px] lg:text-[25px]  lg:w-[126px] font-semibold`}
+                className={`${styles.wallet} absolute top-[15rem] left-[13rem] xl:left-[4rem] md:top-[31rem] xl:top-[20rem] text-[18px] xl:text-[25px]  xl:w-[126px] font-semibold`}
               >
                 Finnie Wallet
               </div>
               <div
-                className={`${styles.wallet} z-10 absolute left-0 lg:left-[10rem] bottom-[91rem] md:bottom-[75rem] lg:bottom-[45rem] max-w-[175px] lg:max-w-[400px] `}
+                className={`${styles.wallet} z-10 absolute left-0 xl:left-[10rem] bottom-[91rem] md:bottom-[75rem] xl:bottom-[45rem] max-w-[175px] xl:max-w-[400px] `}
               >
                 <Image
                   src="/images/about/playground/wallet_front.svg"
@@ -33,7 +33,7 @@ export const Imageground = () => {
                 />
               </div>
               <div
-                className={`${styles.walletback} z-[1] ease-in-out duration-300 absolute lg:relative top-[0rem] md:top-[16rem] lg:top-[-2rem] left-[10rem] lg:left-[17rem] w-[200px] md:w-[307px] lg:max-w-[600px]`}
+                className={`${styles.walletback} z-[1] ease-in-out duration-300 absolute xl:relative top-[0rem] md:top-[16rem] xl:top-[-2rem] left-[10rem] xl:left-[17rem] w-[200px] md:w-[307px] xl:max-w-[600px]`}
               >
                 {isBreakpoint ? (
                   <Image
@@ -55,12 +55,12 @@ export const Imageground = () => {
 
             <div className="">
               <div
-                className={`${styles.decentralized} absolute top-[62rem] md:top-[78rem] lg:top-[20rem] right-[8rem] lg:left-[45rem] text-[18px] lg:text-[25px] w-[200px] font-semibold`}
+                className={`${styles.decentralized} absolute top-[62rem] md:top-[78rem] xl:top-[20rem] right-[8rem] xl:left-[45rem] text-[18px] xl:text-[25px] w-[200px] font-semibold`}
               >
                 Decentralized Identity
               </div>
               <div
-                className={`${styles.decentralized} z-10  absolute right-[-1rem] lg:left-[51rem] bottom-[38rem] md:bottom-[22rem] lg:bottom-[39rem] w-[200px] lg:w-auto`}
+                className={`${styles.decentralized} z-10  absolute right-[-1rem] xl:left-[51rem] bottom-[38rem] md:bottom-[22rem] xl:bottom-[39rem] w-[200px] xl:w-auto`}
               >
                 <Image
                   src="/images/about/playground/decentralized_front.svg"
@@ -70,7 +70,7 @@ export const Imageground = () => {
                 />
               </div>
               <div
-                className={`${styles.decentralizedback} z-[1] ease-in-out duration-300 absolute lg:relative top-[44rem] md:top-[63rem] lg:top-[-19rem] left-0 lg:left-[57rem] md:w-[356px]`}
+                className={`${styles.decentralizedback} z-[1] ease-in-out duration-300 absolute xl:relative top-[44rem] md:top-[63rem] xl:top-[-19rem] left-0 xl:left-[57rem] md:w-[356px]`}
               >
                 {isBreakpoint ? (
                   <Image
@@ -92,12 +92,12 @@ export const Imageground = () => {
 
             <div className="">
               <div
-                className={`${styles.mobile} absolute top-[37rem] md:top-[53rem] lg:top-[44rem] left-[13rem] lg:left-[15rem] text-[18px] lg:text-[25px] w-[200px] font-semibold`}
+                className={`${styles.mobile} absolute top-[37rem] md:top-[53rem] xl:top-[44rem] left-[13rem] xl:left-[15rem] text-[18px] xl:text-[25px] w-[200px] font-semibold`}
               >
                 Finnie Mobile
               </div>
               <div
-                className={`${styles.mobile} z-10  absolute left-[-5rem] lg:left-[22rem] bottom-[68rem] md:bottom-[52rem] lg:bottom-[30rem] max-w-[303px] lg:max-w-[800px]`}
+                className={`${styles.mobile} z-10  absolute left-[-5rem] xl:left-[22rem] bottom-[68rem] md:bottom-[52rem] xl:bottom-[30rem] max-w-[303px] xl:max-w-[800px]`}
               >
                 <Image
                   src="/images/about/playground/mobile_front.svg"
@@ -107,7 +107,7 @@ export const Imageground = () => {
                 />
               </div>
               <div
-                className={`${styles.mobileback} z-[1] ease-in-out duration-300 absolute lg:relative top-[22rem] md:top-[38rem] lg:top-[9rem] left-[8rem] lg:left-[4rem] w-[200px] md:w-[400px] lg:w-[462px]`}
+                className={`${styles.mobileback} z-[1] ease-in-out duration-300 absolute xl:relative top-[22rem] md:top-[38rem] xl:top-[9rem] left-[8rem] xl:left-[4rem] w-[200px] md:w-[400px] xl:w-[462px]`}
               >
                 {isBreakpoint ? (
                   <Image
@@ -129,12 +129,12 @@ export const Imageground = () => {
 
             <div className="">
               <div
-                className={`${styles.node} absolute top-[80rem] md:top-[90rem] lg:top-[60rem] left-[13rem] lg:left-[55rem] text-[18px] lg:text-[25px] w-[200px] font-semibold`}
+                className={`${styles.node} absolute top-[80rem] md:top-[90rem] xl:top-[60rem] left-[13rem] xl:left-[55rem] text-[18px] xl:text-[25px] w-[200px] font-semibold`}
               >
                 Desktop Node
               </div>
               <div
-                className={`${styles.node} z-10  absolute left-[0rem] lg:left-[55rem] bottom-[20rem] md:bottom-[4rem] lg:bottom-[22rem]`}
+                className={`${styles.node} z-10  absolute left-[0rem] xl:left-[55rem] bottom-[20rem] md:bottom-[4rem] xl:bottom-[22rem]`}
               >
                 <Image
                   src="/images/about/playground/node_front.svg"
@@ -144,7 +144,7 @@ export const Imageground = () => {
                 />
               </div>
               <div
-                className={`${styles.nodeback} z-[1] ease-in-out duration-300 absolute lg:relative top-[85rem] md:top-[94rem] lg:top-[-3rem] left-[3rem] md:left-[12rem] lg:left-[37rem]`}
+                className={`${styles.nodeback} z-[1] ease-in-out duration-300 absolute xl:relative top-[85rem] md:top-[94rem] xl:top-[-3rem] left-[3rem] md:left-[12rem] xl:left-[37rem]`}
               >
                 {isBreakpoint ? (
                   <Image

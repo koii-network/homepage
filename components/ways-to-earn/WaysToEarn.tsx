@@ -4,11 +4,11 @@ export const WaysToEarn = () => {
   return (
     <section className="container z-40 mx-auto md:mt-32">
       <span
-        className="anchor absolute translate-y-[2rem] md:translate-y-[-2rem] lg:translate-y-[-14rem]"
+        className="anchor absolute translate-y-[2rem] md:translate-y-[-2rem] xl:translate-y-[-14rem]"
         id="ways-to-earn"
       ></span>
-      <div className="flex flex-col justify-center lg:flex-row md: md:justify-between md:flex-nowrap">
-        <div className="gap-8 mb-16 text-center lg:text-left">
+      <div className="flex flex-col justify-center xl:flex-row md: md:justify-between md:flex-nowrap">
+        <div className="gap-8 mb-16 text-center xl:text-left">
           <h2 className="text-[28px] md:text-4xl leading-[48px] pt-28 text-dark-blue">
             So many ways to earn
           </h2>
