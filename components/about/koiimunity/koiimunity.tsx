@@ -5,19 +5,19 @@ export const Koiimunity = () => {
   const isBreakpoint = useMediaQuery(728);
   return (
     <div
-      className={`heroabout lg:min-h-[1085px] pt-[150px] lg:pt-[30px] relative z-10`}
+      className={`heroabout xl:min-h-[1085px] pt-[150px] xl:pt-[30px] relative z-10`}
       style={{
         background: isBreakpoint
           ? `url("/images/about/koiimunity-mobile.svg") no-repeat center / cover`
           : `url("/images/about/koiimunity.svg") no-repeat center / cover`,
       }}
     >
-      <div className=" container flex flex-col lg:flex-row px-[40px] lg:px-[120px] 2xl:px-[18rem]">
+      <div className=" container flex flex-col xl:flex-row px-[40px] xl:px-[120px] 2xl:px-[18rem]">
         <div className="flex flex-col pt-[3rem] md:pt-[10rem] items-center md:items-start">
-          <div className="title text-[45px] lg:text-[60px] text-lightmint w-[293px] sm:w-auto lg:w-[380px]">
+          <div className="title text-[45px] xl:text-[60px] text-lightmint w-[293px] sm:w-auto xl:w-[380px]">
             Join the Koii-munity
           </div>
-          <div className="subtitle text-[16px] pt-[30px] text-white w-[290px] lg:w-[380px]">
+          <div className="subtitle text-[16px] pt-[30px] text-white w-[290px] xl:w-[380px]">
             <p>
               Each platform is a little bit different. Find the best one for
               what you need, or join them all!
@@ -27,7 +27,7 @@ export const Koiimunity = () => {
             </p>
           </div>
         </div>
-        <div className="cardarea py-[6rem] flex flex-wrap md:justify-end w-[333px] md:w-[715px] lg:w-auto self-center lg:self-auto">
+        <div className="cardarea py-[6rem] flex flex-wrap md:justify-end w-[333px] md:w-[715px] xl:w-auto self-center xl:self-auto">
           <MediaCard
             className="mt-[-4rem]"
             title="Telegram"

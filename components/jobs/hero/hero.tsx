@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Jobshero = () => {
   return (
     <div id="jobs-header" className={`${styles.careerhero}`}>
-      <div className="koiipool absolute z-[1] right-0 top-[16rem] md:top-[20rem] lg:top-0 w-[1796px] h-[1651px]">
+      <div className="koiipool absolute z-[1] right-0 top-[16rem] md:top-[20rem] xl:top-0 w-[1796px] h-[1651px]">
         <Image
           src="/images/career/career_background.svg"
           alt=""

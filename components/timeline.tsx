@@ -34,7 +34,7 @@ export const Timeline = () => {
   return (
     <div className={`${styles.Timeline} pb-20 relative h-[820px]`}>
       <div className="container">
-        {/* <div className="lg:bottom-[20rem] absolute w-[2500px] h-[1096px] ml-[auto] mr-[auto] left-0 lg:left-[-38rem] right-0 text-center z-10">
+        {/* <div className="xl:bottom-[20rem] absolute w-[2500px] h-[1096px] ml-[auto] mr-[auto] left-0 xl:left-[-38rem] right-0 text-center z-10">
       <Image
       src = {seabed}
       layout="fill"
@@ -63,7 +63,7 @@ export const Timeline = () => {
             </svg>
           </div>
         ) : (
-          <div className="md:px-[0] lg:px-[17%] md:h-[685px] lg:h-full z-20 relative">
+          <div className="md:px-[0] xl:px-[17%] md:h-[685px] xl:h-full z-20 relative">
             <svg
               // width="1005"
               // height="907"
@@ -90,8 +90,8 @@ export const Timeline = () => {
         )}
 
         <div className="absolute flex flex-col justify-between left-[3rem] sm:left-[10rem] md:left-0  md:items-center text-white py-12 z-20 top-0 md:w-full h-[85%]">
-          <div className="relative text-right md:w-fit md:mr-[40rem] lg:mr-[52rem]">
-            <span className="md:text-2xl lg:text-3xl font-semibold text-mint">
+          <div className="relative text-right md:w-fit md:mr-[40rem] xl:mr-[52rem]">
+            <span className="md:text-2xl xl:text-3xl font-semibold text-mint">
               2022
             </span>
             <br />
@@ -99,7 +99,7 @@ export const Timeline = () => {
               {isMobile ? "Tap" : "Click"} for details
             </span>
           </div>
-          <div className="relative md:text-xs lg:text-base text-right md:w-fit md:mr-[41rem] lg:mr-[56rem]">
+          <div className="relative md:text-xs xl:text-base text-right md:w-fit md:mr-[41rem] xl:mr-[56rem]">
             <HtmlTooltip
               title={
                 <Fragment>
@@ -138,7 +138,7 @@ export const Timeline = () => {
             <br />
             <span className="text-mint">Public Beta</span>
           </div>
-          <div className="relative md:text-xs lg:text-base text-right md:w-fit md:mr-[38rem] lg:mr-[55rem]">
+          <div className="relative md:text-xs xl:text-base text-right md:w-fit md:mr-[38rem] xl:mr-[55rem]">
             <HtmlTooltip
               title={
                 <Fragment>
@@ -177,7 +177,7 @@ export const Timeline = () => {
             <br />
             <span className="text-mint">For any website</span>
           </div>
-          <div className="relative md:text-xs lg:text-base text-right md:w-fit md:mr-[30rem] lg:mr-[50rem]">
+          <div className="relative md:text-xs xl:text-base text-right md:w-fit md:mr-[30rem] xl:mr-[50rem]">
             <HtmlTooltip
               title={
                 <Fragment>
@@ -215,7 +215,7 @@ export const Timeline = () => {
             </HtmlTooltip>
             <br />
           </div>
-          <div className="relative md:text-xs lg:text-base text-right md:w-fit md:mr-[26rem] md:bottom-[1rem]  lg:mr-[48rem]">
+          <div className="relative md:text-xs xl:text-base text-right md:w-fit md:mr-[26rem] md:bottom-[1rem]  xl:mr-[48rem]">
             <HtmlTooltip
               title={
                 <Fragment>
@@ -253,7 +253,7 @@ export const Timeline = () => {
             </HtmlTooltip>
             <br />
           </div>
-          <div className="relative md:text-xs lg:text-base text-right md:w-fit md:mr-[16rem] md:bottom-[2rem] lg:mr-[42rem] ]">
+          <div className="relative md:text-xs xl:text-base text-right md:w-fit md:mr-[16rem] md:bottom-[2rem] xl:mr-[42rem] ]">
             <HtmlTooltip
               title={
                 <Fragment>
@@ -287,7 +287,7 @@ export const Timeline = () => {
             <br />
             <span className="text-mint">Public Beta</span>
           </div>
-          <div className="relative md:text-xs lg:text-base text-right md:w-fit md:mr-[-5rem] md:bottom-[3rem] lg:bottom-[2rem] lg:mr-[20rem] md:bottom-[2%]">
+          <div className="relative md:text-xs xl:text-base text-right md:w-fit md:mr-[-5rem] md:bottom-[3rem] xl:bottom-[2rem] xl:mr-[20rem] md:bottom-[2%]">
             <HtmlTooltip
               title={
                 <Fragment>
@@ -327,7 +327,7 @@ export const Timeline = () => {
               )}
             </HtmlTooltip>
           </div>
-          <div className="relative md:text-xs lg:text-base text-right md:w-fit md:mr-[-13rem] md:bottom-[3rem] lg:bottom-[2rem] lg:mr-[0rem]">
+          <div className="relative md:text-xs xl:text-base text-right md:w-fit md:mr-[-13rem] md:bottom-[3rem] xl:bottom-[2rem] xl:mr-[0rem]">
             <HtmlTooltip
               title={
                 <Fragment>
@@ -368,7 +368,7 @@ export const Timeline = () => {
             </HtmlTooltip>
             <br />
           </div>
-          <div className="relative md:text-xs lg:text-base text-right md:w-fit md:mr-[-25rem] md:bottom-[3rem] lg:bottom-0 lg:mr-[-20rem]">
+          <div className="relative md:text-xs xl:text-base text-right md:w-fit md:mr-[-25rem] md:bottom-[3rem] xl:bottom-0 xl:mr-[-20rem]">
             <HtmlTooltip
               title={
                 <Fragment>
@@ -405,7 +405,7 @@ export const Timeline = () => {
             </HtmlTooltip>
             <br />
           </div>
-          <div className="relative md:text-xs lg:text-base text-right md:w-fit md:mr-[-26rem] md:bottom-[3rem] lg:bottom-0 lg:mr-[-30rem]">
+          <div className="relative md:text-xs xl:text-base text-right md:w-fit md:mr-[-26rem] md:bottom-[3rem] xl:bottom-0 xl:mr-[-30rem]">
             <HtmlTooltip
               title={
                 <Fragment>

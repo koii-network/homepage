@@ -4,10 +4,10 @@ import "/styles/about.module.scss";
 export const Form = () => {
   return (
     <div
-      className="w-full pt-12 lg:pt-40 bg-lightmint lg:bg-faux-azure-mist"
+      className="w-full pt-12 lg:px-8 lg:pt-40 bg-lightmint lg:bg-faux-azure-mist"
       id="founders-form"
     >
-      <div className="px-8 pb-14">
+      <div className="px-8 lg:px-0 pb-14">
         <p className="font-sans text-3xl leading-10 font-semibold text-koiipurpledark text-center tracking-tight">
           Fill out the form to get started.
         </p>

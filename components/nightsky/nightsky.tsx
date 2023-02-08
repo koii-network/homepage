@@ -7,7 +7,7 @@ export const NightSky = () => {
       className={`${styles.nightsky} h-[900px] md:h-[1000px] overflow-visible`}
     >
       <span
-        className="anchor absolute translate-y-[-3rem] md:translate-y-[-2rem] lg:translate-y-[-2rem]"
+        className="anchor absolute translate-y-[-3rem] md:translate-y-[-2rem] xl:translate-y-[-2rem]"
         id="nightsky"
       ></span>
       <div className="container relative mx-auto overflow-visible">
@@ -30,7 +30,7 @@ export const NightSky = () => {
           </div>
         </div>
 
-        <div className="star-text md:text-2xl flex md:pl-[26rem] lg:pl-[35rem] text-white w-auto">
+        <div className="star-text md:text-2xl flex md:pl-[26rem] xl:pl-[35rem] text-white w-auto">
           <span className="animate-[identity_6000ms_ease_infinite;] relative bottom-[16rem] md:bottom-[3rem] left-[12rem] md:left-[5rem]">
             Identity
           </span>
@@ -48,10 +48,10 @@ export const NightSky = () => {
           </span>
         </div>
         <div className="icebergtext md:text-2xl flex flex-row-reverse relative text-[#171753]">
-          <span className="relative right-[4rem] md:right-[13rem] lg:right-[18rem] top-[14rem] md:top-[13rem]">
+          <span className="relative right-[4rem] md:right-[13rem] xl:right-[18rem] top-[14rem] md:top-[13rem]">
             Free Crypto
           </span>
-          <span className="relative right-[3rem] md:right-[14rem] lg:right-[19rem] top-[20rem] md:top-[24rem]">
+          <span className="relative right-[3rem] md:right-[14rem] xl:right-[19rem] top-[20rem] md:top-[24rem]">
             Amazing Developer Tools
           </span>
         </div>

@@ -3,17 +3,17 @@ import { TechCard } from "./components/tech";
 export const Technology = () => {
   return (
     <div
-      className={`herotech container lg:h-[520px] pt-[150px] lg:pt-[30px] relative z-10`}
+      className={`herotech container xl:h-[520px] pt-[150px] xl:pt-[30px] relative z-10`}
     >
-      <div className="flex flex-col px-[40px] lg:px-[120px]">
-        <div className="title text-[30px] lg:text-[40px] font-semibold">
+      <div className="flex flex-col px-[40px] xl:px-[120px]">
+        <div className="title text-[30px] xl:text-[40px] font-semibold">
           Our Technology
         </div>
         <div className="description text-[16px] pt-[20px] pb-[70px] max-w-[478px]">
           Koii nodes are part of a constellation of decentralized systems. Start
           building peer to peer applications, today!
         </div>
-        <div className="techcard flex flex-col items-center lg:flex-row lg:items-baseline mx-[-3.5rem]">
+        <div className="techcard flex flex-col items-center xl:flex-row xl:items-baseline mx-[-3.5rem]">
           <TechCard
             imgSrc="/images/tech_wallet.svg"
             width={92}

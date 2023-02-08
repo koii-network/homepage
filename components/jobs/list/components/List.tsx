@@ -11,9 +11,9 @@ export const JobList = ({ title, className, onClick }: JobListProps) => {
   return (
     <div
       className={`${className} 
-  md:w-[662px]  lg:w-[836px] h-auto text-koiiblue my-[5px] p-[30px]`}
+  md:w-[662px]  xl:w-[836px] h-auto text-koiiblue my-[5px] p-[30px]`}
     >
-      <div className="flex flex-col lg:flex-row justify-between">
+      <div className="flex flex-col xl:flex-row justify-between">
         <div className="flex flex-col">
           <p className="title text-[32px]">{title}</p>
           <p className="text-[16px]">Remote</p>
