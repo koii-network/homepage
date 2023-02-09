@@ -59,7 +59,7 @@ export const PirateShip = () => {
 
   const cloudsImage = isMobileScreen ? clouds : cloudsXL;
   const cloudsClasses =
-    "lg:absolute lg:-top-80 xl:-top-90 lg:px-16 lg:ml-16 xl:px-40 lg:scale-90";
+    "lg:absolute lg:-top-80 xl:-top-90 lg:px-16 xl:px-40 lg:scale-90";
   const ropeLength = currentStep === 0 || currentStep === 5 ? "h-328" : "h-368";
   const anchorVerticalPosition =
     currentStep === 0 || currentStep === 5 ? "top-396 lg:top-392" : "top-428";
@@ -74,12 +74,12 @@ export const PirateShip = () => {
         <Image
           alt="Clouds"
           src={cloudsImage}
-          className="w-full lg:max-w-5xl xl:max-w-[1121px]"
+          className="w-full lg:max-w-[1300px] xl:max-w-[1121px]"
         />
       </div>
 
       <div className="relative lg:-top-[220px] xl:-top-48 lg:right-48 xl:right-72">
-        <h3 className="px-2 lg:ml-8 xl:ml-0 text-2xl text-darkpurple lg:w-[790px] lg:pl-24 lg:text-left lg:text-[32px]">
+        <h3 className="px-2 lg:ml-8 xl:ml-0 text-2xl mt-2 text-darkpurple lg:w-[790px] lg:pl-24 lg:text-left lg:text-[32px]">
           Koii makes it easy to build decentralized apps that don’t suck.
         </h3>
         <div className="relative mt-10 lg:-left-20 lg:ml-8 xl:ml-0 lg:mt-16 lg:scale-125">
