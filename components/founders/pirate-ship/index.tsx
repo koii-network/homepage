@@ -75,6 +75,7 @@ export const PirateShip = () => {
           alt="Clouds"
           src={cloudsImage}
           className="w-full lg:max-w-[1300px] xl:max-w-[1121px]"
+          priority
         />
       </div>
 
