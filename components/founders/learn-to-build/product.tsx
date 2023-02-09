@@ -25,8 +25,8 @@ export const Product = ({
     delay: 300,
   });
 
-  const isMobile = useMediaQuery(1024);
-  const labelClasses = `text-white py-5 px-9 lg:px-5 xl:px-9 whitespace-nowrap transition-all ease-in-out duration-500 min-w-min w-56 bg-purple lg:w-full lg:max-w-[248px] lg:mx-auto xl:max-w-none z-10 ${
+  const isMobile = useMediaQuery(1023);
+  const labelClasses = `text-white py-5 px-9 lg:px-4 lg:py-3 xl:py-5 xl:px-9 whitespace-nowrap transition-all ease-in-out duration-500 min-w-min w-56 bg-purple lg:w-full lg:max-w-[248px] lg:mx-auto xl:max-w-none z-10 lg:flex-row lg:items-center ${
     side === "left" && isMobile
       ? "text-left rounded-r-full lg:rounded-full"
       : "text-right ml-auto rounded-l-full lg:rounded-full lg:text-center"
@@ -51,7 +51,7 @@ export const Product = ({
         key={label}
       />
       <div className="mt-56 flex flex-col text-left lg:scale-90 lg:self-start xl:scale-100">
-        <div className="bg-transparenttext-xl mt-10 w-48 whitespace-nowrap rounded-full font-semibold">
+        <div className="bg-transparent text-xl mt-10 w-48 whitespace-nowrap rounded-full font-semibold">
           {label}
         </div>
         <div className="my-4 w-[424px] text-left text-base">{text}</div>
