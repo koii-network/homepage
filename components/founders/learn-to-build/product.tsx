@@ -26,7 +26,7 @@ export const Product = ({
   });
 
   const isMobile = useMediaQuery(1023);
-  const labelClasses = `text-white py-5 px-9 lg:px-4 lg:py-3 xl:py-5 xl:px-9 whitespace-nowrap transition-all ease-in-out duration-500 min-w-min w-56 bg-purple lg:w-full lg:max-w-[248px] lg:mx-auto xl:max-w-none z-10 lg:flex-row lg:items-center ${
+  const labelClasses = `text-white py-5 px-9 lg:px-4 lg:py-3 xl:py-5 xl:px-9 whitespace-nowrap transition-all ease-in-out duration-500 min-w-min w-56 bg-purple lg:w-full lg:max-w-[248px] lg:mx-auto xl:max-w-none z-10 lg:text-sm xl:text-base lg:flex-row lg:items-center ${
     side === "left" && isMobile
       ? "text-left rounded-r-full lg:rounded-full"
       : "text-right ml-auto rounded-l-full lg:rounded-full lg:text-center"
