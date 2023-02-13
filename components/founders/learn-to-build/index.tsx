@@ -43,13 +43,13 @@ export const LearnToBuild = () => {
 
   return (
     <div className="relative flex flex-col items-center gap-20 bg-[#1e1d5a] pt-16 text-center font-medium text-purple lg:bg-[#191854]">
-      <div className="md:leading-48px text-2xl tracking-tighter text-lightmint md:tracking-normal md:text-white xl:-mb-48 xl:text-4xl">
+      <div className="lg:leading-48px text-2xl tracking-tighter text-lightmint lg:tracking-normal lg:text-white xl:-mb-48 xl:text-4xl">
         Community Ownership & Governance:
         <br />
         The future is in your hands.
       </div>
-      <div className="flex w-full flex-col bg-products bg-cover bg-no-repeat pt-40 pb-[280px] md:px-8 md:pt-0 xl:bg-products-xl xl:pt-[340px]">
-        <div className="hidden md:mt-7 md:flex xl:-mt-24">
+      <div className="flex w-full flex-col bg-products bg-cover bg-no-repeat pt-40 pb-[280px] lg:px-8 lg:pt-0 xl:bg-products-xl xl:pt-[340px]">
+        <div className="hidden lg:mt-7 lg:flex xl:-mt-24">
           <Product
             label={topProduct.label}
             images={topProduct.images}
@@ -59,11 +59,11 @@ export const LearnToBuild = () => {
           />
         </div>
 
-        <div className="flex w-full flex-col gap-16 transition-all duration-700 ease-in-out md:mx-auto md:max-w-screen-xl md:flex-row md:flex-wrap">
+        <div className="flex w-full flex-col gap-16 transition-all duration-700 ease-in-out lg:mx-auto lg:max-w-5xl lg:gap-4 xl:max-w-screen-xl lg:flex-row">
           {products.map(({ label, images, text, docsLink }, index) => (
             <div
               key={label}
-              className="flex w-full flex-col transition-all duration-500 ease-in-out md:flex-1 md:basis-[28%] md:cursor-pointer md:hover:scale-105 xl:basis-48"
+              className="flex w-full flex-col transition-all duration-500 ease-in-out lg:flex-1 lg:basis-[28%] lg:cursor-pointer lg:hover:scale-105 xl:basis-48"
               onMouseEnter={() =>
                 setTopProduct({ label, images, text, docsLink })
               }
