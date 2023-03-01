@@ -365,13 +365,14 @@ export const Steps = () => {
         </div>
         <div className={`flex flex-col mx-[2rem]`}>
           <p className="text-[20px] font-semibold md:w-[400px]">
-          Leverage the World’s Compute Power
+            Leverage the World’s Compute Power
           </p>
           <p className="text-[16px] pt-[20px] max-w-[360px]">
-          Easily write and deploy tasks in JavaScript. You’ll get access to 45,000 computers around the world.
+            Easily write and deploy tasks in JavaScript. You’ll get access to
+            45,000 computers around the world.
           </p>
           <p className="text-[16px] pt-[20px] max-w-[360px]">
-          Launch your first task in under 5 minutes.
+            Launch your first task in under 5 minutes.
           </p>
           <Button
             width="197px"
