@@ -20,7 +20,7 @@ export const Steps = () => {
         Stepcard.style.opacity = "0";
         Step1.style.opacity = "1";
         Step1.style.visibility = "visible";
-        Stepbox.classList.add("h-[950px]");
+        Stepbox.classList.add("h-[1250px]");
       }
       if (Anchor != null) {
         Anchor.scrollIntoView();
@@ -39,7 +39,7 @@ export const Steps = () => {
         Stepcard.style.opacity = "1";
         Step1.style.opacity = "0";
         Step1.style.visibility = "hidden";
-        Stepbox.classList.remove("h-[950px]");
+        Stepbox.classList.remove("h-[1250px]");
       }
     }
   };
@@ -56,7 +56,7 @@ export const Steps = () => {
         Stepcard.style.opacity = "0";
         Step2.style.opacity = "1";
         Step2.style.visibility = "visible";
-        Stepbox.classList.add("h-[950px]");
+        Stepbox.classList.add("h-[1050px]");
       }
       if (Anchor != null) {
         Anchor.scrollIntoView();
@@ -75,7 +75,7 @@ export const Steps = () => {
         Stepcard.style.opacity = "1";
         Step2.style.opacity = "0";
         Step2.style.visibility = "hidden";
-        Stepbox.classList.remove("h-[950px]");
+        Stepbox.classList.remove("h-[1050px]");
       }
     }
   };
@@ -92,7 +92,7 @@ export const Steps = () => {
         Stepcard.style.opacity = "0";
         Step3.style.opacity = "1";
         Step3.style.visibility = "visible";
-        Stepbox.classList.add("h-[950px]");
+        Stepbox.classList.add("h-[1200px]");
       }
       if (Anchor != null) {
         Anchor.scrollIntoView();
@@ -111,7 +111,7 @@ export const Steps = () => {
         Stepcard.style.opacity = "1";
         Step3.style.opacity = "0";
         Step3.style.visibility = "hidden";
-        Stepbox.classList.remove("h-[950px]");
+        Stepbox.classList.remove("h-[1200px]");
       }
     }
   };
@@ -129,7 +129,7 @@ export const Steps = () => {
         Step4.style.opacity = "1";
         Step4.style.visibility = "visible";
         Stepbox.classList.add("md:min-h-[900px]");
-        Stepbox.classList.add("h-[1050px]");
+        Stepbox.classList.add("h-[1350px]");
       }
       if (Anchor != null) {
         Anchor.scrollIntoView();
@@ -149,7 +149,7 @@ export const Steps = () => {
         Step4.style.opacity = "0";
         Step4.style.visibility = "hidden";
         Stepbox.classList.remove("md:min-h-[900px]");
-        Stepbox.classList.remove("h-[1050px]");
+        Stepbox.classList.remove("h-[1350px]");
       }
     }
   };
@@ -158,10 +158,10 @@ export const Steps = () => {
   const isMobile = useMediaQuery(728);
   return (
     <div
-      className={`earnsteps container xl:min-h-[580px] pt-[50px] xl:pt-[30px] relative z-10`}
+      className={`earnsteps container lg:min-h-[700px] pt-[50px] xl:pt-[30px] relative z-10`}
     >
       <div className="flex flex-col items-center" id="ListSection">
-        <p className="text-center text-[32px]">
+        <p className="text-center text-[32px] mt-48 md:mt-16 xl:mt-8">
           There are so many ways to get involved...
           <br /> and to earn.
         </p>
@@ -170,13 +170,13 @@ export const Steps = () => {
             Tap the sections below to learn more.
           </p>
         ) : (
-          <p className="text-center text-[18px] pt-[10px]">
+          <p className="text-center text-[18px] pt-[10px] mb-12">
             Click the sections below to learn more.
           </p>
         )}
       </div>
       <div
-        className={`${styles.stepbox} md:h-auto xl:min-h-[370px]  flex flex-col px-[40px] xl:px-[120px]`}
+        className={`${styles.stepbox} md:h-auto xl:min-h-[370px] flex flex-col px-[40px] xl:px-[120px]`}
         id="stepbox"
       >
         {isBreakpoint ? (
@@ -295,7 +295,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step1full} absolute z-10 top-[150px] right-[50%] translate-x-[50%] pt-[50px] xl:pt-[30px]`}
+        className={`${styles.step1full} absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%] mt-32 lg:mt-12 pt-[50px] xl:pt-[30px]`}
         id="Step1Full"
         onMouseLeave={Step1OUT}
       >
@@ -347,7 +347,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step2full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
+        className={`${styles.step2full} flex flex-col xl:flex-row px-[4rem] mt-40 lg:mt-24 items-center justify-between absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%]`}
         id="Step2Full"
         onMouseLeave={Step2OUT}
       >
@@ -392,7 +392,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step3full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
+        className={`${styles.step3full} flex flex-col xl:flex-row px-[4rem] items-center justify-between mt-40 lg:mt-24 absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%]`}
         id="Step3Full"
         onMouseLeave={Step3OUT}
       >
@@ -439,7 +439,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step4full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
+        className={`${styles.step4full} flex flex-col xl:flex-row px-[4rem] items-center justify-between mt-80 lg:mt-24 absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
         id="Step4Full"
         onMouseLeave={Step4OUT}
       >
