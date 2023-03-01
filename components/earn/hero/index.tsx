@@ -49,8 +49,10 @@ export const Earnhero = () => {
             >
               Developers need lots of computers to run the apps and websites
               that you use every day. <br />
-              You don’t need a supercomputer—the unused power from your laptop
-              and an internet connection is worth a lot.
+              <p className="py-[10px]">
+                You don’t need a supercomputer—the unused power from your laptop
+                and an internet connection is worth a lot.
+              </p>
             </div>
             <div className="md:w-fit md:flex md:space-x-6">
               <Button
