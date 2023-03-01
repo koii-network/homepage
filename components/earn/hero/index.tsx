@@ -30,7 +30,7 @@ export const Earnhero = () => {
             </div>
             <div className="w-fit pt-[4rem]">
               <HubspotForm
-                formId={"b31f31bd-fffc-4ddb-84ff-f2448a776773"}
+                formId={"a5b3b039-0c80-4c95-90b3-73bd3ee00315"}
                 wrapperClassNames={
                   "p-1 bg-white border border-solid border-dark-blue rounded-[32px] md:w-[400px] flex flex-row justify-between subscribe-button"
                 }
