@@ -434,7 +434,7 @@ export const Steps = () => {
         <div
           className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
         >
-          <Image src="/images/earn/step3_become.svg" width={371} height={371} />
+          <Image src="/images/earn/3-boat.svg" width={371} height={371} />
         </div>
       </div>
 
@@ -457,16 +457,14 @@ export const Steps = () => {
         </div>
         <div className={`flex flex-col mx-[2rem]`}>
           <p className="text-[20px] font-semibold">
-            Rent your device’s extra compute power
+          Attention Tracking
           </p>
           <p className="text-[16px] pt-[20px] max-w-[326px]">
-            Rent the extra compute power on your laptop or desktop (mobile
-            coming soon). Help run the network and earn tokens without even
-            thinking about it.{" "}
+          Earning rewards for every person who visits your website is easy—
+          Install this script in the `head` of your site and start earning KOII.
           </p>
           <p className="text-[16px] pt-[20px] max-w-[326px]">
-            The Koii Node takes the same amount of space and RAM as your
-            favorite music playing app, so anyone can run one!
+          Click the button below for the full docs.
           </p>
           <Button
             width="197px"
