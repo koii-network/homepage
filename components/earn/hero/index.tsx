@@ -50,7 +50,6 @@ export const Earnhero = () => {
             </div>
             <div
               className="sub_content text-[18px] md:w-[590px] py-[10px]"
-              id="subtitle"
             >
               Developers need lots of computers to run the apps and websites
               that you use every day. <br />
