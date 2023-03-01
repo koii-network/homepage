@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 import styles from "styles/earn.module.css";
 import React, { MouseEvent } from "react";
+import { HubspotForm } from "@/components/subscribe/hubspot-form";
 
 export const Steps = () => {
   const Step1IN = (e: MouseEvent<HTMLDivElement>) => {
@@ -313,42 +314,34 @@ export const Steps = () => {
           </div>
           <div className={`flex flex-col mx-[2rem]`}>
             <p className="text-[20px] font-semibold">
-              Attention Tracking on your site
+              Rent your device’s extra compute power
             </p>
-            <p className="text-[16px] pt-[20px] max-w-[326px]">
-              Earning rewards for every person who visits your website is easy—
-              <br />
-              Install this script and you’re good to go
+            <p className="text-[16px] pt-[20px] max-w-[450px]">
+              Rent the extra compute power on your laptop or desktop. Help run
+              the network and earn tokens without even thinking about it.
             </p>
-            <p className="text-[16px] pt-[20px]">
-              Check out the docs for full configuration:
+            <p className="text-[16px] pt-[20px] max-w-[450px] pb-[1rem]">
+              The Koii Node takes the same amount of space and RAM as your
+              favorite music playing app, so anyone can run one!
             </p>
-            <Button
-              width="197px"
-              height="53px"
-              asLink
-              target="_blank"
-              href="https://docs.koii.network/earning-koii/attention-mining"
-              className=" my-[2rem] px-6 py-3 w-[221px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
-              label="Koii Wiki"
+            <HubspotForm
+              formId={"94cf9dab-046d-4ec9-8f74-b160793c2bf0"}
+              wrapperClassNames={
+                "p-1 bg-white border border-solid border-dark-blue rounded-[32px] md:w-[400px] flex flex-row justify-between subscribe-button"
+              }
+              inputClassNames={
+                " outline-none bg-none focus:border-none md:w-[224px]"
+              }
+              inputWrapperClassNames={"ml-4 pt-3"}
+              submitClassNames={
+                "bg-[#4E4E8D] text-white rounded-[24px] w-[142px] h-[48px] text-[12px] uppercase"
+              }
             />
           </div>
-          <div className={`justify-center w-[242px] h-[auto] xl:w-[371px]`}>
-            <div
-              className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] xl:w-[390px] h-auto`}
-            >
-              <p> import * as port from &quot;@_koii/k2-port&quot;</p>
-              <p>
-                <br />
-                {` let portAPI = new port.PoRT({ `}{" "}
-              </p>
-              <p>
-                trustedNodeAddress: &apos;https://k2-tasknet.koii.live&apos;,
-              </p>
-              <p> node: 5,</p>
-              <p> connectionWait: true,</p>
-              <p>{`});`}</p>
-            </div>
+          <div
+            className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
+          >
+            <Image src="/images/earn/step4_node.svg" width={371} height={371} />
           </div>
         </div>
       </div>
@@ -481,10 +474,20 @@ export const Steps = () => {
             label="Run a Node"
           />
         </div>
-        <div
-          className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
-        >
-          <Image src="/images/earn/step4_node.svg" width={371} height={371} />
+        <div className={`justify-center w-[242px] h-[auto] xl:w-[371px]`}>
+          <div
+            className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] xl:w-[390px] h-auto`}
+          >
+            <p> import * as port from &quot;@_koii/k2-port&quot;</p>
+            <p>
+              <br />
+              {` let portAPI = new port.PoRT({ `}{" "}
+            </p>
+            <p>trustedNodeAddress: &apos;https://k2-tasknet.koii.live&apos;,</p>
+            <p> node: 5,</p>
+            <p> connectionWait: true,</p>
+            <p>{`});`}</p>
+          </div>
         </div>
       </div>
     </div>
