@@ -409,12 +409,17 @@ export const Steps = () => {
           <Image src="/images/earn/step3.svg" width={371} height={371} />
         </div>
         <div className={`flex flex-col mx-[2rem]`}>
-          <p className="text-[20px] font-semibold">$1M Grants, Mentorship & More</p>
-          <p className="text-[16px] pt-[20px] max-w-[326px]">
-          Do you believe in empowering people through community-driven apps? We’ll provide technical and financial support to bring your product to life.
+          <p className="text-[20px] font-semibold">
+            $1M Grants, Mentorship & More
           </p>
           <p className="text-[16px] pt-[20px] max-w-[326px]">
-          Learn from tech experts, access our partnership network, and get media support.
+            Do you believe in empowering people through community-driven apps?
+            We’ll provide technical and financial support to bring your product
+            to life.
+          </p>
+          <p className="text-[16px] pt-[20px] max-w-[326px]">
+            Learn from tech experts, access our partnership network, and get
+            media support.
           </p>
           <Button
             width="197px"
