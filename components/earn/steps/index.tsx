@@ -161,7 +161,10 @@ export const Steps = () => {
       className={`earnsteps container lg:min-h-[700px] pt-[50px] xl:pt-[30px] relative z-10`}
     >
       <div className="flex flex-col items-center" id="ListSection">
-        <p className="text-center text-[32px] mt-48 md:mt-16 xl:mt-8" id="subtitle">
+        <p
+          className="text-center text-[32px] mt-48 md:mt-16 xl:mt-8"
+          id="subtitle"
+        >
           There are so many ways to get involved...
           <br /> and to earn.
         </p>

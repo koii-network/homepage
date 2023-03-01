@@ -48,9 +48,7 @@ export const Earnhero = () => {
             <div className="sub_head font-semibold text-center md:text-left text-[28px] md:text-[28px] md:w-[565px]">
               Tasks are like Uber for your computer.
             </div>
-            <div
-              className="sub_content text-[18px] md:w-[590px] py-[10px]"
-            >
+            <div className="sub_content text-[18px] md:w-[590px] py-[10px]">
               Developers need lots of computers to run the apps and websites
               that you use every day. <br />
               <p className="py-[10px]">
