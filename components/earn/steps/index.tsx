@@ -14,9 +14,17 @@ export const Steps = () => {
       const Step1 = document.getElementById("Step1Full");
       const Stepbox = document.getElementById("stepbox");
       const Anchor = document.getElementById("subtitle");
-      if (Stepcard != null && Step1 != null && Stepbox != null) {
+      const ListSection = document.getElementById("ListSection");
+      if (
+        Stepcard != null &&
+        Step1 != null &&
+        Stepbox != null &&
+        ListSection != null
+      ) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
+        ListSection.style.visibility = "hidden";
+        ListSection.style.opacity = "0";
         Step1.style.opacity = "1";
         Step1.style.visibility = "visible";
         Stepbox.classList.add("h-[950px]");
@@ -33,9 +41,17 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step1 = document.getElementById("Step1Full");
       const Stepbox = document.getElementById("stepbox");
-      if (Stepcard != null && Step1 != null && Stepbox != null) {
+      const ListSection = document.getElementById("ListSection");
+      if (
+        Stepcard != null &&
+        Step1 != null &&
+        Stepbox != null &&
+        ListSection != null
+      ) {
         Stepcard.style.visibility = "visible";
         Stepcard.style.opacity = "1";
+        ListSection.style.visibility = "visible";
+        ListSection.style.opacity = "1";
         Step1.style.opacity = "0";
         Step1.style.visibility = "hidden";
         Stepbox.classList.remove("h-[950px]");
@@ -159,7 +175,7 @@ export const Steps = () => {
     <div
       className={`earnsteps container xl:min-h-[580px] pt-[50px] xl:pt-[30px] relative z-10`}
     >
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center" id="ListSection">
         <p className="text-center text-[32px]">
           There are so many ways to get involved...
           <br /> and to earn.
@@ -294,7 +310,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step1full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%] `}
+        className={`${styles.step1full} absolute z-10 top-0 right-[50%] translate-x-[50%] `}
         id="Step1Full"
         onMouseLeave={Step1OUT}
       >
@@ -305,46 +321,65 @@ export const Steps = () => {
         ) : (
           ""
         )}
-        <div
-          className={`justify-center xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px] mb-[2rem]`}
-        >
-          <Image src="/images/earn/step1.svg" width={371} height={371} />
-        </div>
-        <div className={`flex flex-col mx-[2rem]`}>
-          <p className="text-[20px] font-semibold">
-            Attention Tracking on your site
+        <div className="flex flex-col items-center">
+          <p className="text-center text-[32px]">
+            There are so many ways to get involved...
+            <br /> and to earn.
           </p>
-          <p className="text-[16px] pt-[20px] max-w-[326px]">
-            Earning rewards for every person who visits your website is easy—
-            <br />
-            Install this script and you’re good to go
-          </p>
-          <p className="text-[16px] pt-[20px]">
-            Check out the docs for full configuration:
-          </p>
-          <Button
-            width="197px"
-            height="53px"
-            asLink
-            target="_blank"
-            href="https://docs.koii.network/earning-koii/attention-mining"
-            className=" my-[2rem] px-6 py-3 w-[221px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
-            label="Koii Wiki"
-          />
-        </div>
-        <div className={`justify-center w-[242px] h-[auto] xl:w-[371px]`}>
-          <div
-            className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] xl:w-[390px] h-auto`}
-          >
-            <p> import * as port from &quot;@_koii/k2-port&quot;</p>
-            <p>
-              <br />
-              {` let portAPI = new port.PoRT({ `}{" "}
+          {isMobile ? (
+            <p className="text-center text-[18px] pt-[10px]">
+              Tap the sections below to learn more.
             </p>
-            <p>trustedNodeAddress: &apos;https://k2-tasknet.koii.live&apos;,</p>
-            <p> node: 5,</p>
-            <p> connectionWait: true,</p>
-            <p>{`});`}</p>
+          ) : (
+            <p className="text-center text-[18px] pt-[10px]">
+              Click the sections below to learn more.
+            </p>
+          )}
+        </div>
+        <div className=" flex flex-col xl:flex-row px-[4rem] items-center justify-between ">
+          <div
+            className={`justify-center xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px] mb-[2rem]`}
+          >
+            <Image src="/images/earn/step1.svg" width={371} height={371} />
+          </div>
+          <div className={`flex flex-col mx-[2rem]`}>
+            <p className="text-[20px] font-semibold">
+              Attention Tracking on your site
+            </p>
+            <p className="text-[16px] pt-[20px] max-w-[326px]">
+              Earning rewards for every person who visits your website is easy—
+              <br />
+              Install this script and you’re good to go
+            </p>
+            <p className="text-[16px] pt-[20px]">
+              Check out the docs for full configuration:
+            </p>
+            <Button
+              width="197px"
+              height="53px"
+              asLink
+              target="_blank"
+              href="https://docs.koii.network/earning-koii/attention-mining"
+              className=" my-[2rem] px-6 py-3 w-[221px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
+              label="Koii Wiki"
+            />
+          </div>
+          <div className={`justify-center w-[242px] h-[auto] xl:w-[371px]`}>
+            <div
+              className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] xl:w-[390px] h-auto`}
+            >
+              <p> import * as port from &quot;@_koii/k2-port&quot;</p>
+              <p>
+                <br />
+                {` let portAPI = new port.PoRT({ `}{" "}
+              </p>
+              <p>
+                trustedNodeAddress: &apos;https://k2-tasknet.koii.live&apos;,
+              </p>
+              <p> node: 5,</p>
+              <p> connectionWait: true,</p>
+              <p>{`});`}</p>
+            </div>
           </div>
         </div>
       </div>
