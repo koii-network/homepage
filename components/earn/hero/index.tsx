@@ -19,13 +19,12 @@ export const Earnhero = () => {
         }}
       >
         <div className="container ">
-          <div className="flex flex-col pt-[8rem] xl:pt-[4rem] xl:pl-[5rem] ">
+          <div className="flex flex-col pt-[8rem] xl:pt-[10rem] xl:pl-[5rem] ">
             <div className="earn-title text-white font-semibold md:font-normal text-[30px] md:text-[44px] xl:text-[50px] w-[300px] xl:w-[587px]">
-              There are so many ways to earn
+            Take back the internet.
             </div>
-            <div className="earn-subtitle text-white text-[18px] md:text-[20px] xl:text-[24px] md:w-[400px] xl:w-[455px] w-[280px] pt-[30px]">
-              No matter who you are or where you’re from, you can earn KOII as
-              long as you have an internet connection.
+            <div className="earn-subtitle text-white text-[18px] md:w-[400px] xl:w-[505px] w-[280px] pt-[30px]">
+            Rent your computer to make income while you sleep, and help us power the next generation of communities.
             </div>
             <div className="w-fit">
               <Button
@@ -40,12 +39,32 @@ export const Earnhero = () => {
             </div>
           </div>
           <div className="subtitle flex flex-col pt-[30rem] md:pt-[30rem] pb-[5rem] xl:pt-[8rem] xl:pl-[5rem]">
-            <div className="sub_head font-semibold text-center md:text-left text-[28px] md:text-[30px] md:w-[565px]">
-              The internet should be owned by those who use it.
+            <div className="sub_head font-semibold text-center md:text-left text-[28px] md:text-[28px] md:w-[565px]">
+            Tasks are like Uber for your computer.
             </div>
-            <div className="sub_content text-[18px] md:w-[590px]" id="subtitle">
-              We are giving away the keys to the new web. All you have to do is
-              click one of the bubbles to get started.
+            <div className="sub_content text-[18px] md:w-[590px] py-[10px]" id="subtitle">
+            Developers need lots of computers to run the apps and websites that you use every day. <br/>
+You don’t need a supercomputer—the unused power from your laptop and an internet connection is worth a lot.
+          </div>
+            <div className="md:w-fit md:flex md:space-x-6">
+              <Button
+                width="280px"
+                height="40px"
+                asLink
+                target="_blank"
+                href="https://docs.koii.network/earning-koii/attention-mining"
+                className="px-6 py-3 w-[245px] bg-[#4D3D8D] text-white text-normal rounded-[32px] drop-shadow-lg mt-[1rem]"
+                label="Run Tasks, Earn $$$"
+              />
+               <Button
+                width="280px"
+                height="40px"
+                asLink
+                target="_blank"
+                href="https://docs.koii.network/earning-koii/attention-mining"
+                className="px-6 py-3 w-[154px] bg-[#087980] text-white text-normal rounded-[32px] drop-shadow-lg mt-[1rem]"
+                label="Developers"
+              />
             </div>
           </div>
 
