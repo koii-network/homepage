@@ -2,6 +2,7 @@ import { useMediaQuery } from "@/components/hooks";
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/Button";
+import { HubspotForm } from "@/components/subscribe/hubspot-form";
 
 export const Earnhero = () => {
   const isBreakpoint = useMediaQuery(728);
@@ -27,15 +28,19 @@ export const Earnhero = () => {
               Rent your computer to make income while you sleep, and help us
               power the next generation of communities.
             </div>
-            <div className="w-fit">
-              <Button
-                width="221px"
-                height="40px"
-                asLink
-                target="_blank"
-                href="https://docs.koii.network/earning-koii/attention-mining"
-                className="px-6 py-3 w-[190px] bg-[#9BE7C4] text-koiiblue text-normal rounded-[32px] drop-shadow-lg mt-[3rem]"
-                label="Find out how"
+            <div className="w-fit pt-[4rem]">
+              <HubspotForm
+                formId={"b31f31bd-fffc-4ddb-84ff-f2448a776773"}
+                wrapperClassNames={
+                  "p-1 bg-white border border-solid border-dark-blue rounded-[32px] md:w-[400px] flex flex-row justify-between subscribe-button"
+                }
+                inputClassNames={
+                  " outline-none bg-none focus:border-none md:w-[224px]"
+                }
+                inputWrapperClassNames={"ml-4 pt-3"}
+                submitClassNames={
+                  "bg-[#4E4E8D] text-white rounded-[24px] w-[142px] h-[48px] text-[12px] uppercase"
+                }
               />
             </div>
           </div>
