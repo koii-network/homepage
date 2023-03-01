@@ -319,10 +319,11 @@ export const Steps = () => {
         </div>
         <div className={`justify-center w-[242px] h-[auto] xl:w-[371px]`}>
           <div
-            className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] xl:w-[371px] h-auto`}
+            className={` ${styles.script} text-left script-box text-white p-[2rem] md:w-[242px] xl:w-[390px] h-auto`}
           >
-            <p>{` port = new PoRT({ `} </p>
-            <p>trustedNodeAddress: &apos;https://mainnet.koii.live&apos;,</p>
+            <p> import * as port from "@_koii/k2-port"</p>
+            <p><br/>{` let portAPI = new port.PoRT({ `} </p>
+            <p>trustedNodeAddress: &apos;https://k2-tasknet.koii.live&apos;,</p>
             <p> node: 5,</p>
             <p> connectionWait: true,</p>
             <p>{`});`}</p>
