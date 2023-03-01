@@ -445,7 +445,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step4full} flex flex-col xl:flex-row px-[4rem] items-center justify-between mt-10 lg:mt-24 absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
+        className={`${styles.step4full} flex flex-col xl:flex-row px-[4rem] items-center justify-between mt-[10rem] lg:mt-24 absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
         id="Step4Full"
         onMouseLeave={Step4OUT}
       >
