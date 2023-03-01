@@ -159,6 +159,21 @@ export const Steps = () => {
     <div
       className={`earnsteps container xl:min-h-[580px] pt-[50px] xl:pt-[30px] relative z-10`}
     >
+      <div className="flex flex-col items-center">
+        <p className="text-center text-[32px]">
+          There are so many ways to get involved...
+          <br /> and to earn.
+        </p>
+        {isMobile ? (
+          <p className="text-center text-[18px] pt-[10px]">
+            Tap the sections below to learn more.
+          </p>
+        ) : (
+          <p className="text-center text-[18px] pt-[10px]">
+            Click the sections below to learn more.
+          </p>
+        )}
+      </div>
       <div
         className={`${styles.stepbox} md:h-auto xl:min-h-[370px]  flex flex-col px-[40px] xl:px-[120px]`}
         id="stepbox"
