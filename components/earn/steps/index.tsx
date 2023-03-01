@@ -456,15 +456,14 @@ export const Steps = () => {
           <Image src="/images/earn/step4_big.svg" width={371} height={371} />
         </div>
         <div className={`flex flex-col mx-[2rem]`}>
-          <p className="text-[20px] font-semibold">
-          Attention Tracking
+          <p className="text-[20px] font-semibold">Attention Tracking</p>
+          <p className="text-[16px] pt-[20px] max-w-[326px]">
+            Earning rewards for every person who visits your website is easy—
+            Install this script in the `head` of your site and start earning
+            KOII.
           </p>
           <p className="text-[16px] pt-[20px] max-w-[326px]">
-          Earning rewards for every person who visits your website is easy—
-          Install this script in the `head` of your site and start earning KOII.
-          </p>
-          <p className="text-[16px] pt-[20px] max-w-[326px]">
-          Click the button below for the full docs.
+            Click the button below for the full docs.
           </p>
           <Button
             width="197px"
