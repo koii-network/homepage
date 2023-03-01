@@ -468,11 +468,6 @@ export const Steps = () => {
           <Image src="/images/earn/step4_node.svg" width={371} height={371} />
         </div>
       </div>
-      <div className="text-center pb-[2rem] md:text-center xl:text-left xl::text-left md:w-[712px] font-[18px] mt-[5rem] px-[1rem] xl::pl-[4rem]">
-        1 Million KOII are released each day. Every token gives you{" "}
-        <b>governance rights</b>, and can be used to <b>rent computing power</b>{" "}
-        from the network.
-      </div>
     </div>
   );
 };
