@@ -162,7 +162,7 @@ export const Steps = () => {
     >
       <div className="flex flex-col items-center" id="ListSection">
         <p
-          className="text-center text-[32px] mt-48 md:mt-16 xl:mt-8"
+          className="text-center text-[32px] mt-6 md:mt-16 xl:mt-8"
           id="subtitle"
         >
           There are so many ways to get involved...

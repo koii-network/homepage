@@ -8,7 +8,7 @@ export const Earnhero = () => {
   const isBreakpoint = useMediaQuery(728);
   return (
     <div
-      className={`heroearn h-[1230px] xl:h-[900px] pt-[4rem] xl:pt-[70px]`}
+      className={`heroearn h-[1465px] xl:h-[900px] pt-[4rem] xl:pt-[70px]`}
       id="myID"
     >
       <div
