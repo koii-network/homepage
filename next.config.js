@@ -308,4 +308,8 @@ const redirectConfig = [
     source: "/one-pager",
     destination: "https://docsend.com/view/imrrbbnprzxxwrju",
   },
+  {
+    source: "/career",
+    destination: "https://www.koii.network/",
+  },
 ];
