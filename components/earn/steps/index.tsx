@@ -364,24 +364,23 @@ export const Steps = () => {
           <Image src="/images/earn/step2.svg" width={371} height={371} />
         </div>
         <div className={`flex flex-col mx-[2rem]`}>
-          <p className="text-[20px] font-semibold">
-            Drag & Drop any file to create an NFT
+          <p className="text-[20px] font-semibold md:w-[400px]">
+          Leverage the World’s Compute Power
           </p>
-          <p className="text-[16px] pt-[20px] max-w-[326px]">
-            Anything you create can become an NFT that earns attention rewards.
+          <p className="text-[16px] pt-[20px] max-w-[360px]">
+          Easily write and deploy tasks in JavaScript. You’ll get access to 45,000 computers around the world.
           </p>
-          <p className="text-[16px] pt-[20px] max-w-[326px]">
-            Get Finnie to mint any file on your computer in under a minutes.
-            Then share with your friends to start earning.
+          <p className="text-[16px] pt-[20px] max-w-[360px]">
+          Launch your first task in under 5 minutes.
           </p>
           <Button
             width="197px"
             height="53px"
             asLink
             target="_blank"
-            href="https://koii.me/finnie"
-            className=" my-[2rem] px-6 py-3 w-[221px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
-            label="Get Finnie"
+            href="https://docs.koii.network/microservices-and-tasks/what-are-tasks"
+            className=" my-[2rem] px-6 py-3 w-[221px] bg-[#4D3D8D] text-white text-normal rounded-[32px] drop-shadow-lg"
+            label="Get Started"
           />
         </div>
         <div
