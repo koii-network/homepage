@@ -298,7 +298,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step1full} flex flex-col xl:flex-row px-[4rem] mt-40 lg:mt-24 items-center justify-between absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%] w-[410px] md:w-auto`}
+        className={`${styles.step1full} flex flex-col xl:flex-row px-[4rem] mt-5 lg:mt-24 items-center justify-between absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%] w-[410px] md:w-auto`}
         id="Step1Full"
         onMouseLeave={Step1OUT}
       >
@@ -353,7 +353,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step2full} flex flex-col xl:flex-row px-[4rem] mt-40 lg:mt-24 items-center justify-between absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%]`}
+        className={`${styles.step2full} flex flex-col xl:flex-row px-[4rem] mt-5 lg:mt-24 items-center justify-between absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%]`}
         id="Step2Full"
         onMouseLeave={Step2OUT}
       >
@@ -398,7 +398,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step3full} flex flex-col xl:flex-row px-[4rem] items-center justify-between mt-40 lg:mt-24 absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%]`}
+        className={`${styles.step3full} flex flex-col xl:flex-row px-[4rem] items-center justify-between mt-5 lg:mt-24 absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%]`}
         id="Step3Full"
         onMouseLeave={Step3OUT}
       >
@@ -445,7 +445,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step4full} flex flex-col xl:flex-row px-[4rem] items-center justify-between mt-80 lg:mt-24 absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
+        className={`${styles.step4full} flex flex-col xl:flex-row px-[4rem] items-center justify-between mt-10 lg:mt-24 absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
         id="Step4Full"
         onMouseLeave={Step4OUT}
       >

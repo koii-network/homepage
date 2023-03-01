@@ -71,7 +71,7 @@ export const Earnhero = () => {
                 height="40px"
                 asLink
                 target="_blank"
-                href="https://docs.koii.network/earning-koii/attention-mining"
+                href="https://docs.koii.network/microservices-and-tasks/what-are-tasks"
                 className="px-6 py-3 w-[154px] bg-[#087980] text-white text-normal rounded-[32px] drop-shadow-lg mt-[1rem]"
                 label="Developers"
               />
