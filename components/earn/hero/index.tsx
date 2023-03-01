@@ -81,14 +81,26 @@ export const Earnhero = () => {
             </div>
           </div>
 
-          <div className="ease-in-out animate-[guy_15000ms_ease-in-out_infinite;] guy absolute z-20 w-[366.62px] h-[462.49px] xl:w-[466.62px] xl:h-[562.49px] right-[50%] translate-x-2/4 md:translate-x-[75%] xl:translate-x-[100%] 2xl:translate-x-[125%] bottom-[10rem] md:bottom-[12rem] xl:bottom-[-11rem]">
-            <Image src="/images/earn/hero_guy.svg" layout="fill" />
+          <div className="ease-in-out animate-[guy_15000ms_ease-in-out_infinite;] guy absolute z-20 w-[366.62px] h-[462.49px] xl:w-[366.62px] translate-y-[7%] xl:h-[562.49px] right-[50%] translate-x-2/4 md:translate-x-[75%] xl:translate-x-[130%] 2xl:translate-x-[125%] bottom-[10rem] md:bottom-[12rem] xl:bottom-[-9rem]">
+            <Image
+              src="/images/earn/Hero-People-Money.svg"
+              layout="fill"
+              alt="People investing"
+            />
           </div>
-          <div className="ease-in-out animate-[guitar_15000ms_ease-in-out_infinite;] guitar absolute z-20 w-[378.62px] h-[414.49px] xl:w-[531.62px] xl:h-[514.49px] right-[50%] translate-x-2/4 md:translate-x-[75%] xl:translate-x-[100%] bottom-[10rem] md:bottom-[10rem] xl:bottom-[-11rem]">
-            <Image src="/images/earn/hero_guitar.svg" layout="fill" />
+          <div className="ease-in-out animate-[guitar_15000ms_ease-in-out_infinite;] guitar absolute z-20 w-[278.62px] h-[414.49px] xl:w-[331.62px] xl:h-[514.49px] right-[50%] translate-x-2/4 md:translate-x-[75%] xl:translate-x-[130%] bottom-[10rem] md:bottom-[10rem] xl:bottom-[-9rem]">
+            <Image
+              src="/images/earn/Hero- Server-Data.svg"
+              layout="fill"
+              alt="Servers running"
+            />
           </div>
-          <div className="ease-in-out animate-[paint_15000ms_ease-in-out_infinite;] paint absolute z-20 w-[462.62px] h-[532.49px] xl:w-[627.5px] xl:h-[632.89px] right-[50%] translate-x-[45%] md:translate-x-[80%] xl:translate-x-[95%] bottom-[7rem] md:bottom-[6rem] xl:bottom-[-11rem]">
-            <Image src="/images/earn/hero_paint.svg" layout="fill" />
+          <div className="ease-in-out animate-[paint_15000ms_ease-in-out_infinite;] paint absolute z-20 w-[310px] h-[532.49px] xl:w-[400px] xl:h-[632.89px] right-[50%] translate-x-[45%] translate-y-[7%] md:translate-x-[80%] xl:translate-x-[130%] bottom-[7rem] md:bottom-[6rem] xl:bottom-[-9rem]">
+            <Image
+              src="/images/earn/Hero-Desktop-Money.svg"
+              layout="fill"
+              alt="Laptop with tokens"
+            />
           </div>
         </div>
       </div>
