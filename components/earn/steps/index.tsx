@@ -14,11 +14,7 @@ export const Steps = () => {
       const Step1 = document.getElementById("Step1Full");
       const Stepbox = document.getElementById("stepbox");
       const Anchor = document.getElementById("subtitle");
-      if (
-        Stepcard != null &&
-        Step1 != null &&
-        Stepbox != null
-      ) {
+      if (Stepcard != null && Step1 != null && Stepbox != null) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
         Step1.style.opacity = "1";
@@ -37,11 +33,7 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step1 = document.getElementById("Step1Full");
       const Stepbox = document.getElementById("stepbox");
-      if (
-        Stepcard != null &&
-        Step1 != null &&
-        Stepbox != null
-      ) {
+      if (Stepcard != null && Step1 != null && Stepbox != null) {
         Stepcard.style.visibility = "visible";
         Stepcard.style.opacity = "1";
         Step1.style.opacity = "0";
