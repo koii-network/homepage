@@ -310,7 +310,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step1full} absolute z-10 top-0 right-[50%] translate-x-[50%] `}
+        className={`${styles.step1full} absolute z-10 top-0 right-[50%] translate-x-[50%] pt-[50px] xl:pt-[30px]`}
         id="Step1Full"
         onMouseLeave={Step1OUT}
       >
