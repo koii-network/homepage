@@ -14,17 +14,13 @@ export const Steps = () => {
       const Step1 = document.getElementById("Step1Full");
       const Stepbox = document.getElementById("stepbox");
       const Anchor = document.getElementById("subtitle");
-      const ListSection = document.getElementById("ListSection");
       if (
         Stepcard != null &&
         Step1 != null &&
-        Stepbox != null &&
-        ListSection != null
+        Stepbox != null
       ) {
         Stepcard.style.visibility = "hidden";
         Stepcard.style.opacity = "0";
-        ListSection.style.visibility = "hidden";
-        ListSection.style.opacity = "0";
         Step1.style.opacity = "1";
         Step1.style.visibility = "visible";
         Stepbox.classList.add("h-[950px]");
@@ -41,17 +37,13 @@ export const Steps = () => {
       const Stepcard = document.getElementById("Stepcard");
       const Step1 = document.getElementById("Step1Full");
       const Stepbox = document.getElementById("stepbox");
-      const ListSection = document.getElementById("ListSection");
       if (
         Stepcard != null &&
         Step1 != null &&
-        Stepbox != null &&
-        ListSection != null
+        Stepbox != null
       ) {
         Stepcard.style.visibility = "visible";
         Stepcard.style.opacity = "1";
-        ListSection.style.visibility = "visible";
-        ListSection.style.opacity = "1";
         Step1.style.opacity = "0";
         Step1.style.visibility = "hidden";
         Stepbox.classList.remove("h-[950px]");
@@ -209,8 +201,8 @@ export const Steps = () => {
                 imgSrc="/images/earn/step1.svg"
                 width="w-[172.5px]"
                 height="h-[172.5px]"
-                title="Attention Tracking on your site"
-                description="If you have a website with regular traffic, earn passive income now— it only takes 2 minutes."
+                title="Passive income in a snap"
+                description="Run the network as a node operator and get rewarded without a second thought."
                 alt="Dynamic NFT"
                 className={`pl-[4rem] xl:pl-0`}
                 textclassName="text-left"
@@ -222,8 +214,8 @@ export const Steps = () => {
                 imgSrc="/images/earn/step2.svg"
                 width="w-[172.5px]"
                 height="h-[172.5px]"
-                title="Drag & Drop any file to create an NFT"
-                description="Share it with your friends and start earning right away."
+                title="Leverage the World’s Compute Power"
+                description="Write your first task in under 15 minutes, and harness the power of 45,000 computers. "
                 alt="step2"
                 className="items-end md:ml-[10rem] pr-[4rem] xl:pr-0"
                 textclassName="text-right md:text-left items-end xl:items-start"
@@ -235,8 +227,8 @@ export const Steps = () => {
                 imgSrc="/images/earn/step3.svg"
                 width="w-[172.5px]"
                 height="h-[172.5px]"
-                title="Become an Ambassador"
-                description="Learn about Koii, engage with the community, and earn for your time!"
+                title="$1M Grants, Mentorship, & More"
+                description="We are helping you bring your passion project to life. Koii’s tools and Founder Support program empower you to make it happen fast."
                 alt="Koii-X"
                 className="pl-[4rem] xl:pl-0"
                 textclassName="text-left"
@@ -248,8 +240,8 @@ export const Steps = () => {
                 imgSrc="/images/earn/step4_big.svg"
                 width="w-[172.5px]"
                 height="h-[172.5px]"
-                title="Rent your device’s extra compute power"
-                description="Run the network and get rewarded without a second thought."
+                title="Attention Rewards"
+                description="If your websites or web3 content is getting regular traffic, earn passive income now—it only takes 2 minutes."
                 alt="destorage"
                 className="items-end md:ml-[10rem] pr-[4rem] xl:pr-0"
                 textclassName="text-right md:text-left "
@@ -266,8 +258,8 @@ export const Steps = () => {
               imgSrc="/images/earn/step1.svg"
               width="w-[172.5px]"
               height="h-[172.5px]"
-              title="Attention Tracking on your site"
-              description="If you have a website with regular traffic, earn passive income now— it only takes 2 minutes."
+              title="Passive income in a snap"
+              description="Run the network as a node operator and get rewarded without a second thought."
               alt="dynamic nft"
               className="pl-[4rem] xl:pl-0"
               textclassName="text-left"
@@ -277,8 +269,8 @@ export const Steps = () => {
               imgSrc="/images/earn/step3.svg"
               width="w-[172.5px]"
               height="h-[172.5px]"
-              title="Become an Ambassador"
-              description="Learn about Koii, engage with the community, and earn for your time!"
+              title="$1M Grants, Mentorship, & More"
+              description="We are helping you bring your passion project to life. Koii’s tools and Founder Support program empower you to make it happen fast."
               alt="Koii token"
               className="pl-[4rem] xl:pl-0"
               textclassName="text-left"
@@ -288,8 +280,8 @@ export const Steps = () => {
               imgSrc="/images/earn/step2.svg"
               width="w-[172.5px]"
               height="h-[172.5px]"
-              title="Drag & Drop any file to create an NFT"
-              description="Share it with your friends and start earning right away."
+              title="Leverage the World’s Compute Power"
+              description="Write your first task in under 15 minutes, and harness the power of 45,000 computers. "
               alt="step2"
               className="items-end md:ml-[10rem] pr-[4rem] xl:pr-0"
               textclassName="text-right md:text-left items-end xl:items-start"
@@ -299,8 +291,8 @@ export const Steps = () => {
               imgSrc="/images/earn/step4_big.svg"
               width="w-[172.5px]"
               height="h-[172.5px]"
-              title="Rent your device’s extra compute power"
-              description="Run the network and get rewarded without a second thought."
+              title="Attention Rewards"
+              description="If your websites or web3 content is getting regular traffic, earn passive income now—it only takes 2 minutes."
               alt="destorage"
               className="items-end md:ml-[10rem] pr-[4rem] xl:pr-0"
               textclassName="text-right md:text-left"
@@ -310,7 +302,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step1full} absolute z-10 top-0 right-[50%] translate-x-[50%] pt-[50px] xl:pt-[30px]`}
+        className={`${styles.step1full} absolute z-10 top-[150px] right-[50%] translate-x-[50%] pt-[50px] xl:pt-[30px]`}
         id="Step1Full"
         onMouseLeave={Step1OUT}
       >
@@ -321,21 +313,6 @@ export const Steps = () => {
         ) : (
           ""
         )}
-        <div className="flex flex-col items-center">
-          <p className="text-center text-[32px]">
-            There are so many ways to get involved...
-            <br /> and to earn.
-          </p>
-          {isMobile ? (
-            <p className="text-center text-[18px] pt-[10px]">
-              Tap the sections below to learn more.
-            </p>
-          ) : (
-            <p className="text-center text-[18px] pt-[10px]">
-              Click the sections below to learn more.
-            </p>
-          )}
-        </div>
         <div className=" flex flex-col xl:flex-row px-[4rem] items-center justify-between ">
           <div
             className={`justify-center xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px] mb-[2rem]`}
@@ -385,7 +362,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step2full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%]`}
+        className={`${styles.step2full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
         id="Step2Full"
         onMouseLeave={Step2OUT}
       >
@@ -430,7 +407,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step3full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%]`}
+        className={`${styles.step3full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
         id="Step3Full"
         onMouseLeave={Step3OUT}
       >
@@ -474,7 +451,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step4full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-0 right-[50%] translate-x-[50%]`}
+        className={`${styles.step4full} flex flex-col xl:flex-row px-[4rem] items-center justify-between absolute z-10 top-[150px] right-[50%] translate-x-[50%]`}
         id="Step4Full"
         onMouseLeave={Step4OUT}
       >
