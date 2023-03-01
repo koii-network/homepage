@@ -409,23 +409,21 @@ export const Steps = () => {
           <Image src="/images/earn/step3.svg" width={371} height={371} />
         </div>
         <div className={`flex flex-col mx-[2rem]`}>
-          <p className="text-[20px] font-semibold">Become an Ambassador</p>
+          <p className="text-[20px] font-semibold">$1M Grants, Mentorship & More</p>
           <p className="text-[16px] pt-[20px] max-w-[326px]">
-            Shout Koii from the rooftops, bring your friends, learn all about
-            the space.
+          Do you believe in empowering people through community-driven apps? We’ll provide technical and financial support to bring your product to life.
           </p>
           <p className="text-[16px] pt-[20px] max-w-[326px]">
-            Join the Ambassador program to empower the next generation of
-            internet users.
+          Learn from tech experts, access our partnership network, and get media support.
           </p>
           <Button
             width="197px"
             height="53px"
             asLink
             target="_blank"
-            href="https://discord.gg/koii"
+            href="/founders"
             className=" my-[2rem] px-6 py-3 w-[251px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
-            label="Become an Ambassador"
+            label="Join the Next Cohort"
           />
         </div>
         <div
