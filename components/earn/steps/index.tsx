@@ -295,7 +295,7 @@ export const Steps = () => {
       </div>
 
       <div
-        className={`${styles.step1full} absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%] mt-32 lg:mt-12 pt-[50px] xl:pt-[30px]`}
+        className={`${styles.step1full} flex flex-col xl:flex-row px-[4rem] mt-40 lg:mt-24 items-center justify-between absolute z-10 top-[280px] md:top-[150px] right-[50%] translate-x-[50%]`}
         id="Step1Full"
         onMouseLeave={Step1OUT}
       >
@@ -306,43 +306,41 @@ export const Steps = () => {
         ) : (
           ""
         )}
-        <div className=" flex flex-col xl:flex-row px-[4rem] items-center justify-between ">
-          <div
-            className={`justify-center xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px] mb-[2rem]`}
-          >
-            <Image src="/images/earn/step1.svg" width={371} height={371} />
-          </div>
-          <div className={`flex flex-col mx-[2rem]`}>
-            <p className="text-[20px] font-semibold">
-              Rent your device’s extra compute power
-            </p>
-            <p className="text-[16px] pt-[20px] max-w-[450px]">
-              Rent the extra compute power on your laptop or desktop. Help run
-              the network and earn tokens without even thinking about it.
-            </p>
-            <p className="text-[16px] pt-[20px] max-w-[450px] pb-[1rem]">
-              The Koii Node takes the same amount of space and RAM as your
-              favorite music playing app, so anyone can run one!
-            </p>
-            <HubspotForm
-              formId={"94cf9dab-046d-4ec9-8f74-b160793c2bf0"}
-              wrapperClassNames={
-                "p-1 bg-white border border-solid border-dark-blue rounded-[32px] md:w-[400px] flex flex-row justify-between subscribe-button"
-              }
-              inputClassNames={
-                " outline-none bg-none focus:border-none md:w-[224px]"
-              }
-              inputWrapperClassNames={"ml-4 pt-3"}
-              submitClassNames={
-                "bg-[#4E4E8D] text-white rounded-[24px] w-[142px] h-[48px] text-[12px] uppercase"
-              }
-            />
-          </div>
-          <div
-            className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
-          >
-            <Image src="/images/earn/step4_node.svg" width={371} height={371} />
-          </div>
+        <div
+          className={`justify-center xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px] mb-[2rem]`}
+        >
+          <Image src="/images/earn/step1.svg" width={371} height={371} />
+        </div>
+        <div className={`flex flex-col mx-[2rem]`}>
+          <p className="text-[20px] font-semibold">
+            Rent your device’s extra compute power
+          </p>
+          <p className="text-[16px] pt-[20px] max-w-[450px]">
+            Rent the extra compute power on your laptop or desktop. Help run the
+            network and earn tokens without even thinking about it.
+          </p>
+          <p className="text-[16px] pt-[20px] max-w-[450px] pb-[1rem]">
+            The Koii Node takes the same amount of space and RAM as your
+            favorite music playing app, so anyone can run one!
+          </p>
+          <HubspotForm
+            formId={"94cf9dab-046d-4ec9-8f74-b160793c2bf0"}
+            wrapperClassNames={
+              "p-1 bg-white border border-solid border-dark-blue rounded-[32px] md:w-[400px] flex flex-row justify-between subscribe-button"
+            }
+            inputClassNames={
+              " outline-none bg-none focus:border-none md:w-[224px]"
+            }
+            inputWrapperClassNames={"ml-4 pt-3"}
+            submitClassNames={
+              "bg-[#4E4E8D] text-white rounded-[24px] w-[142px] h-[48px] text-[12px] uppercase"
+            }
+          />
+        </div>
+        <div
+          className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
+        >
+          <Image src="/images/earn/step4_node.svg" width={371} height={371} />
         </div>
       </div>
 
