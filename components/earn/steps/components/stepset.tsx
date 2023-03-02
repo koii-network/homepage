@@ -13,7 +13,7 @@ export const Step1IN = (e: MouseEvent<HTMLDivElement>) => {
       Stepcard.style.opacity = "0";
       Step1.style.opacity = "1";
       Step1.style.visibility = "visible";
-      Stepbox.classList.add("h-[950px]");
+      //   Stepbox.classList.add("h-[950px]");
     }
     if (Anchor != null) {
       Anchor.scrollIntoView();
@@ -36,7 +36,7 @@ export const Button1 = (e: MouseEvent<HTMLDivElement>) => {
       Step2.style.visibility = "hidden";
       Step1.style.opacity = "1";
       Step1.style.visibility = "visible";
-      Stepbox.classList.add("h-[950px]");
+      //   Stepbox.classList.add("h-[950px]");
     }
     if (Anchor != null) {
       Anchor.scrollIntoView();
@@ -59,7 +59,7 @@ export const Button2 = (e: MouseEvent<HTMLDivElement>) => {
       Step1.style.visibility = "hidden";
       Step2.style.opacity = "1";
       Step2.style.visibility = "visible";
-      Stepbox.classList.add("h-[950px]");
+      //   Stepbox.classList.add("h-[950px]");
     }
     if (Anchor != null) {
       Anchor.scrollIntoView();
@@ -95,7 +95,7 @@ export const Step2IN = (e: any) => {
       Stepcard.style.opacity = "0";
       Step2.style.opacity = "1";
       Step2.style.visibility = "visible";
-      Stepbox.classList.add("h-[950px]");
+      //   Stepbox.classList.add("h-[950px]");
     }
     if (Anchor != null) {
       Anchor.scrollIntoView();
@@ -131,7 +131,7 @@ export const Step3IN = (e: MouseEvent<HTMLDivElement>) => {
       Stepcard.style.opacity = "0";
       Step3.style.opacity = "1";
       Step3.style.visibility = "visible";
-      Stepbox.classList.add("h-[950px]");
+      //   Stepbox.classList.add("h-[950px]");
     }
     if (Anchor != null) {
       Anchor.scrollIntoView();
@@ -167,8 +167,8 @@ export const Step4IN = (e: MouseEvent<HTMLDivElement>) => {
       Stepcard.style.opacity = "0";
       Step4.style.opacity = "1";
       Step4.style.visibility = "visible";
-      Stepbox.classList.add("md:min-h-[900px]");
-      Stepbox.classList.add("h-[1050px]");
+      //   Stepbox.classList.add("md:min-h-[900px]");
+      //   Stepbox.classList.add("h-[1050px]");
     }
     if (Anchor != null) {
       Anchor.scrollIntoView();
