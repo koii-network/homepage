@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/Button";
 import { HubspotForm } from "@/components/subscribe/hubspot-form";
+import { Step1IN, Step2IN } from "@/components/earn/steps/components/stepset";
 
 export const Earnhero = () => {
   const isBreakpoint = useMediaQuery(728);
@@ -57,24 +58,28 @@ export const Earnhero = () => {
               </p>
             </div>
             <div className="md:w-fit md:flex md:space-x-6">
-              <Button
-                width="280px"
-                height="40px"
-                asLink
-                target="_blank"
-                href="https://docs.koii.network/earning-koii/attention-mining"
-                className="px-6 py-3 w-[245px] bg-[#4D3D8D] text-white text-normal rounded-[32px] drop-shadow-lg mt-[1rem]"
-                label="Run Tasks, Earn $$$"
-              />
-              <Button
-                width="280px"
-                height="40px"
-                asLink
-                target="_blank"
-                href="https://docs.koii.network/microservices-and-tasks/what-are-tasks"
-                className="px-6 py-3 w-[154px] bg-[#087980] text-white text-normal rounded-[32px] drop-shadow-lg mt-[1rem]"
-                label="Developers"
-              />
+              <div onClick={Step1IN} className="cursor-pointer">
+                <Button
+                  width="280px"
+                  height="40px"
+                  asLink
+                  target="_blank"
+                  // href="https://docs.koii.network/earning-koii/attention-mining"
+                  className="px-6 py-3 w-[245px] bg-[#4D3D8D] text-white text-normal rounded-[32px] drop-shadow-lg mt-[1rem]"
+                  label="Run Tasks, Earn $$$"
+                />
+              </div>
+              <div onClick={Step2IN} className="cursor-pointer">
+                <Button
+                  width="280px"
+                  height="40px"
+                  asLink
+                  target="_blank"
+                  href="https://docs.koii.network/microservices-and-tasks/what-are-tasks"
+                  className="px-6 py-3 w-[154px] bg-[#087980] text-white text-normal rounded-[32px] drop-shadow-lg mt-[1rem]"
+                  label="Developers"
+                />
+              </div>
             </div>
           </div>
 
