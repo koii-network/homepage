@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/Button";
 import { HubspotForm } from "@/components/subscribe/hubspot-form";
-import { Step1IN, Step2IN } from "@/components/earn/steps/components/stepset";
+import { Button1, Button2 } from "@/components/earn/steps/components/stepset";
 
 export const Earnhero = () => {
   const isBreakpoint = useMediaQuery(728);
@@ -58,7 +58,7 @@ export const Earnhero = () => {
               </p>
             </div>
             <div className="md:w-fit md:flex md:space-x-6">
-              <div onClick={Step1IN} className="cursor-pointer">
+              <div onClick={Button1} className="cursor-pointer">
                 <Button
                   width="280px"
                   height="40px"
@@ -69,7 +69,7 @@ export const Earnhero = () => {
                   label="Run Tasks, Earn $$$"
                 />
               </div>
-              <div onClick={Step2IN} className="cursor-pointer">
+              <div onClick={Button2} className="cursor-pointer">
                 <Button
                   width="280px"
                   height="40px"
