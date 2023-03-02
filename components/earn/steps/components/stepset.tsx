@@ -21,51 +21,51 @@ export const Step1IN = (e: MouseEvent<HTMLDivElement>) => {
   }
 };
 export const Button1 = (e: MouseEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    // Do something
-    if (typeof window !== "undefined") {
-      const Stepcard = document.getElementById("Stepcard");
-      const Step1 = document.getElementById("Step1Full");
-      const Stepbox = document.getElementById("stepbox");
-      const Anchor = document.getElementById("subtitle");
-      const Step2 = document.getElementById("Step2Full");
-      if (Stepcard != null && Step1 != null && Step2 != null && Stepbox != null) {
-        Stepcard.style.visibility = "hidden";
-        Stepcard.style.opacity = "0";
-        Step2.style.opacity = "0";
-        Step2.style.visibility = "hidden";
-        Step1.style.opacity = "1";
-        Step1.style.visibility = "visible";
-        Stepbox.classList.add("h-[950px]");
-      }
-      if (Anchor != null) {
-        Anchor.scrollIntoView();
-      }
+  e.preventDefault();
+  // Do something
+  if (typeof window !== "undefined") {
+    const Stepcard = document.getElementById("Stepcard");
+    const Step1 = document.getElementById("Step1Full");
+    const Stepbox = document.getElementById("stepbox");
+    const Anchor = document.getElementById("subtitle");
+    const Step2 = document.getElementById("Step2Full");
+    if (Stepcard != null && Step1 != null && Step2 != null && Stepbox != null) {
+      Stepcard.style.visibility = "hidden";
+      Stepcard.style.opacity = "0";
+      Step2.style.opacity = "0";
+      Step2.style.visibility = "hidden";
+      Step1.style.opacity = "1";
+      Step1.style.visibility = "visible";
+      Stepbox.classList.add("h-[950px]");
     }
-  };
-  export const Button2 = (e: MouseEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    // Do something
-    if (typeof window !== "undefined") {
-      const Stepcard = document.getElementById("Stepcard");
-      const Step1 = document.getElementById("Step1Full");
-      const Stepbox = document.getElementById("stepbox");
-      const Anchor = document.getElementById("subtitle");
-      const Step2 = document.getElementById("Step2Full");
-      if (Stepcard != null && Step1 != null && Step2 != null && Stepbox != null) {
-        Stepcard.style.visibility = "hidden";
-        Stepcard.style.opacity = "0";
-        Step1.style.opacity = "0";
-        Step1.style.visibility = "hidden";
-        Step2.style.opacity = "1";
-        Step2.style.visibility = "visible";
-        Stepbox.classList.add("h-[950px]");
-      }
-      if (Anchor != null) {
-        Anchor.scrollIntoView();
-      }
+    if (Anchor != null) {
+      Anchor.scrollIntoView();
     }
-  };
+  }
+};
+export const Button2 = (e: MouseEvent<HTMLDivElement>) => {
+  e.preventDefault();
+  // Do something
+  if (typeof window !== "undefined") {
+    const Stepcard = document.getElementById("Stepcard");
+    const Step1 = document.getElementById("Step1Full");
+    const Stepbox = document.getElementById("stepbox");
+    const Anchor = document.getElementById("subtitle");
+    const Step2 = document.getElementById("Step2Full");
+    if (Stepcard != null && Step1 != null && Step2 != null && Stepbox != null) {
+      Stepcard.style.visibility = "hidden";
+      Stepcard.style.opacity = "0";
+      Step1.style.opacity = "0";
+      Step1.style.visibility = "hidden";
+      Step2.style.opacity = "1";
+      Step2.style.visibility = "visible";
+      Stepbox.classList.add("h-[950px]");
+    }
+    if (Anchor != null) {
+      Anchor.scrollIntoView();
+    }
+  }
+};
 export const Step1OUT = (e: MouseEvent<HTMLDivElement>) => {
   e.preventDefault();
   // Do something
