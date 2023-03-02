@@ -5,7 +5,16 @@ import Image from "next/image";
 import styles from "styles/earn.module.css";
 import React from "react";
 import { HubspotForm } from "@/components/subscribe/hubspot-form";
-import { Step1IN, Step2IN, Step3IN, Step4IN, Step1OUT, Step2OUT, Step3OUT, Step4OUT} from "./components/stepset";
+import {
+  Step1IN,
+  Step2IN,
+  Step3IN,
+  Step4IN,
+  Step1OUT,
+  Step2OUT,
+  Step3OUT,
+  Step4OUT,
+} from "./components/stepset";
 
 export const Steps = () => {
   const isBreakpoint = useMediaQuery(1439);
