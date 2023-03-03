@@ -296,7 +296,7 @@ export const Steps = () => {
             asLink
             target="_blank"
             href="/founders"
-            className=" my-[2rem] px-6 py-3 w-[251px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
+            className=" my-[2rem] px-6 py-3 w-[251px] bg-[#4D3D8D] text-white text-normal rounded-[32px] drop-shadow-lg"
             label="Join the Next Cohort"
           />
         </div>
@@ -339,7 +339,7 @@ export const Steps = () => {
             height="53px"
             asLink
             href="/node"
-            className=" my-[2rem] px-6 py-3 w-[221px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
+            className=" my-[2rem] px-6 py-3 w-[221px] bg-[#4D3D8D] text-white text-normal rounded-[32px] drop-shadow-lg"
             label="Run a Node"
           />
         </div>
