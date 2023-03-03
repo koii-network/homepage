@@ -207,7 +207,7 @@ export const Steps = () => {
           className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] xl:h-[371px] mt-8`}
         >
           <Image
-            src="/images/earn/step4_node.svg"
+            src="/images/earn/Device-power.svg"
             width={371}
             height={371}
             alt="People at desk"
@@ -256,7 +256,11 @@ export const Steps = () => {
         <div
           className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
         >
-          <Image src="/images/earn/step2_finnie.svg" width={371} height={371} />
+          <Image
+            src="/images/earn/Compute-power.svg"
+            width={371}
+            height={371}
+          />
         </div>
       </div>
 
@@ -296,7 +300,7 @@ export const Steps = () => {
             asLink
             target="_blank"
             href="/founders"
-            className=" my-[2rem] px-6 py-3 w-[251px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
+            className=" my-[2rem] px-6 py-3 w-[251px] bg-[#4D3D8D] text-white text-normal rounded-[32px] drop-shadow-lg"
             label="Join the Next Cohort"
           />
         </div>
@@ -339,7 +343,7 @@ export const Steps = () => {
             height="53px"
             asLink
             href="/node"
-            className=" my-[2rem] px-6 py-3 w-[221px] bg-koiiblue text-white text-normal rounded-[32px] drop-shadow-lg"
+            className=" my-[2rem] px-6 py-3 w-[221px] bg-[#4D3D8D] text-white text-normal rounded-[32px] drop-shadow-lg"
             label="Run a Node"
           />
         </div>
