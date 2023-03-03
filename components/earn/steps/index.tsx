@@ -256,7 +256,11 @@ export const Steps = () => {
         <div
           className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
         >
-          <Image src="/images/earn/Compute-power.svg" width={371} height={371} />
+          <Image
+            src="/images/earn/Compute-power.svg"
+            width={371}
+            height={371}
+          />
         </div>
       </div>
 
