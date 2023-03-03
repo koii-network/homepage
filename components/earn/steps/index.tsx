@@ -207,7 +207,7 @@ export const Steps = () => {
           className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] xl:h-[371px] mt-8`}
         >
           <Image
-            src="/images/earn/step4_node.svg"
+            src="/images/earn/Device-power.svg"
             width={371}
             height={371}
             alt="People at desk"
@@ -256,7 +256,7 @@ export const Steps = () => {
         <div
           className={`justify-center md:w-[242px] md:h-[242px] xl:w-[371px] md:w-[242px] md:h-[242px] xl:h-[371px]`}
         >
-          <Image src="/images/earn/step2_finnie.svg" width={371} height={371} />
+          <Image src="/images/earn/Compute-power.svg" width={371} height={371} />
         </div>
       </div>
 
