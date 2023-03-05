@@ -342,9 +342,9 @@ export const Steps = () => {
             width="197px"
             height="53px"
             asLink
-            href="/node"
+            href="https://docs.koii.network/earning-koii/proof-of-real-traffic-port/attention-mining"
             className=" my-[2rem] px-6 py-3 w-[221px] bg-[#4D3D8D] text-white text-normal rounded-[32px] drop-shadow-lg"
-            label="Run a Node"
+            label="Learn How"
           />
         </div>
         <div className={`justify-center w-[242px] h-[auto] xl:w-[371px]`}>
