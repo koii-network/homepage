@@ -17,12 +17,10 @@ export const Navbar = () => {
   
   function useOutsideAlerter(ref : any) {
     useEffect(() => {
-      /**
-       * Alert if clicked on outside of element
-       */
       function handleClickOutside(event:any) {
         if (ref.current && !ref.current.contains(event.target)) {
-          toggleOpenMenu();
+          console.log("clickoutside", openMobileMenu)
+          openMobileMenu? setOpenMobileMenu(true) : setOpenMobileMenu(false);
         }
       }
       // Bind the event listener
