@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MenuButton } from "./menu-button";
@@ -7,10 +7,33 @@ import { NewsletterButton } from "./newsletter-button";
 
 export const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
-
   const toggleOpenMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
+    console.log("menu is", openMobileMenu)
   };
+
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
+  
+  function useOutsideAlerter(ref : any) {
+    useEffect(() => {
+      /**
+       * Alert if clicked on outside of element
+       */
+      function handleClickOutside(event:any) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          toggleOpenMenu();
+        }
+      }
+      // Bind the event listener
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
@@ -45,8 +68,10 @@ export const Navbar = () => {
        */}
       <div
         className={` ${
-          !openMobileMenu && "hidden"
+          !openMobileMenu && "hidden" 
         } md:hidden bg-gradient-to-l from-turquoise-light to-white drop-shadow-md pt-4 pb-6 pr-8`}
+        ref={wrapperRef}
+        id="navbar-menu"
       >
         <NavbarMenu />
 
