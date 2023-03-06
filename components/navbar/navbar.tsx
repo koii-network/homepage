@@ -8,7 +8,8 @@ import { NewsletterButton } from "./newsletter-button";
 export const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
   const toggleOpenMenu = () => {
-    setOpenMobileMenu(!openMobileMenu);  };
+    setOpenMobileMenu(!openMobileMenu);
+  };
 
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
