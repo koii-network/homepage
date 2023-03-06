@@ -178,7 +178,7 @@ export const Steps = () => {
           <Image src="/images/earn/step1.svg" width={371} height={371} />
         </div>
         <div className={`flex flex-col mx-[2rem]`}>
-          <p className="text-[20px] font-semibold mx-auto max-w-[250px]">
+          <p className="text-[20px] font-semibold ">
             Rent your device’s extra compute power
           </p>
           <p className="text-[16px] pt-[20px] mx-auto max-w-[250px] md:max-w-[450px]">
