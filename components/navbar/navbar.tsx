@@ -9,18 +9,18 @@ export const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
   const toggleOpenMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
-    console.log("menu is", openMobileMenu)
+    console.log("menu is", openMobileMenu);
   };
 
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
-  
-  function useOutsideAlerter(ref : any) {
+
+  function useOutsideAlerter(ref: any) {
     useEffect(() => {
-      function handleClickOutside(event:any) {
+      function handleClickOutside(event: any) {
         if (ref.current && !ref.current.contains(event.target)) {
-          console.log("clickoutside", openMobileMenu)
-          openMobileMenu? setOpenMobileMenu(true) : setOpenMobileMenu(false);
+          console.log("clickoutside", openMobileMenu);
+          openMobileMenu ? setOpenMobileMenu(true) : setOpenMobileMenu(false);
         }
       }
       // Bind the event listener
@@ -31,7 +31,6 @@ export const Navbar = () => {
       };
     }, [ref]);
   }
-
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
@@ -66,7 +65,7 @@ export const Navbar = () => {
        */}
       <div
         className={` ${
-          !openMobileMenu && "hidden" 
+          !openMobileMenu && "hidden"
         } md:hidden bg-gradient-to-l from-turquoise-light to-white drop-shadow-md pt-4 pb-6 pr-8`}
         ref={wrapperRef}
         id="navbar-menu"
