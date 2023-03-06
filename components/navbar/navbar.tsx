@@ -8,9 +8,7 @@ import { NewsletterButton } from "./newsletter-button";
 export const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
   const toggleOpenMenu = () => {
-    setOpenMobileMenu(!openMobileMenu);
-    console.log("menu is", openMobileMenu);
-  };
+    setOpenMobileMenu(!openMobileMenu);  };
 
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
@@ -19,7 +17,6 @@ export const Navbar = () => {
     useEffect(() => {
       function handleClickOutside(event: any) {
         if (ref.current && !ref.current.contains(event.target)) {
-          console.log("clickoutside", openMobileMenu);
           openMobileMenu ? setOpenMobileMenu(true) : setOpenMobileMenu(false);
         }
       }
