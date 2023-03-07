@@ -11,9 +11,12 @@ export const Navbar = () => {
   const toggleOpenMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
   };
+  const closeMenu = () => {
+    if (openMobileMenu) setOpenMobileMenu(false);
+  };
 
   const wrapperRef = useRef<HTMLDivElement>(null);
-  useOnClickOutside(wrapperRef, toggleOpenMenu);
+  useOnClickOutside(wrapperRef, closeMenu);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50" ref={wrapperRef}>
