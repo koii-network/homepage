@@ -11,10 +11,10 @@ export const Navbar = () => {
     setOpenMobileMenu(!openMobileMenu);
   };
 
-  const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef);
+  const wrapperRef = useRef<HTMLDivElement | null>(null);
+  useOutsideClose(wrapperRef);
 
-  function useOutsideAlerter(ref: any) {
+  function useOutsideClose(ref: any) {
     useEffect(() => {
       function handleClickOutside(event: any) {
         if (ref.current && !ref.current.contains(event.target)) {
