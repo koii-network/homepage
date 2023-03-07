@@ -1,6 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useOnClickOutside } from "@/components/hooks";
 import { MenuButton } from "./menu-button";
 import { NavbarMenu } from "./navbar-menu";
 import { NewsletterButton } from "./newsletter-button";
@@ -11,24 +12,8 @@ export const Navbar = () => {
     setOpenMobileMenu(!openMobileMenu);
   };
 
-  const wrapperRef = useRef<HTMLDivElement | null>(null);
-  useOutsideClose(wrapperRef);
-
-  function useOutsideClose(ref: any) {
-    useEffect(() => {
-      function handleClickOutside(event: any) {
-        if (ref.current && !ref.current.contains(event.target)) {
-          openMobileMenu ? setOpenMobileMenu(true) : setOpenMobileMenu(false);
-        }
-      }
-      // Bind the event listener
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        // Unbind the event listener on clean up
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, [ref]);
-  }
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  useOnClickOutside(wrapperRef, toggleOpenMenu);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
