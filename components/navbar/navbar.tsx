@@ -1,19 +1,25 @@
-import { useState } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useOnClickOutside } from "@/components/hooks";
 import { MenuButton } from "./menu-button";
 import { NavbarMenu } from "./navbar-menu";
 import { NewsletterButton } from "./newsletter-button";
 
 export const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
-
   const toggleOpenMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
   };
+  const closeMenu = () => {
+    if (openMobileMenu) setOpenMobileMenu(false);
+  };
+
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  useOnClickOutside(wrapperRef, closeMenu);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="fixed top-0 left-0 right-0 z-50" ref={wrapperRef}>
       <div className="relative z-50 flex justify-between py-2 pl-4 pr-8 bg-gradient-to-r from-turquoise-light to-white drop-shadow-lg md:drop-shadow-none">
         <Link href="/">
           <a>
@@ -47,6 +53,7 @@ export const Navbar = () => {
         className={` ${
           !openMobileMenu && "hidden"
         } md:hidden bg-gradient-to-l from-turquoise-light to-white drop-shadow-md pt-4 pb-6 pr-8`}
+        id="navbar-menu"
       >
         <NavbarMenu />
 
