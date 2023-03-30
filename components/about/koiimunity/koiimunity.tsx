@@ -71,7 +71,7 @@ export const Koiimunity = () => {
             width="w-[160px]  md:w-[322px]"
             height="h-[269px]  md:h-[322px]"
             buttonLabel="Follow"
-            url="https://twitter.com"
+            url="https://twitter.com/KoiiNetwork"
             alt="Twitter"
           />
         </div>
