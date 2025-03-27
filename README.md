@@ -1,40 +1,116 @@
-<p>
-  <img src="https://raw.githubusercontent.com/koii-network/koii.X/main/.github/images/koii_logo.svg" width="224px" alt="logo" />
-</p>
-<h1 style="width: 100%"> Koii Network :fish:</h1>
-<span>
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white" alt="typescript" />&nbsp;
-   <a href="https://discord.gg/koii" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white" alt="cli version" /></a>&nbsp;
-   <a href="http://koii.network/" target="_blank"> <img src="https://img.shields.io/badge/made%20by-koii-blue" alt="made-by-koii" /></a>&nbsp;
-</span>
+# Koii Network Homepage
 
+## 🌊 Project Overview
 
-### This is a homepage project for [koii.network](http://koii.network/) describing all necessary information about us as Koii. 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Koii Network's homepage is a modern, responsive web application built to showcase the decentralized computing platform's vision, features, and ecosystem. The website serves as a comprehensive resource for developers, founders, and users interested in learning about Koii's innovative blockchain and web3 technologies.
 
-## Getting Started
+Key highlights:
+- Informative multi-page website covering different aspects of the Koii Network
+- Interactive UI showcasing technology, earn opportunities, and ecosystem features
+- Responsive design optimized for desktop and mobile experiences
 
-First, run the development server:
+## 🚀 Getting Started
 
+### Prerequisites
+- Node.js (v16 or later)
+- npm or Yarn
+
+### Installation Steps
+1. Clone the repository
+```bash
+git clone https://github.com/koii-network/homepage.git
+cd homepage
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Create a `.env` file (if needed for future environment-specific configurations)
+```bash
+touch .env
+```
+
+4. Start the development server
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at `http://localhost:3000`
 
-## Learn More
+## 🌐 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Production Build
+```bash
+npm run build
+# or 
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deployment Options
+- **Vercel**: Recommended for Next.js applications
+- **Netlify**: Direct deployment support
+- **Docker**: Custom containerization possible
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Generating Sitemap
+```bash
+npm run sitemap
+# or
+yarn sitemap
+```
 
-## Deploy on Vercel
+## 📂 Project Structure
+```
+├── components/       # Reusable React components
+├── config/           # Configuration files
+├── pages/            # Next.js page components
+├── public/           # Static assets
+├── styles/           # Global and module CSS/SCSS
+└── types/            # TypeScript type definitions
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠 Technologies Used
+- **Framework**: Next.js 12
+- **Language**: TypeScript
+- **Styling**: 
+  - Tailwind CSS
+  - SCSS
+  - Emotion
+- **Animation**: 
+  - Framer Motion
+  - React Spring
+- **UI Components**: Material-UI
+- **Development Tools**:
+  - ESLint
+  - Prettier
+  - Husky (Git hooks)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ✨ Feature Highlights
+- Responsive, mobile-friendly design
+- Multi-page navigation
+- Interactive sections for:
+  - About Koii Network
+  - Earn opportunities
+  - Founders program
+  - Node capabilities
+- Sitemap generation
+- Performance optimized
+
+## 🔧 Configuration
+- Tailwind configuration in `tailwind.config.js`
+- TypeScript configuration in `tsconfig.json`
+- ESLint and Prettier configurations included
+
+## 📄 License
+This project is currently private. All rights reserved by Koii Network.
+
+## 🤝 Contributing
+Please read the contributing guidelines before submitting pull requests.
+
+## 📞 Support
+For issues or questions, please [open an issue](https://github.com/koii-network/homepage/issues) on GitHub.
