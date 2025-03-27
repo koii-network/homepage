@@ -1,40 +1,128 @@
-<p>
-  <img src="https://raw.githubusercontent.com/koii-network/koii.X/main/.github/images/koii_logo.svg" width="224px" alt="logo" />
-</p>
-<h1 style="width: 100%"> Koii Network :fish:</h1>
-<span>
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white" alt="typescript" />&nbsp;
-   <a href="https://discord.gg/koii" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white" alt="cli version" /></a>&nbsp;
-   <a href="http://koii.network/" target="_blank"> <img src="https://img.shields.io/badge/made%20by-koii-blue" alt="made-by-koii" /></a>&nbsp;
-</span>
+# 🌊 Koii Network Web Application
 
+## 🚀 Project Overview
 
-### This is a homepage project for [koii.network](http://koii.network/) describing all necessary information about us as Koii. 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Koii Network is a decentralized web platform designed to empower developers, creators, and users in the Web3 ecosystem. This web application serves as the central hub for exploring Koii's innovative blockchain and decentralized computing solutions.
 
-## Getting Started
+### 🌟 Key Features
+- Comprehensive information about Koii Network's technology
+- Multiple sections: About, Founders, Earn, Jobs, and Metaverse
+- Interactive UI with responsive design
+- Web3 and blockchain technology showcase
+- Developer and creator-focused resources
 
-First, run the development server:
+## 🛠 Getting Started
 
+### Prerequisites
+- Node.js (v16 or later)
+- npm or Yarn
+- Git
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-org/koii-network-web.git
+cd koii-network-web
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Create a `.env` file in the project root (if needed)
+```bash
+# Example configuration
+NEXT_PUBLIC_API_URL=https://api.koii.network
+```
+
+4. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## 🚢 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Vercel Deployment
+```bash
+# Install Vercel CLI
+npm i -g vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Deploy
+vercel
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Docker Deployment
+```bash
+# Build Docker image
+docker build -t koii-web .
 
-## Deploy on Vercel
+# Run Docker container
+docker run -p 3000:3000 koii-web
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📂 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+koii-network-web/
+├── components/     # Reusable React components
+├── config/         # Configuration files and constants
+├── pages/          # Next.js page components
+├── public/         # Static assets
+├── styles/         # Global and module-specific styles
+└── README.md       # Project documentation
+```
+
+## 🔧 Technologies Used
+
+- **Frontend**
+  - React
+  - Next.js
+  - TypeScript
+  - Tailwind CSS
+  - SCSS
+
+- **Web3 Technologies**
+  - Decentralized storage
+  - Dynamic NFTs
+  - Blockchain integration
+
+- **Development Tools**
+  - ESLint
+  - Prettier
+  - PostCSS
+
+## ✨ Feature Highlights
+
+- Responsive, mobile-friendly design
+- Multi-page application with smooth navigation
+- Sections for Earn, Jobs, Founders, and Metaverse
+- Interactive UI components
+- Web3 resource exploration
+
+## 🔧 Configuration
+
+- Tailwind CSS configuration in `tailwind.config.js`
+- TypeScript configuration in `tsconfig.json`
+- Environment variables in `.env`
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check out our [Contribution Guidelines](CONTRIBUTING.md) for more details.
+
+## 📞 Contact
+
+- Website: [koii.network](https://koii.network)
+- Twitter: [@koii_network](https://twitter.com/koii_network)
+- Discord: [Koii Network Discord](https://discord.gg/koii)
